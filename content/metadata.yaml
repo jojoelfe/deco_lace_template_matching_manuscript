@@ -1,26 +1,25 @@
 ---
-title: "Manuscript Title"
+title: "Visual proteomics using whole-lamella 2D template matching"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - cryo-EM
+  - visual protemics
+  - ribosome
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
+  - github: jojoelfe
+    name: Johannes Elferich
+    initials: JE
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    email: johannes.elferich@umassmed.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
+      - RNA Therapeutic INstitute, UMass Chan Medical SChool
+      - HHMI
+
+  - github: nikogrigorieff
+    name: Nikolaus Grigorieff
+    initials: NG
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    email: niko@grigorieff.org
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - RNA Therapeutic INstitute, UMass Chan Medical SChool
+      - HHMI
