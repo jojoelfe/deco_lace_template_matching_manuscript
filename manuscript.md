@@ -1,24 +1,24 @@
 ---
-title: Manuscript Title
+title: Visual proteomics using whole-lamella 2D template matching
 keywords:
-- markdown
-- publishing
-- manubot
+- cryo-EM
+- visual protemics
+- ribosome
 lang: en-US
 date-meta: '2021-12-02'
 author-meta:
-- John Doe
-- Jane Roe
+- Johannes Elferich
+- Nikolaus Grigorieff
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="Visual proteomics using whole-lamella 2D template matching" />
+  <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
+  <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
+  <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta name="dc.date" content="2021-12-02" />
   <meta name="citation_publication_date" content="2021-12-02" />
   <meta name="dc.language" content="en-US" />
@@ -27,13 +27,13 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author" content="Johannes Elferich" />
+  <meta name="citation_author_institution" content="RNA Therapeutic INstitute, UMass Chan Medical SChool" />
+  <meta name="citation_author_institution" content="HHMI" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author" content="Nikolaus Grigorieff" />
+  <meta name="citation_author_institution" content="RNA Therapeutic INstitute, UMass Chan Medical SChool" />
+  <meta name="citation_author_institution" content="HHMI" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta property="og:url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@4ae5997](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/4ae5997246915cb5245f198d2ed701aafd9850b1)
+from [jojoelfe/fowl_template_matching_manuscript@f8ff302](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/f8ff3026a1d4f527c473269e2d6ab02fd98821ec)
 on December 2, 2021.
 </em></small>
 
@@ -75,25 +75,22 @@ on December 2, 2021.
 
 
 
-+ **John Doe**<br>
++ **Johannes Elferich**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [jojoelfe](https://github.com/jojoelfe)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     RNA Therapeutic INstitute, UMass Chan Medical SChool; HHMI
   </small>
 
-+ **Jane Roe**<br>
++ **Nikolaus Grigorieff**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)<br>
+    [nikogrigorieff](https://github.com/nikogrigorieff)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     RNA Therapeutic INstitute, UMass Chan Medical SChool; HHMI
   </small>
 
 

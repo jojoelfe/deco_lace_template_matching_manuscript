@@ -1,18 +1,18 @@
 {
   "pandoc": {
-    "title": "Manuscript Title",
+    "title": "Visual proteomics using whole-lamella 2D template matching",
     "keywords": [
-      "markdown",
-      "publishing",
-      "manubot"
+      "cryo-EM",
+      "visual protemics",
+      "ribosome"
     ],
     "lang": "en-US",
     "date-meta": "2021-12-02",
     "author-meta": [
-      "John Doe",
-      "Jane Roe"
+      "Johannes Elferich",
+      "Nikolaus Grigorieff"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2021-12-02\" />\n<meta name=\"citation_publication_date\" content=\"2021-12-02\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/\" />\n<meta property=\"og:url\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta name=\"citation_title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta property=\"og:title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta property=\"twitter:title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta name=\"dc.date\" content=\"2021-12-02\" />\n<meta name=\"citation_publication_date\" content=\"2021-12-02\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Johannes Elferich\" />\n<meta name=\"citation_author_institution\" content=\"RNA Therapeutic INstitute, UMass Chan Medical SChool\" />\n<meta name=\"citation_author_institution\" content=\"HHMI\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Nikolaus Grigorieff\" />\n<meta name=\"citation_author_institution\" content=\"RNA Therapeutic INstitute, UMass Chan Medical SChool\" />\n<meta name=\"citation_author_institution\" content=\"HHMI\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/\" />\n<meta property=\"og:url\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -25,31 +25,29 @@
     "date": "December 2, 2021",
     "authors": [
       {
-        "github": "johndoe",
-        "name": "John Doe",
-        "initials": "JD",
+        "github": "jojoelfe",
+        "name": "Johannes Elferich",
+        "initials": "JE",
         "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "twitter": "johndoe",
-        "email": "john.doe@something.com",
+        "email": "johannes.elferich@umassmed.edu",
         "affiliations": [
-          "Department of Something, University of Whatever"
-        ],
-        "funders": [
-          "Grant XXXXXXXX"
+          "RNA Therapeutic INstitute, UMass Chan Medical SChool",
+          "HHMI"
         ],
         "affiliation_numbers": [
-          1
+          1,
+          2
         ]
       },
       {
-        "github": "janeroe",
-        "name": "Jane Roe",
-        "initials": "JR",
+        "github": "nikogrigorieff",
+        "name": "Nikolaus Grigorieff",
+        "initials": "NG",
         "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "email": "jane.roe@whatever.edu",
+        "email": "niko@grigorieff.org",
         "affiliations": [
-          "Department of Something, University of Whatever",
-          "Department of Whatever, University of Something"
+          "RNA Therapeutic INstitute, UMass Chan Medical SChool",
+          "HHMI"
         ],
         "affiliation_numbers": [
           1,
@@ -59,11 +57,11 @@
     ],
     "affiliations": [
       {
-        "affiliation": "Department of Something, University of Whatever",
+        "affiliation": "RNA Therapeutic INstitute, UMass Chan Medical SChool",
         "affiliation_number": 1
       },
       {
-        "affiliation": "Department of Whatever, University of Something",
+        "affiliation": "HHMI",
         "affiliation_number": 2
       }
     ],
@@ -72,15 +70,15 @@
       "repo_slug": "jojoelfe/fowl_template_matching_manuscript",
       "repo_owner": "jojoelfe",
       "repo_name": "fowl_template_matching_manuscript",
-      "commit": "4ae5997246915cb5245f198d2ed701aafd9850b1",
-      "triggering_commit": "4ae5997246915cb5245f198d2ed701aafd9850b1",
-      "build_url": "https://github.com/jojoelfe/fowl_template_matching_manuscript/commit/4ae5997246915cb5245f198d2ed701aafd9850b1/checks",
-      "job_url": "https://github.com/jojoelfe/fowl_template_matching_manuscript/actions/runs/1531557817"
+      "commit": "f8ff3026a1d4f527c473269e2d6ab02fd98821ec",
+      "triggering_commit": "f8ff3026a1d4f527c473269e2d6ab02fd98821ec",
+      "build_url": "https://github.com/jojoelfe/fowl_template_matching_manuscript/commit/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/checks",
+      "job_url": "https://github.com/jojoelfe/fowl_template_matching_manuscript/actions/runs/1531569436"
     },
     "html_url": "https://jojoelfe.github.io/fowl_template_matching_manuscript/",
     "pdf_url": "https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf",
-    "html_url_versioned": "https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/",
-    "pdf_url_versioned": "https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4ae5997246915cb5245f198d2ed701aafd9850b1/manuscript.pdf",
+    "html_url_versioned": "https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/",
+    "pdf_url_versioned": "https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8ff3026a1d4f527c473269e2d6ab02fd98821ec/manuscript.pdf",
     "manubot_version": "0.5.1",
     "rootstock_commit": "4ae5997246915cb5245f198d2ed701aafd9850b1",
     "manuscript_stats": {
