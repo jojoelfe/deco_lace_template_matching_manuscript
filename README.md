@@ -1,19 +1,50 @@
-# Automated scholarly manuscripts on GitHub
+# FOWL 2D template matching manuscript
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://jojoelfe.github.io/fowl_template_matching_manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/jojoelfe/fowl_template_matching_manuscript/workflows/Manubot/badge.svg)](https://github.com/jojoelfe/fowl_template_matching_manuscript/actions)
-[![Travis Build Status](https://travis-ci.com/jojoelfe/fowl_template_matching_manuscript.svg?branch=main)](https://travis-ci.com/jojoelfe/fowl_template_matching_manuscript)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+This manuscript describes how to use the Fast Observation of Whole Lamella (FOWL) technique to find biomolecules in lamella.
+
+## Figure Outline
+
+- Figure 1: Why is FOWL needed?
+  - Example of ribosome condensation
+
+- Figure 2: FOWL collection + dataprocessing pipeline
+  - Collection
+  - Analysis
+  - Time needed
+
+- Figure 3: LSU template matching in lamella
+
+- Figure 4: Analysis of functional states
+
+
+
+## Data TODOs
+
+- [ ] Match at least four lamella of neutrophil-like cells
+- [ ] Test if small subunit of ribosome is present
+- [ ] Statistical argument for polyribosome presence
+
+## Code TODOs
+
+- [ ] Fowl collection script 
+- [ ] cisTEM processing pipeline
+- [ ] visualization in napari/chimeraX?
+
+## Writing TODO
+
+- [ ] Abstract
+- [ ] Introduction
 
 ## Manubot
 
