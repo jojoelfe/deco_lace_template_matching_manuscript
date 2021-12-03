@@ -40,6 +40,8 @@ This manuscript describes how to use the Fast Observation of Whole Lamella (FOWL
 - [ ] Fowl collection script 
 - [ ] cisTEM processing pipeline
   - [ ] Correct beamdetection and noise-masking in unblur
+    - [ ] Let gui calculate correct pixel size
+    - [ ] Blend noise into image
 - [ ] visualization in napari/chimeraX?
 
 ## Writing TODO
