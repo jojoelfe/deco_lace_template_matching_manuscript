@@ -24,8 +24,14 @@ This manuscript describes how to use the Fast Observation of Whole Lamella (FOWL
   - Time needed
 
 - Figure 3: LSU template matching in lamella
+  - Overviews + positions
+  - Plot scores
+  - Plot thickness
+  - Score vs Thickness
 
 - Figure 4: Analysis of functional states
+  - Is SSU present (plot on overview)
+  - Polyribosome (plot colored by polyribo group)
 
 
 
