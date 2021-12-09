@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2021-12-06'
+date-meta: '2021-12-09'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2021-12-06" />
-  <meta name="citation_publication_date" content="2021-12-06" />
+  <meta name="dc.date" content="2021-12-09" />
+  <meta name="citation_publication_date" content="2021-12-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6f2f9a805a41aafc137a186b3632f9f2e7a6e1fa/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6f2f9a805a41aafc137a186b3632f9f2e7a6e1fa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6f2f9a805a41aafc137a186b3632f9f2e7a6e1fa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/eb5375e6d3b0c52fdc03cc5e03e3d194f35fc14c/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/eb5375e6d3b0c52fdc03cc5e03e3d194f35fc14c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/eb5375e6d3b0c52fdc03cc5e03e3d194f35fc14c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6f2f9a805a41aafc137a186b3632f9f2e7a6e1fa/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/eb5375e6d3b0c52fdc03cc5e03e3d194f35fc14c/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@6f2f9a8](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/6f2f9a805a41aafc137a186b3632f9f2e7a6e1fa)
-on December 6, 2021.
+from [jojoelfe/fowl_template_matching_manuscript@eb5375e](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/eb5375e6d3b0c52fdc03cc5e03e3d194f35fc14c)
+on December 9, 2021.
 </em></small>
 
 ## Authors
@@ -97,9 +97,10 @@ on December 6, 2021.
 
 ## Abstract {.page_break_before}
 
-During hematopoiesis all cells of the blood derive from a common set of stem and progenitor cells in the bone marrow. How is the differentiation of these morphologically and functionally diverse cells orchestrated and how is differentiation outcome is encoded in progenitor cells? To provide answers to this question we are using a “visual proteomics” approach where we determine cellular state by quantifying the localization, orientation, and functional state of biomolecules in cells by label-free cryo-electron microscopy (cryo-EM) imaging. Our lab has developed an algorithm called 2D template matching, where all possible projections of a reference structure are compared with cryo-EM images of cells to derive the location and orientation of all instances of a biomolecule. We used this approach to find large ribosomal subunits in cryo-EM images of differentiating hematopoietic precursor cells. A new data-acquisition scheme called “Fast Observation of Whole Lamella” (FOWL) was employed to find ribosomes in complete cellular cross-sections. We find highly heterogeneous distribution of ribosomes in differentiated cells and are working on optimizing data-collection and data-processing to achieve the throughput that allows imaging the equivalent of multiple cellular volumes. We envision that using these high-throughput visual proteomics approaches can become a complimentary technique to other single-cell techniques, such as flow-cytometry and single-cell sequencing.
 
-Localization of biomolecules inside a cells is the fundamental quest of all biological imaging. There are two primary methods to achieve this goal. On the one hand photon-based imaging can localize biomolecules inside whole cells and tissues, but has limited resolution which often prohibits accurate counting of biomolecules, limited accuracy of the spatial coordinates and provides no information about the relative orientations of the molecules. Electron-based imaging on the other hand provides highly accurate position and orientation information but is often limited to small fields of view inside a cell, providing only limited biological context. In this study we use a montaging scheme to collect cryo-electron microscopy data over a whole lamella of a mammalian cell, representing roughly 1% of the total cellular volume. We use 2D-template matching to determinine localization and orientation of the large subunit of the ribosome.
+
+Localization and characterization of biomolecules inside a cell is the fundamental quest of all biological imaging. Fluoresence microscopy can localize biomolecules inside whole cells and tissues, but its ability to count biomolecules and accuracy of the spatial coordinates is limited by the wavelength of visible light. Cryo-electron microscopy on the other hand provides highly accurate position and orientation information of biomolecules but is often limited to small fields of view inside a cell, providing only limited biological context. In this study we use a data-acquisition scheme called “Fast Observation of Whole Lamella” (FOWL) to collect cryo-electron microscopy data over thin central sections, representing roughly 1% of the total cellular volume, of neutrophil-ile mouse cells. We use 2D-template matching to determinine localization and orientation of the large subunit of the ribosome in . We furthermore use 2D-template matching to test for complex formation with the small ribosomal subunit and used relative orientations of ribosome to assign ribosomes to polysomes. Overall these results provide a "map" of translational activity in whole crosssections of mammalian cells. We envision that using these high-throughput cryo-EM data collection and 2D tempalting matching approaches will advance visual proteomics approaches that can complement other single-cell "omics" techniques, such as flow-cytometry and single-cell sequencing.
+
 
 
 ## Introduction
