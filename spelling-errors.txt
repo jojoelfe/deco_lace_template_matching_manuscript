@@ -1,13 +1,9 @@
 biomolecules
-crosssections
 cryo
 cytometry
-determinine
 Elferich
-Fluoresence
 Grigorieff
 HHMI
-ile
 jojoelfe
 Lamella
 neutrophil
@@ -20,7 +16,6 @@ ribosomal
 ribosome
 ribosomes
 subunit
-tempalting
 translational
 UMass
 XXXX
