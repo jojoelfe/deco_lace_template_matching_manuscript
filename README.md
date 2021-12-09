@@ -20,6 +20,7 @@ This manuscript describes how to use the Fast Observation of Whole Lamella (FOWL
 
 - Figure 2: FOWL collection + dataprocessing pipeline
   - Collection
+  - Plot CTFs as function of collection
   - Analysis
   - Time needed
 
@@ -28,10 +29,14 @@ This manuscript describes how to use the Fast Observation of Whole Lamella (FOWL
   - Plot scores
   - Plot thickness
   - Score vs Thickness
+  - Scores in overlap regions
+  - Scores at edge of beam
+  - Beamtilt refinement?
 
 - Figure 4: Analysis of functional states
   - Is SSU present (plot on overview)
-  - Polyribosome (plot colored by polyribo group)
+  - Polyribosome (plot colored by polyribosome group)
+  - Membranebound
 
 
 
