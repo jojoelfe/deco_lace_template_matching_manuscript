@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2021-12-09'
+date-meta: '2021-12-29'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2021-12-09" />
-  <meta name="citation_publication_date" content="2021-12-09" />
+  <meta name="dc.date" content="2021-12-29" />
+  <meta name="citation_publication_date" content="2021-12-29" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f1158d0698318cef2d729c654bc45a63f99a44f1/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f1158d0698318cef2d729c654bc45a63f99a44f1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f1158d0698318cef2d729c654bc45a63f99a44f1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6e4bf4a27c5ca62eaa03e0b1e093b3f08d6aa9c4/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6e4bf4a27c5ca62eaa03e0b1e093b3f08d6aa9c4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6e4bf4a27c5ca62eaa03e0b1e093b3f08d6aa9c4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f1158d0698318cef2d729c654bc45a63f99a44f1/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6e4bf4a27c5ca62eaa03e0b1e093b3f08d6aa9c4/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@f1158d0](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/f1158d0698318cef2d729c654bc45a63f99a44f1)
-on December 9, 2021.
+from [jojoelfe/fowl_template_matching_manuscript@6e4bf4a](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/6e4bf4a27c5ca62eaa03e0b1e093b3f08d6aa9c4)
+on December 29, 2021.
 </em></small>
 
 ## Authors
@@ -104,6 +104,23 @@ Localization and characterization of biomolecules inside a cell is the fundament
 
 
 ## Introduction
+
+
+## Figures
+
+\begin{tikzpicture}
+
+\def \n {5}
+\def \radius {3cm}
+\def \margin {8} % margin in angles, depends on the radius
+
+\foreach \s in {1,...,\n}
+{
+  \node[draw, circle] at ({360/\n * (\s - 1)}:\radius) {$\s$};
+  \draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius)
+    arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
+}
+\end{tikzpicture}
 
 
 ## References {.page_break_before}
