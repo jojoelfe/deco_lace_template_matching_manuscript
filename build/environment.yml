@@ -10,7 +10,7 @@ dependencies:
   - jsonschema=3.2.0
   - pandoc=2.14
   - pango=1.40.14
-  - pdf2svg=0.2.3
+  - pdf2svg
   - pip=20.2
   - psutil=5.7.3
   - python=3.7.8
