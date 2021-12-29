@@ -57,6 +57,10 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-${{ env.DEFAULT_BRANCH_REF }}
+      - name: Setup Tectonic
+        uses: wtfjoke/setup-tectonic@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Environment
         uses: conda-incubator/setup-miniconda@v2
         with:
