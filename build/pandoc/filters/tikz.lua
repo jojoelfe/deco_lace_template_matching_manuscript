@@ -21,6 +21,7 @@ local function tikz2image(src, filetype, outfile)
         os.rename('tikz.pdf', outfile)
       else
         os.execute('pdf2svg tikz.pdf ' .. outfile)
+        os.execute('cp tikz.pdf '.. outfile .. '.pdf')
       end
     end)
   end)
