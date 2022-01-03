@@ -2,12 +2,12 @@
 from: markdown
 input-file: output/manuscript.md
 filters:
+- tikz.lua
 - pandoc-fignos
 - pandoc-eqnos
 - pandoc-tablenos
 - pandoc-manubot-cite
 - citeproc
-- tikz.lua
 wrap: preserve
 metadata:
   csl: build/assets/style.csl

@@ -37,6 +37,7 @@ manubot process \
 
 # Make output directory
 mkdir -p output
+mkdir -p output/figures
 
 # Create HTML output
 # https://pandoc.org/MANUAL.html
@@ -45,8 +46,6 @@ pandoc --verbose \
   --data-dir="$PANDOC_DATA_DIR" \
   --defaults=common.yaml \
   --defaults=html.yaml
-cp *.pdf output/
-cp *.svg output/
 
 # Create PDF output (unless BUILD_PDF environment variable equals "false")
 # The double-commas (,,) lowercase the variable.
