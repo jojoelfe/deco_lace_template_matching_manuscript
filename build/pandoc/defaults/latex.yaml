@@ -2,3 +2,4 @@
 # Load on top of common defaults.
 to: latex
 output-file: output/manuscript.tex
+template: build/themes/default.latex

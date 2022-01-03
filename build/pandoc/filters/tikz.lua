@@ -88,7 +88,7 @@ end
 function Para(para)
   if para.content[1].t == "Image" then
 
-    return pandoc.Para({pandoc.Image(para.content[1].caption,'output/figures/' .. para.content[1].src .. '.' .. extension_for[FORMAT])})
+    return pandoc.Para({pandoc.Image(para.content[1].caption,'figures/' .. para.content[1].src .. '.' .. extension_for[FORMAT])})
   else
     return para
   end
