@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f16ad49442325e67935666d2f54a5ab26f6c3bff/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f16ad49442325e67935666d2f54a5ab26f6c3bff/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f16ad49442325e67935666d2f54a5ab26f6c3bff/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/2bf38c80956820aff2b64db456c6dc343ed9f8c6/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/2bf38c80956820aff2b64db456c6dc343ed9f8c6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/2bf38c80956820aff2b64db456c6dc343ed9f8c6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f16ad49442325e67935666d2f54a5ab26f6c3bff/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/2bf38c80956820aff2b64db456c6dc343ed9f8c6/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@f16ad49](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/f16ad49442325e67935666d2f54a5ab26f6c3bff)
+from [jojoelfe/fowl_template_matching_manuscript@2bf38c8](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/2bf38c80956820aff2b64db456c6dc343ed9f8c6)
 on January 3, 2022.
 </em></small>
 
