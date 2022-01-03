@@ -1,5 +1,5 @@
 biomolecules
-cryo
+Cryo
 cytometry
 Elferich
 Grigorieff
