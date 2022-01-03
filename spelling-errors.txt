@@ -2,7 +2,7 @@ Acquilos
 autofocus
 AutoTEM
 biomolecules
-Cryo
+cryo
 cryoplunger
 cytometry
 defocus
