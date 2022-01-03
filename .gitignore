@@ -23,6 +23,7 @@ __pycache__/
 
 # Misc temporary files
 *.bak
+*.blend1
 
 # System specific files
 
