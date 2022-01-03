@@ -1,0 +1,11 @@
+name: fowl_manuscript_processing
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - napari
+  - matplotlib
+  - pip
+  - pandas
+  - pip:
+    - mrcfile
