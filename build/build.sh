@@ -98,10 +98,13 @@ fi
 # Create LaTeX output (if BUILD_LATEX environment variable equals "true")
 if [ "${BUILD_LATEX,,}" = "true" ]; then
   echo >&2 "Exporting LaTeX manuscript"
+  ln -s content/images
   pandoc \
     --data-dir="$PANDOC_DATA_DIR" \
     --defaults=common.yaml \
     --defaults=latex.yaml
+  tectonic output/manuscript.tex
+  rm images
 fi
 
 # Spellcheck

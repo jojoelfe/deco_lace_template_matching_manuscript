@@ -3,3 +3,5 @@
 to: latex
 output-file: output/manuscript.tex
 template: build/themes/default.latex
+filters:
+  - svg2pdf.py

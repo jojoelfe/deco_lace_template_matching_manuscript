@@ -362,7 +362,6 @@ $if(csl-refs)$
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 $endif$
-\usepackage[clean]{svg}
 $if(lang)$
 \ifLuaTeX
 \usepackage[bidi=basic]{babel}
