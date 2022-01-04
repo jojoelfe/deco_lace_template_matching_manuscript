@@ -35,6 +35,8 @@ jobs:
         with:
           # fetch entire commit history to support get_rootstock_commit
           fetch-depth: 0
+          lfs: 'true'
+          ssh-key: ${{ secrets.git_ssh_key }}
       - name: Set Environment Variables (Workflow Dispatch)
         if: github.event_name == 'workflow_dispatch'
         run: |
