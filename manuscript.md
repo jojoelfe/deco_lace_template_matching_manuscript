@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-03'
+date-meta: '2022-01-04'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-03" />
-  <meta name="citation_publication_date" content="2022-01-03" />
+  <meta name="dc.date" content="2022-01-04" />
+  <meta name="citation_publication_date" content="2022-01-04" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/62df8f94079cea91a7ff27395620b6520811c5b5/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/62df8f94079cea91a7ff27395620b6520811c5b5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/62df8f94079cea91a7ff27395620b6520811c5b5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/3fd92a26614a26949905aec5a87c6e0dabaffd3a/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/3fd92a26614a26949905aec5a87c6e0dabaffd3a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/3fd92a26614a26949905aec5a87c6e0dabaffd3a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/62df8f94079cea91a7ff27395620b6520811c5b5/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/3fd92a26614a26949905aec5a87c6e0dabaffd3a/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@62df8f9](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/62df8f94079cea91a7ff27395620b6520811c5b5)
-on January 3, 2022.
+from [jojoelfe/fowl_template_matching_manuscript@3fd92a2](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/3fd92a26614a26949905aec5a87c6e0dabaffd3a)
+on January 4, 2022.
 </em></small>
 
 ## Authors
@@ -105,6 +105,11 @@ Localization and characterization of biomolecules inside a cell is the fundament
 
 ## Introduction
 
+Understanding of cellular processes requires knowledge of the amount, location, and interaction of biomolecules inside the cell. Techniques that measure this can broadly be divided into label, and label-free techniques. In label-techniques a probe is physically attahced to a molecule is interest that is able to produce a high signal-to-noise signal, such as a fluorescent probe. In label-free techniques the physical properties of molecules themselves are used for detection. An example for this is proteomics using mass-spectrometry. Broadly the advantage of label-free techniques is that they can provide information over thousands of molecules, while label-techniques offer higher fidelity information for a few molecules. Especially spatial information can most of the time only be achieved using label-tehcniques. 
+
+Cryo-electron microscopy has the potential to directly measure the arrangement of atoms that compose biomolecules inside of cells, therby allowing label-free detection with high spatial accuracy. This has been called "Visual proteomics". The predominant technique at the moemnt is cryo-electron tomography. However, the throughput of these methods in low due to highly complex sample preparation, data acquisition, and data processing. We have shown that molecules can be identified by their structural "fingerprint" in single projection using "2D temaplte-matching".
+
+Here we apply 2D-template matching to neutrophil-ilke murine cells. By employing anew data-acquisition scheme we obtained coverage of the whole "lamella" covering roughly 2% of the cellular volume. 
 
 ## Materials and Methods
 
