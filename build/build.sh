@@ -42,11 +42,15 @@ mkdir -p output/figures
 # Create HTML output
 # https://pandoc.org/MANUAL.html
 echo >&2 "Exporting HTML manuscript"
+ln -s content/images
+ln -s content/graphics
+
 pandoc --verbose \
   --data-dir="$PANDOC_DATA_DIR" \
   --defaults=common.yaml \
   --defaults=html.yaml
-
+rm images
+rm graphics
 # Create PDF output (unless BUILD_PDF environment variable equals "false")
 # The double-commas (,,) lowercase the variable.
 # If Docker is not available, use WeasyPrint to create PDF
@@ -99,12 +103,14 @@ fi
 if [ "${BUILD_LATEX,,}" = "true" ]; then
   echo >&2 "Exporting LaTeX manuscript"
   ln -s content/images
+  ln -s content/graphics
   pandoc \
     --data-dir="$PANDOC_DATA_DIR" \
     --defaults=common.yaml \
     --defaults=latex.yaml
   tectonic output/manuscript.tex
   rm images
+  rm graphics
 fi
 
 # Spellcheck
