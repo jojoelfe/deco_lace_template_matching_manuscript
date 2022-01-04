@@ -103,6 +103,9 @@ fi
 if [ "${BUILD_LATEX,,}" = "true" ]; then
   echo >&2 "Exporting LaTeX manuscript"
   ln -s content/images
+  cd output
+  ln -s ../content/images
+  cd ..
   ln -s content/graphics
   ls -lisah images/orcid.pdf
   pandoc \
@@ -111,6 +114,7 @@ if [ "${BUILD_LATEX,,}" = "true" ]; then
     --defaults=latex.yaml
   tectonic output/manuscript.tex
   rm images
+  rm output/images
   rm graphics
 fi
 
