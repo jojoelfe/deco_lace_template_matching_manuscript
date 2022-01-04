@@ -20,7 +20,6 @@ dependencies:
   - toml
   - watchdog
   - yamllint
-  - inkscape
   - pip:
     - errorhandler==2.0.1
     - git+https://github.com/manubot/manubot@a4af68125ab6bb322fdfb1689cfeec09f0cb1b60

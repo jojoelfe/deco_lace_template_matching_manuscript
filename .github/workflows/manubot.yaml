@@ -13,15 +13,15 @@ on:
       BUILD_PDF:
         type: boolean
         description: generate PDF output
-        default: true
+        default: false
       BUILD_DOCX:
         type: boolean
         description: generate DOCX output
-        default: false
+        default: true
       BUILD_LATEX:
         type: boolean
         description: generate LaTeX output
-        default: false
+        default: true
 jobs:
   manubot:
     name: Manubot

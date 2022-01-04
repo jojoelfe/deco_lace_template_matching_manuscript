@@ -8,5 +8,6 @@ set -o errexit \
 
 sudo apt-get update --yes
 sudo apt-get install --yes aspell aspell-en
+sudo apt-get install --yes inkscape
 wget --directory-prefix=build/pandoc/filters \
   https://github.com/pandoc/lua-filters/raw/13c3fa7e97206413609a48a82575cb43137e037f/spellcheck/spellcheck.lua
