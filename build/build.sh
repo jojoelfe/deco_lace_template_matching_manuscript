@@ -104,7 +104,7 @@ if [ "${BUILD_LATEX,,}" = "true" ]; then
   echo >&2 "Exporting LaTeX manuscript"
   ln -s content/images
   ln -s content/graphics
-  ls -R
+  ls -lisah images/orcid.pdf
   pandoc \
     --data-dir="$PANDOC_DATA_DIR" \
     --defaults=common.yaml \
