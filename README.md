@@ -13,6 +13,13 @@
 
 This manuscript describes how to use the Fast Observation of Whole Lamella (FOWL) technique to find biomolecules in lamella.
 
+
+Names:
+
+- cryo-HICE (cryo-HIgh Content Electron micrscopy)
+- cryo-LARE (cryo-Large ARea Electron-microscopy)
+- cryo-EMILIA (cryo-Electron MIcroscopy of Large Imaging Areas)
+- BILACE (Beam-Imageshift for Large-Area Cryo-Electron microscopy)
 ## Figure Outline
 
 - Figure 1: Why is FOWL needed?
