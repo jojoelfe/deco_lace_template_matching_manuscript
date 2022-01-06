@@ -28,22 +28,22 @@ header-includes: |-
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Johannes Elferich" />
-  <meta name="citation_author_institution" content="RNA Therapeutic INstitute, UMass Chan Medical SChool" />
+  <meta name="citation_author_institution" content="RNA Therapeutic INstitute, UMass Chan Medical School" />
   <meta name="citation_author_institution" content="HHMI" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0002-9911-706X" />
   <meta name="citation_author" content="Nikolaus Grigorieff" />
-  <meta name="citation_author_institution" content="RNA Therapeutic INstitute, UMass Chan Medical SChool" />
+  <meta name="citation_author_institution" content="RNA Therapeutic INstitute, UMass Chan Medical School" />
   <meta name="citation_author_institution" content="HHMI" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0002-1506-909X" />
   <link rel="canonical" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta property="og:url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta property="twitter:url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c6c6b9e497e469ad2c2539c561a6b8511ba53727/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c6c6b9e497e469ad2c2539c561a6b8511ba53727/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c6c6b9e497e469ad2c2539c561a6b8511ba53727/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/526a225ec7d9a3155b4717e770a46fa6829fcdbb/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/526a225ec7d9a3155b4717e770a46fa6829fcdbb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/526a225ec7d9a3155b4717e770a46fa6829fcdbb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c6c6b9e497e469ad2c2539c561a6b8511ba53727/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/526a225ec7d9a3155b4717e770a46fa6829fcdbb/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@c6c6b9e](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/c6c6b9e497e469ad2c2539c561a6b8511ba53727)
+from [jojoelfe/fowl_template_matching_manuscript@526a225](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/526a225ec7d9a3155b4717e770a46fa6829fcdbb)
 on January 6, 2022.
 </em></small>
 
@@ -77,20 +77,20 @@ on January 6, 2022.
 
 + **Johannes Elferich**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-9911-706X](https://orcid.org/0000-0002-9911-706X)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [jojoelfe](https://github.com/jojoelfe)<br>
   <small>
-     RNA Therapeutic INstitute, UMass Chan Medical SChool; HHMI
+     RNA Therapeutic INstitute, UMass Chan Medical School; HHMI
   </small>
 
 + **Nikolaus Grigorieff**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-1506-909X](https://orcid.org/0000-0002-1506-909X)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [nikogrigorieff](https://github.com/nikogrigorieff)<br>
   <small>
-     RNA Therapeutic INstitute, UMass Chan Medical SChool; HHMI
+     RNA Therapeutic INstitute, UMass Chan Medical School; HHMI
   </small>
 
 
@@ -152,19 +152,19 @@ Low magnification montages were used to find lamella and lamella that were suffi
 \node[graphicNode] {\includegraphics[width=6cm]{content/graphics/approach/approach.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (6.5,9.35) {}; 
+\node (anchor) at (6.2,9.35) {}; 
 \node[labelNode] {B};
 \node[graphicNode] {\includegraphics[height=4.3cm]{content/images/fringebeam.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (6.5,4.85) {}; 
+\node (anchor) at (6.2,4.85) {}; 
 \node[labelNode] {C};
 \node[graphicNode] {\includegraphics[height=4.3cm]{content/images/fringebeam.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (9.5,9.35) {}; 
-\node[labelNode] {C};
-\node[graphicNode] {\includegraphics[height=4.3cm]{content/images/fringebeam.png}};
+\node (anchor) at (11.0,9.35) {}; 
+\node[labelNode] {D};
+\node[graphicNode] {\includegraphics[height=4.3cm]{content/graphics/approach/defocusplot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 ```
