@@ -86,9 +86,10 @@ end
 
 
 function Para(para)
-  if para.content[1].t == "Image" then
-
-    return pandoc.Para({pandoc.Image(para.content[1].caption,'figures/' .. para.content[1].src .. '.' .. extension_for[FORMAT])})
+  if para.content[1].t == "Image" and string.match(para.content[1].src, "tikz:") then
+    new_path = 'figures/' .. string.sub(para.content[1].src,6) .. '.' .. extension_for[FORMAT]
+    para.content[1].src = new_path
+    return para
   else
     return para
   end
