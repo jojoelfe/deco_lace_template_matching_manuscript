@@ -3,7 +3,7 @@ attahced
 autofocus
 AutoTEM
 biomolecules
-Cryo
+cryo
 cryoplunger
 cytometry
 defocus
@@ -25,7 +25,7 @@ insepction
 jojoelfe
 keV
 Krios
-Lamella
+lamella
 Leica
 moemnt
 montaging
@@ -49,6 +49,7 @@ sillicone
 spectrometry
 stageby
 subunit
+subunits
 sufficently
 tehcniques
 TEM

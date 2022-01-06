@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-05'
+date-meta: '2022-01-06'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-05" />
-  <meta name="citation_publication_date" content="2022-01-05" />
+  <meta name="dc.date" content="2022-01-06" />
+  <meta name="citation_publication_date" content="2022-01-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4eeafd31bd521c439395837768989d548d581f72/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4eeafd31bd521c439395837768989d548d581f72/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4eeafd31bd521c439395837768989d548d581f72/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/235c98011841e63da260c4cb8fb415b0a94c69ec/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/235c98011841e63da260c4cb8fb415b0a94c69ec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/235c98011841e63da260c4cb8fb415b0a94c69ec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/4eeafd31bd521c439395837768989d548d581f72/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/235c98011841e63da260c4cb8fb415b0a94c69ec/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@4eeafd3](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/4eeafd31bd521c439395837768989d548d581f72)
-on January 5, 2022.
+from [jojoelfe/fowl_template_matching_manuscript@235c980](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/235c98011841e63da260c4cb8fb415b0a94c69ec)
+on January 6, 2022.
 </em></small>
 
 ## Authors
@@ -134,16 +134,17 @@ Low magnification montages were used to find lamella and lamella that were suffi
 ### Data analysis
 
 
-## Introduction
+## Results
 
 
-## Introduction
+## Discussion
 
 
 ## Figures
 
+![Template matching of ribosomal large subunits in fib-milled neutrophil like cells](figures/figure1_draft.svg){#fig:initmatching}
 
-![This is an example-figurern](example-figure)
+![This is an example-figurern](tikz:example-figure){#fig:approach}
 
 ```{.tikz-figure #example-figure width=16cm height=13cm draft=true}
 \node (anchor) at (0.5,9.35) {}; 

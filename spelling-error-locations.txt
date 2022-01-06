@@ -73,4 +73,7 @@ content/03.methods.md:15:lamella
 content/03.methods.md:15:lamella
 content/03.methods.md:15:sufficently
 content/03.methods.md:17:pre
-content/80.figures.md:4:figurern
+content/80.figures.md:3:neutrophil
+content/80.figures.md:3:ribosomal
+content/80.figures.md:3:subunits
+content/80.figures.md:5:figurern
