@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/ebb09fd3b2af48278146a5d4f27069ad62312efe/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/ebb09fd3b2af48278146a5d4f27069ad62312efe/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/ebb09fd3b2af48278146a5d4f27069ad62312efe/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c6c6b9e497e469ad2c2539c561a6b8511ba53727/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c6c6b9e497e469ad2c2539c561a6b8511ba53727/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c6c6b9e497e469ad2c2539c561a6b8511ba53727/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/ebb09fd3b2af48278146a5d4f27069ad62312efe/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c6c6b9e497e469ad2c2539c561a6b8511ba53727/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@ebb09fd](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/ebb09fd3b2af48278146a5d4f27069ad62312efe)
+from [jojoelfe/fowl_template_matching_manuscript@c6c6b9e](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/c6c6b9e497e469ad2c2539c561a6b8511ba53727)
 on January 6, 2022.
 </em></small>
 
@@ -158,6 +158,11 @@ Low magnification montages were used to find lamella and lamella that were suffi
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 \node (anchor) at (6.5,4.85) {}; 
+\node[labelNode] {C};
+\node[graphicNode] {\includegraphics[height=4.3cm]{content/images/fringebeam.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+\node (anchor) at (9.5,9.35) {}; 
 \node[labelNode] {C};
 \node[graphicNode] {\includegraphics[height=4.3cm]{content/images/fringebeam.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
