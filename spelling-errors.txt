@@ -2,8 +2,9 @@ Acquilos
 attahced
 autofocus
 AutoTEM
+BILACE
 biomolecules
-cryo
+Cryo
 cryoplunger
 cytometry
 defocus
@@ -21,11 +22,13 @@ HHMI
 Hoechst
 HoxA
 ilke
+Imageshift
 insepction
 jojoelfe
 keV
 Krios
-Lamella
+lamella
+lamellae
 Leica
 moemnt
 montaging
@@ -38,7 +41,6 @@ polysomes
 pre
 proteomics
 ribosomal
-ribosome
 ribosomes
 RPMI
 sapcing
