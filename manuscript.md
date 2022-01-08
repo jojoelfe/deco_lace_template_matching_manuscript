@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-06'
+date-meta: '2022-01-08'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-06" />
-  <meta name="citation_publication_date" content="2022-01-06" />
+  <meta name="dc.date" content="2022-01-08" />
+  <meta name="citation_publication_date" content="2022-01-08" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/526a225ec7d9a3155b4717e770a46fa6829fcdbb/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/526a225ec7d9a3155b4717e770a46fa6829fcdbb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/526a225ec7d9a3155b4717e770a46fa6829fcdbb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/b912df049646e0195f8740292f2cef03bc1edcc3/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/b912df049646e0195f8740292f2cef03bc1edcc3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/b912df049646e0195f8740292f2cef03bc1edcc3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/526a225ec7d9a3155b4717e770a46fa6829fcdbb/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/b912df049646e0195f8740292f2cef03bc1edcc3/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@526a225](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/526a225ec7d9a3155b4717e770a46fa6829fcdbb)
-on January 6, 2022.
+from [jojoelfe/fowl_template_matching_manuscript@b912df0](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/b912df049646e0195f8740292f2cef03bc1edcc3)
+on January 8, 2022.
 </em></small>
 
 ## Authors

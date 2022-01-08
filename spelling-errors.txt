@@ -27,7 +27,7 @@ insepction
 jojoelfe
 keV
 Krios
-Lamella
+lamella
 lamellae
 Leica
 moemnt
