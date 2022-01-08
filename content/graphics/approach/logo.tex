@@ -1,0 +1,33 @@
+\documentclass[tikz,border=0cm]{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows,snakes,shapes,fadings,calc}
+\usepackage{fontspec}
+\setmainfont{Roboto}[
+  Extension = .otf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic,
+]    
+\usepackage{etoolbox} 
+
+\newcommand{\figwidth}{7cm} 
+\newcommand{\figheight}{10cm} 
+\newcommand{\fontselect}{\large\bf} 
+
+
+\begin{document}
+\begin{tikzpicture}
+ 
+  % Include the image in a node
+  \node [
+      above right,
+      inner sep=0] (image) at (0,0) {\includegraphics[width=\textwidth]{approach.png}};
+   
+  % Create scope with normalized axes
+  \node [above right,inner sep=0,text width=\textwidth ,align=center] at (0,13) {\Huge \textbf{BILACE}};
+  \node [above right,inner sep=0,text width=\textwidth ,align=center] at (0,12.5) {\normalsize \textbf{B}eam-\textbf{I}mageshift for \textbf{L}arge \textbf{A}rea \textbf{C}ryo-\textbf{E}lectron microscopy}; 
+  \end{tikzpicture}
+\end{document}
