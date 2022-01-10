@@ -76,6 +76,14 @@ content/03.methods.md:15:lamella
 content/03.methods.md:15:lamella
 content/03.methods.md:15:sufficently
 content/03.methods.md:17:pre
+content/04.results.md:3:cryo
+content/04.results.md:3:lamella
+content/04.results.md:3:ribosomal
+content/04.results.md:3:subunits
+content/04.results.md:5:cryo
+content/04.results.md:5:lamella
+content/04.results.md:7:cryo
+content/04.results.md:7:ribosome
 content/80.figures.md:3:neutrophil
 content/80.figures.md:3:ribosomal
 content/80.figures.md:3:subunits

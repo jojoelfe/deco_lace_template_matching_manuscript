@@ -41,6 +41,7 @@ polysomes
 pre
 proteomics
 ribosomal
+ribosome
 ribosomes
 RPMI
 sapcing

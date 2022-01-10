@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-08'
+date-meta: '2022-01-10'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-08" />
-  <meta name="citation_publication_date" content="2022-01-08" />
+  <meta name="dc.date" content="2022-01-10" />
+  <meta name="citation_publication_date" content="2022-01-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/b912df049646e0195f8740292f2cef03bc1edcc3/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/b912df049646e0195f8740292f2cef03bc1edcc3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/b912df049646e0195f8740292f2cef03bc1edcc3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/89a407efeab56f8bc4162ab6383ce3b2d4cc992e/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/89a407efeab56f8bc4162ab6383ce3b2d4cc992e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/89a407efeab56f8bc4162ab6383ce3b2d4cc992e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/b912df049646e0195f8740292f2cef03bc1edcc3/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/89a407efeab56f8bc4162ab6383ce3b2d4cc992e/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@b912df0](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/b912df049646e0195f8740292f2cef03bc1edcc3)
-on January 8, 2022.
+from [jojoelfe/fowl_template_matching_manuscript@89a407e](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/89a407efeab56f8bc4162ab6383ce3b2d4cc992e)
+on January 10, 2022.
 </em></small>
 
 ## Authors
@@ -135,6 +135,14 @@ Low magnification montages were used to find lamella and lamella that were suffi
 
 
 ## Results
+
+### 2D-Template matching can be used to find ribosomal subunits in cryo-FIB thinned lamella of mammalian cells
+
+### cryo-EMILIA for 2D imaging of whole lamella
+
+### 2D-Template matching of cryo-EMILIA data reveals ribosome distribution 
+
+### Quantitative analysis of translation activity
 
 
 ## Discussion
