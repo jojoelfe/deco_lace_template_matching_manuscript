@@ -1,41 +1,31 @@
 import matplotlib.pyplot as plt
-import sqlite3
-import pandas as pd
-import os
-import contextlib
 import numpy as np
+import latexipy as lp
 
-datasets = ["/scratch/bern/elferich/ER_Hox_120h_20211029_g1_l1/ER_Hox_120h_20211029_g1_l1.db",
-            "/scratch/bern/elferich/ER_Hox_120h_20211029_g1_l2/ER_Hox_120h_20211029_g1_l2.db",
-            "/scratch/bern/elferich/ER_Hox_120h_20211029_g2_l3/ER_Hox_120h_20211029_g2_l3.db",
-            "/scratch/bern/elferich/ER_Hox_120h_202111029_g2_l4/ER_Hox_120h_202111029_g2_l4.db",
-            "/scratch/bern/elferich/R_Hox_120h_20211108_g2_l1/R_Hox_120h_20211108_g2_l1.db",
-            "/scratch/bern/elferich/ER_Hox_120h_20211108_g2_l2/ER_Hox_120h_20211108_g2_l2.db",
-            "/scratch/bern/elferich/ER_Hox_120h_20211108_g2_l3/ER_Hox_120h_20211108_g2_l3.db",
-            "/scratch/bern/elferich/ER_Hox_120h_20211108_g2_l4/ER_Hox_120h_20211108_g2_l4.db"]
+
+import utils
+
 defocus = []
 
-for dataset in datasets:
-    print(dataset)
-    with contextlib.closing(sqlite3.connect(dataset)) as con:
+for dataset in utils.datasets:
+    selected_micrographs = utils.get_data_from_db(dataset)
+    defocus.append([[m["DEFOCUS1"]-m["DEFOCUS2"],m['IMAGE_SHIFT_X'],m['IMAGE_SHIFT_Y']] for i,m in selected_micrographs.iterrows() if m['SCORE']>0.08 and m['DETECTED_RING_RESOLUTION'] < 7])
 
-        df1 = pd.read_sql_query(f"SELECT IMAGE_ASSET_ID,MOVIE_ASSET_ID,IMAGE_ASSETS.FILENAME, MOVIE_ASSETS.FILENAME as movie_filename, CTF_ESTIMATION_ID ,IMAGE_ASSETS.PIXEL_SIZE as image_pixel_size, MOVIE_ASSETS.PIXEL_SIZE as movie_pixel_size, IMAGE_ASSETS.X_SIZE, IMAGE_ASSETS.Y_SIZE  FROM IMAGE_ASSETS INNER JOIN MOVIE_ASSETS ON MOVIE_ASSETS.MOVIE_ASSET_ID == IMAGE_ASSETS.PARENT_MOVIE_ID", con)
-        df2 = pd.read_sql_query("SELECT CTF_ESTIMATION_ID,DEFOCUS1,DEFOCUS2,DEFOCUS_ANGLE,OUTPUT_DIAGNOSTIC_FILE,SCORE, DETECTED_RING_RESOLUTION FROM ESTIMATED_CTF_PARAMETERS",con)
-        selected_micrographs = pd.merge(df1,df2,on="CTF_ESTIMATION_ID")
-        df3 = pd.read_sql_query(f"SELECT MOVIE_ASSET_ID,IMAGE_SHIFT_X, IMAGE_SHIFT_Y FROM MOVIE_ASSETS_METADATA",con)
-        selected_micrographs = pd.merge(selected_micrographs,df3,on="MOVIE_ASSET_ID")
 
-        defocus.append([[(m["DEFOCUS1"]-m["DEFOCUS2"]),m['IMAGE_SHIFT_X'],m['IMAGE_SHIFT_Y']] for i,m in selected_micrographs.iterrows() if m['SCORE']>0.05])
+lp.latexify()
+with lp.figure("defocus_astigmatism_vs_bs_plot",size=lp.figure_size(ratio=0.5,doc_width_pt=500),tight_layout=False):
+    cm = plt.cm.get_cmap('viridis')
+    fig, axs = plt.subplots(1,2,sharey=True,constrained_layout=True)
+    data_euc = np.array(defocus[0],dtype=float)
+    axs[0].scatter(data_euc[:,1],data_euc[:,2],c=data_euc[:,0], cmap=cm,vmin=0,vmax=3000)
+    data_ff = np.array(defocus[4],dtype=float)
+    sc = axs[1].scatter(data_ff[:,1],data_ff[:,2],c=data_ff[:,0], cmap=cm,vmin=0,vmax=3000)
 
-print(defocus)
-fig, axs = plt.subplots(2, 4,sharex=True,sharey=True)
-for i,la in enumerate(defocus):
-    data = np.array(la,dtype=float)
+    axs[0].set_xlabel("Image Shift X [µm]")
+    axs[1].set_xlabel("Image Shift X [µm]")
+    axs[0].set_ylabel("Image Shift Y [µm]")
+    axs[0].set_title("Eucentric Focus")
+    axs[1].set_title("Fringe-Free Focus")
 
-    axs.flat[i].scatter(data[:,1],data[:,2],c=data[:,0], cmap='viridis')
-plt.xlabel("BIS X")
-plt.ylabel("BIS Y")
+    fig.colorbar(sc, ax=axs[1], shrink=1.0,label="Astigmatism [Å]")
 
-import tikzplotlib
-
-tikzplotlib.save("../graphics/approach/defocusplot.tex")
