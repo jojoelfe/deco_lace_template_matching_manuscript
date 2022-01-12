@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-10'
+date-meta: '2022-01-12'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-10" />
-  <meta name="citation_publication_date" content="2022-01-10" />
+  <meta name="dc.date" content="2022-01-12" />
+  <meta name="citation_publication_date" content="2022-01-12" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/89a407efeab56f8bc4162ab6383ce3b2d4cc992e/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/89a407efeab56f8bc4162ab6383ce3b2d4cc992e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/89a407efeab56f8bc4162ab6383ce3b2d4cc992e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/46c30f9688730f08211286b18e875777ccd45d12/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/46c30f9688730f08211286b18e875777ccd45d12/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/46c30f9688730f08211286b18e875777ccd45d12/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/89a407efeab56f8bc4162ab6383ce3b2d4cc992e/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/46c30f9688730f08211286b18e875777ccd45d12/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@89a407e](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/89a407efeab56f8bc4162ab6383ce3b2d4cc992e)
-on January 10, 2022.
+from [jojoelfe/fowl_template_matching_manuscript@46c30f9](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/46c30f9688730f08211286b18e875777ccd45d12)
+on January 12, 2022.
 </em></small>
 
 ## Authors
@@ -137,6 +137,25 @@ Low magnification montages were used to find lamella and lamella that were suffi
 ## Results
 
 ### 2D-Template matching can be used to find ribosomal subunits in cryo-FIB thinned lamella of mammalian cells
+
+To test whether we could detect individual ribosomes in mammalian cells we
+prepared cryo-lamella of mouse neutrophil-like cells. Low-magnification images
+of these lamellas clearly shows cellular features consistent with a
+neutrophil-like phenotype, mainly a segmented nucleus and a plethora of
+membrane-organelles, corresponding to the granules and secretory vesicles of
+neutrophils. We then proceeded to acquire micrographs on this lamella with a
+defocus of 0.5-1.0 um, 30 e/A2/s exposure and 1.5 A pixelsize. We manually
+selected multiple locations in the lamella and focused using standard low-dose
+techniques, i.e. by first ensuring correct focus by imaging a sacrifical area.
+The resoluting micrographs showed no signs of crystalline ice and had thon-rings
+to  resolution, indicating successfull vitrification. 
+
+We used an atomic model of the 60S mouse ribosomal subunit  (6SWA) for 2D
+template matching. In a subset of images the distribution of cross-correlation
+scores significantly exceeded the distribution expected from non-signifcant
+matching. By using the criterion described by for thresholding potential matches
+we found that in images of cytosolic ompartments we found evidence of 10-500
+ribosomes in the imaged area.
 
 ### cryo-EMILIA for 2D imaging of whole lamella
 
