@@ -6,12 +6,14 @@ BILACE
 biomolecules
 cryo
 cryoplunger
+CTFFind
 cytometry
 cytosolic
 defocus
 differnce
 Elferich
 eucentric
+expsoure
 FB
 FBS
 figurern
@@ -25,6 +27,7 @@ HoxA
 ilke
 Imageshift
 insepction
+intial
 jojoelfe
 keV
 Krios
@@ -55,7 +58,7 @@ sacrifical
 sapcing
 SCF
 SEM
-serialEM
+SerialEM
 signifcant
 sillicone
 spectrometry
