@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/105d8d7ba58c1a2212968cee80f9b385655eec49/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/105d8d7ba58c1a2212968cee80f9b385655eec49/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/105d8d7ba58c1a2212968cee80f9b385655eec49/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c59af5ccc24634184c44c739e5293d6c54280aa8/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c59af5ccc24634184c44c739e5293d6c54280aa8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c59af5ccc24634184c44c739e5293d6c54280aa8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/105d8d7ba58c1a2212968cee80f9b385655eec49/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c59af5ccc24634184c44c739e5293d6c54280aa8/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@105d8d7](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/105d8d7ba58c1a2212968cee80f9b385655eec49)
+from [jojoelfe/fowl_template_matching_manuscript@c59af5c](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/c59af5ccc24634184c44c739e5293d6c54280aa8)
 on January 17, 2022.
 </em></small>
 
@@ -205,7 +205,9 @@ to the previous exposure making drastic changes in the defocus unlikely.
 Furthermore we started our acquisition pattern on the platinum deposition edge,
 so the intial exposure where the defocus was not yet adjusted did not contain
 any biologically relevant information. Using this strategy we were able to
-highly consistently collect data with a defocus of 8 um (Figure 2B).
+highly consistently collect data with a defocus of 8 um (Figure 2B). Together
+with the nominal defocus of the microscope this data results in a topological
+map of the lamella.
 
 ### 2D-Template matching of cryo-EMILIA data reveals ribosome distribution 
 
@@ -224,6 +226,18 @@ obtained matches with the same model used for the data in Figure 1.
 
 ## Discussion
 
+
+- Elizabeth Wright and Grant Jensen Montage tomography papers
+
+- Waffle method for higher throughput, automation of fib-milling
+
+- Throughput and bottlenecks
+
+- Visual proteomics
+
+- Granules containing ribosomes?
+
+- Threshold implications (no matches on most images)
 
 ## Figures
 
