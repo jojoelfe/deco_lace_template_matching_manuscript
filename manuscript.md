@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-14'
+date-meta: '2022-01-17'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-14" />
-  <meta name="citation_publication_date" content="2022-01-14" />
+  <meta name="dc.date" content="2022-01-17" />
+  <meta name="citation_publication_date" content="2022-01-17" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/8dafefa4c9b49cadf9dc46e9339a57d1cc3ee68a/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/8dafefa4c9b49cadf9dc46e9339a57d1cc3ee68a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/8dafefa4c9b49cadf9dc46e9339a57d1cc3ee68a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/105d8d7ba58c1a2212968cee80f9b385655eec49/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/105d8d7ba58c1a2212968cee80f9b385655eec49/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/105d8d7ba58c1a2212968cee80f9b385655eec49/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/8dafefa4c9b49cadf9dc46e9339a57d1cc3ee68a/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/105d8d7ba58c1a2212968cee80f9b385655eec49/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@8dafefa](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/8dafefa4c9b49cadf9dc46e9339a57d1cc3ee68a)
-on January 14, 2022.
+from [jojoelfe/fowl_template_matching_manuscript@105d8d7](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/105d8d7ba58c1a2212968cee80f9b385655eec49)
+on January 17, 2022.
 </em></small>
 
 ## Authors
@@ -105,11 +105,40 @@ Localization of biomolecules inside a cell is an important goal of biological im
 
 ## Introduction
 
-Understanding of cellular processes requires knowledge of the amount, location, and interaction of biomolecules inside the cell. Techniques that measure this can broadly be divided into label, and label-free techniques. In label-techniques a probe is physically attahced to a molecule is interest that is able to produce a high signal-to-noise signal, such as a fluorescent probe. In label-free techniques the physical properties of molecules themselves are used for detection. An example for this is proteomics using mass-spectrometry. Broadly the advantage of label-free techniques is that they can provide information over thousands of molecules, while label-techniques offer higher fidelity information for a few molecules. Especially spatial information can most of the time only be achieved using label-tehcniques. 
+Understanding of cellular processes requires knowledge of the amount, location,
+and interaction of biomolecules inside the cell. Techniques that measure this
+can broadly be divided into label, and label-free techniques. In
+label-techniques a probe is physically attahced to a molecule is interest that
+is able to produce a high signal-to-noise signal, such as a fluorescent probe.
+In label-free techniques the physical properties of molecules themselves are
+used for detection. An example for this is proteomics using mass-spectrometry.
+Broadly the advantage of label-free techniques is that they can provide
+information over thousands of molecules, while label-techniques offer higher
+fidelity information for a few molecules. Especially spatial information can
+most of the time only be achieved using label-tehcniques. 
 
-Cryo-electron microscopy has the potential to directly measure the arrangement of atoms that compose biomolecules inside of cells, therby allowing label-free detection with high spatial accuracy. This has been called "Visual proteomics". The predominant technique at the moemnt is cryo-electron tomography. However, the throughput of these methods in low due to highly complex sample preparation, data acquisition, and data processing. We have shown that molecules can be identified by their structural "fingerprint" in single projection using "2D temaplte-matching".
+Cryo-electron microscopy has the potential to directly measure the arrangement
+of atoms that compose biomolecules inside of cells, thereby allowing label-free
+detection with high spatial accuracy. This has been called "Visual proteomics".
+The predominant technique at the moment is cryo-electron tomography. However,
+the throughput of these methods in low due to highly complex sample preparation,
+data acquisition, and data processing. We have shown that molecules can be
+identified by their structural "fingerprint" in single projection using "2D
+template-matching".
 
-Here we apply 2D-template matching to neutrophil-ilke murine cells. By employing anew data-acquisition scheme we obtained coverage of the whole "lamella" covering roughly 2% of the cellular volume. 
+Hematopoiesis is the process of generating the various cell typs of the blood in
+the bone marrow. Disregulation of the process results in diseases like leukemia.
+Understaning how hematopoietic stem and progenitor cells are programmed to
+diffferentiate to the appropriate cell type would be provide new insight how
+hematopoiesis can be misregulated. Of special interest is the regulation of
+translation during hematopoiesis. This is exemplified by the observation that
+genetic defects in the ribosome machinery often leads to hematopoietic disease.
+As such direct quantification of ribosome location, number and conformational
+states could lead to new insight into hematopoietic disease. 
+
+Here we apply 2D-template matching to neutrophil-ilke murine cells. By employing
+anew data-acquisition scheme we obtained coverage of the whole "lamella"
+covering roughly 2% of the cellular volume. 
 
 ## Materials and Methods
 
@@ -163,7 +192,7 @@ In order to obtain high-resolution data for complete lamella we used a new
 approach for data collection. This approach uses three key strategies: (1)
 ensures that every electron that exposes the sample is collected on the camera
 (2) uses beam-image shift to precisely and quickly raster the surface of the
-lamella and (3) uses a focusing strategy that does not rely on a sacrifical area.
+lamella and (3) uses a focusing strategy that does not rely on a sacrificial area.
 First, we focused the electron beam so that the
 entire beam was placed on the detector. We then centered a lamella under the
 electron beam and used beam-image shift of the microscope to systematically
@@ -179,6 +208,16 @@ any biologically relevant information. Using this strategy we were able to
 highly consistently collect data with a defocus of 8 um (Figure 2B).
 
 ### 2D-Template matching of cryo-EMILIA data reveals ribosome distribution 
+
+We developed customized preprocessing protocol to images obtained by cryo-EMILIA
+to enable their use for 2D-template matching. First we restricted calculation of
+cross-correlation coefficients between individual movie frames to the central
+portion of the image to prevent artifacts from the beam edges on estimation of
+motion. Then we calculated a mask that defined the illuminated area of the
+micrographs and used it to fill non-illumated areas with gaussian noise,
+matching mean and standard deviation to the illuminated signal (Figure 3A). The
+so processed images were suitable for 2D-template matching and we were able to
+obtained matches with the same model used for the data in Figure 1.
 
 ### Quantitative analysis of translation activity
 

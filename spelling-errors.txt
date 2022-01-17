@@ -4,6 +4,7 @@ autofocus
 AutoTEM
 BILACE
 biomolecules
+conformational
 cryo
 cryoplunger
 CTFFind
@@ -11,6 +12,8 @@ cytometry
 cytosolic
 defocus
 differnce
+diffferentiate
+Disregulation
 Elferich
 eucentric
 expsoure
@@ -21,10 +24,13 @@ GIS
 gridd
 gridsquares
 Grigorieff
+hematopoiesis
+hematopoietic
 HHMI
 Hoechst
 HoxA
 ilke
+illumated
 Imageshift
 insepction
 intial
@@ -36,7 +42,7 @@ lamellae
 lamellas
 Leica
 micrographs
-moemnt
+misregulated
 montaging
 neutrophil
 neutrophils
@@ -48,6 +54,7 @@ openin
 pixelsize
 polysomes
 pre
+preprocessing
 proteomics
 resoluting
 ribosomal
@@ -58,7 +65,7 @@ sacrifical
 sapcing
 SCF
 SEM
-SerialEM
+serialEM
 signifcant
 sillicone
 spectrometry
@@ -70,10 +77,10 @@ sufficently
 SWA
 tehcniques
 TEM
-temaplte
-therby
 thon
 thresholding
 Titam
 translational
+typs
 UMass
+Understaning
