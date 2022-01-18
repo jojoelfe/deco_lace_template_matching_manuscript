@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-17'
+date-meta: '2022-01-18'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-17" />
-  <meta name="citation_publication_date" content="2022-01-17" />
+  <meta name="dc.date" content="2022-01-18" />
+  <meta name="citation_publication_date" content="2022-01-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c59af5ccc24634184c44c739e5293d6c54280aa8/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c59af5ccc24634184c44c739e5293d6c54280aa8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c59af5ccc24634184c44c739e5293d6c54280aa8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6d7b0ed364e03d6ad6be5b138e91432c36160a43/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6d7b0ed364e03d6ad6be5b138e91432c36160a43/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6d7b0ed364e03d6ad6be5b138e91432c36160a43/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/c59af5ccc24634184c44c739e5293d6c54280aa8/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6d7b0ed364e03d6ad6be5b138e91432c36160a43/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@c59af5c](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/c59af5ccc24634184c44c739e5293d6c54280aa8)
-on January 17, 2022.
+from [jojoelfe/fowl_template_matching_manuscript@6d7b0ed](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/6d7b0ed364e03d6ad6be5b138e91432c36160a43)
+on January 18, 2022.
 </em></small>
 
 ## Authors
@@ -144,17 +144,58 @@ covering roughly 2% of the cellular volume.
 
 ### Grid preparation
 
-ER-HoxA9 cells were maintained in RPMI supplemented with 10% FBS, penicillin/streptomycin, SCF, and estrogen [@doi:10.1016/j.cell.2016.08.057] at 37C and 5% CO2. 120h prior to gridd freezing cells were washed twice in PBS and cultured in the same medium, except without estrogen. Differentiation was verified by staining with Hoechst-dye and insepction of nuclear morphology. Cells were then counted and diluted to 1^106 cells/ml. Grids ( either 200 mesh copper grids, with a sillicone-oxide and 2um holes with a 2um spacing or 200 mesh gold grids with a thin gold film and 2 um holes in 2um sapcing) were glow-discharged from both sides using a ... for ... . 3.5 ul of cells suspension was added to grids on the thin-film side and grids were automatically blotted from the back-side using a GP2 cryoplunger (Leica) for ... s and rapidly plunged into liquid ethane at -185C. 
+ER-HoxA9 cells were maintained in RPMI supplemented with 10% FBS,
+penicillin/streptomycin, SCF, and estrogen [@doi:10.1016/j.cell.2016.08.057] at
+37C and 5% CO2. 120h prior to gridd freezing cells were washed twice in PBS and
+cultured in the same medium, except without estrogen. Differentiation was
+verified by staining with Hoechst-dye and insepction of nuclear morphology.
+Cells were then counted and diluted to 1^106 cells/ml. Grids ( either 200 mesh
+copper grids, with a sillicone-oxide and 2um holes with a 2um spacing or 200
+mesh gold grids with a thin gold film and 2 um holes in 2um sapcing) were
+glow-discharged from both sides using a ... for ... . 3.5 ul of cells suspension
+was added to grids on the thin-film side and grids were automatically blotted
+from the back-side using a GP2 cryoplunger (Leica) for ... s and rapidly plunged
+into liquid ethane at -185C. 
 
 ### FIB-milling
 
-Grids were loaded into a Acquilos 2 FIB/SEM  microscope with a stage cooled to -190C. Grids were sputter-coated with platinum for 15s at 45 mA and then coated with a layer of platinum-precursor by openin the GIS-valve for 45s. An overview of the grid was created by montaging SEM images and isolated cells at the center of gridsquares were selected for FB-milling. Lamella were generated automatically using the AutoTEM software, resulting in 6-8 um wide lamella with 150-200 um thickness as determined by FIB-imaging of the lamella edge.
+Grids were loaded into a Acquilos 2 FIB/SEM  microscope with a stage cooled to
+-190C. Grids were sputter-coated with platinum for 15s at 45 mA and then coated
+with a layer of platinum-precursor by openin the GIS-valve for 45s. An overview
+of the grid was created by montaging SEM images and isolated cells at the center
+of gridsquares were selected for FB-milling. Lamella were generated
+automatically using the AutoTEM software, resulting in 6-8 um wide lamella with
+150-200 um thickness as determined by FIB-imaging of the lamella edge.
 
 ### Data collection
 
-Grids were loaded into a Krios Titam TEM operated at 300 keV. The microscope was setup with a cross-grating grid on the stageby setting the beam-diameter to 900 nm, resulting in the beam being completely visible in the camera. To establish fringe-free conditions, the "Fine eucentric" procedure of serialEM was used to move a square of the cross-grating grid to the eucentric position of the microscope. The effective defocus was then set to 2 um, using the "autofocus" routine of serialEM. The objective focus of the microscope was changed until no fringes were visible. The stage was then moved in Z until images had a apparent defocus of 2 um. The differnce in stage Z-position between the eucentric and fringe-free conditions was calculate d and noted to move other areas into fringe-free condition.
+Grids were loaded into a Krios Titam TEM operated at 300 keV. The microscope was
+setup with a cross-grating grid on the stageby setting the beam-diameter to 900
+nm, resulting in the beam being completely visible in the camera. To establish
+fringe-free conditions, the "Fine eucentric" procedure of serialEM was used to
+move a square of the cross-grating grid to the eucentric position of the
+microscope. The effective defocus was then set to 2 um, using the "autofocus"
+routine of serialEM. The objective focus of the microscope was changed until no
+fringes were visible. The stage was then moved in Z until images had a apparent
+defocus of 2 um. The differnce in stage Z-position between the eucentric and
+fringe-free conditions was calculate d and noted to move other areas into
+fringe-free condition.
 
-Low magnification montages were used to find lamella and lamella that were sufficently thin and free of contamination were selected for automated data collection. 
+Low magnification montages were used to find lamella and lamella that were
+sufficently thin and free of contamination were selected for automated data
+collection. The corners of the lamella were manually annotated in SerialEM and
+translated into Beam-Imageshift values using SerialEm calibration. A hexagonal
+patter of beam-imageshift positions was calculated that covered the area between
+he four corners in a serpentine way, with a sqrt(3) * 400 nm horizontal spacing
+and 800 nm vertical spacing. Exposures were then taking at each position with a
+30 e/A total dose. After each exposure that defocus was estimated using the
+ctffind function of SerialEM and the focus for th next exposure was corrected by
+the difference between the estimated focus and the desired defocus of 800 um.
+Also after each exposure the deviation of the beam from the center of the camera
+was measured and corrected using the "CenterBeamFrom IMage" command of SerialEM.
+
+After datacollection a 20s exposure at 2250x magnification of the lamella at
+200um defocus was taken for visualization purposes.
 
 ### Data pre-processing
 
