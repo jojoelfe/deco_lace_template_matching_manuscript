@@ -13,6 +13,8 @@ IS_to_camera.shape = (2,2)
 #orig_x_size = 5120
 scaled_x_size = 1200.0
 
+load_cached_images = True
+
 def get_scaled_filename(filename):
     p = Path(filename)
     return p.parent.joinpath("Scaled").joinpath(p.name)
@@ -28,6 +30,15 @@ def initial_assembly(expand_data, IS_to_camera):
 
 def get_corners(x,y,radius):
     return [[x+radius,y+radius],[x-radius,y+radius],[x-radius,y-radius],[x+radius,y-radius]]
+
+def get_range(data):
+    min_shift_x = np.min(data.loc[:,"image_shift_pixel_x"]) - 4000
+    min_shift_y = np.min(data.loc[:,"image_shift_pixel_y"]) - 4000
+    max_shift_x = np.max(data.loc[:,"image_shift_pixel_x"]/4) + 1000
+    max_shift_y = np.max(data.loc[:,"image_shift_pixel_y"]/4) + 1000
+    max_image_x = np.max(data.loc[:,"X_SIZE"]/4)
+    max_image_y = np.max(data.loc[:,"Y_SIZE"]/4)
+    return (min_shift_x,min_shift_y)
 
 def plot_montage(data,to_show):
     min_shift_x = np.min(data.loc[:,"image_shift_pixel_x"]/4) - 1000
@@ -91,19 +102,28 @@ print(utils.datasets[4])
 print(len(selected_micrographs))
 initial_assembly(selected_micrographs,IS_to_camera=IS_to_camera)
 
-(assemb, mask, matches) = plot_montage(selected_micrographs,[i for i,r in selected_micrographs.iterrows()])
-np.savez_compressed('/scratch/bern/elferich/napari_lamella5',matches=data_matches,mask=data_mask,image=data_image)
+
+image_cache_filename = '/scratch/bern/elferich/napari_' + Path(utils.datasets[4]).stem + '_cache.npz'
+if load_cached_images:
+    load = np.load(image_cache_filename)
+    assemb = load["image"]
+    mask = load["mask"]
+    matches = load["matches"]
+else:
+    (assemb, mask, matches) = plot_montage(selected_micrographs,[i for i,r in selected_micrographs.iterrows()])
+    np.savez_compressed('/scratch/bern/elferich/napari_lamella5',matches=matches,mask=mask,image=assemb)
 
 centers = [get_corners(m['IMAGE_SHIFT_X']*150,m['IMAGE_SHIFT_Y']*150,36) for i,m in selected_micrographs.iterrows()]
 #assemb=np.zeros((100,100))
 viewer = napari.view_image(assemb,contrast_limits=(0,10),interpolation='bilinear',scale=(0.6,0.6))
 viewer.add_image(mask,contrast_limits=(0,10),interpolation='bilinear',scale=(0.6,0.6))
-viewer.add_image(matches,contrast_limits=(0,10),interpolation='bilinear',scale=(0.6,0.6))
+viewer.add_image(matches,contrast_limits=(0,100000),interpolation='bilinear',blending='additive',colormap='red' ,scale=(0.6,0.6))
 
 radius = 250
-data = [[[row["image_shift_pixel_x"]*0.15,row["image_shift_pixel_y"]*0.15],
-         [row["image_shift_pixel_x"]*0.15,row["image_shift_pixel_y"]*0.15+2*radius],
-         [row["image_shift_pixel_x"]*0.15+2*radius,row["image_shift_pixel_y"]*0.15+2*radius],
-         [row["image_shift_pixel_x"]*0.15+2*radius,row["image_shift_pixel_y"]*0.15]] for i, row in selected_micrographs.iterrows()]
+min_shift_x, min_shift_y = get_range(selected_micrographs)
+data = [[[(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15+radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15+radius],
+         [(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15-radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15+radius],
+         [(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15-radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15-radius],
+         [(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15+radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15-radius]] for i, row in selected_micrographs.iterrows()]
 viewer.add_shapes(data,shape_type='ellipse',face_color='transparent',edge_color="red",edge_width=15)
 napari.run()
