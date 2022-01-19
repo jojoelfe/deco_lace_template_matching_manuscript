@@ -5,11 +5,12 @@ import numpy as np
 import napari
 import mrcfile
 from pathlib import Path
+from skimage.transform import rescale, resize, downscale_local_mean
 
 IS_to_camera = np.array([13374,  6053.4,  6394.1,  -13172])
 IS_to_camera.shape = (2,2)
 
-orig_x_size = 5120
+#orig_x_size = 5120
 scaled_x_size = 1200.0
 
 def get_scaled_filename(filename):
@@ -20,7 +21,8 @@ def initial_assembly(expand_data, IS_to_camera):
     for item in expand_data.iterrows():
         image_shift = np.array([item[1]["IMAGE_SHIFT_X"],item[1]["IMAGE_SHIFT_Y"]])
         shift_in_camera_pixels = np.dot(IS_to_camera,image_shift)
-        shift_in_image_pixel = (shift_in_camera_pixels / (item[1]["image_pixel_size"]/(item[1]["movie_pixel_size"]))) / (orig_x_size/scaled_x_size)
+        largest_size = np.max([item[1]["X_SIZE"],item[1]["Y_SIZE"]])
+        shift_in_image_pixel = (shift_in_camera_pixels / (item[1]["image_pixel_size"]/(item[1]["movie_pixel_size"])))
         expand_data.loc[item[0],"image_shift_pixel_x"] = shift_in_image_pixel[0]
         expand_data.loc[item[0],"image_shift_pixel_y"] = shift_in_image_pixel[1]
 
@@ -28,38 +30,80 @@ def get_corners(x,y,radius):
     return [[x+radius,y+radius],[x-radius,y+radius],[x-radius,y-radius],[x+radius,y-radius]]
 
 def plot_montage(data,to_show):
-    min_shift_x = np.min(data.loc[:,"image_shift_pixel_x"])
-    min_shift_y = np.min(data.loc[:,"image_shift_pixel_y"])
-    max_shift_x = np.max(data.loc[:,"image_shift_pixel_x"])
-    max_shift_y = np.max(data.loc[:,"image_shift_pixel_y"])
-    image_x = 1200
-    image_y = 852
+    min_shift_x = np.min(data.loc[:,"image_shift_pixel_x"]/4) - 1000
+    min_shift_y = np.min(data.loc[:,"image_shift_pixel_y"]/4) - 1000
+    max_shift_x = np.max(data.loc[:,"image_shift_pixel_x"]/4) + 1000
+    max_shift_y = np.max(data.loc[:,"image_shift_pixel_y"]/4) + 1000
+    max_image_x = np.max(data.loc[:,"X_SIZE"]/4)
+    max_image_y = np.max(data.loc[:,"Y_SIZE"]/4)
 
-    big = np.zeros((int(max_shift_y-min_shift_y+image_y),int(max_shift_x-min_shift_x+image_x)))
-    for image in data.iterrows():
+    big = np.zeros((int(max_shift_y-min_shift_y+max_image_y),int(max_shift_x-min_shift_x+max_image_x)))
+    mask = np.zeros((int(max_shift_y-min_shift_y+max_image_y),int(max_shift_x-min_shift_x+max_image_x)))
+    matches = np.zeros((int(max_shift_y-min_shift_y+max_image_y),int(max_shift_x-min_shift_x+max_image_x)))
+    for i, image in data.iterrows():
         if image[0] not in to_show:
             continue
-        with mrcfile.open(get_scaled_filename(image[1]['FILENAME'])) as mrc: 
+        with mrcfile.open(image['FILENAME'][:-6]+"_0.mrc") as mrc: 
             image_data = np.copy(np.flip(mrc.data[0],axis=0))
+            image_data = resize(image_data, (image_data.shape[0] // 4, image_data.shape[1] // 4),anti_aliasing=True)
         
-        xx,yy  = np.meshgrid(np.arange(image_data.shape[1]),np.arange(image_data.shape[0]))
-        mask =  (((xx-600)**2 + (yy-425)**2) < 400**2)
-        image_data *= mask
-        big[int(image[1]["image_shift_pixel_y"]-min_shift_y):int(image[1]["image_shift_pixel_y"]+image_y-min_shift_y),int(image[1]["image_shift_pixel_x"]-min_shift_x):int(image[1]["image_shift_pixel_x"]-min_shift_x+image_x)] += image_data
-    return(big)
+        with mrcfile.open(image['FILENAME'][:-6]+"_1_mask.mrc") as mrc: 
+            mask_data = np.copy(np.flip(mrc.data[0],axis=0))
+            mask_data.dtype = np.uint8
+        
+        (y,x) = image_data.shape
+        mask_float = mask_data/255.0
+        mask_resized = resize(mask_float, (y,x),anti_aliasing=True) 
+        image_data *= mask_resized
+
+        crop_x = (image["ORIGINAL_X_SIZE"] - image["X_SIZE"]) / 2
+        crop_y = (image["ORIGINAL_Y_SIZE"] - image["Y_SIZE"]) / 2
+
+        crop_center_x = image["CROP_CENTER_X"] 
+        crop_center_y = image["CROP_CENTER_Y"] 
+        insert_point_x = image["image_shift_pixel_x"] + crop_x + crop_center_x
+        insert_point_y = image["image_shift_pixel_y"] + crop_y - crop_center_y
+        insert_point_x /= 4
+        insert_point_y /= 4
+        insert_point_x -= min_shift_x
+        insert_point_y -= min_shift_y
+        big[int(insert_point_y):int(insert_point_y+y),
+            int(insert_point_x):int(insert_point_x+x)] += image_data
+        mask[int(insert_point_y):int(insert_point_y+y),
+            int(insert_point_x):int(insert_point_x+x)] += mask_resized
+        mask[mask < 0.1] = 1.0
+        matches_dir = Path(image['FILENAME']).parent.parent / 'TemplateMatching' 
+        matches_filenames = list(matches_dir.glob(Path(image['FILENAME'][:-6]).name +"*plotted_result*.mrc"))
+        if len(matches_filenames) > 0:
+            with mrcfile.open(matches_filenames[-1]) as mrc: 
+                match_data = np.copy(np.flip(mrc.data[0],axis=0))
+                match_data = resize(match_data, (image_data.shape[0], image_data.shape[1]),anti_aliasing=True)
+            matches[int(insert_point_y):int(insert_point_y+y),
+                int(insert_point_x):int(insert_point_x+x)] += match_data    
+    return(big,mask,matches)
 
 
 
 
 
-selected_micrographs = utils.get_data_from_db(utils.datasets[0])
-
+selected_micrographs = utils.get_data_from_db(utils.datasets[4])
+print(utils.datasets[4])
+print(len(selected_micrographs))
 initial_assembly(selected_micrographs,IS_to_camera=IS_to_camera)
 
-assemb = plot_montage(selected_micrographs,[i for i,r in selected_micrographs.iterrows()])
-print(assemb.shape)
-#centers = [get_corners(m['IMAGE_SHIFT_X']*150,m['IMAGE_SHIFT_Y']*150,36) for i,m in selected_micrographs.iterrows()]
+(assemb, mask, matches) = plot_montage(selected_micrographs,[i for i,r in selected_micrographs.iterrows()])
+np.savez_compressed('/scratch/bern/elferich/napari_lamella5',matches=data_matches,mask=data_mask,image=data_image)
 
-viewer = napari.view_image(assemb,contrast_limits=(0,10),interpolation='bilinear')
+centers = [get_corners(m['IMAGE_SHIFT_X']*150,m['IMAGE_SHIFT_Y']*150,36) for i,m in selected_micrographs.iterrows()]
+#assemb=np.zeros((100,100))
+viewer = napari.view_image(assemb,contrast_limits=(0,10),interpolation='bilinear',scale=(0.6,0.6))
+viewer.add_image(mask,contrast_limits=(0,10),interpolation='bilinear',scale=(0.6,0.6))
+viewer.add_image(matches,contrast_limits=(0,10),interpolation='bilinear',scale=(0.6,0.6))
 
+radius = 250
+data = [[[row["image_shift_pixel_x"]*0.15,row["image_shift_pixel_y"]*0.15],
+         [row["image_shift_pixel_x"]*0.15,row["image_shift_pixel_y"]*0.15+2*radius],
+         [row["image_shift_pixel_x"]*0.15+2*radius,row["image_shift_pixel_y"]*0.15+2*radius],
+         [row["image_shift_pixel_x"]*0.15+2*radius,row["image_shift_pixel_y"]*0.15]] for i, row in selected_micrographs.iterrows()]
+viewer.add_shapes(data,shape_type='ellipse',face_color='transparent',edge_color="red",edge_width=15)
 napari.run()
