@@ -33,13 +33,13 @@ Hoechst
 HoxA
 ilke
 illumated
-imageshift
+Imageshift
 insepction
 intial
 jojoelfe
 keV
 Krios
-Lamella
+lamella
 lamellae
 lamellas
 Leica
@@ -67,7 +67,7 @@ sacrifical
 sapcing
 SCF
 SEM
-SerialEM
+SerialEm
 signifcant
 sillicone
 spectrometry
