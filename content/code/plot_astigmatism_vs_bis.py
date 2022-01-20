@@ -9,7 +9,7 @@ defocus = []
 
 for dataset in utils.datasets:
     selected_micrographs = utils.get_data_from_db(dataset)
-    defocus.append([[m["DEFOCUS1"]-m["DEFOCUS2"],m['IMAGE_SHIFT_X'],m['IMAGE_SHIFT_Y']] for i,m in selected_micrographs.iterrows() if m['SCORE']>0.08 and m['DETECTED_RING_RESOLUTION'] < 7])
+    defocus.append([[m["DEFOCUS1"]-m["DEFOCUS2"],m['IMAGE_SHIFT_X'],m['IMAGE_SHIFT_Y']] for i,m in selected_micrographs.iterrows() if m['SCORE']>0.05 and m['DETECTED_RING_RESOLUTION'] < 15])
 
 
 lp.latexify()

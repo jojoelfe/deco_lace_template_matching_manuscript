@@ -8,17 +8,17 @@ from pathlib import Path
 import utils
 
 intensity = {}
-dataset = utils.datasets[0]
+dataset = "/scratch/bern/elferich/ER_Hox_120h_20211029_g1_l1_initial/ER_Hox_120h_20211029_g1_l1_initial.db"
 selected_micrographs = utils.get_data_from_db(dataset)
 with open(Path(dataset).stem +"_thickness.json","r") as fp:
     thickness_data = json.load(fp)
 intensity[dataset] = [[thickness_data[m['movie_filename']],m['IMAGE_SHIFT_X'],m['IMAGE_SHIFT_Y']] for i,m in selected_micrographs.iterrows()]
-dataset = utils.datasets[3]
+dataset = utils.datasets[4]
 selected_micrographs = utils.get_data_from_db(dataset)
 with open(Path(dataset).stem +"_thickness.json","r") as fp:
     thickness_data = json.load(fp)
 intensity[dataset] = [[thickness_data[m['movie_filename']],m['IMAGE_SHIFT_X'],m['IMAGE_SHIFT_Y']] for i,m in selected_micrographs.iterrows()]
-datasets = [utils.datasets[0],utils.datasets[3]]
+datasets = ["/scratch/bern/elferich/ER_Hox_120h_20211029_g1_l1_initial/ER_Hox_120h_20211029_g1_l1_initial.db",utils.datasets[4]]
 
 lp.latexify()
 with lp.figure("thickness_by_intensity_vs_bs_plot",size=lp.figure_size(ratio=0.5,doc_width_pt=500),tight_layout=False):
