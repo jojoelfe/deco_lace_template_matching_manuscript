@@ -111,14 +111,15 @@ if load_cached_images:
     matches = load["matches"]
 else:
     (assemb, mask, matches) = plot_montage(selected_micrographs,[i for i,r in selected_micrographs.iterrows()])
-    np.savez_compressed('/scratch/bern/elferich/napari_lamella5',matches=matches,mask=mask,image=assemb)
+    np.savez_compressed(image_cache_filename,matches=matches,mask=mask,image=assemb)
 
 centers = [get_corners(m['IMAGE_SHIFT_X']*150,m['IMAGE_SHIFT_Y']*150,36) for i,m in selected_micrographs.iterrows()]
 #assemb=np.zeros((100,100))
 viewer = napari.view_image(assemb,contrast_limits=(0,10),interpolation='bilinear',scale=(0.6,0.6))
 viewer.add_image(mask,contrast_limits=(0,10),interpolation='bilinear',scale=(0.6,0.6))
 viewer.add_image(matches,contrast_limits=(0,100000),interpolation='bilinear',blending='additive',colormap='red' ,scale=(0.6,0.6))
-
+view = np.load("/scratch/bern/elferich/lamella5_view.npz")
+viewer.add_image(view["image"])
 radius = 250
 min_shift_x, min_shift_y = get_range(selected_micrographs)
 data = [[[(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15+radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15+radius],
