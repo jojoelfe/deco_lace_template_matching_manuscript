@@ -31,11 +31,12 @@ local tikz_doc_template = [[
       labelNode/.style={anchor=south east, above left=0cm and 0cm of anchor, font=\fontselect}, 
       redAnchorNode/.style={anchor=center, left=-0.1cm of anchor, circle, fill=red, minimum size=0.2cm}, 
       graphicNode/.style={anchor=north west, below right=0cm and 0cm of anchor}, 
+      titleNode/.style={anchor=south west, above right=0cm and 0cm of anchor}, 
     }
     
     \newtoggle{draft}
-        \toggletrue{draft}
-        %% \togglefalse{draft} 
+      %%  \toggletrue{draft}
+       \togglefalse{draft} 
     
     \begin{document}
     \begin{tikzpicture}[every node/.style={inner sep=0pt}]
