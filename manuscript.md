@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6a838c457838aa3907510d255ef76f1165201051/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6a838c457838aa3907510d255ef76f1165201051/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6a838c457838aa3907510d255ef76f1165201051/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/1ab3e8bc78dd9f8d18576d6adbf09b518796c249/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/1ab3e8bc78dd9f8d18576d6adbf09b518796c249/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/1ab3e8bc78dd9f8d18576d6adbf09b518796c249/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/6a838c457838aa3907510d255ef76f1165201051/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/1ab3e8bc78dd9f8d18576d6adbf09b518796c249/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@6a838c4](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/6a838c457838aa3907510d255ef76f1165201051)
+from [jojoelfe/fowl_template_matching_manuscript@1ab3e8b](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/1ab3e8bc78dd9f8d18576d6adbf09b518796c249)
 on January 20, 2022.
 </em></small>
 
@@ -146,7 +146,7 @@ covering roughly 2% of the cellular volume.
 
 ER-HoxA9 cells were maintained in RPMI supplemented with 10% FBS,
 penicillin/streptomycin, SCF, and estrogen [@doi:10.1016/j.cell.2016.08.057] at
-37C and 5% CO2. 120h prior to gridd freezing cells were washed twice in PBS and
+37C and 5% CO2. 120h prior to grid freezing cells were washed twice in PBS and
 cultured in the same medium, except without estrogen. Differentiation was
 verified by staining with Hoechst-dye and insepction of nuclear morphology.
 Cells were then counted and diluted to 1^106 cells/ml. Grids ( either 200 mesh
@@ -182,7 +182,7 @@ fringe-free conditions was calculate d and noted to move other areas into
 fringe-free condition.
 
 Low magnification montages were used to find lamella and lamella that were
-sufficently thin and free of contamination were selected for automated data
+sufficiently thin and free of contamination were selected for automated data
 collection. The corners of the lamella were manually annotated in SerialEM and
 translated into Beam-Imageshift values using SerialEm calibration. A hexagonal
 patter of beam-imageshift positions was calculated that covered the area between
@@ -199,7 +199,27 @@ After datacollection a 20s exposure at 2250x magnification of the lamella at
 
 ### Data pre-processing
 
+Movies were gain-corrected and motion-corrected using a custom version of
+unblur. To avoid influence of the beam-edge on motion-correction only a quarter
+of the movie in the center of the camera was considered for calculation of the
+estimated motion. After movie frames were aligned and summed a mask for the
+illuminated area was calculated by lowpass filtering the image at ... A,
+thresholding the image at 10% of the maximal value and then lowpass filtering
+the mask at ... A. This mask was then used to replace un-illuminated area with
+gaussian noise, with the same mean and standard deviation as the illuminated
+area. The contrast-transfer function (CTF) was estimated using ctffind, searching
+between 0.02 and 2 um defocus. 
+
 ### Template matching
+
+The search template was generated from the cryo-EM structure of the mouse large
+ribosomal subunit (PDB 6SWA). The ... subunit was deleted from the model and the
+simulate program of the cisTEM suite was used to calculate an density map from
+the atomic coordinates. The match_template program was used to search for this
+template in the preprocessed images, using 1.5 deg angular step in out-of-plane
+angles and 1.0 deg in-plane. 21 defocus planes in 200nm steps centered around
+the defocus estimates by ctffind were searches. Matches were defined as peaks
+above a threshold calulated according to .. .(7.75 for most images).
 
 ### Data analysis
 
@@ -223,9 +243,15 @@ to  resolution, indicating successfull vitrification.
 We used an atomic model of the 60S mouse ribosomal subunit  (6SWA) for 2D
 template matching. In a subset of images the distribution of cross-correlation
 scores significantly exceeded the distribution expected from non-signifcant
-matching. By using the criterion described by for thresholding potential matches
-we found that in images of cytosolic ompartments we found evidence of 10-500
-ribosomes in the imaged area.
+matching(Figure 1B). In the resulting scaled maximum-intensity maps, clear peaks
+with SNR thresholds up to 10 were apparent (Figure 1C). By using the criterion
+described by for thresholding potential matches we found that in images of
+cytosolic ompartments we found evidence of 10-500 ribosomes in the imaged areas.
+Notably we found no matches in images that were taken in the nuclear
+compartment. In the cytosolic areas we found a drastically different number of
+matches, In somer areas we found only ~ 50 matches er image area, corresponding
+to a concentration of..., while in another area we found more than 500 matches,
+corresponding to a concentration of ... .
 
 ### cryo-EMILIA for 2D imaging of whole lamella
 
@@ -284,31 +310,98 @@ obtained matches with the same model used for the data in Figure 1.
 
 ![Template matching of ribosomal large subunits in fib-milled neutrophil like cells](figures/figure1_draft.svg){#fig:initmatching}
 
+![This is an example-figurern](tikz:initmatching2){#fig:initmatching2}
+
+```{.tikz-figure #initmatching2 width=16cm height=13cm draft=true}
+\node (anchor) at (0.5,9.35) {}; 
+\node[labelNode] {A};
+\node[graphicNode] {\includegraphics[width=12cm]{content/code/img/initial_map_match.pdf}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+```
+
+
 ![This is an example-figurern](tikz:example-figure){#fig:approach}
 
 ```{.tikz-figure #example-figure width=16cm height=13cm draft=true}
 \node (anchor) at (0.5,9.35) {}; 
 \node[labelNode] {A};
-\node[graphicNode] {\includegraphics[width=6cm]{content/graphics/approach/approach.pdf}};
+\node[graphicNode] {\includegraphics[width=5cm]{content/graphics/approach/approach.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (6.2,9.35) {}; 
+\node (anchor) at (6.0,9.35) {}; 
 \node[labelNode] {B};
-\node[graphicNode] {\includegraphics[height=4.3cm]{content/images/fringebeam.png}};
+\node[graphicNode] {\includegraphics[width=5cm]{content/images/ac_strategy.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (6.2,4.85) {}; 
+
+\node (anchor) at (11.5,9.35) {}; 
 \node[labelNode] {C};
-\node[graphicNode] {\includegraphics[height=4.3cm]{content/images/fringebeam.png}};
+\node[titleNode] {Eucentric Focus};
+\node[graphicNode] {\includegraphics[height=3.0cm]{content/images/fringebeam.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (11.0,9.35) {}; 
+\node (anchor) at (15,9.35) {}; 
 \node[labelNode] {D};
-\node[graphicNode] {\includegraphics[height=4.3cm]{content/graphics/approach/defocusplot.pdf}};
+\node[titleNode] {Fringe-free Focus};
+\node[graphicNode] {\includegraphics[height=3.0cm]{content/images/nofringebeam.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+\node (anchor) at (11.5,4.85) {}; 
+\node[labelNode] {E};
+\node[graphicNode] {\includegraphics[height=4.3cm]{content/code/img/defocusplot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 ```
 
+![This is an example-figurern](tikz:example-figure2){#fig:approach2}
+
+```{.tikz-figure #example-figure2 width=16cm height=13cm draft=true}
+\node (anchor) at (0.5,9.35) {}; 
+\node[labelNode] {A};
+\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_defocus_vs_bs_plot.pdf}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+\node (anchor) at (0.5,5.35) {}; 
+\node[labelNode] {B};
+\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_astigmatism_vs_bs_plot.pdf}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+\node (anchor) at (8.5,9.35) {}; 
+\node[labelNode] {C};
+\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_angle_vs_bs_plot.pdf}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+```
+
+
+![This is an example-figurern](tikz:example-figure3){#fig:approach3}
+
+```{.tikz-figure #example-figure3 width=16cm height=13cm draft=true}
+\node (anchor) at (0.5,9.35) {}; 
+\node[labelNode] {A};
+\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/movement_vs_bs_plot.pdf}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+
+\node (anchor) at (8.5,9.35) {}; 
+\node[labelNode] {B};
+\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/thickness_by_intensity_vs_bs_plot.pdf}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+```
+
+![This is an example-figurern](tikz:matching){#fig:matching}
+
+```{.tikz-figure #matching width=16cm height=13cm draft=true}
+\node (anchor) at (0.5,9.35) {}; 
+\node[labelNode] {A};
+\node[graphicNode] {\includegraphics[width=7.5cm]{content/images/screenie.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+
+
+```
 
 ## References {.page_break_before}
 
