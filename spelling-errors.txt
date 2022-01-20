@@ -33,7 +33,7 @@ Hoechst
 HoxA
 ilke
 illumated
-Imageshift
+imageshift
 insepction
 intial
 jojoelfe
@@ -67,7 +67,7 @@ sacrifical
 sapcing
 SCF
 SEM
-serialEM
+SerialEm
 signifcant
 sillicone
 spectrometry
