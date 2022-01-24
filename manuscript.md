@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-20'
+date-meta: '2022-01-24'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-20" />
-  <meta name="citation_publication_date" content="2022-01-20" />
+  <meta name="dc.date" content="2022-01-24" />
+  <meta name="citation_publication_date" content="2022-01-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/1ab3e8bc78dd9f8d18576d6adbf09b518796c249/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/1ab3e8bc78dd9f8d18576d6adbf09b518796c249/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/1ab3e8bc78dd9f8d18576d6adbf09b518796c249/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/16c9012da84faf860bb5c4b34702d04e83965355/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/16c9012da84faf860bb5c4b34702d04e83965355/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/16c9012da84faf860bb5c4b34702d04e83965355/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/1ab3e8bc78dd9f8d18576d6adbf09b518796c249/))
+([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/16c9012da84faf860bb5c4b34702d04e83965355/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@1ab3e8b](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/1ab3e8bc78dd9f8d18576d6adbf09b518796c249)
-on January 20, 2022.
+from [jojoelfe/fowl_template_matching_manuscript@16c9012](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/16c9012da84faf860bb5c4b34702d04e83965355)
+on January 24, 2022.
 </em></small>
 
 ## Authors
@@ -108,23 +108,40 @@ Localization of biomolecules inside a cell is an important goal of biological im
 Understanding of cellular processes requires knowledge of the amount, location,
 and interaction of biomolecules inside the cell. Techniques that measure this
 can broadly be divided into label, and label-free techniques. In
-label-techniques a probe is physically attahced to a molecule is interest that
+label-techniques a probe is physically attached to a molecule is interest that
 is able to produce a high signal-to-noise signal, such as a fluorescent probe.
 In label-free techniques the physical properties of molecules themselves are
 used for detection. An example for this is proteomics using mass-spectrometry.
 Broadly the advantage of label-free techniques is that they can provide
 information over thousands of molecules, while label-techniques offer higher
 fidelity information for a few molecules. Especially spatial information can
-most of the time only be achieved using label-tehcniques. 
+most of the time only be achieved using label-techniques. 
 
 Cryo-electron microscopy has the potential to directly measure the arrangement
 of atoms that compose biomolecules inside of cells, thereby allowing label-free
 detection with high spatial accuracy. This has been called "Visual proteomics".
-The predominant technique at the moment is cryo-electron tomography. However,
-the throughput of these methods in low due to highly complex sample preparation,
-data acquisition, and data processing. We have shown that molecules can be
-identified by their structural "fingerprint" in single projection using "2D
-template-matching".
+Since cryo-EM requires thin samples (<500nm), imaging of biomolecules inside
+cells is either restricted to small organism and thin regions of large cells or
+requires thinning of the sample. This can be achieved either by mechanical
+sectioning [cite] or by milling using a focused ion beam (FIB) [cite]. This
+complex workflow restricts throughpute of cryo-EM. This is exacerbated by the
+fact that at the required magnification typical field of views (FOV) are very
+small compared to mammalian cells and the FOV achieved by label-techniques such
+as fluorescence light microscopy. The predominant technique for detection of
+biomolecules according to their shape in cells at the moment is cryo-electron
+tomography. However, the requirement of physically tilt the stage at every FOV,
+together with a more complex workflw that requires highly accurate lignment of
+various projection, further restricts the throughput for molecular detection. 
+
+An alternative approach is to identify molecules  by their structural "fingerprint" in
+single projection using "2D template-matching" [cite]. In this methods an
+experimentally obtained 
+3D model of a biomolecule is used to calculate the expected electron density,
+which is called the template. The template is then projected on a fine angular
+grid and the projection are used to find local cross-correlation peaks in a
+cryo-EM micrograph. Since locations of the biomolecule in teh Z-direction causes
+predictable aberrations to the projection image, this method can be used to
+calculate 3D coordinates and orientations of a biomolecule in a cellular sample [cite]
 
 Hematopoiesis is the process of generating the various cell typs of the blood in
 the bone marrow. Disregulation of the process results in diseases like leukemia.
@@ -137,7 +154,8 @@ As such direct quantification of ribosome location, number and conformational
 states could lead to new insight into hematopoietic disease. 
 
 Here we apply 2D-template matching to neutrophil-ilke murine cells. By employing
-anew data-acquisition scheme we obtained coverage of the whole "lamella"
+anew data-acquisition scheme, Defocus-adjusted large area cryo-electron
+microscopy (DeCo-LACE) we obtained coverage of the whole "lamella"
 covering roughly 2% of the cellular volume. 
 
 ## Materials and Methods
@@ -259,22 +277,44 @@ In order to obtain high-resolution data for complete lamella we used a new
 approach for data collection. This approach uses three key strategies: (1)
 ensures that every electron that exposes the sample is collected on the camera
 (2) uses beam-image shift to precisely and quickly raster the surface of the
-lamella and (3) uses a focusing strategy that does not rely on a sacrificial area.
-First, we focused the electron beam so that the
-entire beam was placed on the detector. We then centered a lamella under the
-electron beam and used beam-image shift of the microscope to systematically
-raster the whole surface of the lamella in a hexagonal pattern. Instead of
-focusing in a sacrifical area, we determined the defocus after every exposure
-using a routine implemented in SerialEM modeled after CTFFind. The focus was
-then adjusted based on the difference between desired and measured defocus.
-Since we used a serpentine pattern for data collection every expsoure is close
-to the previous exposure making drastic changes in the defocus unlikely.
-Furthermore we started our acquisition pattern on the platinum deposition edge,
-so the intial exposure where the defocus was not yet adjusted did not contain
-any biologically relevant information. Using this strategy we were able to
-highly consistently collect data with a defocus of 8 um (Figure 2B). Together
-with the nominal defocus of the microscope this data results in a topological
-map of the lamella.
+lamella and (3) uses a focusing strategy that does not rely on a sacrificial
+area.
+
+To ensure that every electron exposing the sample was captured by the detector,
+we focused the electron beam so that the entire beam was placed on the detector.
+During canonical low-dose imaging the microscope is configured so that the focal
+plan is identical to the eucentric plane of the specimen stage. This leaves the
+C2 aperture out of focus, resulting in ripples at the edge of the beam (Figure
+2B). While these ripples are low-resolution features that might not interfere
+with 2D template matching, which is designed to be robust to low-resolution
+noise, we also tested collecting data under a condition where the C2 aperture is
+in focus (Figure 2C). 
+
+We then centered a lamella under the electron beam and used beam-image shift of
+the microscope to systematically raster the whole surface of the lamella in a
+hexagonal pattern. Instead of focusing in a sacrificial area, we determined the
+defocus after every exposure using a routine implemented in SerialEM modeled
+after CTFFind. The focus was then adjusted based on the difference between
+desired and measured defocus. Since we used a serpentine pattern for data
+collection every exposure is close to the previous exposure making drastic
+changes in the defocus unlikely. Furthermore we started our acquisition pattern
+on the platinum deposition edge, so the initial exposure where the defocus was
+not yet adjusted did not contain any biologically relevant information. 
+
+We used this strategy to collect data on 8 lamella, 4 using the eucentric focus
+condition and 4 using the fringe-free condition. We were able to highly
+consistently collect data with a defocus of 8 um (Figure 2D), both in the
+eucentric focus and fringe-free focus condition. Together with the nominal
+defocus of the microscope this data results in a topological map of the lamella.
+To ensure that data was collected consistently, we mapped defocus values as a
+function of the applied Beam-image shift (Figure 2E). This demonstrated that the
+defocus was consistent over the lamella, with outliers only at isolated images
+and in images containing contamination. We also plotted the measure objective
+astigmatism of the lamella and found that it varies with the applied Beam-image
+shift, become more astigmatic mostly due to beam-image shift in the X
+direction. While approaches exist to correct this during the data-collection, we
+opted to not use these mechanism for these early experiments and instead rely on
+computational correction of these aberrations in order to characterize them. 
 
 ### 2D-Template matching of cryo-EMILIA data reveals ribosome distribution 
 
