@@ -20,6 +20,9 @@ Names:
 - cryo-LARE (cryo-Large ARea Electron-microscopy)
 - cryo-EMILIA (cryo-Electron MIcroscopy of Large Imaging Areas)
 - BILACE (Beam-Imageshift for Large-Area Cryo-Electron microscopy)
+
+- DECO-LACE 
+- 
 ## Figure Outline
 
 - Figure 1: Why is FOWL needed?
