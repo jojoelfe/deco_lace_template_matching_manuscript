@@ -41,7 +41,7 @@ insepction
 jojoelfe
 keV
 Krios
-Lamella
+lamella
 lamellae
 lamellas
 Leica
@@ -74,7 +74,7 @@ sacrifical
 sapcing
 SCF
 SEM
-SerialEm
+SerialEM
 signifcant
 sillicone
 SNR
