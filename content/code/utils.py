@@ -4,7 +4,7 @@ import sqlite3
 import numpy as np
 
 datasets = ["/scratch/bern/elferich/ER_Hox_120h_20211029_g1_l1/ER_Hox_120h_20211029_g1_l1.db",
-            "/scratch/bern/elferich/ER_Hox_120h_20211029_g1_l2/ER_Hox_120h_20211029_g1_l2.db",
+            "/scratch/bern/elferich/ER_Hox_120h_20211029_g1_l1/ER_Hox_120h_20211029_g1_l1.db",
             "/scratch/bern/elferich/ER_Hox_120h_20211029_g2_l3/ER_Hox_120h_20211029_g2_l3.db",
             "/scratch/bern/elferich/ER_Hox_120h_202111029_g2_l4/ER_Hox_120h_202111029_g2_l4.db",
             "/scratch/bern/elferich/R_Hox_120h_20211108_g2_l1/R_Hox_120h_20211108_g2_l1.db",
@@ -22,11 +22,16 @@ def get_data_from_db(dataset,get_movement=False):
         selected_micrographs = pd.merge(selected_micrographs,df3,on="MOVIE_ASSET_ID")
         selected_micrographs["TOTAL_MOVEMENT"] = 0
         if get_movement:
+            prev_shift = None
             for i, row in selected_micrographs.iterrows():
                 df4 = pd.read_sql_query(f"SELECT FRAME_NUMBER, X_SHIFT, Y_SHIFT FROM MOVIE_ALIGNMENT_PARAMETERS_{row['ALIGNMENT_ID']}",con)
                 total_movement = 0
                 for j, mrow in df4.iterrows():
-                    movement = np.linalg.norm(np.array([mrow["X_SHIFT"],mrow["Y_SHIFT"]]))
+                    if prev_shift is None:
+                        prev_shift = np.array([mrow["X_SHIFT"],mrow["Y_SHIFT"]])
+                        continue
+                    movement = np.linalg.norm(prev_shift-np.array([mrow["X_SHIFT"],mrow["Y_SHIFT"]]))
                     total_movement += movement
+                    prev_shift = np.array([mrow["X_SHIFT"],mrow["Y_SHIFT"]])
                 selected_micrographs.at[i,'TOTAL_MOVEMENT'] = total_movement
     return(selected_micrographs)
