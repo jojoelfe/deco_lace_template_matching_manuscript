@@ -30,7 +30,7 @@ FOV
 GIS
 gridsquares
 Grigorieff
-hematopoiesis
+Hematopoiesis
 hematopoietic
 HHMI
 Hoechst
