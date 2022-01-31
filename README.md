@@ -1,34 +1,25 @@
-# FOWL 2D template matching manuscript
+# DeCo LACE 2D template matching manuscript
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://jojoelfe.github.io/fowl_template_matching_manuscript/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf)
-[![GitHub Actions Status](https://github.com/jojoelfe/fowl_template_matching_manuscript/workflows/Manubot/badge.svg)](https://github.com/jojoelfe/fowl_template_matching_manuscript/actions)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf)
+[![GitHub Actions Status](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/workflows/Manubot/badge.svg)](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/actions)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
 
 <!-- usage note: edit this section. -->
 
-This manuscript describes how to use the Fast Observation of Whole Lamella (FOWL) technique to find biomolecules in lamella.
+This manuscript describes how to use the Defocs-Corrected Large-Area Cryo-EM (DeCo-LACE) technique to find biomolecules in lamella.
 
 
-Names:
-
-- cryo-HICE (cryo-HIgh Content Electron micrscopy)
-- cryo-LARE (cryo-Large ARea Electron-microscopy)
-- cryo-EMILIA (cryo-Electron MIcroscopy of Large Imaging Areas)
-- BILACE (Beam-Imageshift for Large-Area Cryo-Electron microscopy)
-
-- DECO-LACE 
-- 
 ## Figure Outline
 
-- Figure 1: Why is FOWL needed?
+- Figure 1: Why is DeCo LACE needed?
   - Example of ribosome condensation
 
-- Figure 2: FOWL collection + dataprocessing pipeline
+- Figure 2: DeCo LACE collection + dataprocessing pipeline
   - Collection
   - Plot CTFs as function of collection
   - Analysis
@@ -58,7 +49,7 @@ Names:
 
 ## Code TODOs
 
-- [ ] Fowl collection script 
+- [ ] DeCo LACE collection script 
 - [ ] cisTEM processing pipeline
   - [ ] Correct beamdetection and noise-masking in unblur
     - [ ] Let gui calculate correct pixel size
@@ -134,11 +125,11 @@ Whenever a pull request is opened, CI (continuous integration) will test whether
 The build process aims to detect common errors, such as invalid citations.
 If your pull request build fails, see the CI logs for the cause of failure and revise your pull request accordingly.
 
-When a commit to the `main` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/gh-pages) and [`output`](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/output) branches.
+When a commit to the `main` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/gh-pages) and [`output`](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
-+ **HTML manuscript** at https://jojoelfe.github.io/fowl_template_matching_manuscript/
-+ **PDF manuscript** at https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf
++ **HTML manuscript** at https://jojoelfe.github.io/deco_lace_template_matching_manuscript/
++ **PDF manuscript** at https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf
 
 For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
 
@@ -153,7 +144,7 @@ We encourage users to openly license their manuscripts, which is the default as 
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 Except when noted otherwise, the entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
-Please attribute by linking to https://github.com/jojoelfe/fowl_template_matching_manuscript.
+Please attribute by linking to https://github.com/jojoelfe/deco_lace_template_matching_manuscript.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
 All files matched by the following glob patterns are dual licensed under CC BY 4.0 and CC0 1.0:
@@ -173,4 +164,4 @@ All other files are only available under CC BY 4.0, including:
 + `*.pdf`
 + `*.docx`
 
-Please open [an issue](https://github.com/jojoelfe/fowl_template_matching_manuscript/issues) for any question related to licensing.
+Please open [an issue](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/issues) for any question related to licensing.
