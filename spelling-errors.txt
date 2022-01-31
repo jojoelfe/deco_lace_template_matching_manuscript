@@ -11,7 +11,7 @@ conformational
 cryo
 cryoplunger
 CTF
-CTFFind
+ctffind
 cytometry
 cytosolic
 datacollection
@@ -25,6 +25,7 @@ eucentric
 FB
 FBS
 figurern
+fluoresence
 FOV
 GIS
 gridsquares
@@ -45,7 +46,6 @@ lamella
 lamellae
 lamellas
 Leica
-lignment
 lowpass
 micrograph
 micrographs
@@ -90,11 +90,9 @@ teh
 TEM
 thon
 thresholding
-throughpute
 Titam
 translational
 typs
 UMass
 unblur
 Understaning
-workflw

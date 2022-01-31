@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-25'
+date-meta: '2022-01-31'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-25" />
-  <meta name="citation_publication_date" content="2022-01-25" />
+  <meta name="dc.date" content="2022-01-31" />
+  <meta name="citation_publication_date" content="2022-01-31" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -28,22 +28,22 @@ header-includes: |-
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Johannes Elferich" />
-  <meta name="citation_author_institution" content="RNA Therapeutic INstitute, UMass Chan Medical School" />
+  <meta name="citation_author_institution" content="RNA Therapeutic Institute, UMass Chan Medical School" />
   <meta name="citation_author_institution" content="HHMI" />
   <meta name="citation_author_orcid" content="0000-0002-9911-706X" />
   <meta name="citation_author" content="Nikolaus Grigorieff" />
-  <meta name="citation_author_institution" content="RNA Therapeutic INstitute, UMass Chan Medical School" />
+  <meta name="citation_author_institution" content="RNA Therapeutic Institute, UMass Chan Medical School" />
   <meta name="citation_author_institution" content="HHMI" />
   <meta name="citation_author_orcid" content="0000-0002-1506-909X" />
-  <link rel="canonical" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
-  <meta property="og:url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
-  <meta property="twitter:url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
-  <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/" />
-  <meta name="citation_pdf_url" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8bf332359f234c2adb083a7c013540d76624804/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8bf332359f234c2adb083a7c013540d76624804/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8bf332359f234c2adb083a7c013540d76624804/manuscript.pdf" />
+  <link rel="canonical" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
+  <meta property="og:url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
+  <meta property="twitter:url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
+  <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
+  <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/8296ca48cc0d5658c7cacb082d2974b5b5e0828e/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/8296ca48cc0d5658c7cacb082d2974b5b5e0828e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/8296ca48cc0d5658c7cacb082d2974b5b5e0828e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/fowl_template_matching_manuscript/v/f8bf332359f234c2adb083a7c013540d76624804/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/8296ca48cc0d5658c7cacb082d2974b5b5e0828e/))
 was automatically generated
-from [jojoelfe/fowl_template_matching_manuscript@f8bf332](https://github.com/jojoelfe/fowl_template_matching_manuscript/tree/f8bf332359f234c2adb083a7c013540d76624804)
-on January 25, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@8296ca4](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/8296ca48cc0d5658c7cacb082d2974b5b5e0828e)
+on January 31, 2022.
 </em></small>
 
 ## Authors
@@ -81,7 +81,7 @@ on January 25, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [jojoelfe](https://github.com/jojoelfe)<br>
   <small>
-     RNA Therapeutic INstitute, UMass Chan Medical School; HHMI
+     RNA Therapeutic Institute, UMass Chan Medical School; HHMI
   </small>
 
 + **Nikolaus Grigorieff**<br>
@@ -90,7 +90,7 @@ on January 25, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [nikogrigorieff](https://github.com/nikogrigorieff)<br>
   <small>
-     RNA Therapeutic INstitute, UMass Chan Medical School; HHMI
+     RNA Therapeutic Institute, UMass Chan Medical School; HHMI
   </small>
 
 
@@ -106,55 +106,61 @@ Localization of biomolecules inside a cell is an important goal of biological im
 ## Introduction
 
 Understanding of cellular processes requires knowledge of the amount, location,
-and interaction of biomolecules inside the cell. Techniques that measure this
-can broadly be divided into label, and label-free techniques. In
+interactions, and conformation of biomolecules inside the cell. Techniques that
+measure this can broadly be divided into label- and label-free techniques. In
 label-techniques a probe is physically attached to a molecule is interest that
 is able to produce a high signal-to-noise signal, such as a fluorescent probe.
 In label-free techniques the physical properties of molecules themselves are
-used for detection. An example for this is proteomics using mass-spectrometry.
-Broadly the advantage of label-free techniques is that they can provide
-information over thousands of molecules, while label-techniques offer higher
-fidelity information for a few molecules. Especially spatial information can
-most of the time only be achieved using label-techniques. 
+used for detection. An example for this is proteomics using mass-spectrometry
+[@doi:10.1038/nbt.1592]. Broadly the advantage of label-free techniques is that
+they can provide information over thousands of molecules, while label-techniques
+offer higher fidelity information for a few molecules. Especially spatial
+information can most of the time only be achieved using label-techniques, such
+as fluoresence microscopy [@doi:10.1038/nmeth817]. 
 
 Cryo-electron microscopy has the potential to directly measure the arrangement
 of atoms that compose biomolecules inside of cells, thereby allowing label-free
-detection with high spatial accuracy. This has been called "Visual proteomics".
-Since cryo-EM requires thin samples (<500nm), imaging of biomolecules inside
-cells is either restricted to small organism and thin regions of large cells or
-requires thinning of the sample. This can be achieved either by mechanical
-sectioning [cite] or by milling using a focused ion beam (FIB) [cite]. This
-complex workflow restricts throughpute of cryo-EM. This is exacerbated by the
-fact that at the required magnification typical field of views (FOV) are very
-small compared to mammalian cells and the FOV achieved by label-techniques such
-as fluorescence light microscopy. The predominant technique for detection of
-biomolecules according to their shape in cells at the moment is cryo-electron
-tomography. However, the requirement of physically tilt the stage at every FOV,
-together with a more complex workflw that requires highly accurate lignment of
-various projection, further restricts the throughput for molecular detection. 
+detection with high spatial accuracy. This has been called "Visual proteomics"
+[@doi:10.1038/nrm1861]. Since cryo-EM requires thin samples (<500nm), imaging of
+biomolecules inside cells is either restricted to small organism and thin
+regions of large cells or requires thinning of the sample. This can be achieved
+either by mechanical sectioning [@doi:10.1111/j.1365-2818.1983.tb04225.x] or by
+milling using a focused ion beam (FIB) [@doi:10.1016/j.sbi.2013.08.006]. This
+complex workflow restricts throughput of cryo-EM imaging of cells. This is
+exacerbated by the fact that at the required magnification typical field of
+views (FOV) are very small compared to mammalian cells and the FOV achieved by
+label-techniques such as fluorescence light microscopy. The predominant
+technique for detection of biomolecules according to their shape in cells at the
+moment is cryo-electron tomography [@doi:10.1017/S0033583511000102]. However, the requirement of physically tilt
+the stage at every FOV, together with a more complex workflow that requires
+highly accurate alignment of various projection, further restricts the throughput
+for molecular detection. 
 
-An alternative approach is to identify molecules  by their structural "fingerprint" in
-single projection using "2D template-matching" [cite]. In this methods an
-experimentally obtained 
-3D model of a biomolecule is used to calculate the expected electron density,
-which is called the template. The template is then projected on a fine angular
-grid and the projection are used to find local cross-correlation peaks in a
-cryo-EM micrograph. Since locations of the biomolecule in teh Z-direction causes
+An alternative approach is to identify molecules  by their structural
+"fingerprint" in single projection using "2D template-matching"
+[@doi:10.7554/eLife.25648; @doi:10.1101/2020.04.22.053868;
+@doi:10.7554/eLife.68946]. In this methods an experimentally obtained 3D model
+of a biomolecule is used to calculate the expected electron density, which is
+called the template. The template is then projected on a fine angular grid and
+the projection are used to find local cross-correlation peaks in a cryo-EM
+micrograph. Since locations of the biomolecule in teh Z-direction causes
 predictable aberrations to the projection image, this method can be used to
-calculate 3D coordinates and orientations of a biomolecule in a cellular sample [cite]
+calculate 3D coordinates and orientations of a biomolecule in a cellular sample
+[@doi:10.1101/2020.04.22.053868]
 
 Hematopoiesis is the process of generating the various cell typs of the blood in
 the bone marrow. Disregulation of the process results in diseases like leukemia.
 Understaning how hematopoietic stem and progenitor cells are programmed to
 diffferentiate to the appropriate cell type would be provide new insight how
 hematopoiesis can be misregulated. Of special interest is the regulation of
-translation during hematopoiesis. This is exemplified by the observation that
-genetic defects in the ribosome machinery often leads to hematopoietic disease.
-As such direct quantification of ribosome location, number and conformational
-states could lead to new insight into hematopoietic disease. 
+translation during hematopoiesis . This is exemplified by the observation that
+genetic defects in the ribosome machinery often leads to hematopoietic
+disease[@doi:10.1093/nar/gkz637]. As such direct quantification of ribosome
+location, number and conformational states could lead to new insight into
+hematopoietic disease [@doi:10.1186/s12885-018-4178-z]. 
 
 Here we apply 2D-template matching to neutrophil-ilke murine cells. By employing
-anew data-acquisition scheme, Defocus-adjusted large area cryo-electron
+anew data-acquisition scheme, Defocus-corrected large area cryo-electron
 microscopy (DeCo-LACE) we obtained coverage of the whole "lamella"
 covering roughly 2% of the cellular volume. 
 
@@ -427,6 +433,45 @@ obtained matches with the same model used for the data in Figure 1.
 \node (anchor) at (8.5,9.35) {}; 
 \node[labelNode] {B};
 \node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/thickness_by_intensity_vs_bs_plot.pdf}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+```
+
+![This is an example-figurern](tikz:example-figure4){#fig:approach4}
+
+```{.tikz-figure #example-figure4 width=16cm height=13cm draft=true}
+\node (anchor) at (0.3,9.35) {}; 
+\node[labelNode] {A};
+\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer000.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+\node (anchor) at (6.1,9.35) {}; 
+\node[labelNode] {B};
+\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer001.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+\node (anchor) at (10.4,9.35) {}; 
+\node[labelNode] {C};
+\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer002.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+\node (anchor) at (14.8,9.35) {}; 
+\node[labelNode] {D};
+\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer003.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+\node (anchor) at (0.3,3.65) {}; 
+\node[labelNode] {E};
+\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer005.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+\node (anchor) at (4.7,3.65) {}; 
+\node[labelNode] {F};
+\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer006.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+\node (anchor) at (9.2,3.65) {}; 
+\node[labelNode] {G};
+\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer007.png}};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+\node (anchor) at (13.8,3.65) {}; 
+\node[labelNode] {H};
+\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer008.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 ```
