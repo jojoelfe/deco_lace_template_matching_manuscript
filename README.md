@@ -11,7 +11,7 @@
 
 <!-- usage note: edit this section. -->
 
-This manuscript describes how to use the Defocs-Corrected Large-Area Cryo-EM (DeCo-LACE) technique to find biomolecules in lamella.
+This manuscript describes how to use the Defocus-Corrected Large-Area Cryo-EM (DeCo-LACE) technique to find biomolecules in lamella.
 
 
 ## Figure Outline
