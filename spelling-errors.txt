@@ -8,7 +8,7 @@ calulated
 CenterBeamFrom
 cisTEM
 conformational
-cryo
+Cryo
 cryoplunger
 CTF
 ctffind
@@ -25,7 +25,6 @@ eucentric
 FB
 FBS
 figurern
-fluoresence
 FOV
 GIS
 gridsquares
@@ -35,9 +34,8 @@ hematopoietic
 HHMI
 Hoechst
 HoxA
-ilke
 illumated
-imageshift
+Imageshift
 insepction
 jojoelfe
 keV
@@ -86,13 +84,11 @@ subunit
 subunits
 successfull
 SWA
-teh
 TEM
 thon
 thresholding
 Titam
 translational
-typs
+translationaly
 UMass
 unblur
-Understaning

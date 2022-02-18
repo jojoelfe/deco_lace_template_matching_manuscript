@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-01-31'
+date-meta: '2022-02-18'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-01-31" />
-  <meta name="citation_publication_date" content="2022-01-31" />
+  <meta name="dc.date" content="2022-02-18" />
+  <meta name="citation_publication_date" content="2022-02-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/77b641805c11f9f7651a787e2b3d289022fbc3e5/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/77b641805c11f9f7651a787e2b3d289022fbc3e5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/77b641805c11f9f7651a787e2b3d289022fbc3e5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/52e4b932db14fd39bc18a4b0241c36732f2d00b8/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/52e4b932db14fd39bc18a4b0241c36732f2d00b8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/52e4b932db14fd39bc18a4b0241c36732f2d00b8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/77b641805c11f9f7651a787e2b3d289022fbc3e5/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/52e4b932db14fd39bc18a4b0241c36732f2d00b8/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@77b6418](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/77b641805c11f9f7651a787e2b3d289022fbc3e5)
-on January 31, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@52e4b93](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/52e4b932db14fd39bc18a4b0241c36732f2d00b8)
+on February 18, 2022.
 </em></small>
 
 ## Authors
@@ -105,64 +105,76 @@ Localization of biomolecules inside a cell is an important goal of biological im
 
 ## Introduction
 
-Understanding of cellular processes requires knowledge of the amount, location,
-interactions, and conformation of biomolecules inside the cell. Techniques that
+Understanding of cellular processes requires knowledge of the amounts, location,
+interactions, and conformations of biomolecules inside the cell. Techniques that
 measure this can broadly be divided into label- and label-free techniques. In
 label-techniques a probe is physically attached to a molecule is interest that
-is able to produce a high signal-to-noise signal, such as a fluorescent probe.
+is able to produce a high signal-to-noise signal, such as a fluorescent molecule.
 In label-free techniques the physical properties of molecules themselves are
 used for detection. An example for this is proteomics using mass-spectrometry
-[@doi:10.1038/nbt.1592]. Broadly the advantage of label-free techniques is that
+[@doi:10.1038/nbt.1592]. The advantage of label-free techniques is that
 they can provide information over thousands of molecules, while label-techniques
 offer higher fidelity information for a few molecules. Especially spatial
 information can most of the time only be achieved using label-techniques, such
-as fluoresence microscopy [@doi:10.1038/nmeth817]. 
+as fluorescence microscopy [@doi:10.1038/nmeth817]. 
 
 Cryo-electron microscopy has the potential to directly measure the arrangement
 of atoms that compose biomolecules inside of cells, thereby allowing label-free
-detection with high spatial accuracy. This has been called "Visual proteomics"
+detection with high spatial accuracy. This has been called "visual proteomics"
 [@doi:10.1038/nrm1861]. Since cryo-EM requires thin samples (<500nm), imaging of
-biomolecules inside cells is either restricted to small organism and thin
-regions of large cells or requires thinning of the sample. This can be achieved
+biomolecules inside cells is either restricted to small organisms, thin
+regions of large cells, or requires thinning of the sample. This can be achieved
 either by mechanical sectioning [@doi:10.1111/j.1365-2818.1983.tb04225.x] or by
 milling using a focused ion beam (FIB) [@doi:10.1016/j.sbi.2013.08.006]. This
 complex workflow restricts throughput of cryo-EM imaging of cells. This is
-exacerbated by the fact that at the required magnification typical field of
+exacerbated by the fact that at the required magnifications, typical field of
 views (FOV) are very small compared to mammalian cells and the FOV achieved by
-label-techniques such as fluorescence light microscopy. The predominant
+label-techniques such as fluorescence light microscopy. The predominant cryo-EM
 technique for detection of biomolecules according to their shape in cells at the
-moment is cryo-electron tomography [@doi:10.1017/S0033583511000102]. However, the requirement of physically tilt
-the stage at every FOV, together with a more complex workflow that requires
-highly accurate alignment of various projection, further restricts the throughput
-for molecular detection. 
+moment is cryo-electron tomography [@doi:10.1017/S0033583511000102]. However,
+the requirement of physically tilt the stage at every FOV, together with a more
+complex workflow that requires highly accurate alignment of various projection,
+further restricts the throughput for molecular detection. 
 
 An alternative approach is to identify molecules  by their structural
 "fingerprint" in single projection using "2D template-matching"
 [@doi:10.7554/eLife.25648; @doi:10.1101/2020.04.22.053868;
-@doi:10.7554/eLife.68946]. In this methods an experimentally obtained 3D model
+@doi:10.7554/eLife.68946]. In this method an experimentally obtained 3D model
 of a biomolecule is used to calculate the expected electron density, which is
 called the template. The template is then projected on a fine angular grid and
-the projection are used to find local cross-correlation peaks in a cryo-EM
-micrograph. Since locations of the biomolecule in teh Z-direction causes
+the projections are used to find local cross-correlation peaks in a cryo-EM
+micrograph. Since locations of the biomolecule in the Z-direction causes
 predictable aberrations to the projection image, this method can be used to
 calculate 3D coordinates and orientations of a biomolecule in a cellular sample
 [@doi:10.1101/2020.04.22.053868]
 
-Hematopoiesis is the process of generating the various cell typs of the blood in
+Hematopoiesis is the process of generating the various cell types of the blood in
 the bone marrow. Disregulation of the process results in diseases like leukemia.
-Understaning how hematopoietic stem and progenitor cells are programmed to
+Understanding how hematopoietic stem and progenitor cells are programmed to
 diffferentiate to the appropriate cell type would be provide new insight how
 hematopoiesis can be misregulated. Of special interest is the regulation of
-translation during hematopoiesis . This is exemplified by the observation that
+translation during hematopoiesis. This is exemplified by the observation that
 genetic defects in the ribosome machinery often leads to hematopoietic
 disease[@doi:10.1093/nar/gkz637]. As such direct quantification of ribosome
 location, number and conformational states could lead to new insight into
 hematopoietic disease [@doi:10.1186/s12885-018-4178-z]. 
 
-Here we apply 2D-template matching to neutrophil-ilke murine cells. By employing
-anew data-acquisition scheme, Defocus-corrected large area cryo-electron
-microscopy (DeCo-LACE) we obtained coverage of the whole "lamella"
-covering roughly 2% of the cellular volume. 
+Here we apply 2D-template matching of ribosomes to cryo-FIB milled
+neutrophil-like murine cells [@doi:10.1016/j.cell.2016.08.057]. To increase the
+amount of collected data and to provide un-biased sampling of the whole lamella
+we devised a new data-acquisition scheme, Defocus-corrected large area
+cryo-electron microscopy (DeCo-LACE). We characterize aberration cause by the
+used large beam-image shifts and highly focused beams and find that they can be
+adequately correct to enable ribosome detection by 2D-template matching. The
+resulting data provides a description of ribosome distribution in the whole
+lamellae, which represent roughly 2% of the cellular volume. We find highly
+heterogeneous density of ribosome within the cell and can identify discrete
+clusters of presumably translationaly active ribosomes, by testing for the
+presence of the small ribosomal subunit. The high accuracy of location and
+orientation of each detected ribosome also allows us to cluster ribosome
+molecules into potential polysomes. Analysis of the throughput in this method
+suggests that for the foreseeable future computation will be the bottleneck for
+visual proteomics.
 
 ## Materials and Methods
 
