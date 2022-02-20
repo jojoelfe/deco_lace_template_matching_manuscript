@@ -68,6 +68,7 @@ extension_for = {
   html = 'svg',
   html4 = 'svg',
   html5 = 'svg',
+  markdown = 'svg',
   latex = 'pdf',
   beamer = 'pdf' }
 

@@ -18,8 +18,8 @@ DOCKER_RUNNING="$(docker info &> /dev/null && echo "true" || (true && echo "fals
 # Set option defaults
 CI="${CI:-false}"
 BUILD_PDF="${BUILD_PDF:-false}"
-BUILD_DOCX="${BUILD_DOCX:-false}"
-BUILD_LATEX="${BUILD_LATEX:-false}"
+BUILD_DOCX="${BUILD_DOCX:-true}"
+BUILD_LATEX="${BUILD_LATEX:-true}"
 SPELLCHECK="${SPELLCHECK:-false}"
 MANUBOT_USE_DOCKER="${MANUBOT_USE_DOCKER:-$DOCKER_RUNNING}"
 # Pandoc's configuration is specified via files of option defaults
@@ -42,6 +42,9 @@ mkdir -p output/figures
 # Create HTML output
 # https://pandoc.org/MANUAL.html
 echo >&2 "Exporting HTML manuscript"
+if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
+if [ -L graphics ]; then rm graphics; fi  # if graphics is a symlink, remove it
+
 ln -s content/images
 ln -s content/graphics
 
@@ -93,21 +96,40 @@ fi
 # Create DOCX output (if BUILD_DOCX environment variable equals "true")
 if [ "${BUILD_DOCX,,}" = "true" ]; then
   echo >&2 "Exporting Word Docx manuscript"
+  if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
+  if [ -L graphics ]; then rm graphics; fi  # if graphics is a symlink, remove it
+  if [ -L figures ]; then rm figures; fi  # if graphics is a symlink, remove it
+
+  ln -s content/images
+  ln -s content/graphics
+  ln -s output/figures
   pandoc --verbose \
     --data-dir="$PANDOC_DATA_DIR" \
     --defaults=common.yaml \
     --defaults=docx.yaml
+  rm figures
+  rm images
+  rm graphics
 fi
 
 # Create LaTeX output (if BUILD_LATEX environment variable equals "true")
 if [ "${BUILD_LATEX,,}" = "true" ]; then
   echo >&2 "Exporting LaTeX manuscript"
+  if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
+  if [ -L graphics ]; then rm graphics; fi  # if graphics is a symlink, remove it
+  if [ -L figures ]; then rm figures; fi  # if graphics is a symlink, remove it
+
   ln -s content/images
-  cd output
-  ln -s ../content/images
-  cd ..
   ln -s content/graphics
-  ls -lisah images/orcid.pdf
+  ln -s output/figures
+  cd output
+  if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
+  if [ -L graphics ]; then rm graphics; fi  # if graphics is a symlink, remove it
+
+  ln -s ../content/images
+  ln -s ../content/graphics
+  cd ..
+  
   pandoc \
     --data-dir="$PANDOC_DATA_DIR" \
     --defaults=common.yaml \
@@ -115,7 +137,9 @@ if [ "${BUILD_LATEX,,}" = "true" ]; then
   tectonic output/manuscript.tex
   rm images
   rm output/images
+  rm output/graphics
   rm graphics
+  rm figures
 fi
 
 # Spellcheck
