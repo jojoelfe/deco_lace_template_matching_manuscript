@@ -96,13 +96,13 @@ ghp-import \
   output
 
 # Deploy the webpage directory to gh-pages
-ghp-import \
-  --no-jekyll \
-  --follow-links \
-  --push \
-  --branch=gh-pages \
-  --message="$MESSAGE" \
-  webpage
+# ghp-import \
+#  --no-jekyll \
+#  --follow-links \
+#  --push \
+#  --branch=gh-pages \
+#  --message="$MESSAGE" \
+#  webpage
 
 if [ $MANUBOT_DEPLOY_VIA_SSH = "true" ]; then
   # Workaround https://github.com/travis-ci/travis-ci/issues/8082
