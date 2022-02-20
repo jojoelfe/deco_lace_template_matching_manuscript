@@ -8,7 +8,7 @@ calulated
 CenterBeamFrom
 cisTEM
 conformational
-Cryo
+cryo
 cryoplunger
 CTF
 ctffind
@@ -16,7 +16,7 @@ cytometry
 cytosolic
 datacollection
 DeCo
-defocus
+Defocus
 differnce
 diffferentiate
 Disregulation
@@ -72,7 +72,7 @@ sacrifical
 sapcing
 SCF
 SEM
-SerialEM
+SerialEm
 signifcant
 sillicone
 SNR

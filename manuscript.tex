@@ -1,0 +1,554 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Visual proteomics using whole-lamella 2D template matching},
+  pdfauthor={Johannes ElferichNikolaus Grigorieff},
+  pdflang={en-US},
+  pdfkeywords={cryo-EM, visual protemics, ribosome},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{american}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\usepackage[margin=2cm]{geometry}
+\usepackage{setspace}
+\doublespacing
+\usepackage{lineno}
+\linenumbers
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Visual proteomics using whole-lamella 2D template matching}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+This manuscript
+(\href{https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56181559e858af0a515082cd5c28c9f1b8501873/}{permalink})
+was automatically generated
+from \href{https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/56181559e858af0a515082cd5c28c9f1b8501873}{jojoelfe/deco\_lace\_template\_matching\_manuscript@5618155}
+on February 20, 2022.
+
+\hypertarget{authors}{%
+\subsection{Authors}\label{authors}}
+
+\begin{itemize}
+\item
+  \textbf{Johannes Elferich}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.pdf}
+  \href{https://orcid.org/0000-0002-9911-706X}{0000-0002-9911-706X}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.pdf}
+  \href{https://github.com/jojoelfe}{jojoelfe}
+  RNA Therapeutic Institute, UMass Chan Medical School; HHMI
+\item
+  \textbf{Nikolaus Grigorieff}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.pdf}
+  \href{https://orcid.org/0000-0002-1506-909X}{0000-0002-1506-909X}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.pdf}
+  \href{https://github.com/nikogrigorieff}{nikogrigorieff}
+  RNA Therapeutic Institute, UMass Chan Medical School; HHMI
+\end{itemize}
+
+\hypertarget{abstract}{%
+\subsection{Abstract}\label{abstract}}
+
+Localization of biomolecules inside a cell is an important goal of biological imaging. Fluorescence microscopy can localize biomolecules inside whole cells and tissues, but its ability to count biomolecules and accuracy of the spatial coordinates is limited by the wavelength of visible light. On the other hand, cryo-electron microscopy (cryo-EM) provides highly accurate position and orientation information of biomolecules but is often limited to small fields of view inside a cell, providing only limited biological context. In this study we use a new data-acquisition scheme called ``Beam-Imageshift for Large Area Cryo-Electron microscopy'' (BILACE) to collect high-resolution cryo-EM data over entire sections (100 -- 200 nm thick lamellae) of neutrophil-like mouse cells, representing roughly 1\% of the total cellular volume. We use 2D template matching to determine localization and orientation of the large ribosomal subunit in these sections. Furthermore, we use 2D template matching to test detected targets for the presence of the small ribosomal subunit and used the relative orientations of the ribosomes to assign them to polysomes. These results provide ``maps'' of translational activity across sections of mammalian cells. We envision that using this high-throughput cryo-EM data collection approach together with 2D template matching will advance visual proteomics to complement other single-cell ``omics'' techniques, such as flow-cytometry and single-cell sequencing.
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+Understanding of cellular processes requires knowledge of the amounts, location,
+interactions, and conformations of biomolecules inside the cell. Techniques that
+measure this can broadly be divided into label- and label-free techniques. In
+label-techniques a probe is physically attached to a molecule is interest that
+is able to produce a high signal-to-noise signal, such as a fluorescent molecule.
+In label-free techniques the physical properties of molecules themselves are
+used for detection. An example for this is proteomics using mass-spectrometry
+{[}\protect\hyperlink{ref-tSXIKPl7}{1}{]}. The advantage of label-free techniques is that
+they can provide information over thousands of molecules, while label-techniques
+offer higher fidelity information for a few molecules. Especially spatial
+information can most of the time only be achieved using label-techniques, such
+as fluorescence microscopy {[}\protect\hyperlink{ref-VBmW7Aot}{2}{]}.
+
+Cryo-electron microscopy has the potential to directly measure the arrangement
+of atoms that compose biomolecules inside of cells, thereby allowing label-free
+detection with high spatial accuracy. This has been called ``visual proteomics''
+{[}\protect\hyperlink{ref-tGQ6TSUo}{3}{]}. Since cryo-EM requires thin samples (\textless500nm), imaging of
+biomolecules inside cells is either restricted to small organisms, thin
+regions of large cells, or requires thinning of the sample. This can be achieved
+either by mechanical sectioning {[}\protect\hyperlink{ref-g8QavfwP}{4}{]} or by
+milling using a focused ion beam (FIB) {[}\protect\hyperlink{ref-16IhS1Nc4}{5}{]}. This
+complex workflow restricts throughput of cryo-EM imaging of cells. This is
+exacerbated by the fact that at the required magnifications, typical field of
+views (FOV) are very small compared to mammalian cells and the FOV achieved by
+label-techniques such as fluorescence light microscopy. The predominant cryo-EM
+technique for detection of biomolecules according to their shape in cells at the
+moment is cryo-electron tomography {[}\protect\hyperlink{ref-Rksh2dxu}{6}{]}. However,
+the requirement of physically tilt the stage at every FOV, together with a more
+complex workflow that requires highly accurate alignment of various projection,
+further restricts the throughput for molecular detection.
+
+An alternative approach is to identify molecules by their structural
+``fingerprint'' in single projection using ``2D template-matching''
+{[}\protect\hyperlink{ref-Ynb3IP6I}{7},\protect\hyperlink{ref-18KGpXYPE}{8},\protect\hyperlink{ref-10bXZuF3G}{9}{]}. In this method an experimentally obtained 3D model
+of a biomolecule is used to calculate the expected electron density, which is
+called the template. The template is then projected on a fine angular grid and
+the projections are used to find local cross-correlation peaks in a cryo-EM
+micrograph. Since locations of the biomolecule in the Z-direction causes
+predictable aberrations to the projection image, this method can be used to
+calculate 3D coordinates and orientations of a biomolecule in a cellular sample
+{[}\protect\hyperlink{ref-18KGpXYPE}{8}{]}
+
+Hematopoiesis is the process of generating the various cell types of the blood in
+the bone marrow. Disregulation of the process results in diseases like leukemia.
+Understanding how hematopoietic stem and progenitor cells are programmed to
+diffferentiate to the appropriate cell type would be provide new insight how
+hematopoiesis can be misregulated. Of special interest is the regulation of
+translation during hematopoiesis. This is exemplified by the observation that
+genetic defects in the ribosome machinery often leads to hematopoietic
+disease{[}\protect\hyperlink{ref-gRoY21jY}{10}{]}. As such direct quantification of ribosome
+location, number and conformational states could lead to new insight into
+hematopoietic disease {[}\protect\hyperlink{ref-KAJ7221k}{11}{]}.
+
+Here we apply 2D-template matching of ribosomes to cryo-FIB milled
+neutrophil-like murine cells {[}\protect\hyperlink{ref-1B9Vt9eYu}{12}{]}. To increase the
+amount of collected data and to provide un-biased sampling of the whole lamella
+we devised a new data-acquisition scheme, Defocus-corrected large area
+cryo-electron microscopy (DeCo-LACE). We characterize aberration cause by the
+used large beam-image shifts and highly focused beams and find that they can be
+adequately correct to enable ribosome detection by 2D-template matching. The
+resulting data provides a description of ribosome distribution in the whole
+lamellae, which represent roughly 2\% of the cellular volume. We find highly
+heterogeneous density of ribosome within the cell and can identify discrete
+clusters of presumably translationaly active ribosomes, by testing for the
+presence of the small ribosomal subunit. The high accuracy of location and
+orientation of each detected ribosome also allows us to cluster ribosome
+molecules into potential polysomes. Analysis of the throughput in this method
+suggests that for the foreseeable future computation will be the bottleneck for
+visual proteomics.
+
+\hypertarget{materials-and-methods}{%
+\subsection{Materials and Methods}\label{materials-and-methods}}
+
+\hypertarget{grid-preparation}{%
+\subsubsection{Grid preparation}\label{grid-preparation}}
+
+ER-HoxA9 cells were maintained in RPMI supplemented with 10\% FBS,
+penicillin/streptomycin, SCF, and estrogen {[}\protect\hyperlink{ref-1B9Vt9eYu}{12}{]} at
+37C and 5\% CO2. 120h prior to grid freezing cells were washed twice in PBS and
+cultured in the same medium, except without estrogen. Differentiation was
+verified by staining with Hoechst-dye and insepction of nuclear morphology.
+Cells were then counted and diluted to 1\^{}106 cells/ml. Grids ( either 200 mesh
+copper grids, with a sillicone-oxide and 2um holes with a 2um spacing or 200
+mesh gold grids with a thin gold film and 2 um holes in 2um sapcing) were
+glow-discharged from both sides using a \ldots{} for \ldots{} . 3.5 ul of cells suspension
+was added to grids on the thin-film side and grids were automatically blotted
+from the back-side using a GP2 cryoplunger (Leica) for \ldots{} s and rapidly plunged
+into liquid ethane at -185C.
+
+\hypertarget{fib-milling}{%
+\subsubsection{FIB-milling}\label{fib-milling}}
+
+Grids were loaded into a Acquilos 2 FIB/SEM microscope with a stage cooled to
+-190C. Grids were sputter-coated with platinum for 15s at 45 mA and then coated
+with a layer of platinum-precursor by openin the GIS-valve for 45s. An overview
+of the grid was created by montaging SEM images and isolated cells at the center
+of gridsquares were selected for FB-milling. Lamella were generated
+automatically using the AutoTEM software, resulting in 6-8 um wide lamella with
+150-200 um thickness as determined by FIB-imaging of the lamella edge.
+
+\hypertarget{data-collection}{%
+\subsubsection{Data collection}\label{data-collection}}
+
+Grids were loaded into a Krios Titam TEM operated at 300 keV. The microscope was
+setup with a cross-grating grid on the stageby setting the beam-diameter to 900
+nm, resulting in the beam being completely visible in the camera. To establish
+fringe-free conditions, the ``Fine eucentric'' procedure of serialEM was used to
+move a square of the cross-grating grid to the eucentric position of the
+microscope. The effective defocus was then set to 2 um, using the ``autofocus''
+routine of serialEM. The objective focus of the microscope was changed until no
+fringes were visible. The stage was then moved in Z until images had a apparent
+defocus of 2 um. The differnce in stage Z-position between the eucentric and
+fringe-free conditions was calculate d and noted to move other areas into
+fringe-free condition.
+
+Low magnification montages were used to find lamella and lamella that were
+sufficiently thin and free of contamination were selected for automated data
+collection. The corners of the lamella were manually annotated in SerialEM and
+translated into Beam-Imageshift values using SerialEm calibration. A hexagonal
+patter of beam-imageshift positions was calculated that covered the area between
+he four corners in a serpentine way, with a sqrt(3) * 400 nm horizontal spacing
+and 800 nm vertical spacing. Exposures were then taking at each position with a
+30 e/A total dose. After each exposure that defocus was estimated using the
+ctffind function of SerialEM and the focus for th next exposure was corrected by
+the difference between the estimated focus and the desired defocus of 800 um.
+Also after each exposure the deviation of the beam from the center of the camera
+was measured and corrected using the ``CenterBeamFrom IMage'' command of SerialEM.
+
+After datacollection a 20s exposure at 2250x magnification of the lamella at
+200um defocus was taken for visualization purposes.
+
+\hypertarget{data-pre-processing}{%
+\subsubsection{Data pre-processing}\label{data-pre-processing}}
+
+Movies were gain-corrected and motion-corrected using a custom version of
+unblur. To avoid influence of the beam-edge on motion-correction only a quarter
+of the movie in the center of the camera was considered for calculation of the
+estimated motion. After movie frames were aligned and summed a mask for the
+illuminated area was calculated by lowpass filtering the image at \ldots{} A,
+thresholding the image at 10\% of the maximal value and then lowpass filtering
+the mask at \ldots{} A. This mask was then used to replace un-illuminated area with
+gaussian noise, with the same mean and standard deviation as the illuminated
+area. The contrast-transfer function (CTF) was estimated using ctffind, searching
+between 0.02 and 2 um defocus.
+
+\hypertarget{template-matching}{%
+\subsubsection{Template matching}\label{template-matching}}
+
+The search template was generated from the cryo-EM structure of the mouse large
+ribosomal subunit (PDB 6SWA). The \ldots{} subunit was deleted from the model and the
+simulate program of the cisTEM suite was used to calculate an density map from
+the atomic coordinates. The match\_template program was used to search for this
+template in the preprocessed images, using 1.5 deg angular step in out-of-plane
+angles and 1.0 deg in-plane. 21 defocus planes in 200nm steps centered around
+the defocus estimates by ctffind were searches. Matches were defined as peaks
+above a threshold calulated according to .. .(7.75 for most images).
+
+\hypertarget{data-analysis}{%
+\subsubsection{Data analysis}\label{data-analysis}}
+
+\hypertarget{results}{%
+\subsection{Results}\label{results}}
+
+\hypertarget{d-template-matching-can-be-used-to-find-ribosomal-subunits-in-cryo-fib-thinned-lamella-of-mammalian-cells}{%
+\subsubsection{2D-Template matching can be used to find ribosomal subunits in cryo-FIB thinned lamella of mammalian cells}\label{d-template-matching-can-be-used-to-find-ribosomal-subunits-in-cryo-fib-thinned-lamella-of-mammalian-cells}}
+
+To test whether we could detect individual ribosomes in mammalian cells we
+prepared cryo-lamella of mouse neutrophil-like cells. Low-magnification images
+of these lamellas clearly shows cellular features consistent with a
+neutrophil-like phenotype, mainly a segmented nucleus and a plethora of
+membrane-organelles, corresponding to the granules and secretory vesicles of
+neutrophils. We then proceeded to acquire micrographs on this lamella with a
+defocus of 0.5-1.0 um, 30 e/A2/s exposure and 1.5 A pixelsize. We manually
+selected multiple locations in the lamella and focused using standard low-dose
+techniques, i.e.~by first ensuring correct focus by imaging a sacrifical area.
+The resoluting micrographs showed no signs of crystalline ice and had thon-rings
+to resolution, indicating successfull vitrification.
+
+We used an atomic model of the 60S mouse ribosomal subunit (6SWA) for 2D
+template matching. In a subset of images the distribution of cross-correlation
+scores significantly exceeded the distribution expected from non-signifcant
+matching(Figure 1B). In the resulting scaled maximum-intensity maps, clear peaks
+with SNR thresholds up to 10 were apparent (Figure 1C). By using the criterion
+described by for thresholding potential matches we found that in images of
+cytosolic ompartments we found evidence of 10-500 ribosomes in the imaged areas.
+Notably we found no matches in images that were taken in the nuclear
+compartment. In the cytosolic areas we found a drastically different number of
+matches, In somer areas we found only \textasciitilde{} 50 matches er image area, corresponding
+to a concentration of\ldots, while in another area we found more than 500 matches,
+corresponding to a concentration of \ldots{} .
+
+\hypertarget{cryo-emilia-for-2d-imaging-of-whole-lamella}{%
+\subsubsection{cryo-EMILIA for 2D imaging of whole lamella}\label{cryo-emilia-for-2d-imaging-of-whole-lamella}}
+
+In order to obtain high-resolution data for complete lamella we used a new
+approach for data collection. This approach uses three key strategies: (1)
+ensures that every electron that exposes the sample is collected on the camera
+(2) uses beam-image shift to precisely and quickly raster the surface of the
+lamella and (3) uses a focusing strategy that does not rely on a sacrificial
+area.
+
+To ensure that every electron exposing the sample was captured by the detector,
+we focused the electron beam so that the entire beam was placed on the detector.
+During canonical low-dose imaging the microscope is configured so that the focal
+plan is identical to the eucentric plane of the specimen stage. This leaves the
+C2 aperture out of focus, resulting in ripples at the edge of the beam (Figure
+2B). While these ripples are low-resolution features that might not interfere
+with 2D template matching, which is designed to be robust to low-resolution
+noise, we also tested collecting data under a condition where the C2 aperture is
+in focus (Figure 2C).
+
+We then centered a lamella under the electron beam and used beam-image shift of
+the microscope to systematically raster the whole surface of the lamella in a
+hexagonal pattern. Instead of focusing in a sacrificial area, we determined the
+defocus after every exposure using a routine implemented in SerialEM modeled
+after CTFFind. The focus was then adjusted based on the difference between
+desired and measured defocus. Since we used a serpentine pattern for data
+collection every exposure is close to the previous exposure making drastic
+changes in the defocus unlikely. Furthermore we started our acquisition pattern
+on the platinum deposition edge, so the initial exposure where the defocus was
+not yet adjusted did not contain any biologically relevant information.
+
+We used this strategy to collect data on 8 lamella, 4 using the eucentric focus
+condition and 4 using the fringe-free condition. We were able to highly
+consistently collect data with a defocus of 8 um (Figure 2D), both in the
+eucentric focus and fringe-free focus condition. Together with the nominal
+defocus of the microscope this data results in a topological map of the lamella.
+To ensure that data was collected consistently, we mapped defocus values as a
+function of the applied Beam-image shift (Figure 2E). This demonstrated that the
+defocus was consistent over the lamella, with outliers only at isolated images
+and in images containing contamination. We also plotted the measure objective
+astigmatism of the lamella and found that it varies with the applied Beam-image
+shift, become more astigmatic mostly due to beam-image shift in the X
+direction. While approaches exist to correct this during the data-collection, we
+opted to not use these mechanism for these early experiments and instead rely on
+computational correction of these aberrations in order to characterize them.
+
+\hypertarget{d-template-matching-of-cryo-emilia-data-reveals-ribosome-distribution}{%
+\subsubsection{2D-Template matching of cryo-EMILIA data reveals ribosome distribution}\label{d-template-matching-of-cryo-emilia-data-reveals-ribosome-distribution}}
+
+We developed customized preprocessing protocol to images obtained by cryo-EMILIA
+to enable their use for 2D-template matching. First we restricted calculation of
+cross-correlation coefficients between individual movie frames to the central
+portion of the image to prevent artifacts from the beam edges on estimation of
+motion. Then we calculated a mask that defined the illuminated area of the
+micrographs and used it to fill non-illumated areas with gaussian noise,
+matching mean and standard deviation to the illuminated signal (Figure 3A). The
+so processed images were suitable for 2D-template matching and we were able to
+obtained matches with the same model used for the data in Figure 1.
+
+\hypertarget{quantitative-analysis-of-translation-activity}{%
+\subsubsection{Quantitative analysis of translation activity}\label{quantitative-analysis-of-translation-activity}}
+
+\hypertarget{discussion}{%
+\subsection{Discussion}\label{discussion}}
+
+\begin{itemize}
+\item
+  Elizabeth Wright and Grant Jensen Montage tomography papers
+\item
+  Waffle method for higher throughput, automation of fib-milling
+\item
+  Throughput and bottlenecks
+\item
+  Visual proteomics
+\item
+  Granules containing ribosomes?
+\item
+  Threshold implications (no matches on most images)
+\end{itemize}
+
+\hypertarget{figures}{%
+\subsection{Figures}\label{figures}}
+
+\begin{figure}
+\hypertarget{fig:initmatching}{%
+\centering
+\includegraphics{figures/figure1_draft.pdf}
+\caption{Template matching of ribosomal large subunits in fib-milled neutrophil like cells}\label{fig:initmatching}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:initmatching2}{%
+\centering
+\includegraphics{figures/initmatching2.pdf}
+\caption{This is an example-figurern}\label{fig:initmatching2}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:approach}{%
+\centering
+\includegraphics{figures/example-figure.pdf}
+\caption{This is an example-figurern}\label{fig:approach}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:approach2}{%
+\centering
+\includegraphics{figures/example-figure2.pdf}
+\caption{This is an example-figurern}\label{fig:approach2}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:approach3}{%
+\centering
+\includegraphics{figures/example-figure3.pdf}
+\caption{This is an example-figurern}\label{fig:approach3}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:approach4}{%
+\centering
+\includegraphics{figures/example-figure4.pdf}
+\caption{This is an example-figurern}\label{fig:approach4}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:matching}{%
+\centering
+\includegraphics{figures/matching.pdf}
+\caption{This is an example-figurern}\label{fig:matching}
+}
+\end{figure}
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-tSXIKPl7}{}}%
+\CSLLeftMargin{1. }
+\CSLRightInline{\textbf{Label-free, normalized quantification of complex mass spectrometry data for proteomic analysis}
+\CSLBlock{Noelle M Griffin, Jingyi Yu, Fred Long, Phil Oh, Sabrina Shore, Yan Li, Jim A Koziol, Jan E Schnitzer} \emph{Nature Biotechnology} (2010-01) \url{https://doi.org/fshgnc}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nbt.1592}{10.1038/nbt.1592} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/20010810}{20010810} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2805705}{PMC2805705}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-VBmW7Aot}{}}%
+\CSLLeftMargin{2. }
+\CSLRightInline{\textbf{Fluorescence microscopy}
+\CSLBlock{Jeff W Lichtman, José-Angel Conchello} \emph{Nature Methods} (2005-12) \url{https://doi.org/bbpg4n}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nmeth817}{10.1038/nmeth817} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/16299476}{16299476}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-tGQ6TSUo}{}}%
+\CSLLeftMargin{3. }
+\CSLRightInline{\textbf{A visual approach to proteomics}
+\CSLBlock{Stephan Nickell, Christine Kofler, Andrew P Leis, Wolfgang Baumeister} \emph{Nature Reviews Molecular Cell Biology} (2006-03) \url{https://doi.org/d6d5mq}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nrm1861}{10.1038/nrm1861} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/16482091}{16482091}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-g8QavfwP}{}}%
+\CSLLeftMargin{4. }
+\CSLRightInline{\textbf{Electron microscopy of frozen hydrated sections of vitreous ice and vitrified biological samples}
+\CSLBlock{AW McDowall, J-J Chang, R Freeman, J Lepault, CA Walter, J Dubochet} \emph{Journal of Microscopy} (1983-07) \url{https://doi.org/bdnzmv}
+\CSLBlock{DOI: \href{https://doi.org/10.1111/j.1365-2818.1983.tb04225.x}{10.1111/j.1365-2818.1983.tb04225.x} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/6350598}{6350598}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-16IhS1Nc4}{}}%
+\CSLLeftMargin{5. }
+\CSLRightInline{\textbf{Opening windows into the cell: focused-ion-beam milling for cryo-electron tomography}
+\CSLBlock{Elizabeth Villa, Miroslava Schaffer, Jürgen M Plitzko, Wolfgang Baumeister} \emph{Current Opinion in Structural Biology} (2013-10) \url{https://doi.org/f537jp}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.sbi.2013.08.006}{10.1016/j.sbi.2013.08.006} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/24090931}{24090931}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Rksh2dxu}{}}%
+\CSLLeftMargin{6. }
+\CSLRightInline{\textbf{Electron tomography of cells}
+\CSLBlock{Lu Gan, Grant J Jensen} \emph{Quarterly Reviews of Biophysics} (2012-02) \url{https://doi.org/czj9hr}
+\CSLBlock{DOI: \href{https://doi.org/10.1017/s0033583511000102}{10.1017/s0033583511000102} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/22082691}{22082691}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Ynb3IP6I}{}}%
+\CSLLeftMargin{7. }
+\CSLRightInline{\textbf{Single-protein detection in crowded molecular environments in cryo-EM images}
+\CSLBlock{JPeter Rickgauer, Nikolaus Grigorieff, Winfried Denk} \emph{eLife} (2017-05-03) \url{https://doi.org/gnq4q4}
+\CSLBlock{DOI: \href{https://doi.org/10.7554/elife.25648}{10.7554/elife.25648} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/28467302}{28467302} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5453696}{PMC5453696}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-18KGpXYPE}{}}%
+\CSLLeftMargin{8. }
+\CSLRightInline{\textbf{Label-free single-instance protein detection in vitrified cells}
+\CSLBlock{JPeter Rickgauer, Heejun Choi, Jennifer Lippincott-Schwartz, Winfried Denk} \emph{Biophysics} (2020-04-24) \url{https://doi.org/gpbjfd}
+\CSLBlock{DOI: \href{https://doi.org/10.1101/2020.04.22.053868}{10.1101/2020.04.22.053868}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-10bXZuF3G}{}}%
+\CSLLeftMargin{9. }
+\CSLRightInline{\textbf{Locating macromolecular assemblies in cells by 2D template matching with cisTEM}
+\CSLBlock{Bronwyn A Lucas, Benjamin A Himes, Liang Xue, Timothy Grant, Julia Mahamid, Nikolaus Grigorieff} \emph{eLife} (2021-06-11) \url{https://doi.org/gkkc49}
+\CSLBlock{DOI: \href{https://doi.org/10.7554/elife.68946}{10.7554/elife.68946} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34114559}{34114559} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8219381}{PMC8219381}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gRoY21jY}{}}%
+\CSLLeftMargin{10. }
+\CSLRightInline{\textbf{Hallmarks of ribosomopathies}
+\CSLBlock{Kim R Kampen, Sergey O Sulima, Stijn Vereecke, Kim De~Keersmaecker} \emph{Nucleic Acids Research} (2020-02-20) \url{https://doi.org/gpbjfm}
+\CSLBlock{DOI: \href{https://doi.org/10.1093/nar/gkz637}{10.1093/nar/gkz637} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31350888}{31350888} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7026650}{PMC7026650}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-KAJ7221k}{}}%
+\CSLLeftMargin{11. }
+\CSLRightInline{\textbf{Diagnostic and prognostic implications of ribosomal protein transcript expression patterns in human cancers}
+\CSLBlock{James M Dolezal, Arie P Dash, Edward V Prochownik} \emph{BMC Cancer} (2018-12) \url{https://doi.org/gc87j9}
+\CSLBlock{DOI: \href{https://doi.org/10.1186/s12885-018-4178-z}{10.1186/s12885-018-4178-z} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29530001}{29530001} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5848553}{PMC5848553}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1B9Vt9eYu}{}}%
+\CSLLeftMargin{12. }
+\CSLRightInline{\textbf{Inhibition of Dihydroorotate Dehydrogenase Overcomes Differentiation Blockade in Acute Myeloid Leukemia}
+\CSLBlock{David B Sykes, Youmna S Kfoury, François E Mercier, Mathias J Wawer, Jason M Law, Mark K Haynes, Timothy A Lewis, Amir Schajnovitz, Esha Jain, Dongjun Lee, \ldots{} David T Scadden} \emph{Cell} (2016-09) \url{https://doi.org/f3r5jr}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.cell.2016.08.057}{10.1016/j.cell.2016.08.057} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/27641501}{27641501} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7360335}{PMC7360335}}}
+
+\end{CSLReferences}
+
+\end{document}
