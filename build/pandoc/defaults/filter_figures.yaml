@@ -1,0 +1,10 @@
+# Pandoc --defaults shared between Manubot output formats.
+from: markdown
+to: markdown
+input-file: output/manuscript.md
+output-file: output/manuscript_filtered.md
+filters:
+- tikz.lua
+wrap: preserve
+standalone: true
+

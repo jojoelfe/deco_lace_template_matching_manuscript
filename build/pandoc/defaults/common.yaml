@@ -1,8 +1,7 @@
 # Pandoc --defaults shared between Manubot output formats.
 from: markdown
-input-file: output/manuscript.md
+input-file: output/manuscript_filtered.md
 filters:
-- tikz.lua
 - pandoc-fignos
 - pandoc-eqnos
 - pandoc-tablenos

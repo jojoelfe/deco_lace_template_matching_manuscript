@@ -39,6 +39,14 @@ manubot process \
 mkdir -p output
 mkdir -p output/figures
 
+# Generate the figures
+
+cp content/figures/* output/figures/
+
+pandoc --verbose \
+  --data-dir="$PANDOC_DATA_DIR" \
+  --defaults=filter_figures.yaml
+
 # Create HTML output
 # https://pandoc.org/MANUAL.html
 echo >&2 "Exporting HTML manuscript"

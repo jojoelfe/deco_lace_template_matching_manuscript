@@ -1,8 +1,8 @@
 # Pandoc --defaults for DOCX output.
 # Load on top of common defaults.
-to: markdown
-output-file: output/manuscript_filtered.md
-#reference-doc: build/themes/default.docx
-#resource-path:
-# - '.'
-# - content
+to: docx
+output-file: output/manuscript.docx
+reference-doc: build/themes/default.docx
+resource-path:
+ - '.'
+ - content
