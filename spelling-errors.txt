@@ -11,7 +11,7 @@ conformational
 cryo
 cryoplunger
 CTF
-CTFFind
+ctffind
 cytometry
 cytosolic
 datacollection
@@ -35,12 +35,12 @@ HHMI
 Hoechst
 HoxA
 illumated
-imageshift
+Imageshift
 insepction
 jojoelfe
 keV
 Krios
-lamella
+Lamella
 lamellae
 lamellas
 Leica
