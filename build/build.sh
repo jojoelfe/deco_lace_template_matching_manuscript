@@ -63,9 +63,8 @@ pandoc --verbose \
 rm images
 rm graphics
 # Create PDF output (unless BUILD_PDF environment variable equals "false")
-# The double-commas (,,) lowercase the variable.
 # If Docker is not available, use WeasyPrint to create PDF
-if [ "${BUILD_PDF,,}" != "false" ] && [ "${MANUBOT_USE_DOCKER,,}" != "true" ]; then
+if [ "${BUILD_PDF}" != "false" ] && [ "${MANUBOT_USE_DOCKER}" != "true" ]; then
   echo >&2 "Exporting PDF manuscript using WeasyPrint"
   if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
   ln -s content/images
@@ -78,9 +77,9 @@ if [ "${BUILD_PDF,,}" != "false" ] && [ "${MANUBOT_USE_DOCKER,,}" != "true" ]; t
 fi
 
 # If Docker is available, use athenapdf to create PDF
-if [ "${BUILD_PDF,,}" != "false" ] && [ "${MANUBOT_USE_DOCKER,,}" == "true" ]; then
+if [ "${BUILD_PDF}" != "false" ] && [ "${MANUBOT_USE_DOCKER}" == "true" ]; then
   echo >&2 "Exporting PDF manuscript using Docker + Athena"
-  if [ "${CI,,}" = "true" ]; then
+  if [ "${CI}" = "true" ]; then
     # Incease --delay for CI builds to ensure the webpage fully renders, even when the CI server is under high load.
     # Local builds default to a shorter --delay to minimize runtime, assuming proper rendering is less crucial.
     MANUBOT_ATHENAPDF_DELAY="${MANUBOT_ATHENAPDF_DELAY:-5000}"
@@ -102,7 +101,7 @@ if [ "${BUILD_PDF,,}" != "false" ] && [ "${MANUBOT_USE_DOCKER,,}" == "true" ]; t
 fi
 
 # Create DOCX output (if BUILD_DOCX environment variable equals "true")
-if [ "${BUILD_DOCX,,}" = "true" ]; then
+if [ "${BUILD_DOCX}" = "true" ]; then
   echo >&2 "Exporting Word Docx manuscript"
   if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
   if [ -L graphics ]; then rm graphics; fi  # if graphics is a symlink, remove it
@@ -121,7 +120,7 @@ if [ "${BUILD_DOCX,,}" = "true" ]; then
 fi
 
 # Create LaTeX output (if BUILD_LATEX environment variable equals "true")
-if [ "${BUILD_LATEX,,}" = "true" ]; then
+if [ "${BUILD_LATEX}" = "true" ]; then
   echo >&2 "Exporting LaTeX manuscript"
   if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
   if [ -L graphics ]; then rm graphics; fi  # if graphics is a symlink, remove it
@@ -151,7 +150,7 @@ if [ "${BUILD_LATEX,,}" = "true" ]; then
 fi
 
 # Spellcheck
-if [ "${SPELLCHECK,,}" = "true" ]; then
+if [ "${SPELLCHECK}" = "true" ]; then
   export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt; ignore-case true"
 
   # Identify and store spelling errors

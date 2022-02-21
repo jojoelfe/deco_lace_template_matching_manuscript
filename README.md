@@ -131,7 +131,7 @@ The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the
 + **HTML manuscript** at https://jojoelfe.github.io/deco_lace_template_matching_manuscript/
 + **PDF manuscript** at https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf
 
-For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
+For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml).
 
 ## License
 

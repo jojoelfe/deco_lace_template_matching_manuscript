@@ -22,16 +22,19 @@ dependencies:
   - yamllint
   - r-rsvg
   - pip:
+    - cffi==1.15.0
     - errorhandler==2.0.1
-    - git+https://github.com/manubot/manubot@a4af68125ab6bb322fdfb1689cfeec09f0cb1b60
-    - isbnlib==3.10.3
+    - git+https://github.com/manubot/manubot@90925eeff90e3aaacaa504fc9a47107609cffc17
+    - isbnlib==3.10.9
     - opentimestamps-client==0.7.0
     - opentimestamps==0.4.1
     - pandoc-eqnos==2.5.0
     - pandoc-fignos==2.4.0
     - pandoc-tablenos==2.3.0
     - pandoc-xnos==2.5.0
+    - pandocfilters==1.5.0
     - panflute==2.1.0
+    - psutil==5.8.0
     - pybase62==0.4.3
     - pysha3==1.0.2
     - python-bitcoinlib==0.10.2
@@ -39,3 +42,4 @@ dependencies:
     - weasyprint==0.42.3
     - matplotlib
     - pandas
+    - pyyaml==5.4.1
