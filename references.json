@@ -1,743 +1,633 @@
 [
   {
-    "id": "1B9Vt9eYu",
-    "type": "article-journal",
-    "container-title": "Cell",
-    "DOI": "10.1016/j.cell.2016.08.057",
-    "ISSN": "00928674",
+    "publisher": "Elsevier BV",
     "issue": "1",
-    "journalAbbreviation": "Cell",
-    "language": "en",
+    "DOI": "10.1016/j.cell.2016.08.057",
+    "type": "article-journal",
     "page": "171-186.e15",
-    "source": "DOI.org (Crossref)",
+    "source": "Crossref",
     "title": "Inhibition of Dihydroorotate Dehydrogenase Overcomes Differentiation Blockade in Acute Myeloid Leukemia",
-    "URL": "https://doi.org/f3r5jr",
     "volume": "167",
     "author": [
       {
-        "family": "Sykes",
-        "given": "David B."
+        "given": "David B.",
+        "family": "Sykes"
       },
       {
-        "family": "Kfoury",
-        "given": "Youmna S."
+        "given": "Youmna S.",
+        "family": "Kfoury"
       },
       {
-        "family": "Mercier",
-        "given": "François E."
+        "given": "François E.",
+        "family": "Mercier"
       },
       {
-        "family": "Wawer",
-        "given": "Mathias J."
+        "given": "Mathias J.",
+        "family": "Wawer"
       },
       {
-        "family": "Law",
-        "given": "Jason M."
+        "given": "Jason M.",
+        "family": "Law"
       },
       {
-        "family": "Haynes",
-        "given": "Mark K."
+        "given": "Mark K.",
+        "family": "Haynes"
       },
       {
-        "family": "Lewis",
-        "given": "Timothy A."
+        "given": "Timothy A.",
+        "family": "Lewis"
       },
       {
-        "family": "Schajnovitz",
-        "given": "Amir"
+        "given": "Amir",
+        "family": "Schajnovitz"
       },
       {
-        "family": "Jain",
-        "given": "Esha"
+        "given": "Esha",
+        "family": "Jain"
       },
       {
-        "family": "Lee",
-        "given": "Dongjun"
+        "given": "Dongjun",
+        "family": "Lee"
       },
       {
-        "family": "Meyer",
-        "given": "Hanna"
+        "given": "Hanna",
+        "family": "Meyer"
       },
       {
-        "family": "Pierce",
-        "given": "Kerry A."
+        "given": "Kerry A.",
+        "family": "Pierce"
       },
       {
-        "family": "Tolliday",
-        "given": "Nicola J."
+        "given": "Nicola J.",
+        "family": "Tolliday"
       },
       {
-        "family": "Waller",
-        "given": "Anna"
+        "given": "Anna",
+        "family": "Waller"
       },
       {
-        "family": "Ferrara",
-        "given": "Steven J."
+        "given": "Steven J.",
+        "family": "Ferrara"
       },
       {
-        "family": "Eheim",
-        "given": "Ashley L."
+        "given": "Ashley L.",
+        "family": "Eheim"
       },
       {
-        "family": "Stoeckigt",
-        "given": "Detlef"
+        "given": "Detlef",
+        "family": "Stoeckigt"
       },
       {
-        "family": "Maxcy",
-        "given": "Katrina L."
+        "given": "Katrina L.",
+        "family": "Maxcy"
       },
       {
-        "family": "Cobert",
-        "given": "Julien M."
+        "given": "Julien M.",
+        "family": "Cobert"
       },
       {
-        "family": "Bachand",
-        "given": "Jacqueline"
+        "given": "Jacqueline",
+        "family": "Bachand"
       },
       {
-        "family": "Szekely",
-        "given": "Brian A."
+        "given": "Brian A.",
+        "family": "Szekely"
       },
       {
-        "family": "Mukherjee",
-        "given": "Siddhartha"
+        "given": "Siddhartha",
+        "family": "Mukherjee"
       },
       {
-        "family": "Sklar",
-        "given": "Larry A."
+        "given": "Larry A.",
+        "family": "Sklar"
       },
       {
-        "family": "Kotz",
-        "given": "Joanne D."
+        "given": "Joanne D.",
+        "family": "Kotz"
       },
       {
-        "family": "Clish",
-        "given": "Clary B."
+        "given": "Clary B.",
+        "family": "Clish"
       },
       {
-        "family": "Sadreyev",
-        "given": "Ruslan I."
+        "given": "Ruslan I.",
+        "family": "Sadreyev"
       },
       {
-        "family": "Clemons",
-        "given": "Paul A."
+        "given": "Paul A.",
+        "family": "Clemons"
       },
       {
-        "family": "Janzer",
-        "given": "Andreas"
+        "given": "Andreas",
+        "family": "Janzer"
       },
       {
-        "family": "Schreiber",
-        "given": "Stuart L."
+        "given": "Stuart L.",
+        "family": "Schreiber"
       },
       {
-        "family": "Scadden",
-        "given": "David T."
+        "given": "David T.",
+        "family": "Scadden"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "Cell",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2016",
+          2016,
           9
         ]
       ]
     },
+    "URL": "https://doi.org/f3r5jr",
+    "container-title-short": "Cell",
     "PMCID": "PMC7360335",
     "PMID": "27641501",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.cell.2016.08.057"
+    "id": "1B9Vt9eYu",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.cell.2016.08.057"
   },
   {
-    "id": "16IhS1Nc4",
-    "type": "article-journal",
-    "container-title": "Current Opinion in Structural Biology",
-    "DOI": "10.1016/j.sbi.2013.08.006",
-    "ISSN": "0959440X",
+    "publisher": "Elsevier BV",
     "issue": "5",
-    "journalAbbreviation": "Current Opinion in Structural Biology",
-    "language": "en",
+    "DOI": "10.1016/j.sbi.2013.08.006",
+    "type": "article-journal",
     "page": "771-777",
-    "source": "DOI.org (Crossref)",
+    "source": "Crossref",
     "title": "Opening windows into the cell: focused-ion-beam milling for cryo-electron tomography",
-    "title-short": "Opening windows into the cell",
-    "URL": "https://doi.org/f537jp",
     "volume": "23",
     "author": [
       {
-        "family": "Villa",
-        "given": "Elizabeth"
+        "given": "Elizabeth",
+        "family": "Villa"
       },
       {
-        "family": "Schaffer",
-        "given": "Miroslava"
+        "given": "Miroslava",
+        "family": "Schaffer"
       },
       {
-        "family": "Plitzko",
-        "given": "Jürgen M"
+        "given": "Jürgen M",
+        "family": "Plitzko"
       },
       {
-        "family": "Baumeister",
-        "given": "Wolfgang"
+        "given": "Wolfgang",
+        "family": "Baumeister"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "Current Opinion in Structural Biology",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2013",
+          2013,
           10
         ]
       ]
     },
+    "URL": "https://doi.org/f537jp",
+    "container-title-short": "Current Opinion in Structural Biology",
     "PMID": "24090931",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.sbi.2013.08.006"
+    "id": "16IhS1Nc4",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.sbi.2013.08.006"
   },
   {
-    "id": "Rksh2dxu",
-    "type": "article-journal",
-    "abstract": "Abstract\r\n            The electron microscope has contributed deep insights into biological structure since its invention nearly 80 years ago. Advances in instrumentation and methodology in recent decades have now enabled electron tomography to become the highest resolution three-dimensional (3D) imaging technique available for unique objects such as cells. Cells can be imaged either plastic-embedded or frozen-hydrated. Then the series of projection images are aligned and back-projected to generate a 3D reconstruction or ‘tomogram’. Here, we review how electron tomography has begun to reveal the molecular organization of cells and how the existing and upcoming technologies promise even greater insights into structural cell biology.",
-    "container-title": "Quarterly Reviews of Biophysics",
-    "DOI": "10.1017/s0033583511000102",
-    "ISSN": "0033-5835, 1469-8994",
+    "publisher": "Cambridge University Press (CUP)",
     "issue": "1",
-    "journalAbbreviation": "Quart. Rev. Biophys.",
-    "language": "en",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The electron microscope has contributed deep insights into biological structure since its invention nearly 80 years ago. Advances in instrumentation and methodology in recent decades have now enabled electron tomography to become the highest resolution three-dimensional (3D) imaging technique available for unique objects such as cells. Cells can be imaged either plastic-embedded or frozen-hydrated. Then the series of projection images are aligned and back-projected to generate a 3D reconstruction or ‘tomogram’. Here, we review how electron tomography has begun to reveal the molecular organization of cells and how the existing and upcoming technologies promise even greater insights into structural cell biology.</jats:p>",
+    "DOI": "10.1017/s0033583511000102",
+    "type": "article-journal",
     "page": "27-56",
-    "source": "DOI.org (Crossref)",
+    "source": "Crossref",
     "title": "Electron tomography of cells",
-    "URL": "https://doi.org/czj9hr",
     "volume": "45",
     "author": [
       {
-        "family": "Gan",
-        "given": "Lu"
+        "given": "Lu",
+        "family": "Gan"
       },
       {
-        "family": "Jensen",
-        "given": "Grant J."
+        "given": "Grant J.",
+        "family": "Jensen"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "Quarterly Reviews of Biophysics",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2012",
-          2
+          2011,
+          11,
+          15
         ]
       ]
     },
+    "URL": "https://doi.org/czj9hr",
+    "container-title-short": "Quart. Rev. Biophys.",
     "PMID": "22082691",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1017/s0033583511000102"
+    "id": "Rksh2dxu",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1017/s0033583511000102"
   },
   {
-    "id": "tSXIKPl7",
-    "type": "article-journal",
-    "container-title": "Nature Biotechnology",
-    "DOI": "10.1038/nbt.1592",
-    "ISSN": "1087-0156, 1546-1696",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
-    "journalAbbreviation": "Nat Biotechnol",
-    "language": "en",
+    "DOI": "10.1038/nbt.1592",
+    "type": "article-journal",
     "page": "83-89",
-    "source": "DOI.org (Crossref)",
+    "source": "Crossref",
     "title": "Label-free, normalized quantification of complex mass spectrometry data for proteomic analysis",
-    "URL": "https://doi.org/fshgnc",
     "volume": "28",
     "author": [
       {
-        "family": "Griffin",
-        "given": "Noelle M"
+        "given": "Noelle M",
+        "family": "Griffin"
       },
       {
-        "family": "Yu",
-        "given": "Jingyi"
+        "given": "Jingyi",
+        "family": "Yu"
       },
       {
-        "family": "Long",
-        "given": "Fred"
+        "given": "Fred",
+        "family": "Long"
       },
       {
-        "family": "Oh",
-        "given": "Phil"
+        "given": "Phil",
+        "family": "Oh"
       },
       {
-        "family": "Shore",
-        "given": "Sabrina"
+        "given": "Sabrina",
+        "family": "Shore"
       },
       {
-        "family": "Li",
-        "given": "Yan"
+        "given": "Yan",
+        "family": "Li"
       },
       {
-        "family": "Koziol",
-        "given": "Jim A"
+        "given": "Jim A",
+        "family": "Koziol"
       },
       {
-        "family": "Schnitzer",
-        "given": "Jan E"
+        "given": "Jan E",
+        "family": "Schnitzer"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "Nature Biotechnology",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2010",
+          2010,
           1
         ]
       ]
     },
+    "URL": "https://doi.org/fshgnc",
+    "container-title-short": "Nat Biotechnol",
     "PMCID": "PMC2805705",
     "PMID": "20010810",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/nbt.1592"
+    "id": "tSXIKPl7",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/nbt.1592"
   },
   {
-    "id": "VBmW7Aot",
-    "type": "article-journal",
-    "container-title": "Nature Methods",
-    "DOI": "10.1038/nmeth817",
-    "ISSN": "1548-7091, 1548-7105",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "12",
-    "journalAbbreviation": "Nat Methods",
-    "language": "en",
+    "DOI": "10.1038/nmeth817",
+    "type": "article-journal",
     "page": "910-919",
-    "source": "DOI.org (Crossref)",
+    "source": "Crossref",
     "title": "Fluorescence microscopy",
-    "URL": "https://doi.org/bbpg4n",
     "volume": "2",
     "author": [
       {
-        "family": "Lichtman",
-        "given": "Jeff W"
+        "given": "Jeff W",
+        "family": "Lichtman"
       },
       {
-        "family": "Conchello",
-        "given": "José-Angel"
+        "given": "José-Angel",
+        "family": "Conchello"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "Nature Methods",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2005",
-          12
+          2005,
+          11,
+          18
         ]
       ]
     },
+    "URL": "https://doi.org/bbpg4n",
+    "container-title-short": "Nat Methods",
     "PMID": "16299476",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/nmeth817"
+    "id": "VBmW7Aot",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/nmeth817"
   },
   {
-    "id": "tGQ6TSUo",
-    "type": "article-journal",
-    "container-title": "Nature Reviews Molecular Cell Biology",
-    "DOI": "10.1038/nrm1861",
-    "ISSN": "1471-0072, 1471-0080",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "3",
-    "journalAbbreviation": "Nat Rev Mol Cell Biol",
-    "language": "en",
+    "DOI": "10.1038/nrm1861",
+    "type": "article-journal",
     "page": "225-230",
-    "source": "DOI.org (Crossref)",
+    "source": "Crossref",
     "title": "A visual approach to proteomics",
-    "URL": "https://doi.org/d6d5mq",
     "volume": "7",
     "author": [
       {
-        "family": "Nickell",
-        "given": "Stephan"
+        "given": "Stephan",
+        "family": "Nickell"
       },
       {
-        "family": "Kofler",
-        "given": "Christine"
+        "given": "Christine",
+        "family": "Kofler"
       },
       {
-        "family": "Leis",
-        "given": "Andrew P."
+        "given": "Andrew P.",
+        "family": "Leis"
       },
       {
-        "family": "Baumeister",
-        "given": "Wolfgang"
+        "given": "Wolfgang",
+        "family": "Baumeister"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "Nature Reviews Molecular Cell Biology",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2006",
-          3
+          2006,
+          2,
+          15
         ]
       ]
     },
+    "URL": "https://doi.org/d6d5mq",
+    "container-title-short": "Nat Rev Mol Cell Biol",
     "PMID": "16482091",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/nrm1861"
+    "id": "tGQ6TSUo",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/nrm1861"
   },
   {
-    "id": "gRoY21jY",
-    "type": "article-journal",
-    "abstract": "Abstract\r\n            Ribosomopathies are diseases caused by defects in ribosomal constituents or in factors with a role in ribosome assembly. Intriguingly, congenital ribosomopathies display a paradoxical transition from early symptoms due to cellular hypo-proliferation to an elevated cancer risk later in life. Another association between ribosome defects and cancer came into view after the recent discovery of somatic mutations in ribosomal proteins and rDNA copy number changes in a variety of tumor types, giving rise to somatic ribosomopathies. Despite these clear connections between ribosome defects and cancer, the molecular mechanisms by which defects in this essential cellular machinery are oncogenic only start to emerge. In this review, the impact of ribosomal defects on the cellular function and their mechanisms of promoting oncogenesis are described. In particular, we discuss the emerging hallmarks of ribosomopathies such as the appearance of ‘onco-ribosomes’ that are specialized in translating oncoproteins, dysregulation of translation-independent extra-ribosomal functions of ribosomal proteins, rewired cellular protein and energy metabolism, and extensive oxidative stress leading to DNA damage. We end by integrating these findings in a model that can provide an explanation how ribosomopathies could lead to the transition from hypo- to hyper-proliferation in bone marrow failure syndromes with elevated cancer risk.",
-    "container-title": "Nucleic Acids Research",
-    "DOI": "10.1093/nar/gkz637",
-    "ISSN": "0305-1048, 1362-4962",
+    "publisher": "Oxford University Press (OUP)",
     "issue": "3",
-    "language": "en",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Ribosomopathies are diseases caused by defects in ribosomal constituents or in factors with a role in ribosome assembly. Intriguingly, congenital ribosomopathies display a paradoxical transition from early symptoms due to cellular hypo-proliferation to an elevated cancer risk later in life. Another association between ribosome defects and cancer came into view after the recent discovery of somatic mutations in ribosomal proteins and rDNA copy number changes in a variety of tumor types, giving rise to somatic ribosomopathies. Despite these clear connections between ribosome defects and cancer, the molecular mechanisms by which defects in this essential cellular machinery are oncogenic only start to emerge. In this review, the impact of ribosomal defects on the cellular function and their mechanisms of promoting oncogenesis are described. In particular, we discuss the emerging hallmarks of ribosomopathies such as the appearance of ‘onco-ribosomes’ that are specialized in translating oncoproteins, dysregulation of translation-independent extra-ribosomal functions of ribosomal proteins, rewired cellular protein and energy metabolism, and extensive oxidative stress leading to DNA damage. We end by integrating these findings in a model that can provide an explanation how ribosomopathies could lead to the transition from hypo- to hyper-proliferation in bone marrow failure syndromes with elevated cancer risk.</jats:p>",
+    "DOI": "10.1093/nar/gkz637",
+    "type": "article-journal",
     "page": "1013-1028",
-    "source": "DOI.org (Crossref)",
+    "source": "Crossref",
     "title": "Hallmarks of ribosomopathies",
-    "URL": "https://doi.org/gpbjfm",
     "volume": "48",
     "author": [
       {
-        "family": "Kampen",
-        "given": "Kim R"
+        "given": "Kim R",
+        "family": "Kampen"
       },
       {
-        "family": "Sulima",
-        "given": "Sergey O"
+        "given": "Sergey O",
+        "family": "Sulima"
       },
       {
-        "family": "Vereecke",
-        "given": "Stijn"
+        "given": "Stijn",
+        "family": "Vereecke"
       },
       {
-        "family": "De Keersmaecker",
-        "given": "Kim"
+        "given": "Kim",
+        "family": "De Keersmaecker"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "Nucleic Acids Research",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2020",
-          2,
-          20
+          2019,
+          7,
+          27
         ]
       ]
     },
+    "URL": "https://doi.org/gpbjfm",
     "PMCID": "PMC7026650",
     "PMID": "31350888",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1093/nar/gkz637"
+    "id": "gRoY21jY",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1093/nar/gkz637"
   },
   {
-    "id": "18KGpXYPE",
-    "type": "report",
-    "abstract": "Abstract\r\n          A general method to map molecular interactions and conformational states in structurally intact cells would find wide application in biochemistry and cell biology. We used a library of images— calculated on the basis of known structural data—as search templates to detect targets as small as the “head” domain (350 kDa) of the ribosome’s small subunit in single-tilt electron cryo-micrographs by cellular high resolution template matching (cHRTM). Atomically precise position and orientation estimates reveal the conformation of individual ribosomes and enable the detection of specifically bound ligands down to 24 kDa. We show that highly head-swivelled states are likely to play a role in mRNA translocation in living cells. cHRTM outperforms cryo-electron tomography three-fold in sensitivity and completely avoids the vicissitudes of exogenous labelling.",
-    "genre": "preprint",
-    "language": "en",
-    "note": "DOI: 10.1101/2020.04.22.053868\nThis CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1101/2020.04.22.053868",
-    "publisher": "Biophysics",
-    "source": "DOI.org (Crossref)",
+    "publisher": "Cold Spring Harbor Laboratory",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>A general method to map molecular interactions and conformational states in structurally intact cells would find wide application in biochemistry and cell biology. We used a library of images— calculated on the basis of known structural data—as search templates to detect targets as small as the “head” domain (350 kDa) of the ribosome’s small subunit in single-tilt electron cryo-micrographs by cellular high resolution template matching (cHRTM). Atomically precise position and orientation estimates reveal the conformation of individual ribosomes and enable the detection of specifically bound ligands down to 24 kDa. We show that highly head-swivelled states are likely to play a role in mRNA translocation in living cells. cHRTM outperforms cryo-electron tomography three-fold in sensitivity and completely avoids the vicissitudes of exogenous labelling.</jats:p>",
+    "DOI": "10.1101/2020.04.22.053868",
+    "type": "manuscript",
+    "source": "Crossref",
     "title": "Label-free single-instance protein detection in vitrified cells",
-    "URL": "https://doi.org/gpbjfd",
     "author": [
       {
-        "family": "Rickgauer",
-        "given": "J. Peter"
+        "given": "J. Peter",
+        "family": "Rickgauer"
       },
       {
-        "family": "Choi",
-        "given": "Heejun"
+        "given": "Heejun",
+        "family": "Choi"
       },
       {
-        "family": "Lippincott-Schwartz",
-        "given": "Jennifer"
+        "given": "Jennifer",
+        "family": "Lippincott-Schwartz"
       },
       {
-        "family": "Denk",
-        "given": "Winfried"
+        "given": "Winfried",
+        "family": "Denk"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
     "issued": {
       "date-parts": [
         [
-          "2020",
+          2020,
           4,
           24
         ]
       ]
     },
-    "DOI": "10.1101/2020.04.22.053868"
+    "URL": "https://doi.org/gpbjfd",
+    "id": "18KGpXYPE",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1101/2020.04.22.053868"
   },
   {
-    "id": "g8QavfwP",
-    "type": "article-journal",
-    "container-title": "Journal of Microscopy",
-    "DOI": "10.1111/j.1365-2818.1983.tb04225.x",
-    "ISSN": "00222720",
+    "publisher": "Wiley",
     "issue": "1",
-    "language": "en",
+    "DOI": "10.1111/j.1365-2818.1983.tb04225.x",
+    "type": "article-journal",
     "page": "1-9",
-    "source": "DOI.org (Crossref)",
+    "source": "Crossref",
     "title": "Electron microscopy of frozen hydrated sections of vitreous ice and vitrified biological samples",
-    "URL": "https://doi.org/bdnzmv",
     "volume": "131",
     "author": [
       {
-        "family": "McDowall",
-        "given": "A. W."
+        "given": "A. W.",
+        "family": "McDowall"
       },
       {
-        "family": "Chang",
-        "given": "J.-J."
+        "given": "J.-J.",
+        "family": "Chang"
       },
       {
-        "family": "Freeman",
-        "given": "R."
+        "given": "R.",
+        "family": "Freeman"
       },
       {
-        "family": "Lepault",
-        "given": "J."
+        "given": "J.",
+        "family": "Lepault"
       },
       {
-        "family": "Walter",
-        "given": "C. A."
+        "given": "C. A.",
+        "family": "Walter"
       },
       {
-        "family": "Dubochet",
-        "given": "J."
+        "given": "J.",
+        "family": "Dubochet"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "Journal of Microscopy",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "1983",
+          1983,
           7
         ]
       ]
     },
+    "URL": "https://doi.org/bdnzmv",
     "PMID": "6350598",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1111/j.1365-2818.1983.tb04225.x"
+    "id": "g8QavfwP",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1111/j.1365-2818.1983.tb04225.x"
   },
   {
-    "id": "KAJ7221k",
-    "type": "article-journal",
-    "container-title": "BMC Cancer",
-    "DOI": "10.1186/s12885-018-4178-z",
-    "ISSN": "1471-2407",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
-    "journalAbbreviation": "BMC Cancer",
-    "language": "en",
-    "page": "275",
-    "source": "DOI.org (Crossref)",
+    "DOI": "10.1186/s12885-018-4178-z",
+    "type": "article-journal",
+    "source": "Crossref",
     "title": "Diagnostic and prognostic implications of ribosomal protein transcript expression patterns in human cancers",
-    "URL": "https://doi.org/gc87j9",
     "volume": "18",
     "author": [
       {
-        "family": "Dolezal",
-        "given": "James M."
+        "given": "James M.",
+        "family": "Dolezal"
       },
       {
-        "family": "Dash",
-        "given": "Arie P."
+        "given": "Arie P.",
+        "family": "Dash"
       },
       {
-        "family": "Prochownik",
-        "given": "Edward V."
+        "given": "Edward V.",
+        "family": "Prochownik"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "BMC Cancer",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2018",
+          2018,
+          3,
           12
         ]
       ]
     },
+    "URL": "https://doi.org/gc87j9",
+    "container-title-short": "BMC Cancer",
     "PMCID": "PMC5848553",
     "PMID": "29530001",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.1186/s12885-018-4178-z"
+    "id": "KAJ7221k",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1186/s12885-018-4178-z"
   },
   {
-    "id": "Ynb3IP6I",
-    "type": "article-journal",
-    "abstract": "We present an approach to study macromolecular assemblies by detecting component proteins’ characteristic high-resolution projection patterns, calculated from their known 3D structures, in single electron cryo-micrographs. Our method detects single apoferritin molecules in vitreous ice with high specificity and determines their orientation and location precisely. Simulations show that high spatial-frequency information and—in the presence of protein background—a whitening filter are essential for optimal detection, in particular for images taken far from focus. Experimentally, we could detect small viral RNA polymerase molecules, distributed randomly among binding locations, inside rotavirus particles. Based on the currently attainable image quality, we estimate a threshold for detection that is 150 kDa in ice and 300 kDa in 100 nm thick samples of dense biological material.",
-    "container-title": "eLife",
+    "publisher": "eLife Sciences Publications, Ltd",
+    "abstract": "<jats:p>We present an approach to study macromolecular assemblies by detecting component proteins’ characteristic high-resolution projection patterns, calculated from their known 3D structures, in single electron cryo-micrographs. Our method detects single apoferritin molecules in vitreous ice with high specificity and determines their orientation and location precisely. Simulations show that high spatial-frequency information and—in the presence of protein background—a whitening filter are essential for optimal detection, in particular for images taken far from focus. Experimentally, we could detect small viral RNA polymerase molecules, distributed randomly among binding locations, inside rotavirus particles. Based on the currently attainable image quality, we estimate a threshold for detection that is 150 kDa in ice and 300 kDa in 100 nm thick samples of dense biological material.</jats:p>",
     "DOI": "10.7554/elife.25648",
-    "ISSN": "2050-084X",
-    "language": "en",
-    "page": "e25648",
-    "source": "DOI.org (Crossref)",
+    "type": "article-journal",
+    "source": "Crossref",
     "title": "Single-protein detection in crowded molecular environments in cryo-EM images",
-    "URL": "https://doi.org/gnq4q4",
     "volume": "6",
     "author": [
       {
-        "family": "Rickgauer",
-        "given": "J Peter"
+        "given": "J Peter",
+        "family": "Rickgauer"
       },
       {
-        "family": "Grigorieff",
-        "given": "Nikolaus"
+        "given": "Nikolaus",
+        "family": "Grigorieff"
       },
       {
-        "family": "Denk",
-        "given": "Winfried"
+        "given": "Winfried",
+        "family": "Denk"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "eLife",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2017",
+          2017,
           5,
           3
         ]
       ]
     },
+    "URL": "https://doi.org/gnq4q4",
     "PMCID": "PMC5453696",
     "PMID": "28467302",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.7554/elife.25648"
+    "id": "Ynb3IP6I",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.7554/elife.25648"
   },
   {
-    "id": "10bXZuF3G",
-    "type": "article-journal",
-    "abstract": "For a more complete understanding of molecular mechanisms, it is important to study macromolecules and their assemblies in the broader context of the cell. This context can be visualized at nanometer resolution in three dimensions (3D) using electron cryo-tomography, which requires tilt series to be recorded and computationally aligned, currently limiting throughput. Additionally, the high-resolution signal preserved in the raw tomograms is currently limited by a number of technical difficulties, leading to an increased false-positive detection rate when using 3D template matching to find molecular complexes in tomograms. We have recently described a 2D template matching approach that addresses these issues by including high-resolution signal preserved in single-tilt images. A current limitation of this approach is the high computational cost that limits throughput. We describe here a GPU-accelerated implementation of 2D template matching in the image processing software\r\n              cis\r\n              TEM that allows for easy scaling and improves the accessibility of this approach. We apply 2D template matching to identify ribosomes in images of frozen-hydrated\r\n              Mycoplasma pneumoniae\r\n              cells with high precision and sensitivity, demonstrating that this is a versatile tool for in situ visual proteomics and in situ structure determination. We benchmark the results with 3D template matching of tomograms acquired on identical sample locations and identify strengths and weaknesses of both techniques, which offer complementary information about target localization and identity.",
-    "container-title": "eLife",
+    "publisher": "eLife Sciences Publications, Ltd",
+    "abstract": "<jats:p>For a more complete understanding of molecular mechanisms, it is important to study macromolecules and their assemblies in the broader context of the cell. This context can be visualized at nanometer resolution in three dimensions (3D) using electron cryo-tomography, which requires tilt series to be recorded and computationally aligned, currently limiting throughput. Additionally, the high-resolution signal preserved in the raw tomograms is currently limited by a number of technical difficulties, leading to an increased false-positive detection rate when using 3D template matching to find molecular complexes in tomograms. We have recently described a 2D template matching approach that addresses these issues by including high-resolution signal preserved in single-tilt images. A current limitation of this approach is the high computational cost that limits throughput. We describe here a GPU-accelerated implementation of 2D template matching in the image processing software <jats:italic>cis</jats:italic>TEM that allows for easy scaling and improves the accessibility of this approach. We apply 2D template matching to identify ribosomes in images of frozen-hydrated <jats:italic>Mycoplasma pneumoniae</jats:italic> cells with high precision and sensitivity, demonstrating that this is a versatile tool for in situ visual proteomics and in situ structure determination. We benchmark the results with 3D template matching of tomograms acquired on identical sample locations and identify strengths and weaknesses of both techniques, which offer complementary information about target localization and identity.</jats:p>",
     "DOI": "10.7554/elife.68946",
-    "ISSN": "2050-084X",
-    "language": "en",
-    "page": "e68946",
-    "source": "DOI.org (Crossref)",
+    "type": "article-journal",
+    "source": "Crossref",
     "title": "Locating macromolecular assemblies in cells by 2D template matching with cisTEM",
-    "URL": "https://doi.org/gkkc49",
     "volume": "10",
     "author": [
       {
-        "family": "Lucas",
-        "given": "Bronwyn A"
+        "given": "Bronwyn A",
+        "family": "Lucas"
       },
       {
-        "family": "Himes",
-        "given": "Benjamin A"
+        "given": "Benjamin A",
+        "family": "Himes"
       },
       {
-        "family": "Xue",
-        "given": "Liang"
+        "given": "Liang",
+        "family": "Xue"
       },
       {
-        "family": "Grant",
-        "given": "Timothy"
+        "given": "Timothy",
+        "family": "Grant"
       },
       {
-        "family": "Mahamid",
-        "given": "Julia"
+        "given": "Julia",
+        "family": "Mahamid"
       },
       {
-        "family": "Grigorieff",
-        "given": "Nikolaus"
+        "given": "Nikolaus",
+        "family": "Grigorieff"
       }
     ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          2,
-          20
-        ]
-      ]
-    },
+    "container-title": "eLife",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
-          "2021",
+          2021,
           6,
           11
         ]
       ]
     },
+    "URL": "https://doi.org/gkkc49",
     "PMCID": "PMC8219381",
     "PMID": "34114559",
-    "note": "This CSL Item was generated by Manubot v0.5.1 from its persistent identifier (standard_id).\nstandard_id: doi:10.7554/elife.68946"
+    "id": "10bXZuF3G",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.7554/elife.68946"
   }
 ]
