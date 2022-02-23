@@ -12,8 +12,11 @@ local tikz_doc_template = [[
     \documentclass[tikz,border=0cm]{standalone}
     \usepackage{graphicx}
     \usepackage{tikz}
+    \usepackage{contour}
+    \contourlength{0.6pt}
     \usetikzlibrary{positioning}
     \usetikzlibrary{arrows,snakes,shapes,fadings}
+    \usetikzlibrary{fit}
     \usepackage{fontspec}
     \setmainfont{Roboto}[
       Extension = .otf,
@@ -23,35 +26,42 @@ local tikz_doc_template = [[
       BoldItalicFont = *-BoldItalic,
     ]    \usepackage{etoolbox} 
     
-    \newcommand{\figwidth}{16cm} 
-    \newcommand{\figheight}{10cm} 
+    \newcommand{\figwidth}{%s} 
+    \newcommand{\figheight}{%s} 
     \newcommand{\fontselect}{\large\bf} 
+    \newcommand{\fontannot}{\bf} 
     
     \tikzset{
       labelNode/.style={anchor=south east, above left=0cm and 0cm of anchor, font=\fontselect}, 
+      annotNode/.style={anchor=center, font=\fontannot},
       redAnchorNode/.style={anchor=center, left=-0.1cm of anchor, circle, fill=red, minimum size=0.2cm}, 
       graphicNode/.style={anchor=north west, below right=0cm and 0cm of anchor}, 
       titleNode/.style={anchor=south west, above right=0cm and 0cm of anchor}, 
+      mnNode/.style={anchor=north east,below right=0cm and 0cm of rect, font=\fontannot}
     }
     
     \newtoggle{draft}
-      %%  \toggletrue{draft}
-       \togglefalse{draft} 
+     \toggle%s{draft}
+     %%\togglefalse{draft} 
     
     \begin{document}
-    \begin{tikzpicture}[every node/.style={inner sep=0pt}]
+    \begin{tikzpicture}[
+      every node/.style={inner sep=0pt},
+      box/.style = {draw=#1, line width=0.8mm,inner sep=0.0mm}
+    ]
     
     \iftoggle{draft}{\node[anchor=south west, rectangle, draw, red, line width=2pt, minimum width=\figwidth, minimum height=\figheight] at (0,0) {};}
     {\node[anchor=south west, rectangle, fill=white, minimum width=\figwidth, minimum height=\figheight] at (0,0) {};};
      
     %s
+    \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};
     \end{tikzpicture}
     \end{document}
 ]]
 
-local function tikz2image(src, filetype, outfile)
+local function tikz2image(width,height,draft,src, filetype, outfile)
     local f = io.open('tikz.tex', 'w')
-    f:write(tikz_doc_template:format(src))
+    f:write(tikz_doc_template:format(width,height,draft,src))
     f:close()
     os.execute('tectonic tikz.tex')
     if filetype == 'pdf' then
@@ -104,7 +114,7 @@ function Block(bl)
       local filetype = extension_for[FORMAT] or 'svg'
       local fbasename = '/output/figures/' .. bl.identifier .. '.' .. filetype
       local fname = system.get_working_directory() .. fbasename
-      tikz2image(bl.text, filetype, fname)
+      tikz2image(bl.attr.attributes['width'],bl.attr.attributes['height'],bl.attr.attributes['draft'],bl.text, filetype, fname)
       
       return pandoc.Null()
     
