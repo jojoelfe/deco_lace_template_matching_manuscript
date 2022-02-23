@@ -62,7 +62,7 @@ def plot_montage(data,to_show):
             image_data = np.copy(np.flip(mrc.data[0],axis=0))
             image_data = resize(image_data, (image_data.shape[0] // crop_by, image_data.shape[1] // crop_by),anti_aliasing=True)
         
-        with mrcfile.open(image['FILENAME'][:-6]+"_1_mask.mrc") as mrc: 
+        with mrcfile.open(image['FILENAME'][:-6]+"_0_mask.mrc") as mrc: 
             mask_data = np.copy(np.flip(mrc.data[0],axis=0))
             mask_data.dtype = np.uint8
         
@@ -108,15 +108,15 @@ def plot_montage(data,to_show):
 
 
 
-selected_micrographs = utils.get_data_from_db(utils.datasets[2])
-print(utils.datasets[2])
+selected_micrographs = utils.get_data_from_db(utils.datasets[1])
+print(utils.datasets[1])
 print(len(selected_micrographs))
 initial_assembly(selected_micrographs,IS_to_camera=IS_to_camera)
 
 directory = Path("/scratch/bern/elferich/decolace_manuscript_processing/initial_assembly/")
 directory.mkdir(parents=True,exist_ok=True)
 
-image_cache_filename = directory / 'euc_lamella3_cache.npz'
+image_cache_filename = directory / 'euc_lamella2_cache.npz'
 if load_cached_images:
     load = np.load(image_cache_filename)
     assemb = load["image"]
@@ -126,7 +126,7 @@ else:
     (assemb, mask, matches) = plot_montage(selected_micrographs,[i+2 for i,r in selected_micrographs.iterrows()])
     np.savez_compressed(image_cache_filename,matches=matches,mask=mask,image=assemb)
     corr = assemb/mask
-    io.imsave(directory / 'euc_lamella3_image.tif',corr/np.max(corr),plugin='pil')
+    io.imsave(directory / 'euc_lamella2_image.tif',corr/np.max(corr),plugin='pil')
 
 
 exit()
