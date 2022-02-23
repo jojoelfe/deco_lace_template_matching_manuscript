@@ -8,7 +8,7 @@ calulated
 CenterBeamFrom
 cisTEM
 conformational
-Cryo
+cryo
 cryoplunger
 CTF
 ctffind
@@ -29,13 +29,13 @@ FOV
 GIS
 gridsquares
 Grigorieff
-Hematopoiesis
+hematopoiesis
 hematopoietic
 HHMI
 Hoechst
 HoxA
 illumated
-imageshift
+Imageshift
 insepction
 jojoelfe
 keV
@@ -72,7 +72,7 @@ sacrifical
 sapcing
 SCF
 SEM
-SerialEM
+serialEM
 signifcant
 sillicone
 SNR
