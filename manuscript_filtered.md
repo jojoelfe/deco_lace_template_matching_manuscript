@@ -89,12 +89,12 @@ header-includes: |
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   ```
   `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/16c528a690632e78c5557a0164f560eef13aa854/" />`{=html}
+  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/" />`{=html}
   ```{=html}
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/16c528a690632e78c5557a0164f560eef13aa854/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/" />
   ```
   ```{=html}
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/16c528a690632e78c5557a0164f560eef13aa854/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/manuscript.pdf" />
   ```
   ```{=html}
   <meta property="og:type" content="article" />
@@ -205,12 +205,12 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
 ```
 `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/16c528a690632e78c5557a0164f560eef13aa854/" />`{=html}
+`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/" />`{=html}
 ```{=html}
-<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/16c528a690632e78c5557a0164f560eef13aa854/" />
+<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/" />
 ```
 ```{=html}
-<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/16c528a690632e78c5557a0164f560eef13aa854/manuscript.pdf" />
+<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/manuscript.pdf" />
 ```
 ```{=html}
 <meta property="og:type" content="article" />
@@ -229,9 +229,9 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 
 `<small>`{=html}`<em>`{=html}
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/16c528a690632e78c5557a0164f560eef13aa854/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@16c528a](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/16c528a690632e78c5557a0164f560eef13aa854)
+from [jojoelfe/deco_lace_template_matching_manuscript@db1bd1a](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/db1bd1a285c0519196fc92fb04c4ad271adf3006)
 on February 23, 2022.
 `</em>`{=html}`</small>`{=html}
 
@@ -264,7 +264,7 @@ Localization of biomolecules inside a cell is an important goal of biological im
 Understanding of cellular processes requires knowledge of the amounts, location,
 interactions, and conformations of biomolecules inside the cell. Techniques that
 measure this can broadly be divided into label- and label-free techniques. In
-label-techniques a probe is physically attached to a molecule is interest that
+label-techniques a probe is physically attached to a molecule of interest that
 is able to produce a high signal-to-noise signal, such as a fluorescent molecule.
 In label-free techniques the physical properties of molecules themselves are
 used for detection. An example for this is proteomics using mass-spectrometry
@@ -518,7 +518,9 @@ obtained matches with the same model used for the data in Figure 1.
 
 ## Figures
 
-![Template matching of ribosomal large subunits in fib-milled neutrophil like cells](figures/figure1_draft.svg){#fig:initmatching}
+![2D template matching of the large subunit of the ribosome in fib-milled neutrophil-like cells
+(A) Overview image of the lamella. Major cellular regions are labeled, as Nucleus (Nuc), Mitochondria (M), and granular cytoplasm (GrCyt). FOVs where high-magnification images for template matching where acquired are indicated as boxes with the number of matches indicated on the bottom right. FOVs displayed in Panels B-E are color-coded.
+(B-E) FOVs with projection of ribosome LSU matches shown in green. (B) Perinuclear region, the only matches are in the cytoplasmic half. (C) Cytoplasmic region with high density of ribosomes (D) Mitochondrium, as expected there are only matches in the cytoplasmic region (E) Cytoplasm, with low density of ribosomes.](figures/initmatching.svg){#fig:initmatching}
 
 ![This is an example-figurern](figures/initmatching2.svg){#fig:initmatching2}
 
