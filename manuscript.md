@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-02-23'
+date-meta: '2022-02-24'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-02-23" />
-  <meta name="citation_publication_date" content="2022-02-23" />
+  <meta name="dc.date" content="2022-02-24" />
+  <meta name="citation_publication_date" content="2022-02-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@db1bd1a](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/db1bd1a285c0519196fc92fb04c4ad271adf3006)
-on February 23, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@1e239da](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/1e239da5dfa82be752529df88887c5cf4896c57d)
+on February 24, 2022.
 </em></small>
 
 ## Authors
@@ -435,10 +435,10 @@ obtained matches with the same model used for the data in Figure 1.
 
 ```
 
-![This is an example-figurern](tikz:initmatching2){#fig:initmatching2}
+![This is an example-figurern](tikz:initmatching2){#fig:initmatching2 tag="S1"}
 
-```{.tikz-figure #initmatching2 width=16cm height=13cm draft=true}
-\node (anchor) at (0.5,9.35) {}; 
+```{.tikz-figure #initmatching2 width=13cm height=9cm draft=false}
+\node (anchor) at (0.5,8.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=12cm]{content/code/img/initial_map_match.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
@@ -448,7 +448,7 @@ obtained matches with the same model used for the data in Figure 1.
 
 ![This is an example-figurern](tikz:example-figure){#fig:approach}
 
-```{.tikz-figure #example-figure width=16cm height=13cm draft=true}
+```{.tikz-figure #example-figure width=19cm height=10cm draft=false}
 \node (anchor) at (0.5,9.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=5cm]{content/graphics/approach/approach.png}};
@@ -481,18 +481,18 @@ obtained matches with the same model used for the data in Figure 1.
 
 ![This is an example-figurern](tikz:example-figure2){#fig:approach2}
 
-```{.tikz-figure #example-figure2 width=16cm height=13cm draft=true}
-\node (anchor) at (0.5,9.35) {}; 
+```{.tikz-figure #example-figure2 width=16.5cm height=9cm draft=false}
+\node (anchor) at (0.5,8.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_defocus_vs_bs_plot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (0.5,5.35) {}; 
+\node (anchor) at (0.5,4.35) {}; 
 \node[labelNode] {B};
 \node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_astigmatism_vs_bs_plot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (8.5,9.35) {}; 
+\node (anchor) at (8.5,8.35) {}; 
 \node[labelNode] {C};
 \node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_angle_vs_bs_plot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
@@ -502,14 +502,14 @@ obtained matches with the same model used for the data in Figure 1.
 
 ![This is an example-figurern](tikz:example-figure3){#fig:approach3}
 
-```{.tikz-figure #example-figure3 width=16cm height=13cm draft=true}
-\node (anchor) at (0.5,9.35) {}; 
+```{.tikz-figure #example-figure3 width=16.5cm height=9cm draft=false}
+\node (anchor) at (0.5,8.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/movement_vs_bs_plot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 
-\node (anchor) at (8.5,9.35) {}; 
+\node (anchor) at (8.5,8.35) {}; 
 \node[labelNode] {B};
 \node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/thickness_by_intensity_vs_bs_plot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
@@ -518,37 +518,37 @@ obtained matches with the same model used for the data in Figure 1.
 
 ![This is an example-figurern](tikz:example-figure4){#fig:approach4}
 
-```{.tikz-figure #example-figure4 width=16cm height=13cm draft=true}
-\node (anchor) at (0.3,9.35) {}; 
+```{.tikz-figure #example-figure4 width=20cm height=13cm draft=false}
+\node (anchor) at (0.5,12.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer000.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (6.1,9.35) {}; 
+\node (anchor) at (6.5,12.35) {}; 
 \node[labelNode] {B};
 \node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer001.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (10.4,9.35) {}; 
+\node (anchor) at (11,12.35) {}; 
 \node[labelNode] {C};
 \node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer002.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (14.8,9.35) {}; 
+\node (anchor) at (15.5,12.35) {}; 
 \node[labelNode] {D};
 \node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer003.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (0.3,3.65) {}; 
+\node (anchor) at (0.5,6.5) {}; 
 \node[labelNode] {E};
 \node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer005.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (4.7,3.65) {}; 
+\node (anchor) at (5,6.5) {}; 
 \node[labelNode] {F};
 \node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer006.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (9.2,3.65) {}; 
+\node (anchor) at (9.5,6.5) {}; 
 \node[labelNode] {G};
 \node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer007.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (13.8,3.65) {}; 
+\node (anchor) at (14.5,6.5) {}; 
 \node[labelNode] {H};
 \node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer008.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
@@ -557,7 +557,7 @@ obtained matches with the same model used for the data in Figure 1.
 
 ![This is an example-figurern](tikz:matching){#fig:matching}
 
-```{.tikz-figure #matching width=16cm height=13cm draft=true}
+```{.tikz-figure #matching width=16cm height=13cm draft=false}
 \node (anchor) at (0.5,9.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=7.5cm]{content/images/screenie.png}};

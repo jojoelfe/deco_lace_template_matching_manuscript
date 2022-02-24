@@ -97,6 +97,18 @@
 \doublespacing
 \usepackage{lineno}
 \linenumbers
+
+%% pandoc-fignos: environment for tagged figures
+\newenvironment{fignos:tagged-figure}[1][]{
+    \let\oldthefigure\thefigure
+    \let\oldtheHfigure\theHfigure
+    \renewcommand{\thefigure}{#1}
+    \renewcommand{\theHfigure}{#1}
+  }{
+    \let\thefigure\oldthefigure
+    \let\theHfigure\oldtheHfigure
+    \addtocounter{figure}{-1}
+  }
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -109,10 +121,10 @@
 \maketitle
 
 This manuscript
-(\href{https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/db1bd1a285c0519196fc92fb04c4ad271adf3006/}{permalink})
+(\href{https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/}{permalink})
 was automatically generated
-from \href{https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/db1bd1a285c0519196fc92fb04c4ad271adf3006}{jojoelfe/deco\_lace\_template\_matching\_manuscript@db1bd1a}
-on February 23, 2022.
+from \href{https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/1e239da5dfa82be752529df88887c5cf4896c57d}{jojoelfe/deco\_lace\_template\_matching\_manuscript@1e239da}
+on February 24, 2022.
 
 \hypertarget{authors}{%
 \subsection{Authors}\label{authors}}
@@ -426,6 +438,8 @@ obtained matches with the same model used for the data in Figure 1.
 }
 \end{figure}
 
+\begin{fignos:tagged-figure}[S1]
+
 \begin{figure}
 \hypertarget{fig:initmatching2}{%
 \centering
@@ -433,6 +447,8 @@ obtained matches with the same model used for the data in Figure 1.
 \caption{This is an example-figurern}\label{fig:initmatching2}
 }
 \end{figure}
+
+\end{fignos:tagged-figure}
 
 \begin{figure}
 \hypertarget{fig:approach}{%
