@@ -11,10 +11,6 @@ from skimage import io
 IS_to_camera = np.array([13374,  6053.4,  6394.1,  -13172])
 IS_to_camera.shape = (2,2)
 
-#orig_x_size = 5120
-scaled_x_size = 1200.0
-
-load_cached_images = False
 
 crop_by = 10
 
@@ -35,8 +31,8 @@ def get_corners(x,y,radius):
     return [[x+radius,y+radius],[x-radius,y+radius],[x-radius,y-radius],[x+radius,y-radius]]
 
 def get_range(data):
-    min_shift_x = np.min(data.loc[:,"image_shift_pixel_x"]) - 200 * crop_by
-    min_shift_y = np.min(data.loc[:,"image_shift_pixel_y"]) - 200 * crop_by
+    min_shift_x = np.min(data.loc[:,"image_shift_pixel_x"]) - 100 * crop_by
+    min_shift_y = np.min(data.loc[:,"image_shift_pixel_y"]) - 100 * crop_by
     max_shift_x = np.max(data.loc[:,"image_shift_pixel_x"]/crop_by) + 100
     max_shift_y = np.max(data.loc[:,"image_shift_pixel_y"]/crop_by) + 100
     max_image_x = np.max(data.loc[:,"X_SIZE"]/crop_by)
@@ -44,10 +40,10 @@ def get_range(data):
     return (min_shift_x,min_shift_y)
 
 def plot_montage(data,to_show):
-    min_shift_x = np.min(data.loc[:,"image_shift_pixel_x"]/crop_by) - 200
-    min_shift_y = np.min(data.loc[:,"image_shift_pixel_y"]/crop_by) - 200
-    max_shift_x = np.max(data.loc[:,"image_shift_pixel_x"]/crop_by) + 200
-    max_shift_y = np.max(data.loc[:,"image_shift_pixel_y"]/crop_by) + 200
+    min_shift_x = np.min(data.loc[:,"image_shift_pixel_x"]/crop_by) - 100
+    min_shift_y = np.min(data.loc[:,"image_shift_pixel_y"]/crop_by) - 100
+    max_shift_x = np.max(data.loc[:,"image_shift_pixel_x"]/crop_by) + 100
+    max_shift_y = np.max(data.loc[:,"image_shift_pixel_y"]/crop_by) + 100
     max_image_x = np.max(data.loc[:,"X_SIZE"]/crop_by)
     max_image_y = np.max(data.loc[:,"Y_SIZE"]/crop_by)
 
@@ -55,14 +51,13 @@ def plot_montage(data,to_show):
     mask = np.zeros((int(max_shift_y-min_shift_y+max_image_y),int(max_shift_x-min_shift_x+max_image_x)))
     matches = np.zeros((int(max_shift_y-min_shift_y+max_image_y),int(max_shift_x-min_shift_x+max_image_x)))
     for i, image in data.iterrows():
-        print(i)
         if image[0] not in to_show:
             continue
         with mrcfile.open(image['FILENAME'][:-6]+"_0.mrc") as mrc: 
             image_data = np.copy(np.flip(mrc.data[0],axis=0))
             image_data = resize(image_data, (image_data.shape[0] // crop_by, image_data.shape[1] // crop_by),anti_aliasing=True)
         
-        with mrcfile.open(image['FILENAME'][:-6]+"_1_mask.mrc") as mrc: 
+        with mrcfile.open(image['FILENAME'][:-6]+"_0_mask.mrc") as mrc: 
             mask_data = np.copy(np.flip(mrc.data[0],axis=0))
             mask_data.dtype = np.uint8
         
@@ -82,10 +77,6 @@ def plot_montage(data,to_show):
         insert_point_y /= crop_by
         insert_point_x -= min_shift_x
         insert_point_y -= min_shift_y
-        if i == 43:
-            print(insert_point_x,insert_point_y)
-            print(x,y)
-            print(big.shape)
         big[int(insert_point_y):int(insert_point_y+y),
             int(insert_point_x):int(insert_point_x+x)] += image_data
         mask[int(insert_point_y):int(insert_point_y+y),
@@ -104,44 +95,11 @@ def plot_montage(data,to_show):
     mask[mask < 0.1] = 1.0 
     return(big,mask,matches)
 
-
-
-
-
-selected_micrographs = utils.get_data_from_db(utils.datasets[7])
-print(utils.datasets[7])
-print(len(selected_micrographs))
-initial_assembly(selected_micrographs,IS_to_camera=IS_to_camera)
-
-directory = Path("/scratch/bern/elferich/decolace_manuscript_processing/initial_assembly/")
-directory.mkdir(parents=True,exist_ok=True)
-
-image_cache_filename = directory / 'fff_lamella4_cache.npz'
-if load_cached_images:
-    load = np.load(image_cache_filename)
-    assemb = load["image"]
-    mask = load["mask"]
-    matches = load["matches"]
-else:
-    (assemb, mask, matches) = plot_montage(selected_micrographs,range(2,471))
-    np.savez_compressed(image_cache_filename,matches=matches,mask=mask,image=assemb)
-    corr = assemb/mask
-    io.imsave(directory / 'fff_lamella4_image.tif',corr/np.max(corr),plugin='pil')
-
-
-exit()
-centers = [get_corners(m['IMAGE_SHIFT_X']*150,m['IMAGE_SHIFT_Y']*150,36) for i,m in selected_micrographs.iterrows()]
-#assemb=np.zeros((100,100))
-scale = 0.15 * crop_by
-viewer = napari.view_image(assemb/mask,contrast_limits=(0,10),interpolation='bilinear',scale=(scale,scale))
-viewer.add_image(mask,contrast_limits=(0,10),interpolation='bilinear',scale=(scale,scale))
-viewer.add_image(matches,contrast_limits=(0,100000),interpolation='bilinear',blending='additive',colormap='red' ,scale=(scale,scale))
-
-radius = 250
-min_shift_x, min_shift_y = get_range(selected_micrographs)
-data = [[[(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15+radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15+radius],
-         [(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15-radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15+radius],
-         [(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15-radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15-radius],
-         [(row["image_shift_pixel_y"]-min_shift_y+row['ORIGINAL_Y_SIZE']//2)*0.15+radius,(row["image_shift_pixel_x"]-min_shift_x+row['ORIGINAL_X_SIZE']//2)*0.15-radius]] for i, row in selected_micrographs.iterrows()]
-viewer.add_shapes(data,shape_type='ellipse',face_color='transparent',edge_color="red",edge_width=15)
-napari.run()
+# Things for a startfile:
+#   - IMage filename
+#   - X size
+#   - Y size
+#   - Mask filename
+#   - plotted result filename
+#   - X offset
+#   - Y offset
