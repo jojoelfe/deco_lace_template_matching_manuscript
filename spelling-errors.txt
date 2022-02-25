@@ -31,7 +31,7 @@ GIS
 GrCyt
 gridsquares
 Grigorieff
-hematopoiesis
+Hematopoiesis
 hematopoietic
 HHMI
 Hoechst

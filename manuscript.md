@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-02-24'
+date-meta: '2022-02-25'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-02-24" />
-  <meta name="citation_publication_date" content="2022-02-24" />
+  <meta name="dc.date" content="2022-02-25" />
+  <meta name="citation_publication_date" content="2022-02-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/c726b59baf4d652934928fac32dda6261f8cf435/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/c726b59baf4d652934928fac32dda6261f8cf435/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/c726b59baf4d652934928fac32dda6261f8cf435/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/1e239da5dfa82be752529df88887c5cf4896c57d/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/c726b59baf4d652934928fac32dda6261f8cf435/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@1e239da](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/1e239da5dfa82be752529df88887c5cf4896c57d)
-on February 24, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@c726b59](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/c726b59baf4d652934928fac32dda6261f8cf435)
+on February 25, 2022.
 </em></small>
 
 ## Authors
