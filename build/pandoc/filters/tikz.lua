@@ -71,7 +71,7 @@ local function tikz2image(width,height,draft,src, filetype, outfile)
         os.rename('tikz.pdf', outfile .. '.pdf')
         print(outfile)
     end
-    -- os.remove('tikz.tex')
+    os.remove('tikz.tex')
 end
 
 extension_for = {
