@@ -16,7 +16,7 @@ cytometry
 cytosolic
 datacollection
 DeCo
-Defocus
+defocus
 differnce
 diffferentiate
 Disregulation
@@ -78,7 +78,7 @@ sacrifical
 sapcing
 SCF
 SEM
-serialEM
+SerialEm
 signifcant
 sillicone
 SNR

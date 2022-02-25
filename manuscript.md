@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/c726b59baf4d652934928fac32dda6261f8cf435/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/c726b59baf4d652934928fac32dda6261f8cf435/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/c726b59baf4d652934928fac32dda6261f8cf435/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/c726b59baf4d652934928fac32dda6261f8cf435/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@c726b59](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/c726b59baf4d652934928fac32dda6261f8cf435)
+from [jojoelfe/deco_lace_template_matching_manuscript@0b9b63c](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d)
 on February 25, 2022.
 </em></small>
 
