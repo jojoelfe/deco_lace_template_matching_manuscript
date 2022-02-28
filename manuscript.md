@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-02-25'
+date-meta: '2022-02-28'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-02-25" />
-  <meta name="citation_publication_date" content="2022-02-25" />
+  <meta name="dc.date" content="2022-02-28" />
+  <meta name="citation_publication_date" content="2022-02-28" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/31bc357aa966ffec4212bc97259f92b6b7231438/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/31bc357aa966ffec4212bc97259f92b6b7231438/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/31bc357aa966ffec4212bc97259f92b6b7231438/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/31bc357aa966ffec4212bc97259f92b6b7231438/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@0b9b63c](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/0b9b63ca1f5f1f419cc06d1da01657a14abcec8d)
-on February 25, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@31bc357](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/31bc357aa966ffec4212bc97259f92b6b7231438)
+on February 28, 2022.
 </em></small>
 
 ## Authors
@@ -435,7 +435,7 @@ obtained matches with the same model used for the data in Figure 1.
 
 ```
 
-![This is an example-figurern](tikz:initmatching2){#fig:initmatching2 tag="S1"}
+![Maximum intensity projection cross-correlation map of micrograph shown in Figure {@fig:initmatching}](tikz:initmatching2){#fig:initmatching2 tag="S1"}
 
 ```{.tikz-figure #initmatching2 width=13cm height=9cm draft=false}
 \node (anchor) at (0.5,8.35) {}; 
@@ -446,16 +446,33 @@ obtained matches with the same model used for the data in Figure 1.
 ```
 
 
-![This is an example-figurern](tikz:example-figure){#fig:approach}
+![DeCo-LACE approach (A) Graphic demonstrating the data-collection strategy for DeCo-LACE](tikz:approach){#fig:approach}
 
-```{.tikz-figure #example-figure width=19cm height=10cm draft=false}
+```{.tikz-figure #approach width=25cm height=10cm draft=false}
 \node (anchor) at (0.5,9.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=5cm]{content/graphics/approach/approach.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
+
 
 \node (anchor) at (6.0,9.35) {}; 
 \node[labelNode] {B};
+
+% Place nodes
+\node [block] (init) at (8.0,8.35) {\textbf{START} \\ Collect overview image};
+\node [block, below = 0.3cm of init.south] (identify) {Setup hexagonal grid covering lamella area};
+\node [block, below = 0.3cm of identify.south] (mutate) {Beam-imageshift to tile n=i};
+\node [block, below = 0.3cm of mutate.south] (transfer) {Capture exposure and determine defocus by CTF fitting};
+\node [block, below = 0.3cm of transfer.south] (evaluate) {Adjust defocus by difference between expected and measured value};
+
+% Draw edges
+\path [line] (init) -- (identify);
+\path [line] (identify) -- (mutate);
+\path [line] (mutate) -- (transfer);
+\path [line] (transfer) -- (evaluate);
+\path [line] (evaluate) -|  ([xshift=0.5cm, yshift=0cm]transfer.east) |- (mutate);
+
+\node (anchor) at (17.0,9.35) {}; 
+\node[labelNode] {Q};
 \node[graphicNode] {\includegraphics[width=5cm]{content/images/ac_strategy.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
@@ -479,9 +496,18 @@ obtained matches with the same model used for the data in Figure 1.
 
 ```
 
-![This is an example-figurern](tikz:example-figure2){#fig:approach2}
+![Workflow of DeCo-Lace processing](tikz:deco_lace_workflow){#fig:deco_lace_workflow}
 
-```{.tikz-figure #example-figure2 width=16.5cm height=9cm draft=false}
+```{.tikz-figure #deco_lace_workflow width=8cm height=8cm draft=true}
+\node [block,anchor=north] (mc) at (4.0,7.5) {\textbf{Motion correction} \\ \textit{unblur decolace} \\ Motion correction using central area of movie to avoid beam artifacts};
+\node [block,below = 0.3 cm of mc.south] (ctf) {\textbf{Ctf estimation} \\ \textit{ctffind4} \\ Standard CTF estimation};
+\node [block,below = 0.3 cm of ctf.south] (match) {\textbf{Template matching} \\ \textit{match template} \\ Template matching using 6swa as template};
+
+```
+
+![This is an example-figurern](tikz:lamella_spatial_info){#fig:lamella_spatial_info}
+
+```{.tikz-figure #lamella_spatial_info width=16.5cm height=9cm draft=false}
 \node (anchor) at (0.5,8.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_defocus_vs_bs_plot.pdf}};
