@@ -16,7 +16,7 @@ cytometry
 cytosolic
 datacollection
 DeCo
-defocus
+Defocus
 differnce
 diffferentiate
 Disregulation
@@ -37,13 +37,13 @@ HHMI
 Hoechst
 HoxA
 illumated
-imageshift
+Imageshift
 initmatching
 insepction
 jojoelfe
 keV
 Krios
-Lamella
+lamella
 lamellae
 lamellas
 Leica
@@ -79,7 +79,7 @@ sacrifical
 sapcing
 SCF
 SEM
-SerialEm
+serialEM
 signifcant
 sillicone
 SNR
