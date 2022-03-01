@@ -13,7 +13,7 @@ dependencies:
   - pdf2svg
   - pip
   - psutil
-  - python
+  - python==3.10
   - pyyaml
   - requests
   - tectonic
@@ -21,6 +21,8 @@ dependencies:
   - watchdog
   - yamllint
   - r-rsvg
+  - freeimage
+  - scikit-image
   - pip:
     - cffi==1.15.0
     - errorhandler==2.0.1
@@ -43,3 +45,5 @@ dependencies:
     - matplotlib
     - pandas
     - pyyaml==5.4.1
+    - mrcfile
+    - starfile
