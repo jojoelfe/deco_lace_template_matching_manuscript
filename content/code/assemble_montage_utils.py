@@ -101,9 +101,9 @@ def create_metadata(expand_data, IS_to_camera, output_base, binning=10, image_su
         matches_filenames = list(matches_dir.glob(Path(item['FILENAME'][:-6]).name +"*plotted_result*.mrc"))
         #print(matches_filenames)
         if len(matches_filenames) > 0:
-            new_entry['tile_plotted_result_filename'] = matches_filenames[0]
+            new_entry['tile_plotted_result_filename'] = str(matches_filenames[0])
         else:
-            new_entry['tile_plotted_result_filename'] = ""
+            new_entry['tile_plotted_result_filename'] = "None"
         # Calulate the offset
         insert_point_x = item["image_shift_pixel_x"] 
         insert_point_y = item["image_shift_pixel_y"]

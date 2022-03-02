@@ -12,6 +12,24 @@ datasets = ["/scratch/bern/elferich/ER_Hox_120h_20211029_g1_l1/ER_Hox_120h_20211
             "/scratch/bern/elferich/ER_Hox_120h_20211108_g2_l3/ER_Hox_120h_20211108_g2_l3.db",
             "/scratch/bern/elferich/ER_Hox_120h_20211108_g2_l4/ER_Hox_120h_20211108_g2_l4.db"]
 
+dataset_names = ["euc_lamella1",
+                 "euc_lamella2",
+                 "euc_lamella3",
+                 "euc_lamella4",
+                 "fff_lamella1",
+                 "fff_lamella2",
+                 "fff_lamella3",
+                 "fff_lamella4"]
+
+dataset_info = [(dataset,dataset_names[i]) for i,dataset in enumerate(datasets)]
+                 
+
+def get_tm_data_from_db(dataset):
+    # Open the database
+    with contextlib.closing(sqlite3.connect(dataset)) as con:
+        df1 = pd.read_sql_query("SELECT * FROM TEMPLATE_MATCH_LIST", con)
+    return df1
+
 def get_data_from_db(dataset,get_movement=False):
     with contextlib.closing(sqlite3.connect(dataset)) as con:
 

@@ -16,14 +16,15 @@ load_cached_images = False
 directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/initial_assembly/")
 directory.mkdir(parents=True,exist_ok=True)
 
-selected_micrographs = utils.get_data_from_db(utils.datasets[2])
-selected_micrographs = selected_micrographs[35:-5]
+selected_micrographs = utils.get_data_from_db(utils.datasets[7])
+selected_micrographs = selected_micrographs[5:-5]
+#selected_micrographs = selected_micrographs.drop(selected_micrographs.index[118])
 
-print(utils.datasets[2])
+print(utils.datasets[7])
 print(len(selected_micrographs))
 metadata = assemble_montage_utils.create_metadata(selected_micrographs,
                                        IS_to_camera=assemble_montage_utils.IS_to_camera,
-                                       output_base=str(directory / 'euc_lamella3'),
+                                       output_base=str(directory / 'fff_lamella4'),
                                        mask_suffix="_1_mask.mrc")
 #assemble_montage_utils.create_montage(metadata)
 exit()
