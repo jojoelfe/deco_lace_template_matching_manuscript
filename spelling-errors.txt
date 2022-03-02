@@ -16,7 +16,7 @@ cytometry
 cytosolic
 datacollection
 DeCo
-Defocus
+defocus
 differnce
 diffferentiate
 Disregulation
@@ -31,13 +31,13 @@ GIS
 GrCyt
 gridsquares
 Grigorieff
-hematopoiesis
+Hematopoiesis
 hematopoietic
 HHMI
 Hoechst
 HoxA
 illumated
-Imageshift
+imageshift
 initmatching
 insepction
 jojoelfe
@@ -79,7 +79,7 @@ sacrifical
 sapcing
 SCF
 SEM
-serialEM
+SerialEM
 signifcant
 sillicone
 SNR
