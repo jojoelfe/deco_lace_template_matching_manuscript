@@ -143,7 +143,6 @@ if [ "${BUILD_LATEX}" = "true" ]; then
     --defaults=latex.yaml
   tectonic output/manuscript.tex
   rm images
-  rm output/images
   rm output/graphics
   rm graphics
   rm figures

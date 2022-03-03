@@ -17,6 +17,7 @@ local tikz_doc_template = [[
     \usetikzlibrary{positioning}
     \usetikzlibrary{arrows,snakes,shapes,fadings}
     \usetikzlibrary{fit}
+    \usetikzlibrary{backgrounds}
     \usepackage{fontspec}
     \setmainfont{Roboto}[
       Extension = .otf,
@@ -25,7 +26,8 @@ local tikz_doc_template = [[
       ItalicFont = *-Italic,
       BoldItalicFont = *-BoldItalic,
     ]    \usepackage{etoolbox} 
-    
+    \usepackage{enumitem}
+    \setlist{nosep,leftmargin=*}
     \newcommand{\figwidth}{%s} 
     \newcommand{\figheight}{%s} 
     \newcommand{\fontselect}{\large\bf} 
@@ -53,7 +55,12 @@ local tikz_doc_template = [[
     ]
     
     \iftoggle{draft}{\node[anchor=south west, rectangle, draw, red, line width=2pt, minimum width=\figwidth, minimum height=\figheight] at (0,0) {};}
-    {\node[anchor=south west, rectangle, fill=white, minimum width=\figwidth, minimum height=\figheight] at (0,0) {};};
+    {
+      \begin{scope}[on background layer]
+
+      \node[anchor=south west, rectangle, fill=white, minimum width=\figwidth, minimum height=\figheight] at (0,0) {};
+      \end{scope}
+    };
      
     %s
     \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};
@@ -61,19 +68,25 @@ local tikz_doc_template = [[
     \end{document}
 ]]
 
+local function get_file_name(file)
+  local file_name = file:match("[^/]*$")
+  return file_name
+end
+
+
 local function tikz2image(width,height,draft,src, filetype, outfile)
-    local f = io.open('tikz.tex', 'w')
+    local f = io.open(get_file_name(outfile) .. '.tex', 'w')
     f:write(tikz_doc_template:format(width,height,draft,src))
     f:close()
-    os.execute('tectonic tikz.tex')
+    os.execute('tectonic ' .. get_file_name(outfile) .. '.tex')
     if filetype == 'pdf' then
-        os.rename('tikz.pdf', outfile)
+        os.rename(get_file_name(outfile) .. '.pdf', outfile)
     else
-        os.execute('pdf2svg tikz.pdf ' .. outfile)
-        os.rename('tikz.pdf', outfile .. '.pdf')
+        os.execute('pdf2svg ' .. get_file_name(outfile) .. '.pdf '  .. outfile .. '.svg')
+        os.rename(get_file_name(outfile) .. '.pdf', outfile .. '.pdf')
         print(outfile)
     end
-    os.remove('tikz.tex')
+    os.rename(get_file_name(outfile) .. '.tex', outfile .. '.tex')
 end
 
 extension_for = {
@@ -114,7 +127,7 @@ function Block(bl)
   if bl and bl.t == "CodeBlock" then
     if bl.attr.classes[1] == 'tikz-figure' then
       local filetype = extension_for[FORMAT] or 'svg'
-      local fbasename = '/output/figures/' .. bl.identifier .. '.' .. filetype
+      local fbasename = '/output/figures/' .. bl.identifier 
       local fname = system.get_working_directory() .. fbasename
       tikz2image(bl.attr.attributes['width'],bl.attr.attributes['height'],bl.attr.attributes['draft'],bl.text, filetype, fname)
       
