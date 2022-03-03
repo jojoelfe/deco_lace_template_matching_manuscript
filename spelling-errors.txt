@@ -16,7 +16,7 @@ cytometry
 cytosolic
 datacollection
 DeCo
-defocus
+Defocus
 differnce
 diffferentiate
 Disregulation
@@ -31,13 +31,13 @@ GIS
 GrCyt
 gridsquares
 Grigorieff
-Hematopoiesis
+hematopoiesis
 hematopoietic
 HHMI
 Hoechst
 HoxA
 illumated
-imageshift
+Imageshift
 initmatching
 insepction
 jojoelfe

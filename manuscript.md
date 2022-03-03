@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-03-02'
+date-meta: '2022-03-03'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-03-02" />
-  <meta name="citation_publication_date" content="2022-03-02" />
+  <meta name="dc.date" content="2022-03-03" />
+  <meta name="citation_publication_date" content="2022-03-03" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@00311cc](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/00311ccf9074082904cef550d9b63ff61297b3c1)
-on March 2, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@a4570af](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/a4570afcb2725b9980fa97358516050b0a2697d3)
+on March 3, 2022.
 </em></small>
 
 ## Authors
@@ -496,14 +496,6 @@ obtained matches with the same model used for the data in Figure 1.
 
 ```
 
-![Workflow of DeCo-Lace processing](tikz:deco_lace_workflow){#fig:deco_lace_workflow}
-
-```{.tikz-figure #deco_lace_workflow width=8cm height=8cm draft=true}
-\node [block,anchor=north] (mc) at (4.0,7.5) {\textbf{Motion correction} \\ \textit{unblur decolace} \\ Motion correction using central area of movie to avoid beam artifacts};
-\node [block,below = 0.3 cm of mc.south] (ctf) {\textbf{Ctf estimation} \\ \textit{ctffind4} \\ Standard CTF estimation};
-\node [block,below = 0.3 cm of ctf.south] (match) {\textbf{Template matching} \\ \textit{match template} \\ Template matching using 6swa as template};
-
-```
 
 ![This is an example-figurern](tikz:lamella_spatial_info){#fig:lamella_spatial_info}
 
@@ -591,6 +583,94 @@ obtained matches with the same model used for the data in Figure 1.
 
 
 
+```
+
+
+![Workflow of DeCo-Lace processing](tikz:deco_lace_workflow){#fig:deco_lace_workflow}
+
+```{.tikz-figure #deco_lace_workflow width=18cm height=18cm draft=false}
+\begin{scope}[
+          blocks/.style = {rectangle, draw, fill=blue!20, text width=15em, align=center, rounded corners, minimum height=2em,inner sep=0.5em},
+          inputs/.style = {rectangle,draw,fill=cyan!20, inner sep=0.5em},
+          every path/.style={line width=1pt}
+]
+\node [inputs,anchor=north] (struc) at (3.0,17.5) {\textbf{6SWA Structure}};
+
+\node [inputs,anchor=north] (movies) at (9.0,17.5) {\textbf{Movies}};
+\node [inputs,anchor=north] (meta) at (15.0,17.5) {\textbf{SerialEM Metadata}};
+
+\node [inputs,anchor=north] (over) at (3.0,1.5) {\textbf{Overview Image}};
+
+\node [blocks,anchor=north] (simu) at (3.0,15.5) {\textbf{Generate Template} \\ \textit{simulate}
+\begin{itemize}
+    \item   Generate electron density map at 1.5{\AA}  pixel-size
+\end{itemize}};
+
+\node [blocks,anchor=north] (mc) at (9.0,15.5) {\textbf{Motion correction} \\ \textit{unblur\_decolace}
+\begin{itemize}
+    \item   Motion correction using central area of movie
+    \item   Mask out unilluminated areas and replace with noise
+\end{itemize}};
+
+\node [inputs,below = 0.5 cm of mc.south] (images) {\textbf{Images}};
+
+\node [blocks,below = 0.5 cm of images.south] (ctf) {\textbf{Ctf estimation} \\ \textit{ctffind4} 
+\begin{itemize}
+    \item Standard CTF estimation
+\end{itemize}};
+\node [blocks,below = 0.7 cm of ctf.south] (match) {\textbf{Template matching} \\ \textit{match\_template} \\ Template matching using 6swa as template};
+
+\begin{scope}[on background layer]
+
+\node[draw,very thick, dashed, inner sep=0.5em, rounded corners, fill=blue!10,
+    fit=(mc) (ctf) (match)] (gui) {};
+\end{scope}
+\node[below left=0.1cm and 0cm of gui.south east, font=\fontannot] {cisTEM GUI};
+
+\node [blocks,below = 1.4 cm of match.south] (refine) {\textbf{Refine matches} \\ \textit{refine\_matches.py/refine\_template} \\ Refine matches and compile list of all matches in a lamella};
+
+\node [inputs,below = 0.5 cm of refine.south] (refstar) {\textbf{matches\_in\_tiles.star}};
+
+
+\node [blocks,anchor=center] (assem) at (images.east -| meta.south) {\textbf{Assemble montage} \\ \textit{assemble\_montage.py} 
+\begin{itemize}
+    \item Create list of all tiles and their respective coordinates
+    \item Create binned montage image
+\end{itemize}};
+
+\node [inputs,below = 0.5 cm of assem.south] (monstar) {\textbf{montage.star}};
+
+\node [blocks,anchor=center] (assemma) at (refstar.east -| monstar.south) {\textbf{Assemble matches} \\ \textit{assemble\_matches.py} 
+\begin{itemize}
+    \item Transfer coordinates of matches into the montage coordinate system
+\end{itemize}};
+
+\node [inputs,below = 0.5 cm of assemma.south] (monmastar) {\textbf{matches\_in\_montage.star}};
+
+
+%% Draw lines
+\draw[->] (struc) -- (simu);
+
+\draw[->] (movies) -- (mc);
+\draw[->] (mc) -- (images);
+\draw[->] (images) -- (ctf);
+\draw[->] (ctf) -- (match);
+\draw[->] (match) -- (refine);
+
+\draw[->] (meta) -- (assem);
+\draw[->] (images) -- (assem);
+
+\draw[->] (simu) |- (match);
+\draw[->] (simu) |- (refine);
+
+\draw[->] (assem) -- (monstar);
+\draw[->] (monstar) -- (assemma);
+
+\draw[->] (refine) -- (refstar);
+\draw[->] (refstar) -- (assemma);
+\draw[->] (assemma) -- (monmastar);
+
+\end{scope}
 ```
 
 ## References {.page_break_before}

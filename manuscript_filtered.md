@@ -4,7 +4,7 @@ author-meta:
 - Nikolaus Grigorieff
 bibliography:
 - content/manual-references.json
-date-meta: 2022-03-02
+date-meta: 2022-03-03
 header-includes: |
   ```{=html}
   <!--
@@ -28,10 +28,10 @@ header-includes: |
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
   ```
   ```{=html}
-  <meta name="dc.date" content="2022-03-02" />
+  <meta name="dc.date" content="2022-03-03" />
   ```
   ```{=html}
-  <meta name="citation_publication_date" content="2022-03-02" />
+  <meta name="citation_publication_date" content="2022-03-03" />
   ```
   ```{=html}
   <meta name="dc.language" content="en-US" />
@@ -89,12 +89,12 @@ header-includes: |
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   ```
   `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/" />`{=html}
+  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />`{=html}
   ```{=html}
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />
   ```
   ```{=html}
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/manuscript.pdf" />
   ```
   ```{=html}
   <meta property="og:type" content="article" />
@@ -144,10 +144,10 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
 ```
 ```{=html}
-<meta name="dc.date" content="2022-03-02" />
+<meta name="dc.date" content="2022-03-03" />
 ```
 ```{=html}
-<meta name="citation_publication_date" content="2022-03-02" />
+<meta name="citation_publication_date" content="2022-03-03" />
 ```
 ```{=html}
 <meta name="dc.language" content="en-US" />
@@ -205,12 +205,12 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
 ```
 `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/" />`{=html}
+`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />`{=html}
 ```{=html}
-<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/" />
+<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />
 ```
 ```{=html}
-<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/manuscript.pdf" />
+<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/manuscript.pdf" />
 ```
 ```{=html}
 <meta property="og:type" content="article" />
@@ -229,10 +229,10 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 
 `<small>`{=html}`<em>`{=html}
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/00311ccf9074082904cef550d9b63ff61297b3c1/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@00311cc](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/00311ccf9074082904cef550d9b63ff61297b3c1)
-on March 2, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@a4570af](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/a4570afcb2725b9980fa97358516050b0a2697d3)
+on March 3, 2022.
 `</em>`{=html}`</small>`{=html}
 
 ## Authors
@@ -526,8 +526,6 @@ obtained matches with the same model used for the data in Figure 1.
 
 ![DeCo-LACE approach (A) Graphic demonstrating the data-collection strategy for DeCo-LACE](figures/approach.svg){#fig:approach}
 
-![Workflow of DeCo-Lace processing](figures/deco_lace_workflow.svg){#fig:deco_lace_workflow}
-
 ![This is an example-figurern](figures/lamella_spatial_info.svg){#fig:lamella_spatial_info}
 
 ![This is an example-figurern](figures/example-figure3.svg){#fig:approach3}
@@ -535,6 +533,8 @@ obtained matches with the same model used for the data in Figure 1.
 ![This is an example-figurern](figures/example-figure4.svg){#fig:approach4}
 
 ![This is an example-figurern](figures/matching.svg){#fig:matching}
+
+![Workflow of DeCo-Lace processing](figures/deco_lace_workflow.svg){#fig:deco_lace_workflow}
 
 ## References {#references .page_break_before}
 
