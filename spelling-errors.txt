@@ -1,7 +1,6 @@
 Acquilos
 autofocus
 AutoTEM
-BILACE
 biomolecule
 biomolecules
 calulated
@@ -16,10 +15,11 @@ cytometry
 cytosolic
 datacollection
 DeCo
-Defocus
+defocus
 differnce
 diffferentiate
 Disregulation
+DTM
 Elferich
 eucentric
 FB
@@ -37,7 +37,7 @@ HHMI
 Hoechst
 HoxA
 illumated
-Imageshift
+imageshift
 initmatching
 insepction
 jojoelfe
@@ -96,6 +96,6 @@ thon
 thresholding
 Titam
 translational
-translationaly
+translationally
 UMass
 unblur

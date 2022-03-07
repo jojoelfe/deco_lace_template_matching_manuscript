@@ -4,7 +4,7 @@ author-meta:
 - Nikolaus Grigorieff
 bibliography:
 - content/manual-references.json
-date-meta: 2022-03-03
+date-meta: 2022-03-07
 header-includes: |
   ```{=html}
   <!--
@@ -28,10 +28,10 @@ header-includes: |
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
   ```
   ```{=html}
-  <meta name="dc.date" content="2022-03-03" />
+  <meta name="dc.date" content="2022-03-07" />
   ```
   ```{=html}
-  <meta name="citation_publication_date" content="2022-03-03" />
+  <meta name="citation_publication_date" content="2022-03-07" />
   ```
   ```{=html}
   <meta name="dc.language" content="en-US" />
@@ -89,12 +89,12 @@ header-includes: |
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   ```
   `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />`{=html}
+  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/287b9950fc2bff7878d36aa1cbf2cb7f2082f798/" />`{=html}
   ```{=html}
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/287b9950fc2bff7878d36aa1cbf2cb7f2082f798/" />
   ```
   ```{=html}
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/287b9950fc2bff7878d36aa1cbf2cb7f2082f798/manuscript.pdf" />
   ```
   ```{=html}
   <meta property="og:type" content="article" />
@@ -144,10 +144,10 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
 ```
 ```{=html}
-<meta name="dc.date" content="2022-03-03" />
+<meta name="dc.date" content="2022-03-07" />
 ```
 ```{=html}
-<meta name="citation_publication_date" content="2022-03-03" />
+<meta name="citation_publication_date" content="2022-03-07" />
 ```
 ```{=html}
 <meta name="dc.language" content="en-US" />
@@ -205,12 +205,12 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
 ```
 `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />`{=html}
+`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/287b9950fc2bff7878d36aa1cbf2cb7f2082f798/" />`{=html}
 ```{=html}
-<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/" />
+<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/287b9950fc2bff7878d36aa1cbf2cb7f2082f798/" />
 ```
 ```{=html}
-<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/manuscript.pdf" />
+<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/287b9950fc2bff7878d36aa1cbf2cb7f2082f798/manuscript.pdf" />
 ```
 ```{=html}
 <meta property="og:type" content="article" />
@@ -229,10 +229,10 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 
 `<small>`{=html}`<em>`{=html}
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a4570afcb2725b9980fa97358516050b0a2697d3/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/287b9950fc2bff7878d36aa1cbf2cb7f2082f798/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@a4570af](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/a4570afcb2725b9980fa97358516050b0a2697d3)
-on March 3, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@287b995](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/287b9950fc2bff7878d36aa1cbf2cb7f2082f798)
+on March 7, 2022.
 `</em>`{=html}`</small>`{=html}
 
 ## Authors
@@ -257,50 +257,70 @@ on March 3, 2022.
 
 ## Abstract {#abstract .page_break_before}
 
-Localization of biomolecules inside a cell is an important goal of biological imaging. Fluorescence microscopy can localize biomolecules inside whole cells and tissues, but its ability to count biomolecules and accuracy of the spatial coordinates is limited by the wavelength of visible light. On the other hand, cryo-electron microscopy (cryo-EM) provides highly accurate position and orientation information of biomolecules but is often limited to small fields of view inside a cell, providing only limited biological context. In this study we use a new data-acquisition scheme called "Beam-Imageshift for Large Area Cryo-Electron microscopy" (BILACE) to collect high-resolution cryo-EM data over entire sections (100 -- 200 nm thick lamellae) of neutrophil-like mouse cells, representing roughly 1% of the total cellular volume. We use 2D template matching to determine localization and orientation of the large ribosomal subunit in these sections. Furthermore, we use 2D template matching to test detected targets for the presence of the small ribosomal subunit and used the relative orientations of the ribosomes to assign them to polysomes. These results provide "maps" of translational activity across sections of mammalian cells. We envision that using this high-throughput cryo-EM data collection approach together with 2D template matching will advance visual proteomics to complement other single-cell "omics" techniques, such as flow-cytometry and single-cell sequencing.
+Localization of biomolecules inside a cell is an important goal of biological
+imaging. Fluorescence microscopy can localize biomolecules inside whole cells
+and tissues, but its ability to count biomolecules and accuracy of the spatial
+coordinates is limited by the wavelength of visible light. Cryo-electron
+microscopy (cryo-EM) provides highly accurate position and orientation
+information of biomolecules but is often confined to small fields of view inside
+a cell, limiting biological context. In this study we use a new data-acquisition
+scheme called "Defocus-Corrected Large-Area cryo-EM" (DeCo-LACE) to collect
+high-resolution cryo-EM data over entire sections (100 -- 200 nm thick lamellae)
+of neutrophil-like mouse cells, representing roughly 1% of the total cellular
+volume. We use 2D template matching (2DTM) to determine localization and orientation
+of the large ribosomal subunit in these sections, detect bound small
+ribosomal subunits and assign ribosomes to polysomes based on their relative orientations to each other. These data provide "maps" of translational activity across
+sections of mammalian cells. This new high-throughput cryo-EM
+data collection approach together with 2DTM will advance visual
+proteomics and complement other single-cell "omics" techniques, such as
+flow-cytometry and single-cell sequencing.
 
 ## Introduction
 
-Understanding of cellular processes requires knowledge of the amounts, location,
-interactions, and conformations of biomolecules inside the cell. Techniques that
-measure this can broadly be divided into label- and label-free techniques. In
-label-techniques a probe is physically attached to a molecule of interest that
-is able to produce a high signal-to-noise signal, such as a fluorescent molecule.
-In label-free techniques the physical properties of molecules themselves are
-used for detection. An example for this is proteomics using mass-spectrometry
-[@doi:10.1038/nbt.1592]. The advantage of label-free techniques is that
-they can provide information over thousands of molecules, while label-techniques
-offer higher fidelity information for a few molecules. Especially spatial
-information can most of the time only be achieved using label-techniques, such
-as fluorescence microscopy [@doi:10.1038/nmeth817].
+A major goal in understanding cellular processes is the knowledge of the
+amounts, location, interactions, and conformations of biomolecules
+inside the cell. This knowledge can be obtained by approaches broadly
+divided into label- and label-free techniques. In label-dependent
+techniques a probe is physically attached to a molecule of interest that
+is able to detected with a high signal-to-noise signal, such as a
+fluorescent molecule. In label-free techniques the physical properties
+of molecules themselves are used for detection. An example for this is
+proteomics using mass-spectrometry [@doi:10.1038/nbt.1592]. The advantage
+of label-free techniques is that they can provide information over
+thousands of molecules, while label-techniques offer highly specific
+information for a few molecules. Especially spatial information can
+often only be achieved using label-dependent techniques, such as
+fluorescence microscopy [@doi:10.1038/nmeth817].
 
-Cryo-electron microscopy has the potential to directly measure the arrangement
-of atoms that compose biomolecules inside of cells, thereby allowing label-free
-detection with high spatial accuracy. This has been called "visual proteomics"
-[@doi:10.1038/nrm1861]. Since cryo-EM requires thin samples (\<500nm), imaging of
-biomolecules inside cells is either restricted to small organisms, thin
-regions of large cells, or requires thinning of the sample. This can be achieved
-either by mechanical sectioning [@doi:10.1111/j.1365-2818.1983.tb04225.x] or by
-milling using a focused ion beam (FIB) [@doi:10.1016/j.sbi.2013.08.006]. This
-complex workflow restricts throughput of cryo-EM imaging of cells. This is
-exacerbated by the fact that at the required magnifications, typical field of
-views (FOV) are very small compared to mammalian cells and the FOV achieved by
-label-techniques such as fluorescence light microscopy. The predominant cryo-EM
-technique for detection of biomolecules according to their shape in cells at the
-moment is cryo-electron tomography [@doi:10.1017/S0033583511000102]. However,
-the requirement of physically tilt the stage at every FOV, together with a more
-complex workflow that requires highly accurate alignment of various projection,
-further restricts the throughput for molecular detection.
+Cryo-electron microscopy has the potential to directly visualize the
+arrangement of atoms that compose biomolecules inside of cells, thereby
+allowing label-free detection with high spatial accuracy. This has been
+called "visual proteomics" [@doi:10.1038/nrm1861]. Since cryo-EM
+requires thin samples (\<500nm), imaging of biomolecules inside cells is
+restricted to small organisms, thin regions of cells, or samples that
+have been suitably thinned. Thinning can be achieved either by
+mechanical sectioning [@doi:10.1111/j.1365-2818.1983.tb04225.x] or by
+milling using a focused ion beam (FIB) [@doi:10.1016/j.sbi.2013.08.006]. his complex workflow
+leads to a low throughput of cryo-EM imaging of cells and is further
+limited by the fact that at the required magnifications, typical fields
+of view (FOV) are very small compared to mammalian cells, and the FOV
+achieved by label-techniques such as fluorescence light microscopy. The
+predominant cryo-EM technique for the localization of biomolecules of
+defined size and shape inside cells is cryo-electron tomography [@doi:10.1017/S0033583511000102]. However, the requirement of a tilt series at
+every imaged location and subsequent image alignment, severely limits
+the throughput for molecular localization.
 
 An alternative approach is to identify molecules by their structural
-"fingerprint" in single projection using "2D template-matching"
-[@doi:10.7554/eLife.25648; @doi:10.1101/2020.04.22.053868; @doi:10.7554/eLife.68946]. In this method an experimentally obtained 3D model
-of a biomolecule is used to calculate the expected electron density, which is
-called the template. The template is then projected on a fine angular grid and
-the projections are used to find local cross-correlation peaks in a cryo-EM
-micrograph. Since locations of the biomolecule in the Z-direction causes
-predictable aberrations to the projection image, this method can be used to
-calculate 3D coordinates and orientations of a biomolecule in a cellular sample
+"fingerprint" in single projection using "2D template-matching" (2DTM)
+[@doi:10.7554/eLife.25648; @doi:10.1101/2020.04.22.053868; @doi:10.7554/eLife.68946]. In this
+method a 3D model of a biomolecule is used as a template to find 2D
+projections that match the molecules visible in the electron
+micrographs. This method requires a projection search on a fine angular
+grid, and the projections are used to find local cross-correlation peaks
+with the micrograph. Since the location of a biomolecule in the
+z-direction causes predictable aberrations to the projection image, this
+method can be used to calculate complete 3D coordinates and orientations
+of a biomolecule in a cellular sample
 [@doi:10.1101/2020.04.22.053868]
 
 Hematopoiesis is the process of generating the various cell types of the blood in
@@ -316,20 +336,21 @@ hematopoietic disease [@doi:10.1186/s12885-018-4178-z].
 
 Here we apply 2D-template matching of ribosomes to cryo-FIB milled
 neutrophil-like murine cells [@doi:10.1016/j.cell.2016.08.057]. To increase the
-amount of collected data and to provide un-biased sampling of the whole lamella
-we devised a new data-acquisition scheme, Defocus-corrected large area
-cryo-electron microscopy (DeCo-LACE). We characterize aberration cause by the
-used large beam-image shifts and highly focused beams and find that they can be
-adequately correct to enable ribosome detection by 2D-template matching. The
-resulting data provides a description of ribosome distribution in the whole
-lamellae, which represent roughly 2% of the cellular volume. We find highly
-heterogeneous density of ribosome within the cell and can identify discrete
-clusters of presumably translationaly active ribosomes, by testing for the
-presence of the small ribosomal subunit. The high accuracy of location and
-orientation of each detected ribosome also allows us to cluster ribosome
-molecules into potential polysomes. Analysis of the throughput in this method
-suggests that for the foreseeable future computation will be the bottleneck for
-visual proteomics.
+amount of collected data and to provide unbiased sampling of the whole
+lamella, we devised a new data-acquisition scheme, Defocus-corrected
+large area cryo-electron microscopy (DeCo-LACE). We characterize
+aberration cause by the used large beam-image shifts and highly focused
+beams and find that they can be adequately corrected to enable ribosome
+detection by 2DTM. The resulting data provide a description of ribosome
+distribution in the whole lamellae, which represent roughly 2% of the
+cellular volume. We find highly heterogeneous density of ribosome within
+the cell and can identify discrete clusters of presumably
+translationally active ribosomes, by testing for the presence of the
+small ribosomal subunit. The high accuracy of location and orientation
+of each detected ribosome also allows us to cluster ribosome molecules
+into potential polysomes. Analysis of the throughput in this method
+suggests that for the foreseeable future computation will be the
+bottleneck for visual proteomics.
 
 ## Materials and Methods
 
