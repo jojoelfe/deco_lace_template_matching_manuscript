@@ -15,7 +15,7 @@ cytometry
 cytosolic
 datacollection
 DeCo
-defocus
+Defocus
 differnce
 diffferentiate
 Disregulation
@@ -37,7 +37,7 @@ HHMI
 Hoechst
 HoxA
 illumated
-imageshift
+Imageshift
 initmatching
 insepction
 jojoelfe
@@ -79,7 +79,7 @@ sacrifical
 sapcing
 SCF
 SEM
-SerialEM
+serialEM
 signifcant
 sillicone
 SNR
