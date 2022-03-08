@@ -7,7 +7,7 @@ montage_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing
 refine_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/lamella_refine/")
 assembled_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/assemble/")
 assembled_directory.mkdir(exist_ok=True,parents=True)
-for (database, name) in utils.dataset_info[4:5]:
+for (database, name) in utils.dataset_info:
     print(name)
     montage_info = starfile.read(montage_directory / f"{name}.star")
     refine_info = starfile.read(refine_directory / f"{name}_refine.star")
@@ -22,7 +22,7 @@ for (database, name) in utils.dataset_info[4:5]:
     info["tile_x"] = info["x"]
     info["tile_y"] = info["y"]
     info["x"] = info["tile_x"] + info["tile_x_offset"]
-    info["y"] = info["tile_y"] - info["tile_y_offset"]
+    info["y"] = info["tile_y"] + info["tile_y_offset"]
     info["image_filename"] = montage_info["montage"]["montage_filename"].loc[0]
     print(info["template_filename"].unique())
     print(info["image_filename"].unique())

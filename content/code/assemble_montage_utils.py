@@ -55,7 +55,7 @@ def create_metadata(expand_data, IS_to_camera, output_base, binning=10, image_su
         crop_center_x = item["CROP_CENTER_X"] 
         crop_center_y = item["CROP_CENTER_Y"] 
         expand_data.loc[i,"image_shift_pixel_x"] = shift_in_image_pixel[0] + crop_x + crop_center_x
-        expand_data.loc[i,"image_shift_pixel_y"] = shift_in_image_pixel[1] + crop_y - crop_center_y
+        expand_data.loc[i,"image_shift_pixel_y"] = - shift_in_image_pixel[1] + crop_y - crop_center_y
         
     
     # Get the range of the shifts taking binning into account
@@ -141,13 +141,13 @@ def create_montage(metadata ):
     for i, tile in tile_info.iterrows():
         
         with mrcfile.open(tile['tile_filename']) as mrc: 
-            tile_data = np.copy(np.flip(mrc.data[0],axis=0))
+            tile_data = np.copy(mrc.data[0])
             tile_dimensions = (int(tile_data.shape[0]// montage_info['montage_binning']),int(tile_data.shape[1]// montage_info['montage_binning']))
             
             tile_data = resize(tile_data,tile_dimensions,anti_aliasing=True)
         
         with mrcfile.open(tile['tile_mask_filename']) as mrc: 
-            mask_data = np.copy(np.flip(mrc.data[0],axis=0))
+            mask_data = np.copy(mrc.data[0])
             mask_data.dtype = np.uint8
         
         
@@ -166,9 +166,9 @@ def create_montage(metadata ):
         mask[insertion_slice] += mask_resized
         
         
-        if len(str(tile['tile_plotted_result_filename'])) > 0:
+        if str(tile['tile_plotted_result_filename']) != "None":
             with mrcfile.open(tile['tile_plotted_result_filename']) as mrc: 
-                match_data = np.copy(np.flip(mrc.data[0],axis=0))
+                match_data = np.copy(mrc.data[0])
                 if np.max(match_data) > 300000:
                     print(i)
                     print(tile['tile_filename'])

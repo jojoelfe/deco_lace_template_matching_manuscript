@@ -6,7 +6,7 @@ import utils
 
 pycistem.set_cistem_path("/groups/elferich/cisTEM/build/refine_template_tests_Intel-gpu-debug/src/")
 
-for (database, name) in utils.dataset_info[7:]:
+for (database, name) in utils.dataset_info[-1:]:
     pa = []
     results = utils.get_tm_data_from_db(database)
     for i, row in results.iterrows():
@@ -24,5 +24,5 @@ for (database, name) in utils.dataset_info[7:]:
     directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/lamella_refine/")
     directory.mkdir(parents=True,exist_ok=True)
 
-    pycistem.programs.refine_template.write_starfile(res_my, str(directory / f"{name}_refine.star"))
+    pycistem.programs.refine_template.write_starfile(res_my, str(directory / f"{name}_refine.star"),overwrite=True)
     
