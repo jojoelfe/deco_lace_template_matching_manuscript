@@ -10,7 +10,7 @@ conformational
 cryo
 cryoplunger
 CTF
-ctffind
+CTFFind
 cytometry
 cytosolic
 datacollection
@@ -31,7 +31,7 @@ GIS
 GrCyt
 gridsquares
 Grigorieff
-hematopoiesis
+Hematopoiesis
 hematopoietic
 HHMI
 Hoechst
@@ -79,7 +79,7 @@ sacrifical
 sapcing
 SCF
 SEM
-serialEM
+SerialEm
 signifcant
 sillicone
 SNR
