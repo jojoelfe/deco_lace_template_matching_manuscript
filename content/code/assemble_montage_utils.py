@@ -9,6 +9,8 @@ from skimage import io
 import pandas as pd
 import starfile
 from skimage.util import img_as_uint
+import json
+from scipy.ndimage import binary_erosion
 
 IS_to_camera = np.array([13374,  6053.4,  6394.1,  -13172])
 IS_to_camera.shape = (2,2)
@@ -41,6 +43,8 @@ def create_metadata(expand_data, IS_to_camera, output_base, binning=10, image_su
         'tile_plotted_result_filename': pd.Series(dtype='object'),
         'tile_image_shift_x': pd.Series(dtype='float'),
         'tile_image_shift_y': pd.Series(dtype='float'),
+        'tile_microscope_focus': pd.Series(dtype='float'),
+        'tile_defocus': pd.Series(dtype='float'),
     })
 
 
@@ -96,6 +100,8 @@ def create_metadata(expand_data, IS_to_camera, output_base, binning=10, image_su
         new_entry['tile_y_crop_center'] = item['CROP_CENTER_Y']
         new_entry['tile_image_shift_x'] = item['IMAGE_SHIFT_X']
         new_entry['tile_image_shift_y'] = item['IMAGE_SHIFT_Y']
+        new_entry['tile_microscope_focus'] = json.loads(item['CONTENT_JSON'])["Defocus"]
+        new_entry['tile_defocus'] = (item['DEFOCUS1'] + item['DEFOCUS2'])/2
         matches_dir = Path(item['FILENAME']).parent.parent / 'TemplateMatching' 
         #print(Path(item['FILENAME'][:-6]).name +"*plotted_result*.mrc")
         matches_filenames = list(matches_dir.glob(Path(item['FILENAME'][:-6]).name +"*plotted_result*.mrc"))
@@ -181,6 +187,69 @@ def create_montage(metadata ):
     big /= mask
     big /= np.max(big)
     matches /= np.max(matches)
+    io.imsave(montage_info['montage_filename'],img_as_uint(big),plugin='tifffile')
+    io.imsave(montage_info['matches_montage_filename'],img_as_uint(matches),plugin='tifffile')
+
+def create_montage_bin_after(metadata,erode_mask=0 ):
+
+    montage_info = metadata['montage'].iloc[0]
+
+    montage_dimensions = (montage_info['montage_y_size']*montage_info['montage_binning'], montage_info['montage_x_size']*montage_info['montage_binning'])
+    montage_binned_dimension = (montage_info['montage_y_size'], montage_info['montage_x_size'])
+    big = np.zeros(montage_dimensions,dtype=float)
+    mask = np.zeros(montage_dimensions,dtype=float)
+    matches = np.zeros(montage_dimensions,dtype=float)
+
+    tile_info = metadata['tiles']
+
+    for i, tile in tile_info.iterrows():
+        
+        with mrcfile.open(tile['tile_filename']) as mrc: 
+            tile_data = np.copy(mrc.data[0])
+            tile_dimensions = (int(tile_data.shape[0]),int(tile_data.shape[1]))
+            tile_data *= tile["tile_intensity_correction"]
+            #tile_data = resize(tile_data,tile_dimensions,anti_aliasing=True)
+        
+        with mrcfile.open(tile['tile_mask_filename']) as mrc: 
+            mask_data = np.copy(mrc.data[0])
+            mask_data.dtype = np.uint8
+        
+        
+        mask_float = mask_data/255.0
+        #mask_resized = resize(mask_float, tile_dimensions,anti_aliasing=True) 
+        if erode_mask > 0:
+            mask_float = binary_erosion(mask_float>0.5,iterations=erode_mask)
+
+        tile_data *= mask_float
+
+
+        montage_pixel_size = montage_info['montage_pixel_size']
+        insertion_slice= (
+            slice(int(tile['tile_y_offset'] / tile['tile_pixel_size']),int(tile['tile_y_offset']/ tile['tile_pixel_size'])+tile_dimensions[0]),
+            slice(int(tile['tile_x_offset'] / tile['tile_pixel_size']),int(tile['tile_x_offset']/ tile['tile_pixel_size'])+tile_dimensions[1])
+        )
+        
+        big[insertion_slice] += tile_data
+        mask[insertion_slice] += mask_float
+        
+        
+        if str(tile['tile_plotted_result_filename']) != "None":
+            with mrcfile.open(tile['tile_plotted_result_filename']) as mrc: 
+                match_data = np.copy(mrc.data[0])
+                if np.max(match_data) > 300000:
+                    print(i)
+                    print(tile['tile_filename'])
+                    print(np.max(match_data))
+                #match_data = resize(match_data, tile_dimensions,anti_aliasing=True)
+                match_data *= mask_float
+            matches[insertion_slice] += match_data   
+
+    mask[mask < 0.1] = 1.0 
+    big /= mask
+    big /= np.max(big)
+    matches /= np.max(matches)
+    big = resize(big,montage_binned_dimension,anti_aliasing=True)
+    matches = resize(matches,montage_binned_dimension,anti_aliasing=True)
     io.imsave(montage_info['montage_filename'],img_as_uint(big),plugin='tifffile')
     io.imsave(montage_info['matches_montage_filename'],img_as_uint(matches),plugin='tifffile')
 

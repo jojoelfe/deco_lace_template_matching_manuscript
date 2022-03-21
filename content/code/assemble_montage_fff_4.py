@@ -26,5 +26,5 @@ metadata = assemble_montage_utils.create_metadata(selected_micrographs,
                                        IS_to_camera=assemble_montage_utils.IS_to_camera,
                                        output_base=str(directory / 'fff_lamella4'),
                                        mask_suffix="_1_mask.mrc")
-assemble_montage_utils.create_montage(metadata)
+#assemble_montage_utils.create_montage(metadata)
 exit()
