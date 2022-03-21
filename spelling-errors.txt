@@ -10,7 +10,7 @@ conformational
 cryo
 cryoplunger
 CTF
-CTFFind
+ctffind
 cytometry
 cytosolic
 datacollection
@@ -37,7 +37,7 @@ HHMI
 Hoechst
 HoxA
 illumated
-Imageshift
+imageshift
 initmatching
 insepction
 jojoelfe
@@ -79,7 +79,7 @@ sacrifical
 sapcing
 SCF
 SEM
-SerialEm
+serialEM
 signifcant
 sillicone
 SNR
