@@ -47,3 +47,5 @@ dependencies:
     - pyyaml==5.4.1
     - mrcfile
     - starfile
+    - ipykernel
+    - matplotlib

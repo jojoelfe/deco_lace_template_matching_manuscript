@@ -10,17 +10,22 @@ montage_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing
 refine_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/lamella_refine/")
 assembled_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/assemble/")
 assembled_directory.mkdir(exist_ok=True,parents=True)
-for (database, name) in utils.dataset_info:
+for (database, name) in utils.dataset_info[5:6]:
     print(name)
     montage_info = starfile.read(montage_directory / f"{name}.star")
     refine_info = starfile.read(refine_directory / f"{name}_refine.star")
     print(len(refine_info.index))
+    print(len(montage_info["tiles"].index))
     # Make sure both sides use image 0
     montage_info["tiles"]["tile_filename"] = montage_info["tiles"]["tile_filename"].apply(lambda x: x.replace("_1.mrc","_0.mrc"))
     refine_info["image_filename"] = refine_info["image_filename"].apply(lambda x: x.replace("_1.mrc","_0.mrc"))
-
+    montage_info["tiles"]["tile_filename"] = montage_info["tiles"]["tile_filename"].apply(lambda x: x.replace("_2.mrc","_0.mrc"))
+    refine_info["image_filename"] = refine_info["image_filename"].apply(lambda x: x.replace("_2.mrc","_0.mrc"))
+    montage_info["tiles"]["tile_filename"] = montage_info["tiles"]["tile_filename"].apply(lambda x: x.replace("_3.mrc","_0.mrc"))
+    refine_info["image_filename"] = refine_info["image_filename"].apply(lambda x: x.replace("_3.mrc","_0.mrc"))
     # Join the two dataframes
     info = montage_info["tiles"].merge(refine_info, how="inner", left_on="tile_filename", right_on="image_filename")
+    print(len(info.index))
     #print(info.loc[0])
     info["tile_x"] = info["x"]
     info["tile_y"] = info["y"]

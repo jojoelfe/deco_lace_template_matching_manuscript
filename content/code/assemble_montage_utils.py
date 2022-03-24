@@ -1,4 +1,5 @@
 from curses import meta
+from selectors import EpollSelector
 import matplotlib.pyplot as plt
 import latexipy as lp
 import numpy as np
@@ -190,10 +191,15 @@ def create_montage(metadata ):
     io.imsave(montage_info['montage_filename'],img_as_uint(big),plugin='tifffile')
     io.imsave(montage_info['matches_montage_filename'],img_as_uint(matches),plugin='tifffile')
 
-def create_montage_bin_after(metadata,erode_mask=0 ):
+def create_montage_bin_after(metadata,erode_mask=0,gain=None,blend=True ):
 
     montage_info = metadata['montage'].iloc[0]
-
+    if gain is not None:
+        with mrcfile.open(gain) as mrc:
+            gain_data = mrc.data.copy()
+        gain_data[gain_data < 0.5] = 1.0
+    else:
+        gain_data = None
     montage_dimensions = (montage_info['montage_y_size']*montage_info['montage_binning'], montage_info['montage_x_size']*montage_info['montage_binning'])
     montage_binned_dimension = (montage_info['montage_y_size'], montage_info['montage_x_size'])
     big = np.zeros(montage_dimensions,dtype=float)
@@ -209,7 +215,19 @@ def create_montage_bin_after(metadata,erode_mask=0 ):
             tile_dimensions = (int(tile_data.shape[0]),int(tile_data.shape[1]))
             tile_data *= tile["tile_intensity_correction"]
             #tile_data = resize(tile_data,tile_dimensions,anti_aliasing=True)
+        if tile_data.shape[1] > gain_data.shape[1] or tile_data.shape[0] > gain_data.shape[0]:
+            print("Skipping tile as it is larger than the gain")
+            continue
+        x_offset = (gain_data.shape[1]-tile_data.shape[1])//2
+        y_offset = (gain_data.shape[0]-tile_data.shape[0])//2
+        print(tile_data.mean())
         
+        pers_gain = gain_data[y_offset:y_offset+tile_data.shape[0],x_offset:x_offset+tile_data.shape[1]]
+        print(pers_gain.mean())
+        tile_data /= pers_gain
+        print(tile_data.mean())
+        print(tile_data.dtype)
+        print(pers_gain.dtype)
         with mrcfile.open(tile['tile_mask_filename']) as mrc: 
             mask_data = np.copy(mrc.data[0])
             mask_data.dtype = np.uint8
@@ -219,6 +237,7 @@ def create_montage_bin_after(metadata,erode_mask=0 ):
         #mask_resized = resize(mask_float, tile_dimensions,anti_aliasing=True) 
         if erode_mask > 0:
             mask_float = binary_erosion(mask_float>0.5,iterations=erode_mask)
+            mask_float = 1.0 * mask_float
 
         tile_data *= mask_float
 
@@ -228,6 +247,11 @@ def create_montage_bin_after(metadata,erode_mask=0 ):
             slice(int(tile['tile_y_offset'] / tile['tile_pixel_size']),int(tile['tile_y_offset']/ tile['tile_pixel_size'])+tile_dimensions[0]),
             slice(int(tile['tile_x_offset'] / tile['tile_pixel_size']),int(tile['tile_x_offset']/ tile['tile_pixel_size'])+tile_dimensions[1])
         )
+
+        existing_mask = 1.0 - mask[insertion_slice]
+        if not blend:
+            tile_data *= existing_mask
+            mask_float *= existing_mask
         
         big[insertion_slice] += tile_data
         mask[insertion_slice] += mask_float
@@ -245,7 +269,8 @@ def create_montage_bin_after(metadata,erode_mask=0 ):
             matches[insertion_slice] += match_data   
 
     mask[mask < 0.1] = 1.0 
-    big /= mask
+    if blend:
+        big /= mask
     big /= np.max(big)
     matches /= np.max(matches)
     big = resize(big,montage_binned_dimension,anti_aliasing=True)

@@ -198,7 +198,7 @@ pycistem.set_cistem_path("/groups/elferich/cisTEM/build/refine_template_tests_In
 input_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/initial_assembly/")
 output_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly/")
 output_directory.mkdir(exist_ok=True,parents=True)
-for (database, name) in utils.dataset_info[:4]:
+for (database, name) in utils.dataset_info[-4:]:
     logger.info(f"Working on {name}")
     montage_data = starfile.read(input_directory/f"{name}.star")
     tile_data = montage_data["tiles"]
@@ -209,6 +209,9 @@ for (database, name) in utils.dataset_info[:4]:
     erode_mask = 0 
     if name.startswith("euc"):
         erode_mask = 100
+        logger.info("Eroding mask by 100 pixels")
+    else: 
+        erode_mask = 10
         logger.info("Eroding mask by 100 pixels")
     #shifts = calculate_crosscorrelations(tile_data,num_proc=20,erode_mask=erode_mask)
     #starfile.write(shifts,output_directory/f"{name}_shifts.star",overwrite=True)
@@ -252,4 +255,4 @@ for (database, name) in utils.dataset_info[:4]:
         "tiles": tile_data
     }
     starfile.write(results,output_directory/f"{name}.star",overwrite=True)
-    assemble_montage_utils.create_montage_bin_after(results,erode_mask=erode_mask)
+    assemble_montage_utils.create_montage_bin_after(results,erode_mask=erode_mask,gain="/scratch/bern/elferich/deco_lace_manuscript_processing/averages/fff_gain.mrc",blend=True)
