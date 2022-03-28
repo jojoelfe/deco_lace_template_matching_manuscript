@@ -118,7 +118,20 @@ for dataset, dataset_name in utils.dataset_info:
 gain /= gain.mean()
 with mrcfile.new(output_dir / f"fff_gain.mrc", overwrite=True) as mrc:
     mrc.set_data(np.float32(gain))
+max_x_euc = max([max_x[k] for k in max_x if k.startswith("euc")])
+max_y_euc = max([max_y[k] for k in max_y if k.startswith("euc")])
+gain = np.zeros((max_y_euc,max_x_euc))
+for dataset, dataset_name in utils.dataset_info:
     
+    if dataset_name.startswith("euc"):
+        with mrcfile.open(output_dir / f"{dataset_name}_av_gain.mrc") as mrc:
+            data = mrc.data
+        x_offset =int( (max_x_euc-data.shape[1])/2)
+        y_offset = int((max_y_euc-data.shape[0])/2)
+        gain[y_offset:y_offset+data.shape[0],x_offset:x_offset+data.shape[1]] += data
+gain /= gain.mean()
+with mrcfile.new(output_dir / f"euc_gain.mrc", overwrite=True) as mrc:
+    mrc.set_data(np.float32(gain))
 
 lp.latexify()
 with lp.figure("averaged_images",size=lp.figure_size(ratio=0.5,doc_width_pt=500),tight_layout=False):
