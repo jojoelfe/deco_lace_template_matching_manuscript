@@ -4,7 +4,7 @@ author-meta:
 - Nikolaus Grigorieff
 bibliography:
 - content/manual-references.json
-date-meta: 2022-03-28
+date-meta: 2022-03-29
 header-includes: |
   ```{=html}
   <!--
@@ -28,10 +28,10 @@ header-includes: |
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
   ```
   ```{=html}
-  <meta name="dc.date" content="2022-03-28" />
+  <meta name="dc.date" content="2022-03-29" />
   ```
   ```{=html}
-  <meta name="citation_publication_date" content="2022-03-28" />
+  <meta name="citation_publication_date" content="2022-03-29" />
   ```
   ```{=html}
   <meta name="dc.language" content="en-US" />
@@ -89,12 +89,12 @@ header-includes: |
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   ```
   `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/" />`{=html}
+  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/" />`{=html}
   ```{=html}
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/" />
   ```
   ```{=html}
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/manuscript.pdf" />
   ```
   ```{=html}
   <meta property="og:type" content="article" />
@@ -144,10 +144,10 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
 ```
 ```{=html}
-<meta name="dc.date" content="2022-03-28" />
+<meta name="dc.date" content="2022-03-29" />
 ```
 ```{=html}
-<meta name="citation_publication_date" content="2022-03-28" />
+<meta name="citation_publication_date" content="2022-03-29" />
 ```
 ```{=html}
 <meta name="dc.language" content="en-US" />
@@ -205,12 +205,12 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
 ```
 `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/" />`{=html}
+`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/" />`{=html}
 ```{=html}
-<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/" />
+<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/" />
 ```
 ```{=html}
-<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/manuscript.pdf" />
+<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/manuscript.pdf" />
 ```
 ```{=html}
 <meta property="og:type" content="article" />
@@ -229,10 +229,10 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 
 `<small>`{=html}`<em>`{=html}
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@a352115](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/a352115c27ccb3b7fa2977015e71c3c7dbb4f954)
-on March 28, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@0a724b0](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/0a724b0da1586e2992e709189796c245a3f07ccf)
+on March 29, 2022.
 `</em>`{=html}`</small>`{=html}
 
 ## Authors
@@ -437,34 +437,38 @@ above a threshold calulated according to .. .(7.75 for most images).
 
 ## Results
 
-### 2D-Template matching can be used to find ribosomal subunits in cryo-FIB thinned lamella of mammalian cells
+### 2DTM detects large ribosomal subunits in cryo-FIB lamella of mammalian cells
 
 To test whether we could detect individual ribosomes in mammalian cells we
 prepared cryo-lamella of mouse neutrophil-like cells. Low-magnification images
 of these lamellas clearly shows cellular features consistent with a
 neutrophil-like phenotype, mainly a segmented nucleus and a plethora of
 membrane-organelles, corresponding to the granules and secretory vesicles of
-neutrophils. We then proceeded to acquire micrographs on this lamella with a
-defocus of 0.5-1.0 um, 30 e/A2/s exposure and 1.5 A pixelsize. We manually
-selected multiple locations in the lamella and focused using standard low-dose
-techniques, i.e. by first ensuring correct focus by imaging a sacrifical area.
-The resoluting micrographs showed no signs of crystalline ice and had thon-rings
-to resolution, indicating successfull vitrification.
+neutrophils (Fig. {@fig:initmatching}A). We then proceeded to acquire
+micrographs on this lamella with a defocus of 0.5-1.0 um, 30 e/A2/s exposure and
+1.5 A pixelsize. We manually selected multiple locations in the lamella and
+focused using standard low-dose techniques where focusing is performed on a sacrificial area. The resulting micrographs showed no signs of
+crystalline ice and had Thon-rings to resolution, indicating successful
+vitrification.
 
 We used an atomic model of the 60S mouse ribosomal subunit (6SWA) for 2D
 template matching. In a subset of images the distribution of cross-correlation
 scores significantly exceeded the distribution expected from non-signifcant
-matching(Figure 1B). In the resulting scaled maximum-intensity maps, clear peaks
-with SNR thresholds up to 10 were apparent (Figure 1C). By using the criterion
-described by for thresholding potential matches we found that in images of
-cytosolic ompartments we found evidence of 10-500 ribosomes in the imaged areas.
-Notably we found no matches in images that were taken in the nuclear
-compartment. In the cytosolic areas we found a drastically different number of
-matches, In somer areas we found only \~ 50 matches er image area, corresponding
-to a concentration of..., while in another area we found more than 500 matches,
-corresponding to a concentration of ... .
-
-### cryo-EMILIA for 2D imaging of whole lamella
+matching. In the resulting scaled maximum-intensity maps, clear peaks
+with SNR thresholds up to 10 were apparent (Fig. {@fig:initmatching2}A). By
+using the criterion described by for thresholding potential matches we found
+that in images of cytosolic compartments we found evidence of 10-500 ribosomes in
+the imaged areas. Notably we found no matches in images that were taken in the
+nuclear compartment. In the cytosolic areas we found a drastically different
+number of matches, In some areas we found only \~ 50 matches er image area, while
+in another area we found more than 500 matches . This ten-fold difference in
+local ribosome concentration , but we realized that current data acquistion
+protocols are limited in that only a small area of the lamella is actually
+imaged and, due to the manual selection of acquision positions based on the
+overview image, might be biased towards cellular region that appear appealing to
+the experimentalist. We therefore set out to collect cryo-EM data for 2DTM from
+mammalian lamella in a high-throughput unbiased fashion.
+\### DECO-LACE for 2D imaging of whole lamella
 
 In order to obtain high-resolution data for complete lamella we used a new
 approach for data collection. This approach uses three key strategies: (1)

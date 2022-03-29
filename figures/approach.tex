@@ -17,8 +17,8 @@
     ]    \usepackage{etoolbox} 
     \usepackage{enumitem}
     \setlist{nosep,leftmargin=*}
-    \newcommand{\figwidth}{25cm} 
-    \newcommand{\figheight}{10cm} 
+    \newcommand{\figwidth}{20cm} 
+    \newcommand{\figheight}{15cm} 
     \newcommand{\fontselect}{\large\bf} 
     \newcommand{\fontannot}{\bf} 
     
@@ -27,7 +27,6 @@
       annotNode/.style={anchor=center, font=\fontannot},
       redAnchorNode/.style={anchor=center, left=-0.1cm of anchor, circle, fill=red, minimum size=0.2cm}, 
       graphicNode/.style={anchor=north west, below right=0cm and 0cm of anchor}, 
-      titleNode/.style={anchor=south west, above right=0cm and 0cm of anchor}, 
       mnNode/.style={below left=0.1cm and 0cm of rect.south east, font=\fontannot},
       block/.style = {rectangle, draw, fill=gray!20, text width=12em, text centered, rounded corners, minimum height=2em,inner sep=0.5em},
       line/.style = {draw, -latex'}
@@ -51,16 +50,28 @@
       \end{scope}
     };
      
-    \node (anchor) at (0.5,9.35) {}; 
+    \node (anchor) at (0.5,14.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=5cm]{content/graphics/approach/approach.png}};
+\draw [densely dotted, red,thick] (3,14.5) -- (3,10);
+\draw [densely dotted, red,thick] (3,9.2) -- (3,6.4);
+
+\tikzset{dimen/.style={<->,>=latex,thin,every rectangle node/.style={above right=0.2cm and -0.3cm,fill=white,midway,font=\sffamily}}}
+
+\draw (3.55,10.4) -- ++(0,1.5) coordinate (D1) -- +(0,5pt);
+\draw (4.15,10.4) -- ++(0,1.5) coordinate (D2) -- +(0,5pt);
+\draw [dimen] (D1) -- (D2) node {$D_{Beam}$};
+
+\draw [->, very thick] (3,10) -- ++(0.5,-0.2)  coordinate (S1) node[midway,below left] {$IS_X$} ;
+\draw [->, very thick] (S1) -- (3.85,10.4) node[midway,below right] {$IS_Y$};
 
 
-\node (anchor) at (6.0,9.35) {}; 
+
+\node (anchor) at (6.0,14.35) {}; 
 \node[labelNode] {B};
 
 % Place nodes
-\node [block] (init) at (8.0,8.35) {\textbf{START} \\ Collect overview image};
+\node [block] (init) at (8.0,13.35) {\textbf{START} \\ Collect overview image};
 \node [block, below = 0.3cm of init.south] (identify) {Setup hexagonal grid covering lamella area};
 \node [block, below = 0.3cm of identify.south] (mutate) {Beam-imageshift to tile n=i};
 \node [block, below = 0.3cm of mutate.south] (transfer) {Capture exposure and determine defocus by CTF fitting};
@@ -73,27 +84,29 @@
 \path [line] (transfer) -- (evaluate);
 \path [line] (evaluate) -|  ([xshift=0.5cm, yshift=0cm]transfer.east) |- (mutate);
 
-\node (anchor) at (17.0,9.35) {}; 
-\node[labelNode] {Q};
-\node[graphicNode] {\includegraphics[width=5cm]{content/images/ac_strategy.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-
-
-\node (anchor) at (11.5,9.35) {}; 
+\node (anchor) at (11.5,14.35) {}; 
 \node[labelNode] {C};
-\node[titleNode] {Eucentric Focus};
-\node[graphicNode] {\includegraphics[height=3.0cm]{content/images/fringebeam.png}};
+\node[graphicNode] {\includegraphics[width=8cm]{content/images/ac_strategy.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (15,9.35) {}; 
+
+\node (anchor) at (0.5,4.5) {}; 
+\node[labelNode] {C};
+\node[graphicNode] (euc) {\includegraphics[height=4.0cm]{content/images/fringebeam.png}};
+\node[above = 0cm and 0cm of euc.north] {Eucentric Focus};
+
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+
+\node (anchor) at (5.5,4.5) {}; 
 \node[labelNode] {D};
-\node[titleNode] {Fringe-free Focus};
-\node[graphicNode] {\includegraphics[height=3.0cm]{content/images/nofringebeam.png}};
+\node[graphicNode] (fff) {\includegraphics[height=4.0cm]{content/images/nofringebeam.png}};
+\node[above = 0cm and 0cm of fff.north] {Fringe-free Focus};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (11.5,4.85) {}; 
+\node (anchor) at (10.5,4.5) {}; 
 \node[labelNode] {E};
-\node[graphicNode] {\includegraphics[height=4.3cm]{content/code/img/defocusplot.pdf}};
+\node[anchor=north west, below right=-0.5cm and 0cm of anchor] {\includegraphics[height=4.8cm]{content/code/img/defocusplot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
     \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};

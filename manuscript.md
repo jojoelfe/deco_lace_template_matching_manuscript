@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-03-28'
+date-meta: '2022-03-29'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-03-28" />
-  <meta name="citation_publication_date" content="2022-03-28" />
+  <meta name="dc.date" content="2022-03-29" />
+  <meta name="citation_publication_date" content="2022-03-29" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@a352115](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/a352115c27ccb3b7fa2977015e71c3c7dbb4f954)
-on March 28, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@0a724b0](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/0a724b0da1586e2992e709189796c245a3f07ccf)
+on March 29, 2022.
 </em></small>
 
 ## Authors
@@ -283,34 +283,38 @@ above a threshold calulated according to .. .(7.75 for most images).
 
 ## Results
 
-### 2D-Template matching can be used to find ribosomal subunits in cryo-FIB thinned lamella of mammalian cells
+### 2DTM detects large ribosomal subunits in cryo-FIB lamella of mammalian cells
 
 To test whether we could detect individual ribosomes in mammalian cells we
 prepared cryo-lamella of mouse neutrophil-like cells. Low-magnification images
 of these lamellas clearly shows cellular features consistent with a
 neutrophil-like phenotype, mainly a segmented nucleus and a plethora of
 membrane-organelles, corresponding to the granules and secretory vesicles of
-neutrophils. We then proceeded to acquire micrographs on this lamella with a
-defocus of 0.5-1.0 um, 30 e/A2/s exposure and 1.5 A pixelsize. We manually
-selected multiple locations in the lamella and focused using standard low-dose
-techniques, i.e. by first ensuring correct focus by imaging a sacrifical area.
-The resoluting micrographs showed no signs of crystalline ice and had thon-rings
-to  resolution, indicating successfull vitrification. 
+neutrophils (Fig. {@fig:initmatching}A). We then proceeded to acquire
+micrographs on this lamella with a defocus of 0.5-1.0 um, 30 e/A2/s exposure and
+1.5 A pixelsize. We manually selected multiple locations in the lamella and
+focused using standard low-dose techniques where  focusing is performed on a sacrificial area. The resulting micrographs showed no signs of
+crystalline ice and had Thon-rings to  resolution, indicating successful
+vitrification. 
 
 We used an atomic model of the 60S mouse ribosomal subunit  (6SWA) for 2D
 template matching. In a subset of images the distribution of cross-correlation
 scores significantly exceeded the distribution expected from non-signifcant
-matching(Figure 1B). In the resulting scaled maximum-intensity maps, clear peaks
-with SNR thresholds up to 10 were apparent (Figure 1C). By using the criterion
-described by for thresholding potential matches we found that in images of
-cytosolic ompartments we found evidence of 10-500 ribosomes in the imaged areas.
-Notably we found no matches in images that were taken in the nuclear
-compartment. In the cytosolic areas we found a drastically different number of
-matches, In somer areas we found only ~ 50 matches er image area, corresponding
-to a concentration of..., while in another area we found more than 500 matches,
-corresponding to a concentration of ... .
-
-### cryo-EMILIA for 2D imaging of whole lamella
+matching. In the resulting scaled maximum-intensity maps, clear peaks
+with SNR thresholds up to 10 were apparent (Fig. {@fig:initmatching2}A). By
+using the criterion described by for thresholding potential matches we found
+that in images of cytosolic compartments we found evidence of 10-500 ribosomes in
+the imaged areas. Notably we found no matches in images that were taken in the
+nuclear compartment. In the cytosolic areas we found a drastically different
+number of matches, In some areas we found only ~ 50 matches er image area, while
+ in another area we found more than 500 matches . This ten-fold difference in
+local ribosome concentration , but we realized that current data acquistion
+protocols are limited in that only a small area of the lamella is actually
+imaged and, due to the manual selection of acquision positions based on the
+overview image, might be biased towards cellular region that appear appealing to
+the experimentalist. We therefore set out to collect cryo-EM data for 2DTM from
+mammalian lamella in a high-throughput unbiased fashion.
+### DECO-LACE for 2D imaging of whole lamella
 
 In order to obtain high-resolution data for complete lamella we used a new
 approach for data collection. This approach uses three key strategies: (1)
@@ -467,19 +471,34 @@ obtained matches with the same model used for the data in Figure 1.
 ```
 
 
+
+
+
 ![DeCo-LACE approach (A) Graphic demonstrating the data-collection strategy for DeCo-LACE](tikz:approach){#fig:approach}
 
-```{.tikz-figure #approach width=25cm height=10cm draft=false}
-\node (anchor) at (0.5,9.35) {}; 
+```{.tikz-figure #approach width=20cm height=15cm draft=false}
+\node (anchor) at (0.5,14.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=5cm]{content/graphics/approach/approach.png}};
+\draw [densely dotted, red,thick] (3,14.5) -- (3,10);
+\draw [densely dotted, red,thick] (3,9.2) -- (3,6.4);
+
+\tikzset{dimen/.style={<->,>=latex,thin,every rectangle node/.style={above right=0.2cm and -0.3cm,fill=white,midway,font=\sffamily}}}
+
+\draw (3.55,10.4) -- ++(0,1.5) coordinate (D1) -- +(0,5pt);
+\draw (4.15,10.4) -- ++(0,1.5) coordinate (D2) -- +(0,5pt);
+\draw [dimen] (D1) -- (D2) node {$D_{Beam}$};
+
+\draw [->, very thick] (3,10) -- ++(0.5,-0.2)  coordinate (S1) node[midway,below left] {$IS_X$} ;
+\draw [->, very thick] (S1) -- (3.85,10.4) node[midway,below right] {$IS_Y$};
 
 
-\node (anchor) at (6.0,9.35) {}; 
+
+\node (anchor) at (6.0,14.35) {}; 
 \node[labelNode] {B};
 
 % Place nodes
-\node [block] (init) at (8.0,8.35) {\textbf{START} \\ Collect overview image};
+\node [block] (init) at (8.0,13.35) {\textbf{START} \\ Collect overview image};
 \node [block, below = 0.3cm of init.south] (identify) {Setup hexagonal grid covering lamella area};
 \node [block, below = 0.3cm of identify.south] (mutate) {Beam-imageshift to tile n=i};
 \node [block, below = 0.3cm of mutate.south] (transfer) {Capture exposure and determine defocus by CTF fitting};
@@ -492,27 +511,29 @@ obtained matches with the same model used for the data in Figure 1.
 \path [line] (transfer) -- (evaluate);
 \path [line] (evaluate) -|  ([xshift=0.5cm, yshift=0cm]transfer.east) |- (mutate);
 
-\node (anchor) at (17.0,9.35) {}; 
-\node[labelNode] {Q};
-\node[graphicNode] {\includegraphics[width=5cm]{content/images/ac_strategy.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-
-
-\node (anchor) at (11.5,9.35) {}; 
+\node (anchor) at (11.5,14.35) {}; 
 \node[labelNode] {C};
-\node[titleNode] {Eucentric Focus};
-\node[graphicNode] {\includegraphics[height=3.0cm]{content/images/fringebeam.png}};
+\node[graphicNode] {\includegraphics[width=8cm]{content/images/ac_strategy.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (15,9.35) {}; 
+
+\node (anchor) at (0.5,4.5) {}; 
+\node[labelNode] {C};
+\node[graphicNode] (euc) {\includegraphics[height=4.0cm]{content/images/fringebeam.png}};
+\node[above = 0cm and 0cm of euc.north] {Eucentric Focus};
+
+\iftoggle{draft}{\node [redAnchorNode] {};};
+
+
+\node (anchor) at (5.5,4.5) {}; 
 \node[labelNode] {D};
-\node[titleNode] {Fringe-free Focus};
-\node[graphicNode] {\includegraphics[height=3.0cm]{content/images/nofringebeam.png}};
+\node[graphicNode] (fff) {\includegraphics[height=4.0cm]{content/images/nofringebeam.png}};
+\node[above = 0cm and 0cm of fff.north] {Fringe-free Focus};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (11.5,4.85) {}; 
+\node (anchor) at (10.5,4.5) {}; 
 \node[labelNode] {E};
-\node[graphicNode] {\includegraphics[height=4.3cm]{content/code/img/defocusplot.pdf}};
+\node[anchor=north west, below right=-0.5cm and 0cm of anchor] {\includegraphics[height=4.8cm]{content/code/img/defocusplot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 ```
@@ -554,6 +575,8 @@ obtained matches with the same model used for the data in Figure 1.
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 ```
+
+
 
 ![This is an example-figurern](tikz:example-figure4){#fig:approach4}
 

@@ -7,12 +7,12 @@
       "ribosome"
     ],
     "lang": "en-US",
-    "date-meta": "2022-03-28",
+    "date-meta": "2022-03-29",
     "author-meta": [
       "Johannes Elferich",
       "Nikolaus Grigorieff"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta name=\"citation_title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta property=\"og:title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta property=\"twitter:title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta name=\"dc.date\" content=\"2022-03-28\" />\n<meta name=\"citation_publication_date\" content=\"2022-03-28\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Johannes Elferich\" />\n<meta name=\"citation_author_institution\" content=\"RNA Therapeutic Institute, UMass Chan Medical School\" />\n<meta name=\"citation_author_institution\" content=\"HHMI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9911-706X\" />\n<meta name=\"citation_author\" content=\"Nikolaus Grigorieff\" />\n<meta name=\"citation_author_institution\" content=\"RNA Therapeutic Institute, UMass Chan Medical School\" />\n<meta name=\"citation_author_institution\" content=\"HHMI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1506-909X\" />\n<link rel=\"canonical\" href=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/\" />\n<meta property=\"og:url\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta name=\"citation_title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta property=\"og:title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta property=\"twitter:title\" content=\"Visual proteomics using whole-lamella 2D template matching\" />\n<meta name=\"dc.date\" content=\"2022-03-29\" />\n<meta name=\"citation_publication_date\" content=\"2022-03-29\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Johannes Elferich\" />\n<meta name=\"citation_author_institution\" content=\"RNA Therapeutic Institute, UMass Chan Medical School\" />\n<meta name=\"citation_author_institution\" content=\"HHMI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9911-706X\" />\n<meta name=\"citation_author\" content=\"Nikolaus Grigorieff\" />\n<meta name=\"citation_author_institution\" content=\"RNA Therapeutic Institute, UMass Chan Medical School\" />\n<meta name=\"citation_author_institution\" content=\"HHMI\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1506-909X\" />\n<link rel=\"canonical\" href=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/\" />\n<meta property=\"og:url\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -22,7 +22,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "March 28, 2022",
+    "date": "March 29, 2022",
     "randomize_author_order": false,
     "authors": [
       {
@@ -71,19 +71,19 @@
       "repo_slug": "jojoelfe/deco_lace_template_matching_manuscript",
       "repo_owner": "jojoelfe",
       "repo_name": "deco_lace_template_matching_manuscript",
-      "commit": "a352115c27ccb3b7fa2977015e71c3c7dbb4f954",
-      "triggering_commit": "a352115c27ccb3b7fa2977015e71c3c7dbb4f954",
-      "build_url": "https://github.com/jojoelfe/deco_lace_template_matching_manuscript/commit/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/checks",
-      "job_url": "https://github.com/jojoelfe/deco_lace_template_matching_manuscript/actions/runs/2052830940"
+      "commit": "0a724b0da1586e2992e709189796c245a3f07ccf",
+      "triggering_commit": "0a724b0da1586e2992e709189796c245a3f07ccf",
+      "build_url": "https://github.com/jojoelfe/deco_lace_template_matching_manuscript/commit/0a724b0da1586e2992e709189796c245a3f07ccf/checks",
+      "job_url": "https://github.com/jojoelfe/deco_lace_template_matching_manuscript/actions/runs/2060706992"
     },
     "html_url": "https://jojoelfe.github.io/deco_lace_template_matching_manuscript/",
     "pdf_url": "https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf",
-    "html_url_versioned": "https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/",
-    "pdf_url_versioned": "https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a352115c27ccb3b7fa2977015e71c3c7dbb4f954/manuscript.pdf",
+    "html_url_versioned": "https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/",
+    "pdf_url_versioned": "https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/0a724b0da1586e2992e709189796c245a3f07ccf/manuscript.pdf",
     "manubot_version": "0.5.2",
     "rootstock_commit": "9a22fab4497f80f501ea361d028f26888ad9d5a0",
     "manuscript_stats": {
-      "word_count": 3872
+      "word_count": 4015
     }
   }
 }
