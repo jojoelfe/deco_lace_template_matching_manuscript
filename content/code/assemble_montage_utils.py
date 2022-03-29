@@ -191,13 +191,14 @@ def create_montage(metadata ):
     io.imsave(montage_info['montage_filename'],img_as_uint(big),plugin='tifffile')
     io.imsave(montage_info['matches_montage_filename'],img_as_uint(matches),plugin='tifffile')
 
-def create_montage_bin_after(metadata,erode_mask=0,gain=None,blend=True ):
+def create_montage_bin_after(metadata,erode_mask=0,gain=None,blend=True,gain_mult=1.0 ):
 
     montage_info = metadata['montage'].iloc[0]
     if gain is not None:
         with mrcfile.open(gain) as mrc:
             gain_data = mrc.data.copy()
         gain_data[gain_data < 0.5] = 1.0
+        gain_data *= gain_mult
     else:
         gain_data = None
     montage_dimensions = (montage_info['montage_y_size']*montage_info['montage_binning'], montage_info['montage_x_size']*montage_info['montage_binning'])

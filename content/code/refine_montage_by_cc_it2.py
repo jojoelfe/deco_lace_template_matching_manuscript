@@ -21,7 +21,7 @@ from skimage import filters
 from functools import partial
 from scipy.ndimage import binary_erosion
 
-
+ver = "_t2"
 FORMAT = "%(message)s"
 logging.basicConfig(
     level="NOTSET", format=FORMAT, datefmt="[%X]", handlers=[RichHandler()]
@@ -58,12 +58,12 @@ def determine_shift_by_cc(doubled,diagnostic=False,erode_mask=0):
         fig, axs = plt.subplots(4,4,figsize=(15,15))
     with mrcfile.open(im1["tile_filename"]) as mrc: 
             reference = np.copy(mrc.data[0])
-            reference = filters.butterworth(reference,cutoff_frequency_ratio=0.05,order=4.0, high_pass=False)
+            reference = filters.butterworth(reference,cutoff_frequency_ratio=0.02,order=4.0, high_pass=False)
     with mrcfile.open(im2["tile_filename"]) as mrc: 
             moving = np.copy(mrc.data[0])
             if diagnostic:
                 axs[2][0].imshow(moving,cmap="Greys_r")
-            moving = filters.butterworth(moving,cutoff_frequency_ratio=0.05,order=4.0, high_pass=False)
+            moving = filters.butterworth(moving,cutoff_frequency_ratio=0.02,order=4.0, high_pass=False)
 
     if diagnostic:
         axs[2][1].imshow(moving,cmap="Greys_r")
@@ -200,7 +200,7 @@ output_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/
 output_directory.mkdir(exist_ok=True,parents=True)
 for (database, name) in utils.dataset_info:
     logger.info(f"Working on {name}")
-    montage_data = starfile.read(input_directory/f"{name}.star")
+    montage_data = starfile.read(input_directory/f"{name}{ver}.star")
     tile_data = montage_data["tiles"]
     # Set index of tile_data to tile_file_name
     tile_data["filename_index"] = tile_data["tile_filename"]
@@ -209,12 +209,12 @@ for (database, name) in utils.dataset_info:
     erode_mask = 0 
     if name.startswith("euc"):
         erode_mask = 100
-        logger.info("Eroding mask by 100 pixels")
+        logger.info("Eroding mask by 130 pixels")
     else: 
         erode_mask = 50
-        logger.info("Eroding mask by 100 pixels")
+        logger.info("Eroding mask by 90 pixels")
     shifts = calculate_crosscorrelations(tile_data,num_proc=20,erode_mask=erode_mask)
-    starfile.write(shifts,output_directory/f"{name}_shifts.star",overwrite=True)
+    starfile.write(shifts,output_directory/f"{name}_shifts{ver}.star",overwrite=True)
     #shifts = starfile.read(output_directory/f"{name}_shifts.star")
     shifts = pair_and_shift_quality_control(tile_data,shifts)
     tile_data = tile_data[tile_data["include_in_refined"] == True].copy()
@@ -243,8 +243,8 @@ for (database, name) in utils.dataset_info:
     montage_pixel_size = tile_data['tile_pixel_size'].iloc[0] * binning
 
     montage_data["montage"].loc[0] =  {
-        'montage_filename': str(output_directory/f"{name}") + "_montage.tif",
-        'matches_montage_filename': str(output_directory/f"{name}")+"_matches_montage.tif",
+        'montage_filename': str(output_directory/f"{name}") + f"_montage{ver}.tif",
+        'matches_montage_filename': str(output_directory/f"{name}")+f"_matches_montage{ver}.tif",
         'montage_pixel_size': montage_pixel_size,
         'montage_binning': binning,
         'montage_x_size': montage_x_size,
@@ -254,10 +254,10 @@ for (database, name) in utils.dataset_info:
         "montage": montage_data["montage"],
         "tiles": tile_data
     }
-    starfile.write(results,output_directory/f"{name}.star",overwrite=True)
+    starfile.write(results,output_directory/f"{name}{ver}.star",overwrite=True)
     if name.startswith("euc"):
         gain = "/scratch/bern/elferich/deco_lace_manuscript_processing/averages/euc_gain.mrc"
     if name.startswith("fff"):
         gain = "/scratch/bern/elferich/deco_lace_manuscript_processing/averages/fff_gain.mrc"
 
-    assemble_montage_utils.create_montage_bin_after(results,erode_mask=erode_mask,gain=gain,blend=False)
+    assemble_montage_utils.create_montage_bin_after(results,erode_mask=erode_mask+50,gain=gain,blend=False,gain_mult=0.5)

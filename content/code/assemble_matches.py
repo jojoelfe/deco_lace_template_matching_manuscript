@@ -6,13 +6,13 @@ import mrcfile
 import numpy as np
 
 
-montage_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly/")
+montage_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/")
 refine_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/lamella_refine/")
 assembled_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/assemble/")
 assembled_directory.mkdir(exist_ok=True,parents=True)
-for (database, name) in utils.dataset_info[5:6]:
+for (database, name) in utils.dataset_info:
     print(name)
-    montage_info = starfile.read(montage_directory / f"{name}.star")
+    montage_info = starfile.read(montage_directory / f"{name}_t2.star")
     refine_info = starfile.read(refine_directory / f"{name}_refine.star")
     print(len(refine_info.index))
     print(len(montage_info["tiles"].index))

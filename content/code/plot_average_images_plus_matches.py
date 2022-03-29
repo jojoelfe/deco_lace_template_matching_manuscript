@@ -19,6 +19,7 @@ import utils
 
 intensity = {}
 gain_average = {}
+gain_all_average = {}
 all_average = {}
 selected_micrographs = {}
 
@@ -64,6 +65,7 @@ for dataset, dataset_name in utils.dataset_info:
     max_x[dataset_name] = max_xsize
     max_y[dataset_name] = max_ysize
     gain_average[dataset] = np.zeros((max_ysize,max_xsize))
+    gain_all_average[dataset] = np.zeros((max_ysize,max_xsize))
     all_average[dataset] = np.zeros((max_ysize,max_xsize))
     logging.info(f"Average image has shape {gain_average[dataset].shape}")
 
@@ -91,9 +93,12 @@ for dataset, dataset_name in utils.dataset_info:
             gain_counter += 1
             gain_average[dataset][y_offset:y_offset+data.shape[0],
                                     x_offset:x_offset+data.shape[1]] += data
-            with mrcfile.new(output_dir / f"diag_{dataset_name}_av_{i:03}.mrc", overwrite=True) as mrc:
-                mrc.set_data(data)
-            print(f"diag_{dataset_name}_av_{i:03}.mrc",np.mean(data),np.sum(mask_data))
+            
+            #with mrcfile.new(output_dir / f"diag_{dataset_name}_av_{i:03}.mrc", overwrite=True) as mrc:
+            #    mrc.set_data(data)
+            #print(f"diag_{dataset_name}_av_{i:03}.mrc",np.mean(data),np.sum(mask_data))
+        gain_all_average[dataset][y_offset:y_offset+data.shape[0],
+                                    x_offset:x_offset+data.shape[1]] += data
         data *= mask_data
         all_average[dataset][y_offset:y_offset+data.shape[0],
                                 x_offset:x_offset+data.shape[1]] += data
@@ -103,10 +108,13 @@ for dataset, dataset_name in utils.dataset_info:
         mrc.set_data(np.float32(all_average[dataset]))
     with mrcfile.new(output_dir / f"{dataset_name}_av_gain.mrc", overwrite=True) as mrc:
         mrc.set_data(np.float32(gain_average[dataset]))
+    with mrcfile.new(output_dir / f"{dataset_name}_av_gain_all.mrc", overwrite=True) as mrc:
+        mrc.set_data(np.float32(gain_all_average[dataset]))
 
 max_x_fff = max([max_x[k] for k in max_x if k.startswith("fff")])
 max_y_fff = max([max_y[k] for k in max_y if k.startswith("fff")])
 gain = np.zeros((max_y_fff,max_x_fff))
+gain_all = np.zeros((max_y_fff,max_x_fff))
 for dataset, dataset_name in utils.dataset_info:
     
     if dataset_name.startswith("fff"):
@@ -115,9 +123,17 @@ for dataset, dataset_name in utils.dataset_info:
         x_offset =int( (max_x_fff-data.shape[1])/2)
         y_offset = int((max_y_fff-data.shape[0])/2)
         gain[y_offset:y_offset+data.shape[0],x_offset:x_offset+data.shape[1]] += data
+        with mrcfile.open(output_dir / f"{dataset_name}_av_gain_all.mrc") as mrc:
+            data = mrc.data
+        x_offset =int( (max_x_fff-data.shape[1])/2)
+        y_offset = int((max_y_fff-data.shape[0])/2)
+        gain_all[y_offset:y_offset+data.shape[0],x_offset:x_offset+data.shape[1]] += data
 gain /= gain.mean()
+gain_all /= gain_all.mean()
 with mrcfile.new(output_dir / f"fff_gain.mrc", overwrite=True) as mrc:
     mrc.set_data(np.float32(gain))
+with mrcfile.new(output_dir / f"fff_gain_all.mrc", overwrite=True) as mrc:
+    mrc.set_data(np.float32(gain_all))
 max_x_euc = max([max_x[k] for k in max_x if k.startswith("euc")])
 max_y_euc = max([max_y[k] for k in max_y if k.startswith("euc")])
 gain = np.zeros((max_y_euc,max_x_euc))
