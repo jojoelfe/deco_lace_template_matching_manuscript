@@ -34,13 +34,13 @@ GIS
 GrCyt
 gridsquares
 Grigorieff
-hematopoiesis
+Hematopoiesis
 hematopoietic
 HHMI
 Hoechst
 HoxA
 illumated
-imageshift
+Imageshift
 initmatching
 insepction
 jojoelfe
@@ -79,7 +79,7 @@ RPMI
 sapcing
 SCF
 SEM
-SerialEm
+SerialEM
 signifcant
 sillicone
 SNR
