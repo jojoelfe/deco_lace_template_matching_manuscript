@@ -38,7 +38,6 @@ local tikz_doc_template = [[
       annotNode/.style={anchor=center, font=\fontannot},
       redAnchorNode/.style={anchor=center, left=-0.1cm of anchor, circle, fill=red, minimum size=0.2cm}, 
       graphicNode/.style={anchor=north west, below right=0cm and 0cm of anchor}, 
-      titleNode/.style={anchor=south west, above right=0cm and 0cm of anchor}, 
       mnNode/.style={below left=0.1cm and 0cm of rect.south east, font=\fontannot},
       block/.style = {rectangle, draw, fill=gray!20, text width=12em, text centered, rounded corners, minimum height=2em,inner sep=0.5em},
       line/.style = {draw, -latex'}
