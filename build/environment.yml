@@ -23,6 +23,7 @@ dependencies:
   - r-rsvg
   - freeimage
   - scikit-image
+  - imagemagick 
   - pip:
     - cffi==1.15.0
     - errorhandler==2.0.1

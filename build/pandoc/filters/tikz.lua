@@ -83,6 +83,8 @@ local function tikz2image(width,height,draft,src, filetype, outfile)
     else
         os.execute('pdf2svg ' .. get_file_name(outfile) .. '.pdf '  .. outfile .. '.svg')
         os.rename(get_file_name(outfile) .. '.pdf', outfile .. '.pdf')
+        os.execute('convert -density 300 '.. outfile .. '.pdf' .. ' -background white -alpha remove ' .. outfile .. '.png')
+        
         print(outfile)
     end
     os.rename(get_file_name(outfile) .. '.tex', outfile .. '.tex')
@@ -113,7 +115,7 @@ end
 
 function Para(para)
   if para.content[1].t == "Image" and string.match(para.content[1].src, "tikz:") then
-    new_path = 'figures/' .. string.sub(para.content[1].src,6) .. '.' .. extension_for[FORMAT]
+    new_path = 'figures/' .. string.sub(para.content[1].src,6) .. '.png' 
     para.content[1].src = new_path
     return para
   else
