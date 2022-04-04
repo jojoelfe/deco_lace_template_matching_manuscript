@@ -16,13 +16,17 @@ for dataset, name in utils.dataset_info:
     with lp.figure(f"movement_vs_bs_plot_{name}",size=lp.figure_size(ratio=1.0,doc_width_pt=250),tight_layout=True):
         cm = plt.cm.get_cmap('viridis')
         data_euc = np.array(defocus,dtype=float)
-        sc =plt.scatter(data_euc[:,1],data_euc[:,2],c=data_euc[:,0], cmap=cm,vmin=0,vmax=50)
-       
+        if name.startswith("euc"):
+            s = 9
+        else:
+            s = 11
+        sc =plt.scatter(data_euc[:,1],data_euc[:,2],c=data_euc[:,0], cmap=cm,vmin=0,vmax=50,marker='H',s=s)
+        plt.axis('scaled')
+
         plt.xlabel("Image Shift X [µm]")
         plt.ylabel("Image Shift Y [µm]")
         plt.xlim(-6,6)
         plt.ylim(-10,8)
-        #fig.colorbar(sc, ax=axs[1], shrink=1.0,label="Total movement [Å]")
 
 for dataset, name in utils.dataset_info[-1:]:
     selected_micrographs = utils.get_data_from_db(dataset,get_movement=True)
@@ -40,4 +44,4 @@ for dataset, name in utils.dataset_info[-1:]:
         plt.xlim(-6,6)
         plt.ylim(-10,8)
         plt.gca().set_visible(False)
-        plt.colorbar(sc, ax=axs[1], shrink=1.0,label="Total movement [Å]")
+        plt.colorbar(sc,  shrink=1.0,label="Total movement [Å]")
