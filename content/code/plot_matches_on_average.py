@@ -54,9 +54,16 @@ with lp.figure("micrograph_with_matches",size=lp.figure_size(ratio=0.4,doc_width
 
         axs[i].set_title(utils.dataset_names[i])
         axs[i].imshow(image[dataset],cmap="gray")
+        
         colormap = plt.cm.viridis #or any other colormap
         normalize = matplotlib.colors.Normalize(vmin=7, vmax=10)
-        print(len(matches[dataset]["tile_x"]/1.5))
         s = axs[i].scatter(matches[dataset]["tile_x"]/1.5,matches[dataset]["tile_y"]/1.5,s=1,c=matches[dataset]["peak_value"],cmap=colormap,norm=normalize)
-    plt.colorbar(s)
+        axs[i].set_xlim(0,image[dataset].shape[1])
+        axs[i].set_ylim(image[dataset].shape[0],0)
+        # Hide Axes
+        axs[i].axis('off')
+    # PLace colorbar outside of plot
+    fig.subplots_adjust(right=0.8)
+    cbar_ax = fig.add_axes([0.85, 0.15, 0.05, 0.7])
+    fig.colorbar(s, cax=cbar_ax)
 
