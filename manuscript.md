@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-03-30'
+date-meta: '2022-04-07'
 author-meta:
 - Johannes Elferich
 - Nikolaus Grigorieff
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="og:title" content="Visual proteomics using whole-lamella 2D template matching" />
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
-  <meta name="dc.date" content="2022-03-30" />
-  <meta name="citation_publication_date" content="2022-03-30" />
+  <meta name="dc.date" content="2022-04-07" />
+  <meta name="citation_publication_date" content="2022-04-07" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@2d0a9a5](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/2d0a9a5debbbf44b5f9d5797d38db68589012013)
-on March 30, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@56ce938](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f)
+on April 7, 2022.
 </em></small>
 
 ## Authors
@@ -293,18 +293,18 @@ membrane-organelles, corresponding to the granules and secretory vesicles of
 neutrophils (Fig. {@fig:initmatching}A). We then proceeded to acquire
 micrographs on this lamella with a defocus of 0.5-1.0 um, 30 e/A2/s exposure and
 1.5 A pixelsize. We manually selected multiple locations in the lamella and
-focused using standard low-dose techniques where  focusing is performed on a sacrificial area. The resulting micrographs showed no signs of
-crystalline ice and had Thon-rings to  resolution, indicating successful
-vitrification. 
+focused using standard low-dose techniques where  focusing is performed on a
+sacrificial area. The resulting micrographs showed no signs of crystalline ice
+and had Thon-rings to  resolution, indicating successful vitrification. 
 
 We used an atomic model of the 60S mouse ribosomal subunit  (6SWA) for 2D
 template matching. In a subset of images the distribution of cross-correlation
 scores significantly exceeded the distribution expected from non-signifcant
-matching. In the resulting scaled maximum-intensity maps, clear peaks
-with SNR thresholds up to 10 were apparent (Fig. {@fig:initmatching2}A). By
-using the criterion described by for thresholding potential matches we found
-that in images of cytosolic compartments we found evidence of 10-500 ribosomes in
-the imaged areas. Notably we found no matches in images that were taken in the
+matching. In the resulting scaled maximum-intensity maps, clear peaks with SNR
+thresholds up to 10 were apparent (Fig. {@fig:initmatching2}A). By using the
+criterion described by for thresholding potential matches we found that in
+images of cytosolic compartments we found evidence of 10-500 ribosomes in the
+imaged areas. Notably we found no matches in images that were taken in the
 nuclear compartment. In the cytosolic areas we found a drastically different
 number of matches, In some areas we found only ~ 50 matches er image area, while
  in another area we found more than 500 matches . This ten-fold difference in
@@ -314,6 +314,7 @@ imaged and, due to the manual selection of acquision positions based on the
 overview image, might be biased towards cellular region that appear appealing to
 the experimentalist. We therefore set out to collect cryo-EM data for 2DTM from
 mammalian lamella in a high-throughput unbiased fashion.
+
 ### DECO-LACE for 2D imaging of whole lamella
 
 In order to obtain high-resolution data for complete lamella we used a new
@@ -354,9 +355,9 @@ function of the applied Beam-image shift (Figure 2E). This demonstrated that the
 defocus was consistent over the lamella, with outliers only at isolated images
 and in images containing contamination. We also plotted the measure objective
 astigmatism of the lamella and found that it varies with the applied Beam-image
-shift, become more astigmatic mostly due to beam-image shift in the X
-direction. While approaches exist to correct this during the data-collection, we
-opted to not use these mechanism for these early experiments and instead rely on
+shift, become more astigmatic mostly due to beam-image shift in the X direction.
+While approaches exist to correct this during the data-collection, we opted to
+not use these mechanism for these early experiments and instead rely on
 computational correction of these aberrations in order to characterize them. 
 
 ### 2D-Template matching of cryo-EMILIA data reveals ribosome distribution 
@@ -365,11 +366,23 @@ We developed customized preprocessing protocol to images obtained by cryo-EMILIA
 to enable their use for 2D-template matching. First we restricted calculation of
 cross-correlation coefficients between individual movie frames to the central
 portion of the image to prevent artifacts from the beam edges on estimation of
-motion. Then we calculated a mask that defined the illuminated area of the
-micrographs and used it to fill non-illumated areas with gaussian noise,
-matching mean and standard deviation to the illuminated signal (Figure 3A). The
+motion [Figure S]. Then we calculated a mask that defined the illuminated area
+of the micrographs and used it to fill non-illumated areas with gaussian noise,
+matching mean and standard deviation to the illuminated signal (Figure S). The
 so processed images were suitable for 2D-template matching and we were able to
 obtained matches with the same model used for the data in Figure 1.
+
+We then matched all individual tiles for ribosomes and assembled a montaged view
+as described above (Figure @fig:matching A+G). The resulting montages reveal
+ribsome distribution throughout the FIB-milled slice of individual cells.
+Organelles like the nucleus and mitochondria only show sporadic matches with low
+SNRs, consistent with the estimated false-positive rate on one per tile. During
+the assembly we calculated the Z positions from the indivdual estimated defocus
+levels and the focus plane of the microscope during acquisition of each tile.
+When viewed from the side the ribosome position therefore show the slope of the
+lamella in the microscope frame. Furthermore, the positions are also consistent
+with an uneven thickness of the lamella, thinner at the leading edge, even
+though, lamella were generated using the "overtilt" approach [cite].  
 
 ### Quantitative analysis of translation activity
 
@@ -388,6 +401,8 @@ obtained matches with the same model used for the data in Figure 1.
 - Granules containing ribosomes?
 
 - Threshold implications (no matches on most images)
+
+- K3 not linear
 
 ## Figures
 
@@ -460,7 +475,10 @@ obtained matches with the same model used for the data in Figure 1.
 
 ```
 
-![Maximum intensity projection cross-correlation map of micrograph shown in Figure {@fig:initmatching}](tikz:initmatching2){#fig:initmatching2 tag="S1"}
+![2D template matching of the large subunit of the ribosome in fib-milled
+neutrophil-like cells (A) Maximum intensity projection cross-correlation map of
+micrograph shown in Figure
+{@fig:initmatching} (B+C) 3D plot of MIP regions indicated by color boxes in Panel A](tikz:initmatching2){#fig:initmatching2 tag="S1"}
 
 ```{.tikz-figure #initmatching2 width=13cm height=9cm draft=false}
 \node (anchor) at (0.5,8.35) {}; 
@@ -474,31 +492,50 @@ obtained matches with the same model used for the data in Figure 1.
 
 
 
-![DeCo-LACE approach (A) Graphic demonstrating the data-collection strategy for DeCo-LACE](tikz:approach){#fig:approach}
+![DeCo-LACE approach (A) Graphic demonstrating the data-collection strategy for
+DeCo-LACE. The electron beam is condensed to a diameter $D_{Beam}$ that allows captured of
+the whole illuminated area on the camera. Beam-image shift along X and Y
+($BIS_X$,$$BIS_Y$) is used to raster the whole lamella
+(B) Diagram of the collection algorithm
+(C) Example overview image of a lamella with the designated acquisition
+positions and the used beam diameter indicated with red circles
+(D+E) Representative micrographs takne with a condensed beam at eucentric focus
+(D) or fringe-free focus (E)
+(F) Boxplot of defocus measured by ctffind of micrographs taken by the DeCo-Lace
+approach on 4 lamella images at eucentric focus and 4 lamella imaged with
+fringe-free focus.
+(F+G) Lamella overview images of lamella imaged at eucentric focus (F) Overview
+image taken at low magnification (40Å pixel size) (G) Overview created by
+montaging high magnification images taken with the DeCo-Lace approach (1.5Å
+pixelsize)
+(H+I) Lamella overview images of lamella imaged at fringe-free focus (H) Overview
+image taken at low magnification (40Å pixel size) (I) Overview created by
+montaging high magnification images taken with the DeCo-Lace approach (1.5Å
+pixelsize) ](tikz:approach){#fig:approach}
 
-```{.tikz-figure #approach width=20cm height=15cm draft=false}
-\node (anchor) at (0.5,14.35) {}; 
+```{.tikz-figure #approach width=20cm height=20cm draft=false}
+\node (anchor) at (0.5,19.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=5cm]{content/graphics/approach/approach.png}};
-\draw [densely dotted, red,thick] (3,14.5) -- (3,10);
-\draw [densely dotted, red,thick] (3,9.2) -- (3,6.4);
+\draw [densely dotted, red,thick] (3,19.5) -- (3,15.0);
+\draw [densely dotted, red,thick] (3,14.2) -- (3,11.4);
 
 \tikzset{dimen/.style={<->,>=latex,thin,every rectangle node/.style={above right=0.2cm and -0.3cm,fill=white,midway,font=\sffamily}}}
 
-\draw (3.55,10.4) -- ++(0,1.5) coordinate (D1) -- +(0,5pt);
-\draw (4.15,10.4) -- ++(0,1.5) coordinate (D2) -- +(0,5pt);
+\draw (3.55,15.4) -- ++(0,1.5) coordinate (D1) -- +(0,5pt);
+\draw (4.15,15.4) -- ++(0,1.5) coordinate (D2) -- +(0,5pt);
 \draw [dimen] (D1) -- (D2) node {$D_{Beam}$};
 
-\draw [->, very thick] (3,10) -- ++(0.5,-0.2)  coordinate (S1) node[midway,below left] {$IS_X$} ;
-\draw [->, very thick] (S1) -- (3.85,10.4) node[midway,below right] {$IS_Y$};
+\draw [->, very thick] (3,15) -- ++(0.5,-0.2)  coordinate (S1) node[midway,below left] {$IS_X$} ;
+\draw [->, very thick] (S1) -- (3.85,15.4) node[midway,below right] {$IS_Y$};
 
 
 
-\node (anchor) at (6.0,14.35) {}; 
+\node (anchor) at (6.0,19.35) {}; 
 \node[labelNode] {B};
 
 % Place nodes
-\node [block] (init) at (8.0,13.35) {\textbf{START} \\ Collect overview image};
+\node [block] (init) at (8.0,18.35) {\textbf{START} \\ Collect overview image};
 \node [block, below = 0.3cm of init.south] (identify) {Setup hexagonal grid covering lamella area};
 \node [block, below = 0.3cm of identify.south] (mutate) {Beam-imageshift to tile n=i};
 \node [block, below = 0.3cm of mutate.south] (transfer) {Capture exposure and determine defocus by CTF fitting};
@@ -511,121 +548,331 @@ obtained matches with the same model used for the data in Figure 1.
 \path [line] (transfer) -- (evaluate);
 \path [line] (evaluate) -|  ([xshift=0.5cm, yshift=0cm]transfer.east) |- (mutate);
 
-\node (anchor) at (11.5,14.35) {}; 
+\node (anchor) at (11.5,19.35) {}; 
 \node[labelNode] {C};
 \node[graphicNode] {\includegraphics[width=8cm]{content/images/ac_strategy.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 
-\node (anchor) at (0.5,4.5) {}; 
-\node[labelNode] {C};
+\node (anchor) at (0.5,9.5) {}; 
+\node[labelNode] {D};
 \node[graphicNode] (euc) {\includegraphics[height=4.0cm]{content/images/fringebeam.png}};
 \node[above = 0cm and 0cm of euc.north] {Eucentric Focus};
 
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 
-\node (anchor) at (5.5,4.5) {}; 
-\node[labelNode] {D};
+\node (anchor) at (5.5,9.5) {}; 
+\node[labelNode] {E};
 \node[graphicNode] (fff) {\includegraphics[height=4.0cm]{content/images/nofringebeam.png}};
 \node[above = 0cm and 0cm of fff.north] {Fringe-free Focus};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (10.5,4.5) {}; 
-\node[labelNode] {E};
+\node (anchor) at (10.5,9.5) {}; 
+\node[labelNode] {F};
 \node[anchor=north west, below right=-0.5cm and 0cm of anchor] {\includegraphics[height=4.8cm]{content/code/img/defocusplot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-```
 
 
-![This is an example-figurern](tikz:lamella_spatial_info){#fig:lamella_spatial_info}
-
-```{.tikz-figure #lamella_spatial_info width=16.5cm height=9cm draft=false}
-\node (anchor) at (0.5,8.35) {}; 
-\node[labelNode] {A};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_defocus_vs_bs_plot.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-
-\node (anchor) at (0.5,4.35) {}; 
-\node[labelNode] {B};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_astigmatism_vs_bs_plot.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-
-\node (anchor) at (8.5,8.35) {}; 
-\node[labelNode] {C};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_angle_vs_bs_plot.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-
-```
-
-
-![This is an example-figurern](tikz:example-figure3){#fig:approach3}
-
-```{.tikz-figure #example-figure3 width=16.5cm height=9cm draft=false}
-\node (anchor) at (0.5,8.35) {}; 
-\node[labelNode] {A};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/movement_vs_bs_plot.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-
-
-\node (anchor) at (8.5,8.35) {}; 
-\node[labelNode] {B};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/thickness_by_intensity_vs_bs_plot.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-
-```
-
-
-
-![This is an example-figurern](tikz:example-figure4){#fig:approach4}
-
-```{.tikz-figure #example-figure4 width=20cm height=13cm draft=false}
-\node (anchor) at (0.5,12.35) {}; 
-\node[labelNode] {A};
-\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer000.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (6.5,12.35) {}; 
-\node[labelNode] {B};
-\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer001.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (11,12.35) {}; 
-\node[labelNode] {C};
-\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer002.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (15.5,12.35) {}; 
-\node[labelNode] {D};
-\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer003.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-
-\node (anchor) at (0.5,6.5) {}; 
-\node[labelNode] {E};
-\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer005.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (5,6.5) {}; 
-\node[labelNode] {F};
-\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer006.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (9.5,6.5) {}; 
+\node (anchor) at (0.5,4.5) {}; 
 \node[labelNode] {G};
-\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer007.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
-\node (anchor) at (14.5,6.5) {}; 
+\node[graphicNode] {\includegraphics[height=4.5cm]{content/images/euc_lamella1_view_morph.png}};
+
+\node (anchor) at (5,4.5) {}; 
 \node[labelNode] {H};
-\node[graphicNode] {\includegraphics[height=5.2cm]{content/images/slicer008.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
+\node[graphicNode] {\includegraphics[height=4.5cm]{content/images/euc_lamella1_1000px.png}};
+
+\node (anchor) at (9.5,4.5) {}; 
+\node[labelNode] {I};
+\node[graphicNode] {\includegraphics[height=4.5cm]{content/images/fff_lamella4_view_morphed.png}};
+
+\node (anchor) at (14,4.5) {}; 
+\node[labelNode] {J};
+\node[graphicNode] {\includegraphics[height=4.5cm]{content/images/fff_lamella4_1000px.png}};
 
 ```
 
-![This is an example-figurern](tikz:matching){#fig:matching}
 
-```{.tikz-figure #matching width=16cm height=13cm draft=false}
-\node (anchor) at (0.5,9.35) {}; 
+
+
+![
+Overview images of lamellae imaged using the DeCo-LACE approach taken at low-magnification
+](tikz:lamella_images){#fig:lamella_images tag="S2"}
+
+```{.tikz-figure #lamella_images width=20.0cm height=5cm draft=false}
+\def\panelheight{4.6cm}
+
+\node (anchor) at (0.5,4.5) {}; 
 \node[labelNode] {A};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/images/screenie.png}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/images/slicer000.png}};
+\node (anchor) at ([shift={(0.5cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/images/slicer001.png}};
+\node (anchor) at ([shift={(0.5cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/images/slicer002.png}};
+\node (anchor) at ([shift={(0.5cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/images/slicer003.png}};
+
+\node (anchor) at ([shift={(0.0cm,-0.5cm)}]0.5,0 |- panel.south) {}; 
+\node[graphicNode]  (panel) {\includegraphics[height=\panelheight]{content/images/slicer005.png}};
+\node (anchor) at ([shift={(0.5cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode]  (panel) {\includegraphics[height=\panelheight]{content/images/slicer006.png}};
+\node (anchor) at ([shift={(0.5cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode]  (panel) {\includegraphics[height=\panelheight]{content/images/slicer007.png}};
+\node (anchor) at ([shift={(0.5cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode]  (panel) {\includegraphics[height=\panelheight]{content/images/slicer008.png}};
+
+```
+
+![Defocus estimation of individual tiles of DeCo-Lace montages
+(A) Defocus values of individual micrographs taken using the DeCo-Lace approach
+plotted as a function of the Beam-Image-Shift values. 
+(B) Defocus astigmatism of individual micrographs taken using the DeCo-Lace approach
+plotted as a function of the Beam-Image-Shift values. ](tikz:lamella_spatial_info){#fig:lamella_spatial_info tag="S3"}
+
+```{.tikz-figure #lamella_spatial_info width=20.0cm height=10cm draft=false}
+\def\panelheight{4.6cm}
 
 
+\node (anchor) at (0.5,9.5) {}; 
+\node[labelNode] {A};
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_euc_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_euc_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_euc_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_euc_lamella4.png}};
+
+\node (anchor) at ([shift={(0.0cm,-0.5cm)}]0.5,0 |- panel.south) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_fff_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_fff_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_fff_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_fff_lamella4.png}};
+\node (anchor) at ([shift={(-0.4cm,4.0cm)}]panel.north east) {}; 
+\node[graphicNode] (key) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_colorbar.png}};
+
+\node (anchor) at ([shift={(0.0cm,-1.0cm)}]0.5,0 |- panel.south) {}; 
+\node[labelNode] {B};
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_euc_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_euc_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_euc_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_euc_lamella4.png}};
+
+\node (anchor) at ([shift={(0.0cm,-0.5cm)}]0.5,0 |- panel.south) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_fff_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_fff_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_fff_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_fff_lamella4.png}};
+\node (anchor) at ([shift={(-0.4cm,4.0cm)}]panel.north east) {}; 
+\node[graphicNode] (key) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_colorbar.png}};
+
+```
+
+![Motion correction of movies with condensed beams. 
+At the top of each panel is an average of the movie that was motion-corrected
+with a red dashed box indicating the region that was used to estimate shifts.
+Below is a graph indicating the estimated shifts of the individual frames of the
+movie. Below this is the MIP of 2DTM using the large subunit of the mouse ribosome.
+(A) Motion correction of the whole movie
+(B) Notion correction of a cropped region of the movie that eliminates the beam
+edges
+(C) Motion correction of the whole movie, using only hte cropped region to
+estimate the shifts
+](tikz:crop_unblur){#fig:crop_unblur tag="S4"}
+
+```{.tikz-figure #crop_unblur width=20.0cm height=10cm draft=false}
+\def\panelheight{4.6cm}
+
+\node (anchor) at (0.5,9.5) {}; 
+\node[labelNode] {A};
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/images/crop_unblur_initial.png}};
+\node (box1) [box=red, fit=(panel), dashed] {};
+
+\node (anchor) at ([shift={(0.0,-0.5cm)}]panel.south west) {}; 
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/code/img/crop_unblur_motiontrace_initial.png}};
+
+\node (anchor) at ([shift={(0.0,-0.5cm)}]panel.south west) {}; 
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/code/img/crop_unblur_mip_initial_alignment.png}};
+
+
+
+\node (anchor) at ([shift={(1.5,0.0cm)}]0.5,9.5 -| panel.north east) {}; 
+\node[labelNode] {B};
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/images/crop_unblur_cropped.png}};
+\node (box2) [box=red, fit=(panel), dashed] {};
+
+\node (anchor) at ([shift={(0.0,-0.5cm)}]panel.south west) {}; 
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/code/img/crop_unblur_motiontrace_cropped.png}};
+
+\node (anchor) at ([shift={(0.0,-0.5cm)}]panel.south west) {}; 
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/code/img/crop_unblur_mip_cropped_alignment.png}};
+
+\node (anchor) at ([shift={(1.5,0.0cm)}]0.5,9.5 -| panel.north east) {}; 
+\node[labelNode] {C};
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/images/crop_unblur_initial.png}};
+\draw[red, dashed, line width=0.8mm] ([shift={(-0.7,-1.2cm)}]panel.north east) -- 
+                                     ([shift={(0.7,-1.2cm)}]panel.north west) --
+                                     ([shift={(0.7,1.2cm)}]panel.south west) --
+                                     ([shift={(-0.7,1.2cm)}]panel.south east) --
+                                     ([shift={(-0.7,-1.2cm)}]panel.north east);
+
+\node (anchor) at ([shift={(0.0,-0.5cm)}]panel.south west) {}; 
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/code/img/crop_unblur_motiontrace_final.png}};
+
+\node (anchor) at ([shift={(0.0,-0.5cm)}]panel.south west) {}; 
+\node[graphicNode] (panel) {\includegraphics[width=5cm]{content/code/img/crop_unblur_mip_final_alignment.png}};
+
+
+```
+
+![Motion correction of individual tiles imaged using the DeCo-LACE approach
+(A) Total estimated motion of individual micrographs taken using the DeCo-Lace approach
+plotted as a function of the Beam-Image-Shift values. 
+(B) Electron intensity of individual micrographs taken using the DeCo-Lace approach
+plotted as a function of the Beam-Image-Shift values. ](tikz:lamella_motion_thickness){#fig:lamella_motion_thickness tag="S5"}
+
+```{.tikz-figure #lamella_motion_thickness width=20.0cm height=10cm draft=false}
+\def\panelheight{4.6cm}
+
+
+\node (anchor) at (0.5,9.5) {}; 
+\node[labelNode] {A};
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_euc_lamella1.png}};
+\node (anchor) at ([shift={(-0.4,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_euc_lamella2.png}};
+\node (anchor) at ([shift={(-0.4,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_euc_lamella3.png}};
+\node (anchor) at ([shift={(-0.4,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_euc_lamella4.png}};
+
+\node (anchor) at ([shift={(0.0cm,-0.5cm)}]0.5,0 |- panel.south) {}; 
+\node[graphicNode]  (panel) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_fff_lamella1.png}};
+\node (anchor) at ([shift={(-0.4,0.0cm)}]panel.north east) {}; 
+\node[graphicNode]  (panel) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_fff_lamella2.png}};
+\node (anchor) at ([shift={(-0.4,0.0cm)}]panel.north east) {};
+\node[graphicNode]  (panel) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_fff_lamella3.png}};
+\node (anchor) at ([shift={(-0.4,0.0cm)}]panel.north east) {}; 
+\node[graphicNode]  (panel) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_fff_lamella4.png}};
+\node (anchor) at ([shift={(-1.0cm,4.0cm)}]panel.north east) {}; 
+\node[graphicNode] (key) {\includegraphics[height=\panelheight]{content/code/img/movement_vs_bs_plot_colorbar.png}};
+
+\node (anchor) at ([shift={(0.0cm,-1.0cm)}]0.5,0 |- panel.south) {}; 
+\node[labelNode] {B};
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_euc_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_euc_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_euc_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_euc_lamella4.png}};
+
+\node (anchor) at ([shift={(0.0cm,-0.5cm)}]0.5,0 |- panel.south) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_fff_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_fff_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_fff_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_fff_lamella4.png}};
+\node (anchor) at ([shift={(-1.0cm,4.0cm)}]panel.north east) {}; 
+\node[graphicNode] (key) {\includegraphics[height=\panelheight]{content/code/img/thickness_by_intensity_vs_bs_plot_colorbar.png}};
+
+```
+
+
+![This is an example-figurern](tikz:matching_stat){#fig:matching_stat}
+
+```{.tikz-figure #matching_stat width=15cm height=3cm draft=false}
+
+
+\node (anchor) at (0.5,2.5) {}; 
+\node[labelNode] {A};
+\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/num_matches_plot.png}};
+\node (anchor) at ([shift={(0.5cm,0.0)}]panel.north east) {}; 
+\node[labelNode] {B};
+\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/scores_plot.png}};
+\node (anchor) at ([shift={(0.5cm,0.0)}]panel.north east) {}; 
+\node[labelNode] {C};
+\node[graphicNode] {\includegraphics[width=4.5cm]{content/code/img/matches_per_tile_plot.png}};
+\node (anchor) at ([shift={(0.0cm,-1.0)}]0.5,2.5 |- panel.south east) {}; 
+\node[labelNode] {D};
+\node[graphicNode] {\includegraphics[width=14cm]{content/code/img/micrograph_with_matches.png}};
+```
+
+
+![Template matching in lamella imaged using the DeCo-Lace approach at eucentric focus](tikz:matching_euc){#fig:matching_euc}
+
+```{.tikz-figure #matching_euc width=17cm height=10cm draft=false}
+
+
+\node (anchor) at (0.5,9.5) {}; 
+\node[labelNode] {A};
+\node[graphicNode] {\includegraphics[height=12cm]{content/images/euc_lamella1_1000px.png}};
+\node[graphicNode] {\includegraphics[height=12cm]{content/images/euc_lamella1_just_matches.png}};
+
+\node (anchor) at (11.0,9.5) {}; 
+\node[labelNode] {B};
+\node[anchor=north west, below right=0cm and -4.5cm of anchor] {\includegraphics[height=12cm]{content/images/euc_lamella1_just_matches_side.png}};
+
+\node (anchor) at (13.0,9.5) {}; 
+\node[labelNode] {C};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/euc_lamella1_just_matches_er_ribos.png}};
+
+\node (anchor) at (13.0,6.5) {}; 
+\node[labelNode] {D};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/euc_lamella1_just_matches_nucleus.png}};
+
+\node (anchor) at (13.,3.5) {}; 
+\node[labelNode] {E};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/euc_lamella1_just_matches_circle.png}};
+
+\node (anchor) at (13.0,0.5) {}; 
+\node[labelNode] {F};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/euc_lamella1_just_matches_contained.png}};
+
+```
+
+
+![This is an example-figurern](tikz:matching_fff){#fig:matching_fff}
+
+```{.tikz-figure #matching_fff width=17cm height=10cm draft=false}
+
+
+
+\node (anchor) at (0.5,9.5) {}; 
+\node[labelNode] {A};
+\node[graphicNode] {\includegraphics[height=12cm]{content/images/fff_lamella4_1000px.png}};
+\node[graphicNode] {\includegraphics[height=12cm]{content/images/fff_lamella4_just_matches.png}};
+
+\node (anchor) at (11.0,9.5) {}; 
+\node[labelNode] {B};
+\node[anchor=north west, below right=0cm and -4cm of anchor] {\includegraphics[height=12cm]{content/images/fff_lamella4_just_matches_side.png}};
+
+\node (anchor) at (13.0,9.5) {}; 
+\node[labelNode] {C};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_just_matches_det3.png}};
+
+\node (anchor) at (13.0,6.5) {}; 
+\node[labelNode] {D};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_just_matches_det1.png}};
+
+\node (anchor) at (13.0,3.5) {}; 
+\node[labelNode] {E};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_just_matches_det4.png}};
+
+\node (anchor) at (13,0.5) {}; 
+\node[labelNode] {F};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_just_matches_det6.png}};
 
 ```
 

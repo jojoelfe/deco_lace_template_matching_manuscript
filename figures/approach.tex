@@ -18,7 +18,7 @@
     \usepackage{enumitem}
     \setlist{nosep,leftmargin=*}
     \newcommand{\figwidth}{20cm} 
-    \newcommand{\figheight}{15cm} 
+    \newcommand{\figheight}{20cm} 
     \newcommand{\fontselect}{\large\bf} 
     \newcommand{\fontannot}{\bf} 
     
@@ -50,28 +50,28 @@
       \end{scope}
     };
      
-    \node (anchor) at (0.5,14.35) {}; 
+    \node (anchor) at (0.5,19.35) {}; 
 \node[labelNode] {A};
 \node[graphicNode] {\includegraphics[width=5cm]{content/graphics/approach/approach.png}};
-\draw [densely dotted, red,thick] (3,14.5) -- (3,10);
-\draw [densely dotted, red,thick] (3,9.2) -- (3,6.4);
+\draw [densely dotted, red,thick] (3,19.5) -- (3,15.0);
+\draw [densely dotted, red,thick] (3,14.2) -- (3,11.4);
 
 \tikzset{dimen/.style={<->,>=latex,thin,every rectangle node/.style={above right=0.2cm and -0.3cm,fill=white,midway,font=\sffamily}}}
 
-\draw (3.55,10.4) -- ++(0,1.5) coordinate (D1) -- +(0,5pt);
-\draw (4.15,10.4) -- ++(0,1.5) coordinate (D2) -- +(0,5pt);
+\draw (3.55,15.4) -- ++(0,1.5) coordinate (D1) -- +(0,5pt);
+\draw (4.15,15.4) -- ++(0,1.5) coordinate (D2) -- +(0,5pt);
 \draw [dimen] (D1) -- (D2) node {$D_{Beam}$};
 
-\draw [->, very thick] (3,10) -- ++(0.5,-0.2)  coordinate (S1) node[midway,below left] {$IS_X$} ;
-\draw [->, very thick] (S1) -- (3.85,10.4) node[midway,below right] {$IS_Y$};
+\draw [->, very thick] (3,15) -- ++(0.5,-0.2)  coordinate (S1) node[midway,below left] {$IS_X$} ;
+\draw [->, very thick] (S1) -- (3.85,15.4) node[midway,below right] {$IS_Y$};
 
 
 
-\node (anchor) at (6.0,14.35) {}; 
+\node (anchor) at (6.0,19.35) {}; 
 \node[labelNode] {B};
 
 % Place nodes
-\node [block] (init) at (8.0,13.35) {\textbf{START} \\ Collect overview image};
+\node [block] (init) at (8.0,18.35) {\textbf{START} \\ Collect overview image};
 \node [block, below = 0.3cm of init.south] (identify) {Setup hexagonal grid covering lamella area};
 \node [block, below = 0.3cm of identify.south] (mutate) {Beam-imageshift to tile n=i};
 \node [block, below = 0.3cm of mutate.south] (transfer) {Capture exposure and determine defocus by CTF fitting};
@@ -84,30 +84,48 @@
 \path [line] (transfer) -- (evaluate);
 \path [line] (evaluate) -|  ([xshift=0.5cm, yshift=0cm]transfer.east) |- (mutate);
 
-\node (anchor) at (11.5,14.35) {}; 
+\node (anchor) at (11.5,19.35) {}; 
 \node[labelNode] {C};
 \node[graphicNode] {\includegraphics[width=8cm]{content/images/ac_strategy.png}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 
-\node (anchor) at (0.5,4.5) {}; 
-\node[labelNode] {C};
+\node (anchor) at (0.5,9.5) {}; 
+\node[labelNode] {D};
 \node[graphicNode] (euc) {\includegraphics[height=4.0cm]{content/images/fringebeam.png}};
 \node[above = 0cm and 0cm of euc.north] {Eucentric Focus};
 
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
 
-\node (anchor) at (5.5,4.5) {}; 
-\node[labelNode] {D};
+\node (anchor) at (5.5,9.5) {}; 
+\node[labelNode] {E};
 \node[graphicNode] (fff) {\includegraphics[height=4.0cm]{content/images/nofringebeam.png}};
 \node[above = 0cm and 0cm of fff.north] {Fringe-free Focus};
 \iftoggle{draft}{\node [redAnchorNode] {};};
 
-\node (anchor) at (10.5,4.5) {}; 
-\node[labelNode] {E};
+\node (anchor) at (10.5,9.5) {}; 
+\node[labelNode] {F};
 \node[anchor=north west, below right=-0.5cm and 0cm of anchor] {\includegraphics[height=4.8cm]{content/code/img/defocusplot.pdf}};
 \iftoggle{draft}{\node [redAnchorNode] {};};
+
+
+
+\node (anchor) at (0.5,4.5) {}; 
+\node[labelNode] {G};
+\node[graphicNode] {\includegraphics[height=4.5cm]{content/images/euc_lamella1_view_morph.png}};
+
+\node (anchor) at (5,4.5) {}; 
+\node[labelNode] {H};
+\node[graphicNode] {\includegraphics[height=4.5cm]{content/images/euc_lamella1_1000px.png}};
+
+\node (anchor) at (9.5,4.5) {}; 
+\node[labelNode] {I};
+\node[graphicNode] {\includegraphics[height=4.5cm]{content/images/fff_lamella4_view_morphed.png}};
+
+\node (anchor) at (14,4.5) {}; 
+\node[labelNode] {J};
+\node[graphicNode] {\includegraphics[height=4.5cm]{content/images/fff_lamella4_1000px.png}};
 
     \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};
     \end{tikzpicture}

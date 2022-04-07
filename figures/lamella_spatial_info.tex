@@ -17,8 +17,8 @@
     ]    \usepackage{etoolbox} 
     \usepackage{enumitem}
     \setlist{nosep,leftmargin=*}
-    \newcommand{\figwidth}{16.5cm} 
-    \newcommand{\figheight}{9cm} 
+    \newcommand{\figwidth}{20.0cm} 
+    \newcommand{\figheight}{10cm} 
     \newcommand{\fontselect}{\large\bf} 
     \newcommand{\fontannot}{\bf} 
     
@@ -50,20 +50,50 @@
       \end{scope}
     };
      
-    \node (anchor) at (0.5,8.35) {}; 
+    \def\panelheight{4.6cm}
+
+
+\node (anchor) at (0.5,9.5) {}; 
 \node[labelNode] {A};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_defocus_vs_bs_plot.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_euc_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_euc_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_euc_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_euc_lamella4.png}};
 
-\node (anchor) at (0.5,4.35) {}; 
+\node (anchor) at ([shift={(0.0cm,-0.5cm)}]0.5,0 |- panel.south) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_fff_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_fff_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_fff_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_fff_lamella4.png}};
+\node (anchor) at ([shift={(-0.4cm,4.0cm)}]panel.north east) {}; 
+\node[graphicNode] (key) {\includegraphics[height=\panelheight]{content/code/img/defocus_defocus_vs_bs_plot_colorbar.png}};
+
+\node (anchor) at ([shift={(0.0cm,-1.0cm)}]0.5,0 |- panel.south) {}; 
 \node[labelNode] {B};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_astigmatism_vs_bs_plot.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_euc_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_euc_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_euc_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_euc_lamella4.png}};
 
-\node (anchor) at (8.5,8.35) {}; 
-\node[labelNode] {C};
-\node[graphicNode] {\includegraphics[width=7.5cm]{content/code/img/defocus_angle_vs_bs_plot.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
+\node (anchor) at ([shift={(0.0cm,-0.5cm)}]0.5,0 |- panel.south) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_fff_lamella1.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_fff_lamella2.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_fff_lamella3.png}};
+\node (anchor) at ([shift={(-0.4cm,0.0cm)}]panel.north east) {}; 
+\node[graphicNode] (panel) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_fff_lamella4.png}};
+\node (anchor) at ([shift={(-0.4cm,4.0cm)}]panel.north east) {}; 
+\node[graphicNode] (key) {\includegraphics[height=\panelheight]{content/code/img/defocus_astigmatism_vs_bs_plot_colorbar.png}};
 
     \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};
     \end{tikzpicture}

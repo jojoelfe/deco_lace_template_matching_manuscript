@@ -4,7 +4,7 @@ author-meta:
 - Nikolaus Grigorieff
 bibliography:
 - content/manual-references.json
-date-meta: 2022-03-30
+date-meta: 2022-04-07
 header-includes: |
   ```{=html}
   <!--
@@ -28,10 +28,10 @@ header-includes: |
   <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
   ```
   ```{=html}
-  <meta name="dc.date" content="2022-03-30" />
+  <meta name="dc.date" content="2022-04-07" />
   ```
   ```{=html}
-  <meta name="citation_publication_date" content="2022-03-30" />
+  <meta name="citation_publication_date" content="2022-04-07" />
   ```
   ```{=html}
   <meta name="dc.language" content="en-US" />
@@ -89,12 +89,12 @@ header-includes: |
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   ```
   `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/" />`{=html}
+  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/" />`{=html}
   ```{=html}
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/" />
   ```
   ```{=html}
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/manuscript.pdf" />
   ```
   ```{=html}
   <meta property="og:type" content="article" />
@@ -144,10 +144,10 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta property="twitter:title" content="Visual proteomics using whole-lamella 2D template matching" />
 ```
 ```{=html}
-<meta name="dc.date" content="2022-03-30" />
+<meta name="dc.date" content="2022-04-07" />
 ```
 ```{=html}
-<meta name="citation_publication_date" content="2022-03-30" />
+<meta name="citation_publication_date" content="2022-04-07" />
 ```
 ```{=html}
 <meta name="dc.language" content="en-US" />
@@ -205,12 +205,12 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
 ```
 `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/" />`{=html}
+`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/" />`{=html}
 ```{=html}
-<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/" />
+<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/" />
 ```
 ```{=html}
-<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/manuscript.pdf" />
+<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/manuscript.pdf" />
 ```
 ```{=html}
 <meta property="og:type" content="article" />
@@ -229,10 +229,10 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 
 `<small>`{=html}`<em>`{=html}
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/2d0a9a5debbbf44b5f9d5797d38db68589012013/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@2d0a9a5](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/2d0a9a5debbbf44b5f9d5797d38db68589012013)
-on March 30, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@56ce938](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/56ce938e8d7fb4ca49b0ca90d4ceca7386ae3b0f)
+on April 7, 2022.
 `</em>`{=html}`</small>`{=html}
 
 ## Authors
@@ -447,18 +447,18 @@ membrane-organelles, corresponding to the granules and secretory vesicles of
 neutrophils (Fig. {@fig:initmatching}A). We then proceeded to acquire
 micrographs on this lamella with a defocus of 0.5-1.0 um, 30 e/A2/s exposure and
 1.5 A pixelsize. We manually selected multiple locations in the lamella and
-focused using standard low-dose techniques where focusing is performed on a sacrificial area. The resulting micrographs showed no signs of
-crystalline ice and had Thon-rings to resolution, indicating successful
-vitrification.
+focused using standard low-dose techniques where focusing is performed on a
+sacrificial area. The resulting micrographs showed no signs of crystalline ice
+and had Thon-rings to resolution, indicating successful vitrification.
 
 We used an atomic model of the 60S mouse ribosomal subunit (6SWA) for 2D
 template matching. In a subset of images the distribution of cross-correlation
 scores significantly exceeded the distribution expected from non-signifcant
-matching. In the resulting scaled maximum-intensity maps, clear peaks
-with SNR thresholds up to 10 were apparent (Fig. {@fig:initmatching2}A). By
-using the criterion described by for thresholding potential matches we found
-that in images of cytosolic compartments we found evidence of 10-500 ribosomes in
-the imaged areas. Notably we found no matches in images that were taken in the
+matching. In the resulting scaled maximum-intensity maps, clear peaks with SNR
+thresholds up to 10 were apparent (Fig. {@fig:initmatching2}A). By using the
+criterion described by for thresholding potential matches we found that in
+images of cytosolic compartments we found evidence of 10-500 ribosomes in the
+imaged areas. Notably we found no matches in images that were taken in the
 nuclear compartment. In the cytosolic areas we found a drastically different
 number of matches, In some areas we found only \~ 50 matches er image area, while
 in another area we found more than 500 matches . This ten-fold difference in
@@ -468,7 +468,8 @@ imaged and, due to the manual selection of acquision positions based on the
 overview image, might be biased towards cellular region that appear appealing to
 the experimentalist. We therefore set out to collect cryo-EM data for 2DTM from
 mammalian lamella in a high-throughput unbiased fashion.
-\### DECO-LACE for 2D imaging of whole lamella
+
+### DECO-LACE for 2D imaging of whole lamella
 
 In order to obtain high-resolution data for complete lamella we used a new
 approach for data collection. This approach uses three key strategies: (1)
@@ -508,9 +509,9 @@ function of the applied Beam-image shift (Figure 2E). This demonstrated that the
 defocus was consistent over the lamella, with outliers only at isolated images
 and in images containing contamination. We also plotted the measure objective
 astigmatism of the lamella and found that it varies with the applied Beam-image
-shift, become more astigmatic mostly due to beam-image shift in the X
-direction. While approaches exist to correct this during the data-collection, we
-opted to not use these mechanism for these early experiments and instead rely on
+shift, become more astigmatic mostly due to beam-image shift in the X direction.
+While approaches exist to correct this during the data-collection, we opted to
+not use these mechanism for these early experiments and instead rely on
 computational correction of these aberrations in order to characterize them.
 
 ### 2D-Template matching of cryo-EMILIA data reveals ribosome distribution
@@ -519,11 +520,23 @@ We developed customized preprocessing protocol to images obtained by cryo-EMILIA
 to enable their use for 2D-template matching. First we restricted calculation of
 cross-correlation coefficients between individual movie frames to the central
 portion of the image to prevent artifacts from the beam edges on estimation of
-motion. Then we calculated a mask that defined the illuminated area of the
-micrographs and used it to fill non-illumated areas with gaussian noise,
-matching mean and standard deviation to the illuminated signal (Figure 3A). The
+motion \[Figure S\]. Then we calculated a mask that defined the illuminated area
+of the micrographs and used it to fill non-illumated areas with gaussian noise,
+matching mean and standard deviation to the illuminated signal (Figure S). The
 so processed images were suitable for 2D-template matching and we were able to
 obtained matches with the same model used for the data in Figure 1.
+
+We then matched all individual tiles for ribosomes and assembled a montaged view
+as described above (Figure @fig:matching A+G). The resulting montages reveal
+ribsome distribution throughout the FIB-milled slice of individual cells.
+Organelles like the nucleus and mitochondria only show sporadic matches with low
+SNRs, consistent with the estimated false-positive rate on one per tile. During
+the assembly we calculated the Z positions from the indivdual estimated defocus
+levels and the focus plane of the microscope during acquisition of each tile.
+When viewed from the side the ribosome position therefore show the slope of the
+lamella in the microscope frame. Furthermore, the positions are also consistent
+with an uneven thickness of the lamella, thinner at the leading edge, even
+though, lamella were generated using the "overtilt" approach \[cite\].
 
 ### Quantitative analysis of translation activity
 
@@ -541,25 +554,72 @@ obtained matches with the same model used for the data in Figure 1.
 
 -   Threshold implications (no matches on most images)
 
+-   K3 not linear
+
 ## Figures
 
 ![2D template matching of the large subunit of the ribosome in fib-milled neutrophil-like cells
 (A) Overview image of the lamella. Major cellular regions are labeled, as Nucleus (Nuc), Mitochondria (M), and granular cytoplasm (GrCyt). FOVs where high-magnification images for template matching where acquired are indicated as boxes with the number of matches indicated on the bottom right. FOVs displayed in Panels B-E are color-coded.
-(B-E) FOVs with projection of ribosome LSU matches shown in green. (B) Perinuclear region, the only matches are in the cytoplasmic half. (C) Cytoplasmic region with high density of ribosomes (D) Mitochondrium, as expected there are only matches in the cytoplasmic region (E) Cytoplasm, with low density of ribosomes.](figures/initmatching.svg){#fig:initmatching}
+(B-E) FOVs with projection of ribosome LSU matches shown in green. (B) Perinuclear region, the only matches are in the cytoplasmic half. (C) Cytoplasmic region with high density of ribosomes (D) Mitochondrium, as expected there are only matches in the cytoplasmic region (E) Cytoplasm, with low density of ribosomes.](figures/initmatching.png){#fig:initmatching}
 
-![Maximum intensity projection cross-correlation map of micrograph shown in Figure {@fig:initmatching}](figures/initmatching2.svg){#fig:initmatching2 tag="S1"}
+![2D template matching of the large subunit of the ribosome in fib-milled
+neutrophil-like cells (A) Maximum intensity projection cross-correlation map of
+micrograph shown in Figure
+{@fig:initmatching} (B+C) 3D plot of MIP regions indicated by color boxes in Panel A](figures/initmatching2.png){#fig:initmatching2 tag="S1"}
 
-![DeCo-LACE approach (A) Graphic demonstrating the data-collection strategy for DeCo-LACE](figures/approach.svg){#fig:approach}
+![DeCo-LACE approach (A) Graphic demonstrating the data-collection strategy for
+DeCo-LACE. The electron beam is condensed to a diameter $D_{Beam}$ that allows captured of
+the whole illuminated area on the camera. Beam-image shift along X and Y
+($BIS_X$,\$$BIS_Y$) is used to raster the whole lamella
+(B) Diagram of the collection algorithm
+(C) Example overview image of a lamella with the designated acquisition
+positions and the used beam diameter indicated with red circles
+(D+E) Representative micrographs takne with a condensed beam at eucentric focus
+(D) or fringe-free focus (E)
+(F) Boxplot of defocus measured by ctffind of micrographs taken by the DeCo-Lace
+approach on 4 lamella images at eucentric focus and 4 lamella imaged with
+fringe-free focus.
+(F+G) Lamella overview images of lamella imaged at eucentric focus (F) Overview
+image taken at low magnification (40Å pixel size) (G) Overview created by
+montaging high magnification images taken with the DeCo-Lace approach (1.5Å
+pixelsize)
+(H+I) Lamella overview images of lamella imaged at fringe-free focus (H) Overview
+image taken at low magnification (40Å pixel size) (I) Overview created by
+montaging high magnification images taken with the DeCo-Lace approach (1.5Å
+pixelsize)](figures/approach.png){#fig:approach}
 
-![This is an example-figurern](figures/lamella_spatial_info.svg){#fig:lamella_spatial_info}
+![Overview images of lamellae imaged using the DeCo-LACE approach taken at low-magnification](figures/lamella_images.png){#fig:lamella_images tag="S2"}
 
-![This is an example-figurern](figures/example-figure3.svg){#fig:approach3}
+![Defocus estimation of individual tiles of DeCo-Lace montages
+(A) Defocus values of individual micrographs taken using the DeCo-Lace approach
+plotted as a function of the Beam-Image-Shift values.
+(B) Defocus astigmatism of individual micrographs taken using the DeCo-Lace approach
+plotted as a function of the Beam-Image-Shift values.](figures/lamella_spatial_info.png){#fig:lamella_spatial_info tag="S3"}
 
-![This is an example-figurern](figures/example-figure4.svg){#fig:approach4}
+![Motion correction of movies with condensed beams.
+At the top of each panel is an average of the movie that was motion-corrected
+with a red dashed box indicating the region that was used to estimate shifts.
+Below is a graph indicating the estimated shifts of the individual frames of the
+movie. Below this is the MIP of 2DTM using the large subunit of the mouse ribosome.
+(A) Motion correction of the whole movie
+(B) Notion correction of a cropped region of the movie that eliminates the beam
+edges
+(C) Motion correction of the whole movie, using only hte cropped region to
+estimate the shifts](figures/crop_unblur.png){#fig:crop_unblur tag="S4"}
 
-![This is an example-figurern](figures/matching.svg){#fig:matching}
+![Motion correction of individual tiles imaged using the DeCo-LACE approach
+(A) Total estimated motion of individual micrographs taken using the DeCo-Lace approach
+plotted as a function of the Beam-Image-Shift values.
+(B) Electron intensity of individual micrographs taken using the DeCo-Lace approach
+plotted as a function of the Beam-Image-Shift values.](figures/lamella_motion_thickness.png){#fig:lamella_motion_thickness tag="S5"}
 
-![Workflow of DeCo-Lace processing](figures/deco_lace_workflow.svg){#fig:deco_lace_workflow}
+![This is an example-figurern](figures/matching_stat.png){#fig:matching_stat}
+
+![Template matching in lamella imaged using the DeCo-Lace approach at eucentric focus](figures/matching_euc.png){#fig:matching_euc}
+
+![This is an example-figurern](figures/matching_fff.png){#fig:matching_fff}
+
+![Workflow of DeCo-Lace processing](figures/deco_lace_workflow.png){#fig:deco_lace_workflow}
 
 ## References {#references .page_break_before}
 
