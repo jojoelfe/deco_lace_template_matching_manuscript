@@ -63,43 +63,43 @@ pandoc --verbose \
 rm images
 rm graphics
 # Create PDF output (unless BUILD_PDF environment variable equals "false")
-# If Docker is not available, use WeasyPrint to create PDF
-if [ "${BUILD_PDF}" != "false" ] && [ "${MANUBOT_USE_DOCKER}" != "true" ]; then
-  echo >&2 "Exporting PDF manuscript using WeasyPrint"
-  if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
-  ln -s content/images
-  pandoc \
-    --data-dir="$PANDOC_DATA_DIR" \
-    --defaults=common.yaml \
-    --defaults=html.yaml \
-    --defaults=pdf-weasyprint.yaml
-  rm images
-fi
-
-# If Docker is available, use athenapdf to create PDF
-if [ "${BUILD_PDF}" != "false" ] && [ "${MANUBOT_USE_DOCKER}" == "true" ]; then
-  echo >&2 "Exporting PDF manuscript using Docker + Athena"
-  if [ "${CI}" = "true" ]; then
-    # Incease --delay for CI builds to ensure the webpage fully renders, even when the CI server is under high load.
-    # Local builds default to a shorter --delay to minimize runtime, assuming proper rendering is less crucial.
-    MANUBOT_ATHENAPDF_DELAY="${MANUBOT_ATHENAPDF_DELAY:-5000}"
-    echo >&2 "Continuous integration build detected. Setting athenapdf --delay=$MANUBOT_ATHENAPDF_DELAY"
-  fi
-  if [ -d output/images ]; then rm -rf output/images; fi  # if images is a directory, remove it
-  cp -R -L content/images output/
-  docker run \
-    --rm \
-    --shm-size=1g \
-    --volume="$(pwd)/output:/converted/" \
-    --security-opt=seccomp:unconfined \
-    arachnysdocker/athenapdf:2.16.0 \
-    athenapdf \
-    --delay=${MANUBOT_ATHENAPDF_DELAY:-1100} \
-    --pagesize=A4 \
-    manuscript.html manuscript.pdf
-  rm -rf output/images
-fi
-
+## If Docker is not available, use WeasyPrint to create PDF
+#if [ "${BUILD_PDF}" != "false" ] && [ "${MANUBOT_USE_DOCKER}" != "true" ]; then
+#  echo >&2 "Exporting PDF manuscript using WeasyPrint"
+#  if [ -L images ]; then rm images; fi  # if images is a symlink, remove it
+#  ln -s content/images
+#  pandoc \
+#    --data-dir="$PANDOC_DATA_DIR" \
+#    --defaults=common.yaml \
+#    --defaults=html.yaml \
+#    --defaults=pdf-weasyprint.yaml
+#  rm images
+#fi
+#
+## If Docker is available, use athenapdf to create PDF
+#if [ "${BUILD_PDF}" != "false" ] && [ "${MANUBOT_USE_DOCKER}" == "true" ]; then
+#  echo >&2 "Exporting PDF manuscript using Docker + Athena"
+#  if [ "${CI}" = "true" ]; then
+#    # Incease --delay for CI builds to ensure the webpage fully renders, even when the CI server is under high load.
+#    # Local builds default to a shorter --delay to minimize runtime, assuming proper rendering is less crucial.
+#    MANUBOT_ATHENAPDF_DELAY="${MANUBOT_ATHENAPDF_DELAY:-5000}"
+#    echo >&2 "Continuous integration build detected. Setting athenapdf --delay=$MANUBOT_ATHENAPDF_DELAY"
+#  fi
+#  if [ -d output/images ]; then rm -rf output/images; fi  # if images is a directory, remove it
+#  cp -R -L content/images output/
+#  docker run \
+#    --rm \
+#    --shm-size=1g \
+#    --volume="$(pwd)/output:/converted/" \
+#    --security-opt=seccomp:unconfined \
+#    arachnysdocker/athenapdf:2.16.0 \
+#    athenapdf \
+#    --delay=${MANUBOT_ATHENAPDF_DELAY:-1100} \
+#    --pagesize=A4 \
+#    manuscript.html manuscript.pdf
+#  rm -rf output/images
+#fi
+#
 # Create DOCX output (if BUILD_DOCX environment variable equals "true")
 if [ "${BUILD_DOCX}" = "true" ]; then
   echo >&2 "Exporting Word Docx manuscript"
