@@ -1,6 +1,6 @@
 tm load_star /scratch/bern/elferich/decolace_manuscript_processing/initial_matching/506_matches.star
 
-windowsize 1230 853
+windowsize 1200 853
 
 zoom pixelSize 5.0875
 
@@ -10,4 +10,10 @@ hide #!1 models
 
 lighting soft
 
+windowsize 1200 853
+
+zoom pixelSize 5.0875
+
 save /scratch/bern/elferich/decolace_manuscript_processing/initial_matching/506_matches.png transparentBackground true
+
+exit

@@ -1,0 +1,19 @@
+tm load_star /scratch/bern/elferich/decolace_manuscript_processing/initial_matching/52_matches.star
+
+windowsize 1200 853
+
+zoom pixelSize 5.0875
+
+volume #2 color #aaffff
+
+hide #!1 models
+
+lighting soft
+
+windowsize 1200 853
+
+zoom pixelSize 5.0875
+
+save /scratch/bern/elferich/decolace_manuscript_processing/initial_matching/52_matches.png transparentBackground true
+
+exit
