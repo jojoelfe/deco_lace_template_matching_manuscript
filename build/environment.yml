@@ -50,3 +50,4 @@ dependencies:
     - starfile
     - ipykernel
     - matplotlib
+    - astropy

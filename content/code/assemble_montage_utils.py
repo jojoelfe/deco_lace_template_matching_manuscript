@@ -31,6 +31,7 @@ def create_metadata(expand_data, IS_to_camera, output_base, binning=10, image_su
 
     result_tiles = pd.DataFrame({
         'tile_filename': pd.Series(dtype='object'),
+        'tile_movie_filename': pd.Series(dtype='object'),
         'tile_x_offset': pd.Series(dtype='int'),
         'tile_y_offset': pd.Series(dtype='int'),
         'tile_pixel_size': pd.Series(dtype='float'),
@@ -91,6 +92,7 @@ def create_metadata(expand_data, IS_to_camera, output_base, binning=10, image_su
         new_entry = {}
         #print(item['FILENAME'])
         new_entry['tile_filename'] = item['FILENAME'][:-6]+image_suffix
+        new_entry['tile_movie_filename'] = item['movie_filename']
         new_entry['tile_mask_filename'] = item['FILENAME'][:-6]+mask_suffix
         new_entry['tile_pixel_size'] = item['image_pixel_size']
         new_entry['tile_x_size'] = item['X_SIZE']

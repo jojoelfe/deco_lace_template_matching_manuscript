@@ -20,6 +20,7 @@ import assemble_montage_utils
 from skimage import filters
 from functools import partial
 from scipy.ndimage import binary_erosion
+import json
 
 
 # Original lowpass
@@ -212,6 +213,9 @@ for (database, name) in utils.dataset_info:
     # Set index of tile_data to tile_file_name
     tile_data["filename_index"] = tile_data["tile_filename"]
     tile_data.set_index("filename_index",inplace=True)
+    with open(Path(database).stem +"_thickness.json","r") as fp:
+        thickness_data = json.load(fp)
+    tile_data = tile_data[tile_data.apply(lambda x: thickness_data[x['tile_movie_filename']] < 0.29, axis=1)].copy()
     #tile_data = tile_data[235:295].copy()
     erode_mask = 0 
     if name.startswith("euc"):
