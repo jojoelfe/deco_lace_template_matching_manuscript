@@ -208,9 +208,6 @@ for (database, name) in utils.dataset_info:
     tile_data.set_index("filename_index",inplace=True)
     #tile_data = tile_data[235:295].copy()
     tile_data = tile_data[tile_data["include_in_refined"] == True].copy()
-    with open(Path(database).stem +"_thickness.json","r") as fp:
-        thickness_data = json.load(fp)
-    tile_data = tile_data[tile_data.apply(lambda x: thickness_data[x['tile_movie_filename']] > 0.25, axis=1)].copy()
     erode_mask = 0 
     if name.startswith("euc"):
         erode_mask = 100
