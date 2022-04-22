@@ -199,7 +199,7 @@ pycistem.set_cistem_path("/groups/elferich/cisTEM/build/refine_template_tests_In
 input_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly/")
 output_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/")
 output_directory.mkdir(exist_ok=True,parents=True)
-for (database, name) in utils.dataset_info:
+for (database, name) in utils.dataset_info[-2:]:
     logger.info(f"Working on {name}")
     montage_data = starfile.read(input_directory/f"{name}{ver}.star")
     tile_data = montage_data["tiles"]

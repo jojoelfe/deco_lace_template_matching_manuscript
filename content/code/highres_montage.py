@@ -38,9 +38,9 @@ pycistem.set_cistem_path("/groups/elferich/cisTEM/build/refine_template_tests_In
 input_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/")
 output_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/")
 output_directory.mkdir(exist_ok=True,parents=True)
-for (database, name) in utils.dataset_info[-1:]:
+for (database, name) in utils.dataset_info[:]:
     logger.info(f"Working on {name}")
-    montage_data = starfile.read(input_directory/f"{name}{ver}_highres.star")
+    montage_data = starfile.read(input_directory/f"{name}{ver}.star")
     tile_data = montage_data["tiles"]
     # Set index of tile_data to tile_file_name
     tile_data["filename_index"] = tile_data["tile_filename"]
@@ -56,7 +56,7 @@ for (database, name) in utils.dataset_info[-1:]:
         logger.info("Eroding mask by 90 pixels")
     
     logger.info(f"Writing out refined montage")
-    binning = montage_data["montage"]["montage_binning"].loc[0]
+    binning = 5
     max_image_x = np.max(tile_data.loc[:,"tile_x_size"]/binning)
     max_image_y = np.max(tile_data.loc[:,"tile_y_size"]/binning)
     min_shift_x = np.min(tile_data.loc[:,"tile_x_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) - 2 * binning
@@ -89,5 +89,6 @@ for (database, name) in utils.dataset_info[-1:]:
         gain = "/scratch/bern/elferich/deco_lace_manuscript_processing/averages/euc_gain.mrc"
     if name.startswith("fff"):
         gain = "/scratch/bern/elferich/deco_lace_manuscript_processing/averages/fff_gain.mrc"
+    starfile.write(results,output_directory/f"{name}{ver}_highres.star",overwrite=True)
 
     assemble_montage_utils.create_montage_bin_after(results,erode_mask=erode_mask+50,gain=gain,blend=False,gain_mult=0.5)
