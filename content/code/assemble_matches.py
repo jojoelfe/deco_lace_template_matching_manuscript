@@ -62,6 +62,6 @@ for (database, name) in utils.dataset_info:
     defocus_correction = info["tile_defocus"] - median_defocus
     microscope_focus_correction = info["tile_microscope_focus"] - median_microscope_focus
     info["defocus"] += defocus_correction
-    info["defocus"] += microscope_focus_correction * 10000
+    info["defocus"] = microscope_focus_correction * 10000 + info["defocus"]
     # Write the new starfile
     starfile.write(info, assembled_directory / f"{name}_assembled_matches.star",overwrite=True)
