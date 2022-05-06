@@ -1,0 +1,56 @@
+tempest load_star /scratch/bern/elferich/deco_lace_manuscript_processing/assemble/euc_lamella1_assembled_matches.star
+
+open /scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/euc_lamella1_montage_t2_highres.tif
+
+
+windowsize 1401 1708
+
+zoom pixelSize 75
+
+volume #3 voxelSize 7.5
+volume #3 origin 0,0,-4000
+volume #3 level 0,1 level 8771,0.9592 level 2.269e+04,1 level 1884,0.9388 change image
+volume #3 color black color white color white color black change image
+volume #3 style image step 1
+
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/6swa.pdb
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/5lzs.pdb
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/3j7r.pdb
+
+tempest toggle_instancing #2
+
+color #4 lightgray
+
+select zone #5/2 30.0 #4
+
+color sel blue
+
+select zone #5/ii 30.0 #4
+
+color sel purple
+
+select zone #5/3 30.0 #4
+
+color sel red
+
+select zone #6/1 30.0 #4
+
+color sel lime
+
+hide #5
+
+hide #6
+
+color zone #2 near #4 distance 30.0
+
+hide #4
+
+tempest toggle_instancing #2
+
+
+camera ortho
+
+lighting simple
+
+
+

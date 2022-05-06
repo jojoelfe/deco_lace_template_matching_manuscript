@@ -282,3 +282,48 @@ def create_montage_bin_after(metadata,erode_mask=0,gain=None,blend=True,gain_mul
     io.imsave(montage_info['matches_montage_filename'],img_as_uint(matches),plugin='tifffile')
 
 
+def find_nucleus_tiles(metadata, annotation_image):
+
+    montage_info = metadata['montage'].iloc[0]
+    
+    montage_dimensions = (montage_info['montage_y_size']*montage_info['montage_binning'], montage_info['montage_x_size']*montage_info['montage_binning'])
+    montage_binned_dimension = (montage_info['montage_y_size'], montage_info['montage_x_size'])
+    big = np.zeros(montage_dimensions,dtype=float)
+    mask = np.zeros(montage_dimensions,dtype=float)
+    matches = np.zeros(montage_dimensions,dtype=float)
+    annotation = io.imread(annotation_image)
+
+    tile_info = metadata['tiles']
+    should_return = []
+    for i, tile in tile_info.iterrows():
+        
+        with mrcfile.open(tile['tile_filename']) as mrc: 
+            tile_data = np.copy(mrc.data[0])
+            tile_dimensions = (int(tile_data.shape[0]),int(tile_data.shape[1]))
+            tile_data *= tile["tile_intensity_correction"]
+            #tile_data = resize(tile_data,tile_dimensions,anti_aliasing=True)
+
+       
+        with mrcfile.open(tile['tile_mask_filename']) as mrc: 
+            mask_data = np.copy(mrc.data[0])
+            mask_data.dtype = np.uint8
+        
+        
+        mask_float = mask_data/255.0
+        #mask_resized = resize(mask_float, tile_dimensions,anti_aliasing=True) 
+        
+
+
+        montage_pixel_size = montage_info['montage_pixel_size']
+        insertion_slice= (
+            slice(int(tile['tile_y_offset'] / (tile['tile_pixel_size'] * montage_info['montage_binning'])),int(tile['tile_y_offset']/  (tile['tile_pixel_size'] * montage_info['montage_binning']))+int(tile_dimensions[0]/montage_info['montage_binning'])),
+            slice(int(tile['tile_x_offset'] / (tile['tile_pixel_size'] * montage_info['montage_binning'])),int(tile['tile_x_offset']/ (tile['tile_pixel_size'] * montage_info['montage_binning']))+int(tile_dimensions[1]/montage_info['montage_binning']))
+        )
+
+        ist_tile_only_nucleus = np.sum(annotation[insertion_slice])==int(tile_dimensions[0]/montage_info['montage_binning'])*int(tile_dimensions[1]/montage_info['montage_binning'])
+        should_return.append(ist_tile_only_nucleus)
+    return tile_info[should_return]
+
+   
+
+

@@ -36,6 +36,7 @@ for logger in loggers:
 logger = logging.getLogger("ref_mon")
 pycistem.set_cistem_path("/groups/elferich/cisTEM/build/refine_template_tests_Intel-gpu-debug/src/")
 input_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/")
+annotation_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/nucleus_annotation/")
 output_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/")
 output_directory.mkdir(exist_ok=True,parents=True)
 for (database, name) in utils.dataset_info[:]:
@@ -56,13 +57,13 @@ for (database, name) in utils.dataset_info[:]:
         logger.info("Eroding mask by 90 pixels")
     
     logger.info(f"Writing out refined montage")
-    binning = 5
+    binning = 10
     max_image_x = np.max(tile_data.loc[:,"tile_x_size"]/binning)
     max_image_y = np.max(tile_data.loc[:,"tile_y_size"]/binning)
-    min_shift_x = np.min(tile_data.loc[:,"tile_x_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) - 8 * binning
-    min_shift_y = np.min(tile_data.loc[:,"tile_y_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) - 8 * binning
-    max_shift_x = np.max(tile_data.loc[:,"tile_x_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) + max_image_x + 8 * binning
-    max_shift_y = np.max(tile_data.loc[:,"tile_y_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) + max_image_y + 8 * binning
+    min_shift_x = np.min(tile_data.loc[:,"tile_x_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) - 2 * binning
+    min_shift_y = np.min(tile_data.loc[:,"tile_y_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) - 2 * binning
+    max_shift_x = np.max(tile_data.loc[:,"tile_x_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) + max_image_x + 2 * binning
+    max_shift_y = np.max(tile_data.loc[:,"tile_y_offset"]/tile_data.loc[:,"tile_pixel_size"]/binning) + max_image_y + 2 * binning
     # Correct tile shift
     tile_data["tile_x_offset"] -= min_shift_x * tile_data["tile_pixel_size"] * binning
     tile_data["tile_y_offset"] -= min_shift_y * tile_data["tile_pixel_size"] * binning
@@ -89,6 +90,10 @@ for (database, name) in utils.dataset_info[:]:
         gain = "/scratch/bern/elferich/deco_lace_manuscript_processing/averages/euc_gain.mrc"
     if name.startswith("fff"):
         gain = "/scratch/bern/elferich/deco_lace_manuscript_processing/averages/fff_gain.mrc"
-    starfile.write(results,output_directory/f"{name}{ver}_highres.star",overwrite=True)
+    
+    tiles = assemble_montage_utils.find_nucleus_tiles(results,annotation_directory / f"{name}.tif")
+    logger.info(len(tiles))
+    starfile.write(tiles,annotation_directory / f"{name}_tiles.star", overwrite=True)
+    #starfile.write(results,output_directory/f"{name}{ver}_highres.star",overwrite=True)
 
-    assemble_montage_utils.create_montage_bin_after(results,erode_mask=erode_mask+50,gain=gain,blend=False,gain_mult=0.5)
+    #assemble_montage_utils.create_montage_bin_after(results,erode_mask=erode_mask+50,gain=gain,blend=False,gain_mult=0.5)

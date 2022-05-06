@@ -17,6 +17,9 @@ local tikz_doc_template = [[
     \usetikzlibrary{positioning}
     \usetikzlibrary{arrows,snakes,shapes,fadings}
     \usetikzlibrary{fit}
+    \usetikzlibrary{calc}
+    \def\centerarc[#1](#2)(#3:#4:#5){ \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+    \usetikzlibrary{3d}
     \usetikzlibrary{backgrounds}
     \usepackage{fontspec}
     \setmainfont{Roboto}[
