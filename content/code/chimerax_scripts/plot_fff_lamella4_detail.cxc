@@ -1,0 +1,106 @@
+tempest load_star /scratch/bern/elferich/deco_lace_manuscript_processing/assemble/fff_lamella4_assembled_matches.star
+
+open /scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/fff_lamella4_montage_t2_highres.tif
+
+
+windowsize 1037 1245
+
+zoom pixelSize 75
+
+volume #3 voxelSize 7.5
+volume #3 origin 0,0,-4000
+volume #3 level 0,1 level 8771,0.9592 level 2.269e+04,1 level 1884,0.9388 change image
+volume #3 color black color white color white color black change image
+volume #3 style image step 1
+
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/6swa.pdb
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/5lzs.pdb
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/3j7r.pdb
+
+tempest toggle_instancing #2
+
+color #4 lightgray
+
+
+
+select zone #5/ii 40.0 #4
+
+color sel blue
+
+select zone #5/3 40.0 #4
+
+color sel red
+
+select zone #5/2 20.0 #4
+
+color sel purple
+
+select zone #6/1 60.0 #4
+
+
+
+color sel lime
+
+hide #5
+
+hide #6
+
+color zone #2 near #4 distance 30.0
+
+hide #4
+
+tempest toggle_instancing #2
+
+hide #1
+volume #3 origin 0,0,-8000
+camera ortho
+
+lighting simple
+
+windowsize 1000 1000
+zoom pixelSize 3.0
+
+windowsize 1000 1000
+zoom pixelSize 3.0
+
+
+view matrix camera  1,0,0,58225,0,1,0,32938,0,0,1,1.2046e+05
+zoom pixelSize 5.0
+volume #3 level 0,1 level 6451,0.9898 level 2.269e+04,1 level 2642,0.9694
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail1.png
+
+view matrix camera  1,0,0,36715,0,1,0,62582,0,0,1,1.2046e+05
+zoom pixelSize 3.0
+volume #3 level 0,1 level 7161,0.9694 level 2.269e+04,1 level 2736,0.9694
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail2.png
+
+
+view matrix camera  1,0,0,45831,0,1,0,9979.8,0,0,1,1.2046e+05
+zoom pixelSize 4.0
+volume #3 level 0,1 level 9008,1 level 2.269e+04,1 level 4725,0.949
+
+marker #7 position 4.596e+04,1.032e+04,3818 color yellow radius 1
+
+hide #2 
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail3_back.png
+show #2
+hide #3
+tempest filter_by_distance #2 1100.0 #7 hide_far true
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail3_close.png transparentBackground  true 
+
+view matrix camera -0.98766,-0.070789,0.13968,62410,-0.12992,-0.12762,-0.98328,-1.0433e+05,0.087432,-0.98929,0.11685,17264
+zoom pixelSize 4.0
+clip far 50000 position #7
+clip near -1000
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail3_close_side.png transparentBackground  true 
+
+view matrix camera  1,0,0,45831,0,1,0,9979.8,0,0,1,1.2046e+05
+zoom pixelSize 4.0
+tempest filter_by_distance #2 1100.0 #7 hide_close true
+color #2 #f57900 models transparency 0
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail3_far.png  transparentBackground  true 
+view matrix camera -0.98766,-0.070789,0.13968,62410,-0.12992,-0.12762,-0.98328,-1.0433e+05,0.087432,-0.98929,0.11685,17264
+zoom pixelSize 4.0
+clip far 50000 position #7
+clip near -1000
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail3_far_side.png  transparentBackground  true 

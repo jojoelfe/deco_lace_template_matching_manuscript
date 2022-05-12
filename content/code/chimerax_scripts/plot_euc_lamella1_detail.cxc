@@ -21,19 +21,23 @@ tempest toggle_instancing #2
 
 color #4 lightgray
 
-select zone #5/2 30.0 #4
+
+
+select zone #5/ii 40.0 #4
 
 color sel blue
 
-select zone #5/ii 30.0 #4
-
-color sel purple
-
-select zone #5/3 30.0 #4
+select zone #5/3 40.0 #4
 
 color sel red
 
-select zone #6/1 30.0 #4
+select zone #5/2 20.0 #4
+
+color sel purple
+
+select zone #6/1 60.0 #4
+
+
 
 color sel lime
 
@@ -47,10 +51,31 @@ hide #4
 
 tempest toggle_instancing #2
 
-
+hide #1
+volume #3 origin 0,0,-8000
 camera ortho
 
 lighting simple
 
+windowsize 1000 1000
+zoom pixelSize 3.0
+view matrix camera 1,0,0,72731,0,1,0,64615,0,0,1,1.6767e+05
+volume #3 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1
+windowsize 1000 1000
+zoom pixelSize 3.0
 
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/euc_lamella1_detail1.png
+
+view matrix camera  1,0,0,12653,0,1,0,75175,0,0,1,1.6767e+05
+volume #3 level 0,1 level 5191,0.9898 level 2.269e+04,1 level 2356,0.9898
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/euc_lamella1_detail2.png
+
+view matrix camera  1,0,0,70861,0,1,0,50014,0,0,1,1.6688e+05
+volume #3 level 0,1 level 8181,1 level 2.269e+04,1 level 2356,0.9898
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/euc_lamella1_detail3.png
+
+view matrix camera  1,0,0,62447,0,1,0,91073,0,0,1,1.6688e+05
+volume #3 level 0,1 level 4679,1 level 2.269e+04,1 level 2356,0.9898
+zoom pixelSize 5.0
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/euc_lamella1_detail4.png
 

@@ -1,4 +1,4 @@
-tm load_star /scratch/bern/elferich/deco_lace_manuscript_processing/assemble/fff_lamella4_assembled_matches.star
+tempest load_star /scratch/bern/elferich/deco_lace_manuscript_processing/assemble/fff_lamella4_assembled_matches.star
 
 open /scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/fff_lamella4_montage_t2_tophat.tif
 
@@ -17,22 +17,27 @@ color #2 #fcaf3e models transparency 0
 volume #2 level 0.000002 change surface
 
 hide #!1 models
-
+hide #!3 models
 camera ortho
 
 windowsize 1037 1245
+
+
 zoom pixelSize 75
 
 lighting simple
 
-
 windowsize 1037 1245
+
+
 zoom pixelSize 75
 
-save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4.png
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/euc_lamella1.png transparentBackground true
 
 set bgColor white
 
 turn y 90
 
-save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_side.png
+save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/euc_lamella1_side.png transparentBackground true
+
+quit
