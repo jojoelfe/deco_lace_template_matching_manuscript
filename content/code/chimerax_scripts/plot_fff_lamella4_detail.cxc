@@ -80,7 +80,7 @@ zoom pixelSize 4.0
 volume #3 level 0,1 level 9008,1 level 2.269e+04,1 level 4725,0.949
 
 marker #7 position 4.596e+04,1.032e+04,3818 color yellow radius 1
-
+set bgColor white
 hide #2 
 save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail3_back.png
 show #2
@@ -94,10 +94,11 @@ clip far 50000 position #7
 clip near -1000
 save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail3_close_side.png transparentBackground  true 
 
+
 view matrix camera  1,0,0,45831,0,1,0,9979.8,0,0,1,1.2046e+05
 zoom pixelSize 4.0
 tempest filter_by_distance #2 1100.0 #7 hide_close true
-color #2 #f57900 models transparency 0
+color #2 #A7C3FA models transparency 0
 save /scratch/bern/elferich/deco_lace_manuscript_processing/ChimeraXrenders/fff_lamella4_detail3_far.png  transparentBackground  true 
 view matrix camera -0.98766,-0.070789,0.13968,62410,-0.12992,-0.12762,-0.98328,-1.0433e+05,0.087432,-0.98929,0.11685,17264
 zoom pixelSize 4.0
