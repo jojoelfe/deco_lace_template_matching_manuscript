@@ -6,6 +6,9 @@
     \usetikzlibrary{positioning}
     \usetikzlibrary{arrows,snakes,shapes,fadings}
     \usetikzlibrary{fit}
+    \usetikzlibrary{calc}
+    \def\centerarc[#1](#2)(#3:#4:#5){ \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+    \usetikzlibrary{3d}
     \usetikzlibrary{backgrounds}
     \usepackage{fontspec}
     \setmainfont{Roboto}[
@@ -51,32 +54,62 @@
     };
      
     
-
+\newlength{\panelheight}
+\setlength{\panelheight}{12cm}
 
 \node (anchor) at (0.5,9.5) {}; 
 \node[labelNode] {A};
-\node[graphicNode] {\includegraphics[height=12cm]{content/images/fff_lamella4_1000px.png}};
-\node[graphicNode] {\includegraphics[height=12cm]{content/images/fff_lamella4_just_matches.png}};
+\node[graphicNode] (assm) {\includegraphics[height=\panelheight]{content/images/fff_lamella4_assm.png}};
+\node[graphicNode] {\includegraphics[height=\panelheight]{content/images/fff_lamella4.png}};
+\node (rect) at (5.35,5.5) [anchor=center,draw,thick,minimum width=0.4cm,minimum height=0.4cm,color=red] {};
+\node (rect) at (8.05,1.75) [anchor=center,draw,thick,minimum width=0.6cm,minimum height=0.6cm,color=green] {};
+\node (rect) at (6.45,-1.23) [anchor=center,draw,thick,minimum width=0.5cm,minimum height=0.5cm,color=blue!60] {};
+% scalebar - physical height is 9337.5nm
+\draw [line width=1.55mm,white] ([xshift=0.5cm, yshift=0.3cm]assm.south west) -- ([xshift=0.5cm + \panelheight / 9.3375 , yshift=0.3cm]assm.south west);
+\draw [line width=0.7mm,black] ([xshift=0.5cm, yshift=0.3cm]assm.south west) -- ([xshift=0.5cm + \panelheight / 9.3375, yshift=0.3cm]assm.south west);
 
 \node (anchor) at (11.0,9.5) {}; 
 \node[labelNode] {B};
-\node[anchor=north west, below right=0cm and -4cm of anchor] {\includegraphics[height=12cm]{content/images/fff_lamella4_just_matches_side.png}};
+\node[anchor=north west, below right=0cm and 0.0cm of anchor] (side) {\includegraphics[height=12cm, trim=15.5cm 0 2cm 0]{content/images/fff_lamella4_side.png}};
 
+\draw [->, thick] ($ (assm.east) + (0.1,0) $) -- node[above=0.2cm, align=center] (c) {} ($ (side.west) + (0.2,0) $);
+
+\centerarc [canvas is zx plane at y=0.75, ->](c.center)(-90:180:0.15);
+\draw [very thick] ($ (c.center) + (0,-0.1) $) -- ($ (c.center) + (0,0.2) $);
+\node at ($ (c.center) + (0.5,0) $) {90°};
+
+\newlength{\panelheightm}
+\setlength{\panelheightm}{2.8cm}
 \node (anchor) at (13.0,9.5) {}; 
 \node[labelNode] {C};
-\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_just_matches_det3.png}};
+\node[graphicNode] (pan) {\includegraphics[height=2.8cm]{content/images/fff_lamella4_detail2.png}};
+\node (n3) [box=red, fit=(pan)] {};
+% scalebar - physical height is 300 nm
+\draw [line width=1.55mm,white] ([xshift=0.2cm, yshift=0.2cm]pan.south west) -- ([xshift=0.2cm + \panelheightm / 3 , yshift=0.2cm]pan.south west);
+\draw [line width=0.7mm,black] ([xshift=0.2cm, yshift=0.2cm]pan.south west) -- ([xshift=0.2cm + \panelheightm / 3, yshift=0.2cm]pan.south west);
 
 \node (anchor) at (13.0,6.5) {}; 
 \node[labelNode] {D};
-\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_just_matches_det1.png}};
+\node[graphicNode] (pan) {\includegraphics[height=2.8cm]{content/images/fff_lamella4_detail1.png}};
+\node (n3) [box=green, fit=(pan)] {};
+% scalebar - physical height is 500 nm
+\draw [line width=1.55mm,white] ([xshift=0.2cm, yshift=0.2cm]pan.south west) -- ([xshift=0.2cm + \panelheightm / 5 , yshift=0.2cm]pan.south west);
+\draw [line width=0.7mm,black] ([xshift=0.2cm, yshift=0.2cm]pan.south west) -- ([xshift=0.2cm + \panelheightm / 5, yshift=0.2cm]pan.south west);
 
 \node (anchor) at (13.0,3.5) {}; 
 \node[labelNode] {E};
-\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_just_matches_det4.png}};
+\node[graphicNode] (pan){\includegraphics[height=2.8cm]{content/images/fff_lamella4_detail3_back.png}};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_detail3_close.png}};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_detail3_far.png}};
+\node (n3) [box=blue!60, fit=(pan)] {};
+% scalebar - physical height is 400 nm
+\draw [line width=1.55mm,white] ([xshift=0.2cm, yshift=0.2cm]pan.south west) -- ([xshift=0.2cm + \panelheightm / 4 , yshift=0.2cm]pan.south west);
+\draw [line width=0.7mm,black] ([xshift=0.2cm, yshift=0.2cm]pan.south west) -- ([xshift=0.2cm + \panelheightm / 4, yshift=0.2cm]pan.south west);
 
 \node (anchor) at (13,0.5) {}; 
 \node[labelNode] {F};
-\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_just_matches_det6.png}};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_detail3_far_side.png}};
+\node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_detail3_close_side.png}};
 
     \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};
     \end{tikzpicture}

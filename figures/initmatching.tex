@@ -6,6 +6,9 @@
     \usetikzlibrary{positioning}
     \usetikzlibrary{arrows,snakes,shapes,fadings}
     \usetikzlibrary{fit}
+    \usetikzlibrary{calc}
+    \def\centerarc[#1](#2)(#3:#4:#5){ \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+    \usetikzlibrary{3d}
     \usetikzlibrary{backgrounds}
     \usepackage{fontspec}
     \setmainfont{Roboto}[
@@ -91,21 +94,25 @@
 
 \node (anchor) at (6.5,9.35) {}; 
 \node[labelNode] {B};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/30_matches_m.png}};
 \node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/30_matches.png}};
 \node (n3) [box=green, fit=(img)] {};
 
 \node (anchor) at (12.75,9.35) {}; 
 \node[labelNode] {C};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/506_matches_m.png}};
 \node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/506_matches.png}};
 \node (n3) [box=red, fit=(img)] {};
 
 \node (anchor) at (6.5,4.75) {}; 
 \node[labelNode] {D};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/17_matches_m.png}};
 \node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/17_matches.png}};
 \node (n3) [box=orange, fit=(img)] {};
 
 \node (anchor) at (12.75,4.75) {}; 
 \node[labelNode] {E};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/52_matches_m.png}};
 \node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/52_matches.png}};
 \node (n3) [box=magenta, fit=(img)] {};
 

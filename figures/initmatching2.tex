@@ -6,6 +6,9 @@
     \usetikzlibrary{positioning}
     \usetikzlibrary{arrows,snakes,shapes,fadings}
     \usetikzlibrary{fit}
+    \usetikzlibrary{calc}
+    \def\centerarc[#1](#2)(#3:#4:#5){ \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+    \usetikzlibrary{3d}
     \usetikzlibrary{backgrounds}
     \usepackage{fontspec}
     \setmainfont{Roboto}[
@@ -51,10 +54,14 @@
     };
      
     \node (anchor) at (0.5,8.35) {}; 
-\node[labelNode] {A};
-\node[graphicNode] {\includegraphics[width=12cm]{content/code/img/initial_map_match.pdf}};
-\iftoggle{draft}{\node [redAnchorNode] {};};
 
+\node at ([shift={(-0.3cm,0.9cm)}]anchor) [anchor=north west] {\includegraphics[width=12cm]{content/code/img/initial_map_match.pdf}};
+\node[labelNode] {A};
+\iftoggle{draft}{\node [redAnchorNode] {};};
+\node (anchor) at (8.5,8.35) {}; 
+\node[labelNode] {B};
+\node (anchor) at (8.5,4.85) {}; 
+\node[labelNode] {C};
     \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};
     \end{tikzpicture}
     \end{document}

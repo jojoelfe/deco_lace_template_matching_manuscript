@@ -6,6 +6,9 @@
     \usetikzlibrary{positioning}
     \usetikzlibrary{arrows,snakes,shapes,fadings}
     \usetikzlibrary{fit}
+    \usetikzlibrary{calc}
+    \def\centerarc[#1](#2)(#3:#4:#5){ \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+    \usetikzlibrary{3d}
     \usetikzlibrary{backgrounds}
     \usepackage{fontspec}
     \setmainfont{Roboto}[
@@ -57,13 +60,22 @@
 \node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/num_matches_plot.png}};
 \node (anchor) at ([shift={(0.5cm,0.0)}]panel.north east) {}; 
 \node[labelNode] {B};
-\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/scores_plot.png}};
+\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/matches_per_tile_plot.png}};
 \node (anchor) at ([shift={(0.5cm,0.0)}]panel.north east) {}; 
 \node[labelNode] {C};
-\node[graphicNode] {\includegraphics[width=4.5cm]{content/code/img/matches_per_tile_plot.png}};
-\node (anchor) at ([shift={(0.0cm,-1.0)}]0.5,2.5 |- panel.south east) {}; 
+\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/scores_plot.png}};
+\node (anchor) at ([shift={(0.0cm,-0.2)}]0.5,2.5 |- panel.south east) {}; 
 \node[labelNode] {D};
-\node[graphicNode] {\includegraphics[width=14cm]{content/code/img/micrograph_with_matches.png}};
+\node[graphicNode] (panel) {\includegraphics[width=14cm]{content/code/img/micrograph_with_matches.png}};
+
+\node (anchor) at ([shift={(0.0cm,-0.2)}]0.5,2.5 |- panel.south east) {}; 
+\node[labelNode] {E};
+\node[graphicNode] (panel) {\includegraphics[width=6cm]{content/code/img/num_matches_vs_bis.png}};
+
+\node (anchor) at ([shift={(1.0cm,0.0)}]panel.north east) {}; 
+\node[labelNode] {F};
+\node[graphicNode] {\includegraphics[width=6cm]{content/code/img/snrs_vs_bis.png}};
+
     \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};
     \end{tikzpicture}
     \end{document}

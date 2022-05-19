@@ -6,6 +6,9 @@
     \usetikzlibrary{positioning}
     \usetikzlibrary{arrows,snakes,shapes,fadings}
     \usetikzlibrary{fit}
+    \usetikzlibrary{calc}
+    \def\centerarc[#1](#2)(#3:#4:#5){ \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+    \usetikzlibrary{3d}
     \usetikzlibrary{backgrounds}
     \usepackage{fontspec}
     \setmainfont{Roboto}[
@@ -50,7 +53,8 @@
       \end{scope}
     };
      
-    \def\panelheight{4.6cm}
+    \newlength{\panelheight}
+\setlength{\panelheight}{4.6cm}
 
 
 \node (anchor) at (0.5,9.5) {}; 
