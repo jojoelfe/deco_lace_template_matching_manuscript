@@ -26,7 +26,7 @@ cytosolic
 dataset
 DeCo
 decolace
-defocus
+Defocus
 degranulation
 describeb
 detections
@@ -35,7 +35,7 @@ Elferich
 endoplasmic
 Epb
 EUC
-Eucentric
+eucentric
 eukaryotic
 exluding
 exlusively
@@ -114,7 +114,7 @@ SerialEM’s
 sillicone
 singal
 SNR
-SNRS
+SNRs
 spectrometry
 subunit
 subunits
