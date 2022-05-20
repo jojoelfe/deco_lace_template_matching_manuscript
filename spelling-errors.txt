@@ -35,7 +35,7 @@ Elferich
 endoplasmic
 Epb
 EUC
-eucentric
+Eucentric
 eukaryotic
 exluding
 exlusively
@@ -65,7 +65,7 @@ ISToCamera
 jojoelfe
 keV
 Krios
-Lamella
+lamella
 lamellae
 Leica
 lowpass
@@ -90,7 +90,7 @@ omics
 overtilt
 PDB
 Perinuclear
-Pre
+pre
 preprocessing
 proteomics
 putatively
@@ -114,7 +114,7 @@ SerialEM’s
 sillicone
 singal
 SNR
-SNRs
+SNRS
 spectrometry
 subunit
 subunits
