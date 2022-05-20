@@ -1,0 +1,123 @@
+    \documentclass[tikz,border=0cm]{standalone}
+    \usepackage{graphicx}
+    \usepackage{tikz}
+    \usepackage{contour}
+    \contourlength{0.6pt}
+    \usetikzlibrary{positioning}
+    \usetikzlibrary{arrows,snakes,shapes,fadings}
+    \usetikzlibrary{fit}
+    \usetikzlibrary{calc}
+    \def\centerarc[#1](#2)(#3:#4:#5){ \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+    \usetikzlibrary{3d}
+    \usetikzlibrary{backgrounds}
+    \usepackage{fontspec}
+    \setmainfont{Roboto}[
+      Extension = .otf,
+      UprightFont = *-Regular,
+      BoldFont = *-Bold,
+      ItalicFont = *-Italic,
+      BoldItalicFont = *-BoldItalic,
+    ]    \usepackage{etoolbox} 
+    \usepackage{enumitem}
+    \setlist{nosep,leftmargin=*}
+    \newcommand{\figwidth}{19cm} 
+    \newcommand{\figheight}{10cm} 
+    \newcommand{\fontselect}{\large\bf} 
+    \newcommand{\fontannot}{\bf} 
+    
+    \tikzset{
+      labelNode/.style={anchor=south east, above left=0cm and 0cm of anchor, font=\fontselect}, 
+      annotNode/.style={anchor=center, font=\fontannot},
+      redAnchorNode/.style={anchor=center, left=-0.1cm of anchor, circle, fill=red, minimum size=0.2cm}, 
+      graphicNode/.style={anchor=north west, below right=0cm and 0cm of anchor}, 
+      mnNode/.style={below left=0.1cm and 0cm of rect.south east, font=\fontannot},
+      block/.style = {rectangle, draw, fill=gray!20, text width=12em, text centered, rounded corners, minimum height=2em,inner sep=0.5em},
+      line/.style = {draw, -latex'}
+    }
+    
+    \newtoggle{draft}
+     \togglefalse{draft}
+     %\togglefalse{draft} 
+    
+    \begin{document}
+    \begin{tikzpicture}[
+      every node/.style={inner sep=0pt},
+      box/.style = {draw=#1, line width=0.8mm,inner sep=0.0mm}
+    ]
+    
+    \iftoggle{draft}{\node[anchor=south west, rectangle, draw, red, line width=2pt, minimum width=\figwidth, minimum height=\figheight] at (0,0) {};}
+    {
+      \begin{scope}[on background layer]
+
+      \node[anchor=south west, rectangle, fill=white, minimum width=\figwidth, minimum height=\figheight] at (0,0) {};
+      \end{scope}
+    };
+     
+    \node (anchor) at (0.5,9.35) {}; 
+\node[labelNode] {A};
+\node[graphicNode] {\includegraphics[height=9cm]{content/images/the_lamella.png}};
+
+\node[annotNode] at (3.5,8.35) {\contour{white}{Nuc}};
+\node[annotNode] at (1.75,4.0) {\contour{white}{Nuc}};
+
+\node[annotNode] at (3.2,4.7) {\contour{white}{M}};
+\node[annotNode] at (2.75,2.25) {\contour{white}{M}};
+
+\node[annotNode] at (1.5,8.0) {\contour{white}{GrCyt}};
+\node[annotNode] at (4.5,3.5) {\contour{white}{GrCyt}};
+
+
+\node (rect) at (1.1,7.5) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=blue!60] {};
+\node[mnNode, color=blue!60] {\contour{white}{2}};
+
+\node (rect) at (3.2,7.3) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=blue!60] {};
+\node[mnNode, color=blue!60] {\contour{white}{0}};
+
+\node (rect) at (4.5,6.25) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=red] {};
+\node[mnNode, color=red] {\contour{white}{506}};
+
+\node (rect) at (3.4,5.5) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=blue!60] {};
+\node[mnNode, color=blue!60] {\contour{white}{16}};
+
+\node (rect) at (2.75,3.5) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=green] {};
+\node[mnNode, color=green] {\contour{white}{30}};
+
+\node (rect) at (2.65,2.35) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=orange] {};
+\node[mnNode, color=orange] {\contour{white}{17}};
+
+\node (rect) at (1.25,1.5) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=blue!60] {};
+\node[mnNode, color=blue!60] {\contour{white}{8}};
+
+\node (rect) at (4.0,2.2) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=magenta] {};
+\node[mnNode, color=magenta] {\contour{white}{52}};
+
+
+\node (anchor) at (6.5,9.35) {}; 
+\node[labelNode] {B};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/30_matches_m.png}};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/30_matches.png}};
+\node (n3) [box=green, fit=(img)] {};
+
+\node (anchor) at (12.75,9.35) {}; 
+\node[labelNode] {C};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/506_matches_m.png}};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/506_matches.png}};
+\node (n3) [box=red, fit=(img)] {};
+
+\node (anchor) at (6.5,4.75) {}; 
+\node[labelNode] {D};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/17_matches_m.png}};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/17_matches.png}};
+\node (n3) [box=orange, fit=(img)] {};
+
+\node (anchor) at (12.75,4.75) {}; 
+\node[labelNode] {E};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/52_matches_m.png}};
+\node (img) [graphicNode]  {\includegraphics[height=4cm]{content/images/52_matches.png}};
+\node (n3) [box=magenta, fit=(img)] {};
+
+%%\iftoggle{draft}{\node [redAnchorNode] {};};
+
+    \iftoggle{draft}{\draw[lightgray,step=1] (0,0) grid (\figwidth,\figheight);}{};
+    \end{tikzpicture}
+    \end{document}
