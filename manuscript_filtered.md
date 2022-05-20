@@ -89,12 +89,12 @@ header-includes: |
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   ```
   `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/9f26f343eb6707bf20436bc0f58fa1c34dc74c00/" />`{=html}
+  `<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/" />`{=html}
   ```{=html}
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/9f26f343eb6707bf20436bc0f58fa1c34dc74c00/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/" />
   ```
   ```{=html}
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/9f26f343eb6707bf20436bc0f58fa1c34dc74c00/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/manuscript.pdf" />
   ```
   ```{=html}
   <meta property="og:type" content="article" />
@@ -205,12 +205,12 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
 ```
 `<link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />`{=html}
-`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/9f26f343eb6707bf20436bc0f58fa1c34dc74c00/" />`{=html}
+`<link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/" />`{=html}
 ```{=html}
-<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/9f26f343eb6707bf20436bc0f58fa1c34dc74c00/" />
+<meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/" />
 ```
 ```{=html}
-<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/9f26f343eb6707bf20436bc0f58fa1c34dc74c00/manuscript.pdf" />
+<meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/manuscript.pdf" />
 ```
 ```{=html}
 <meta property="og:type" content="article" />
@@ -229,9 +229,9 @@ Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/pro
 
 `<small>`{=html}`<em>`{=html}
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/9f26f343eb6707bf20436bc0f58fa1c34dc74c00/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@9f26f34](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/9f26f343eb6707bf20436bc0f58fa1c34dc74c00)
+from [jojoelfe/deco_lace_template_matching_manuscript@e94f17b](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/e94f17b00fe53a7b703becda30c7a1b1503e6e7e)
 on May 20, 2022.
 `</em>`{=html}`</small>`{=html}
 

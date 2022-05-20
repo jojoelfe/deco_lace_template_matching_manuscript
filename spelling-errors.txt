@@ -104,7 +104,7 @@ ribosomes
 ribsomes
 RPMI
 Scalebar
-scatterplot
+Scatterplot
 SCF
 scikit
 scipy
@@ -114,7 +114,7 @@ SerialEM’s
 sillicone
 singal
 SNR
-SNRS
+SNRs
 spectrometry
 subunit
 subunits
