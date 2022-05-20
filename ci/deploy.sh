@@ -71,7 +71,7 @@ mkdir webpage/output
 ln -s ../output/manuscript.html webpage/index.html
 ln -s ../output/manuscript.pdf webpage/manuscript.pdf
 ln -s ../output/manuscript.docx webpage/manuscript.docx
-ln -s ../output/figures webpage/output/figures
+ln -s ../../output/figures webpage/output/figures
 
 # Commit message
 MESSAGE="\
