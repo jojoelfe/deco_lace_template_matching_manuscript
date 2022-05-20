@@ -24,9 +24,9 @@ cytometry
 cytosol
 cytosolic
 dataset
-DeCo
+deco
 decolace
-Defocus
+defocus
 degranulation
 describeb
 detections
@@ -35,7 +35,7 @@ Elferich
 endoplasmic
 Epb
 EUC
-eucentric
+Eucentric
 eukaryotic
 exluding
 exlusively
@@ -104,7 +104,7 @@ ribosomes
 ribsomes
 RPMI
 Scalebar
-scatterplot
+Scatterplot
 SCF
 scikit
 scipy
