@@ -24,9 +24,9 @@ cytometry
 cytosol
 cytosolic
 dataset
-deco
+DeCo
 decolace
-defocus
+Defocus
 degranulation
 describeb
 detections
@@ -35,7 +35,7 @@ Elferich
 endoplasmic
 Epb
 EUC
-Eucentric
+eucentric
 eukaryotic
 exluding
 exlusively
@@ -65,7 +65,7 @@ ISToCamera
 jojoelfe
 keV
 Krios
-lamella
+Lamella
 lamellae
 Leica
 lowpass
@@ -90,7 +90,7 @@ omics
 overtilt
 PDB
 Perinuclear
-pre
+Pre
 preprocessing
 proteomics
 putatively
@@ -104,7 +104,7 @@ ribosomes
 ribsomes
 RPMI
 Scalebar
-Scatterplot
+scatterplot
 SCF
 scikit
 scipy
