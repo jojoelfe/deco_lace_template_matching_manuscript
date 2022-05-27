@@ -5,9 +5,11 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-05-20'
+date-meta: '2022-05-27'
 author-meta:
 - Johannes Elferich
+- Giulia Schiroli
+- David Scadden
 - Nikolaus Grigorieff
 header-includes: |-
   <!--
@@ -19,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Defocus Corrected Large Area Cryo-EM (DeCo-LACE) for Label-Free Detection of Molecules across Entire Cell Sections" />
   <meta property="og:title" content="Defocus Corrected Large Area Cryo-EM (DeCo-LACE) for Label-Free Detection of Molecules across Entire Cell Sections" />
   <meta property="twitter:title" content="Defocus Corrected Large Area Cryo-EM (DeCo-LACE) for Label-Free Detection of Molecules across Entire Cell Sections" />
-  <meta name="dc.date" content="2022-05-20" />
-  <meta name="citation_publication_date" content="2022-05-20" />
+  <meta name="dc.date" content="2022-05-27" />
+  <meta name="citation_publication_date" content="2022-05-27" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -31,6 +33,12 @@ header-includes: |-
   <meta name="citation_author_institution" content="RNA Therapeutic Institute, UMass Chan Medical School" />
   <meta name="citation_author_institution" content="HHMI" />
   <meta name="citation_author_orcid" content="0000-0002-9911-706X" />
+  <meta name="citation_author" content="Giulia Schiroli" />
+  <meta name="citation_author_institution" content="None" />
+  <meta name="citation_author_orcid" content="None" />
+  <meta name="citation_author" content="David Scadden" />
+  <meta name="citation_author_institution" content="None" />
+  <meta name="citation_author_orcid" content="None" />
   <meta name="citation_author" content="Nikolaus Grigorieff" />
   <meta name="citation_author_institution" content="RNA Therapeutic Institute, UMass Chan Medical School" />
   <meta name="citation_author_institution" content="HHMI" />
@@ -41,9 +49,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/26bf17f811e80363e8f38656b89bbae2c14147f8/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/26bf17f811e80363e8f38656b89bbae2c14147f8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/26bf17f811e80363e8f38656b89bbae2c14147f8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/))
+([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/26bf17f811e80363e8f38656b89bbae2c14147f8/))
 was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@e94f17b](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/e94f17b00fe53a7b703becda30c7a1b1503e6e7e)
-on May 20, 2022.
+from [jojoelfe/deco_lace_template_matching_manuscript@26bf17f](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/26bf17f811e80363e8f38656b89bbae2c14147f8)
+on May 27, 2022.
 </em></small>
 
 ## Authors
@@ -82,6 +90,16 @@ on May 20, 2022.
     [jojoelfe](https://github.com/jojoelfe)<br>
   <small>
      RNA Therapeutic Institute, UMass Chan Medical School; HHMI
+  </small>
+
++ **Giulia Schiroli**<br><br>
+  <small>
+     None
+  </small>
+
++ **David Scadden**<br><br>
+  <small>
+     None
   </small>
 
 + **Nikolaus Grigorieff**<br>
@@ -183,142 +201,6 @@ ribosome distribution in an entire lamella, which represent 1-2% of the cellular
 volume. We find a highly heterogeneous density of ribosomes within the cell.
 Analysis of the throughput in this method suggests that for the foreseeable
 future computation will be the bottleneck for visual proteomics.
-
-## Materials and Methods
-
-### Grid preparation
-
-ER-HoxA9 cells were maintained in RPMI medium supplemented with 10% FBS,
-penicillin/streptomycin, SCF, and estrogen [@doi:10.1016/j.cell.2016.08.057] at
-37 °C and 5% CO2. 120 h prior to grid preparation, cells were washed twice in PBS
-and cultured in the same medium except without estrogen. Differentiation was
-verified by staining with Hoechst-dye and inspection of nuclear morphology.
-Cells were then counted and diluted to $1\cdot10^6$ cells/ml. Grids (either 200
-mesh copper grids, with a sillicone-oxide and 2 µm holes with a 2 µm spacing or
-200 mesh gold grids with a thin gold film and 2 µm holes in 2 µm spacing) were
-glow-discharged from both sides using a 15 mA for 45 s. 3.5 µl of cell suspension
-was added to grids on the thin-film side and grids were blotted from the back
-side using a GP2 cryoplunger (Leica) for 8 s and rapidly plunged into liquid
-ethane at -185 °C. 
-
-### FIB-milling
-
-Grids were loaded into an Aquilos 2 FIB/SEM (Thermo Fisher) instrument with a
-stage cooled to -190 °C. Grids were sputter-coated with platinum for 15 s at 45 mA
-and then coated with a layer of platinum-precursor by opening the GIS-valve for
-45 s. An overview of the grid was created by montaging SEM images and isolated
-cells at the center of gridsquares were selected for FIB-milling. Lamellae were
-generated automatically using the AutoTEM software (Thermo Fisher), with the
-following parameters:
-
-- Milling angle: 20°
-- Rough milling: 3.2 µm thickness, 0.5 nA current
-- Medium milling: 1.8 µm thickness, 0.3 nA current, 1.0° overtilt
-- Fine milling: 1.0 µm tchickness, 0.1 nA current, 0.5° overtilt
-- Finer milling: 700 nm thickness, 0.1 nA curent, 0.2° overtilt
-- Polish 1: 450 nm thickness, 50 pA current
-- Polish 2: 200 nm thickness, 30 pA current
-
-This resulted in 6-10 µm wide lamella with 150-250 nm thickness as determined by
-FIB-imaging of the lamella edges.
-
-### Data collection
-
-Grids were loaded into a Titan Krios TEM (Thermo Fisher) operated at 300 keV and
-equipped with a BioQuantum energy filter (Gatan) and K3 camera (Gatan). The
-microscope was aligned using a cross-grating grid on the stage. Prior to each
-session, we carefully performed the "Image/Beam" calibration in nanoprobe. We
-set the magnification to a pixel size of 1.76 Å and condensed the beam to ~ 900 nm
-diameter, resulting in the beam being completely visible on the camera. To
-establish fringe-free conditions, the "Fine eucentric" procedure of SerialEM [@doi:10.1016/j.jsb.2005.07.007] was
-used to move a square of the cross-grating grid to the eucentric position of the
-microscope. The effective defocus was then set to 2 µm, using the "autofocus"
-routine of SerialEM. The objective focus of the microscope was changed until no
-fringes were visible. The stage was then moved in Z until images had an apparent
-defocus of 2 µm. The difference in stage Z-position between the eucentric and
-fringe-free conditions was used to move other areas into fringe-free condition.
-
-Low magnification montages were used to find lamellae and lamellae that were
-sufficiently thin and free of contamination were selected for automated data
-collection. Overview images of each lamella were taken at 2250x magnification
-(38 Å pixel size). The corners of the lamella in the overview image were manually
-annotated in SerialEM and translated into beam image-shift values using SerialEM's
-calibration. A hexagonal pattern of beam image-shift positions was calculated
-that covered the area between the four corners in a serpentine way, with a
-$\sqrt{3}\cdot425$ nm horizontal spacing and $3/4\cdot 850$ nm vertical spacing. Exposures were
- taken at each position with a 30 e^-^/Å$^2$ total dose. After each exposure, the
-defocus was estimated using the ctffind function of SerialEM and the focus for
-the next exposure was corrected by the difference between the estimated focus
-and the desired defocus of 800 nm. Furthermore, after each exposure the
-deviation of the beam from the center of the camera was measured and corrected
-using the "CenterBeamFromImage" command of SerialEM.
-
-After data collection, a 20 s exposure at 2250x magnification of the lamella at
-200 μm defocus was taken for visualization purposes. A Python script implementing
-this procedure is available at [Link to repo].
-
-### DeCo-LACE data processing
-
-An overview of the data analysis pipeline is shown in Fig.
-{@fig:deco_lace_workflow}. 
-
-#### Pre-processing 
-Motion-correction, dose weighting and other preprocessing as detailed below was performed using *cis*TEM [@doi:10.7554/eLife.35383]. To avoid influence of the beam-edge on motion-correction, only a quarter of the
-movie in the center of the camera was considered for calculation of the
-estimated motion. After movie frames were aligned and summed, a mask for the
-illuminated area was calculated by lowpass filtering the image with a 100 Å
-resolution cutoff, thresholding the image at 10% of the maximal value and then lowpass
-filtering the mask again with a 100 Å resolution cutoff to smooth the mask edges. This mask was
-then used to select dark areas in the image and fill the pixels with
-Gaussian noise, with the same mean and standard deviation as the illuminated
-area. A custom version of the unblur program [@doi:10.7554/eLife.06980]
-implementing this procedure is available at [link to decolace branch]. During motion correction images were resampled to a pixel size of 1.5 Å. The
-contrast-transfer function (CTF) was estimated using ctffind
-[@doi:10.1016/j.jsb.2015.08.008], searching between 0.2 and 2 μm defocus. 
-
-#### 2DTM
-
-The search template was generated from the atomic model of the mouse LSU
-(PDB 6SWA, exluding the Epb1 subunit) using the cryo-EM simulator implemented in *cis*TEM
-[@doi:10.1107/S2052252521008538]. The
-match_template program [@doi:10.7554/eLife.68946] was used to search for this
-template in the movie-aligned, exposure-filtered and masked images, using a 1.5°
-angular step in out-of-plane angles and a 1.0° angular step in-plane. 11 defocus
-planes in 20 nm steps centered around the ctffind-determined defocus were searched. Targets
-were defined as detected when their matches with the template produced peaks
-with a singal-to-noise ratio (SNR) above a threshold of 7.75, which was chosen
-based on the one-false-positive-per-tile criterion [@doi:10.7554/eLife.25648].
-
-#### Montage assembly
-
-The coordinates of each tile $i$,
-$\mathbf{c}_{i}$ [2D Vector in pixels] were initialized using beam image-shift of the tile, $\mathbf{b}_i$ [2D Vector in μm],
-and the ISToCamera matrix $\mathbf{IC}$, as calibrated by SerialEM: 
-
-$$\mathbf{c}_{i} = \mathbf{IC} \cdot \mathbf{b}_i$$
-
-A list of tile pairs $i,j$ that overlap were assembled by selecting images where
-$|\mathbf{c}_i-\mathbf{c}_j| < D_{Beam}$. In order to calculate the precise offset between tiles $i$ and $j$, $\mathbf{r}_{i,j}$, we calculated the cross-correlation between the two tiles, masked to the overlapping illuminated area using the scikit-image
-package [@doi:10.7717/peerj.453] was used to calculate refined offsets . The coordinates $\mathbf{c}_{i}$ were then refined by a least-square minimization against $\mathbf{r}_{i,j}$:
-
-$$ \displaystyle{\min_{\mathbf{c}} \sum_{pairs}{(\mathbf{r}_{i,j} - (\mathbf{c}_i-\mathbf{c}_j))^2}}$$
-
-using the scipy package [@doi:10.1038/s41592-019-0686-2]. The masked cross-correlation and the least-square minimization was repeated once more to arrive at the final tile alignment. 
-
-The x,y coordinates of target $n$ detected by 2DTM in the tile $i$,
-$\textbf{m}^\textrm{T}_{n,i}$, was transformed into the montage frame by adding
-the coordinate of the tile.
-
-$$ \textbf{m}^\textrm{M}_n = \textbf{m}^\textrm{T}_{n,i} + \textbf{c}_i$$
-
-The z coordinate of each target was calculated as the sum of the defocus offset
-for the target, the estimated defocus of the tile, and the nominal defocus of
-the microscope when the tile was acquired. 
-
-Images were rendered using UCSF ChimeraX [@doi:10.1002/pro.3943]. The Python scripts used for data processing are available
-under [repolink].
-
-
 
 ## Results
 
@@ -580,93 +462,149 @@ Unexpectedly, we observed granules containing a vesicle of putative cytosolic or
 
 
 
+## Materials and Methods
 
-![Workflow of DeCo-Lace processing](tikz:deco_lace_workflow){#fig:deco_lace_workflow}
+### Grid preparation
 
-```{.tikz-figure #deco_lace_workflow width=18cm height=18cm draft=false}
-\begin{scope}[
-          blocks/.style = {rectangle, draw, fill=blue!20, text width=15em, align=center, rounded corners, minimum height=2em,inner sep=0.5em},
-          inputs/.style = {rectangle,draw,fill=cyan!20, inner sep=0.5em},
-          every path/.style={line width=1pt}
-]
-\node [inputs,anchor=north] (struc) at (3.0,17.5) {\textbf{6SWA Structure}};
+ER-HoxA9 cells were maintained in RPMI medium supplemented with 10% FBS,
+penicillin/streptomycin, SCF, and estrogen [@doi:10.1016/j.cell.2016.08.057] at
+37 °C and 5% CO2. 120 h prior to grid preparation, cells were washed twice in PBS
+and cultured in the same medium except without estrogen. Differentiation was
+verified by staining with Hoechst-dye and inspection of nuclear morphology.
+Cells were then counted and diluted to $1\cdot10^6$ cells/ml. Grids (either 200
+mesh copper grids, with a sillicone-oxide and 2 µm holes with a 2 µm spacing or
+200 mesh gold grids with a thin gold film and 2 µm holes in 2 µm spacing) were
+glow-discharged from both sides using a 15 mA for 45 s. 3.5 µl of cell suspension
+was added to grids on the thin-film side and grids were blotted from the back
+side using a GP2 cryoplunger (Leica) for 8 s and rapidly plunged into liquid
+ethane at -185 °C. 
 
-\node [inputs,anchor=north] (movies) at (9.0,17.5) {\textbf{Movies}};
-\node [inputs,anchor=north] (meta) at (15.0,17.5) {\textbf{SerialEM Metadata}};
+### FIB-milling
 
-\node [inputs,anchor=north] (over) at (3.0,1.5) {\textbf{Overview Image}};
+Grids were loaded into an Aquilos 2 FIB/SEM (Thermo Fisher) instrument with a
+stage cooled to -190 °C. Grids were sputter-coated with platinum for 15 s at 45 mA
+and then coated with a layer of platinum-precursor by opening the GIS-valve for
+45 s. An overview of the grid was created by montaging SEM images and isolated
+cells at the center of gridsquares were selected for FIB-milling. Lamellae were
+generated automatically using the AutoTEM software (Thermo Fisher), with the
+following parameters:
 
-\node [blocks,anchor=north] (simu) at (3.0,15.5) {\textbf{Generate Template} \\ \textit{simulate}
-\begin{itemize}
-    \item   Generate electron density map at 1.5{\AA}  pixel-size
-\end{itemize}};
+- Milling angle: 20°
+- Rough milling: 3.2 µm thickness, 0.5 nA current
+- Medium milling: 1.8 µm thickness, 0.3 nA current, 1.0° overtilt
+- Fine milling: 1.0 µm tchickness, 0.1 nA current, 0.5° overtilt
+- Finer milling: 700 nm thickness, 0.1 nA curent, 0.2° overtilt
+- Polish 1: 450 nm thickness, 50 pA current
+- Polish 2: 200 nm thickness, 30 pA current
 
-\node [blocks,anchor=north] (mc) at (9.0,15.5) {\textbf{Motion correction} \\ \textit{unblur\_decolace}
-\begin{itemize}
-    \item   Motion correction using central area of movie
-    \item   Mask out unilluminated areas and replace with noise
-\end{itemize}};
+This resulted in 6-10 µm wide lamella with 150-250 nm thickness as determined by
+FIB-imaging of the lamella edges.
 
-\node [inputs,below = 0.5 cm of mc.south] (images) {\textbf{Images}};
+### Data collection
 
-\node [blocks,below = 0.5 cm of images.south] (ctf) {\textbf{Ctf estimation} \\ \textit{ctffind4} 
-\begin{itemize}
-    \item Standard CTF estimation
-\end{itemize}};
-\node [blocks,below = 0.7 cm of ctf.south] (match) {\textbf{Template matching} \\ \textit{match\_template} \\ Template matching using 6swa as template};
+Grids were loaded into a Titan Krios TEM (Thermo Fisher) operated at 300 keV and
+equipped with a BioQuantum energy filter (Gatan) and K3 camera (Gatan). The
+microscope was aligned using a cross-grating grid on the stage. Prior to each
+session, we carefully performed the "Image/Beam" calibration in nanoprobe. We
+set the magnification to a pixel size of 1.76 Å and condensed the beam to ~ 900 nm
+diameter, resulting in the beam being completely visible on the camera. To
+establish fringe-free conditions, the "Fine eucentric" procedure of SerialEM [@doi:10.1016/j.jsb.2005.07.007] was
+used to move a square of the cross-grating grid to the eucentric position of the
+microscope. The effective defocus was then set to 2 µm, using the "autofocus"
+routine of SerialEM. The objective focus of the microscope was changed until no
+fringes were visible. The stage was then moved in Z until images had an apparent
+defocus of 2 µm. The difference in stage Z-position between the eucentric and
+fringe-free conditions was used to move other areas into fringe-free condition.
 
-\begin{scope}[on background layer]
+Low magnification montages were used to find lamellae and lamellae that were
+sufficiently thin and free of contamination were selected for automated data
+collection. Overview images of each lamella were taken at 2250x magnification
+(38 Å pixel size). The corners of the lamella in the overview image were manually
+annotated in SerialEM and translated into beam image-shift values using SerialEM's
+calibration. A hexagonal pattern of beam image-shift positions was calculated
+that covered the area between the four corners in a serpentine way, with a
+$\sqrt{3}\cdot425$ nm horizontal spacing and $3/4\cdot 850$ nm vertical spacing. Exposures were
+ taken at each position with a 30 e^-^/Å$^2$ total dose. After each exposure, the
+defocus was estimated using the ctffind function of SerialEM and the focus for
+the next exposure was corrected by the difference between the estimated focus
+and the desired defocus of 800 nm. Furthermore, after each exposure the
+deviation of the beam from the center of the camera was measured and corrected
+using the "CenterBeamFromImage" command of SerialEM.
 
-\node[draw,very thick, dashed, inner sep=0.5em, rounded corners, fill=blue!10,
-    fit=(mc) (ctf) (match)] (gui) {};
-\end{scope}
-\node[below left=0.1cm and 0cm of gui.south east, font=\fontannot] {cisTEM GUI};
+After data collection, a 20 s exposure at 2250x magnification of the lamella at
+200 μm defocus was taken for visualization purposes. A Python script implementing
+this procedure is available at [Link to repo].
 
-\node [blocks,below = 1.4 cm of match.south] (refine) {\textbf{Refine matches} \\ \textit{refine\_matches.py/refine\_template} \\ Refine matches and compile list of all matches in a lamella};
+### DeCo-LACE data processing
 
-\node [inputs,below = 0.5 cm of refine.south] (refstar) {\textbf{matches\_in\_tiles.star}};
+An overview of the data analysis pipeline is shown in Fig.
+{@fig:deco_lace_workflow}. 
+
+#### Pre-processing 
+Motion-correction, dose weighting and other preprocessing as detailed below was performed using *cis*TEM [@doi:10.7554/eLife.35383]. To avoid influence of the beam-edge on motion-correction, only a quarter of the
+movie in the center of the camera was considered for calculation of the
+estimated motion. After movie frames were aligned and summed, a mask for the
+illuminated area was calculated by lowpass filtering the image with a 100 Å
+resolution cutoff, thresholding the image at 10% of the maximal value and then lowpass
+filtering the mask again with a 100 Å resolution cutoff to smooth the mask edges. This mask was
+then used to select dark areas in the image and fill the pixels with
+Gaussian noise, with the same mean and standard deviation as the illuminated
+area. A custom version of the unblur program [@doi:10.7554/eLife.06980]
+implementing this procedure is available at [link to decolace branch]. During motion correction images were resampled to a pixel size of 1.5 Å. The
+contrast-transfer function (CTF) was estimated using ctffind
+[@doi:10.1016/j.jsb.2015.08.008], searching between 0.2 and 2 μm defocus. 
+
+#### 2DTM
+
+The search template was generated from the atomic model of the mouse LSU
+(PDB 6SWA, exluding the Epb1 subunit) using the cryo-EM simulator implemented in *cis*TEM
+[@doi:10.1107/S2052252521008538]. The
+match_template program [@doi:10.7554/eLife.68946] was used to search for this
+template in the movie-aligned, exposure-filtered and masked images, using a 1.5°
+angular step in out-of-plane angles and a 1.0° angular step in-plane. 11 defocus
+planes in 20 nm steps centered around the ctffind-determined defocus were searched. Targets
+were defined as detected when their matches with the template produced peaks
+with a singal-to-noise ratio (SNR) above a threshold of 7.75, which was chosen
+based on the one-false-positive-per-tile criterion [@doi:10.7554/eLife.25648].
+
+#### Montage assembly
+
+The coordinates of each tile $i$,
+$\mathbf{c}_{i}$ [2D Vector in pixels] were initialized using beam image-shift of the tile, $\mathbf{b}_i$ [2D Vector in μm],
+and the ISToCamera matrix $\mathbf{IC}$, as calibrated by SerialEM: 
+
+$$\mathbf{c}_{i} = \mathbf{IC} \cdot \mathbf{b}_i$$
+
+A list of tile pairs $i,j$ that overlap were assembled by selecting images where
+$|\mathbf{c}_i-\mathbf{c}_j| < D_{Beam}$. In order to calculate the precise offset between tiles $i$ and $j$, $\mathbf{r}_{i,j}$, we calculated the cross-correlation between the two tiles, masked to the overlapping illuminated area using the scikit-image
+package [@doi:10.7717/peerj.453] was used to calculate refined offsets . The coordinates $\mathbf{c}_{i}$ were then refined by a least-square minimization against $\mathbf{r}_{i,j}$:
+
+$$ \displaystyle{\min_{\mathbf{c}} \sum_{pairs}{(\mathbf{r}_{i,j} - (\mathbf{c}_i-\mathbf{c}_j))^2}}$$
+
+using the scipy package [@doi:10.1038/s41592-019-0686-2]. The masked cross-correlation and the least-square minimization was repeated once more to arrive at the final tile alignment. 
+
+The x,y coordinates of target $n$ detected by 2DTM in the tile $i$,
+$\textbf{m}^\textrm{T}_{n,i}$, was transformed into the montage frame by adding
+the coordinate of the tile.
+
+$$ \textbf{m}^\textrm{M}_n = \textbf{m}^\textrm{T}_{n,i} + \textbf{c}_i$$
+
+The z coordinate of each target was calculated as the sum of the defocus offset
+for the target, the estimated defocus of the tile, and the nominal defocus of
+the microscope when the tile was acquired. 
+
+Images were rendered using UCSF ChimeraX [@doi:10.1002/pro.3943] using a custom extension to render 2DTM results available at [https://github.com/jojoelfe/tempest]. The Python scripts used for data processing are available
+under [https://github.com/jojoelfe/deco_lace_template_matching_manuscript].
 
 
-\node [blocks,anchor=center] (assem) at (images.east -| meta.south) {\textbf{Assemble montage} \\ \textit{assemble\_montage.py} 
-\begin{itemize}
-    \item Create list of all tiles and their respective coordinates
-    \item Create binned montage image
-\end{itemize}};
 
-\node [inputs,below = 0.5 cm of assem.south] (monstar) {\textbf{montage.star}};
+## Acknowledgments
 
-\node [blocks,anchor=center] (assemma) at (refstar.east -| monstar.south) {\textbf{Assemble matches} \\ \textit{assemble\_matches.py} 
-\begin{itemize}
-    \item Transfer coordinates of matches into the montage coordinate system
-\end{itemize}};
+The authors would like to thank Bronwyn Lucas, Carsten Sachse, and Chen Xue for helpful suggestions and careful reading of the manuscript. Data was collected at the UMass Chan medical School CryoEM core with help by Kankang song, Christna, and Chen Xue. 
 
-\node [inputs,below = 0.5 cm of assemma.south] (monmastar) {\textbf{matches\_in\_montage.star}};
+## Data availability
 
-
-%% Draw lines
-\draw[->] (struc) -- (simu);
-
-\draw[->] (movies) -- (mc);
-\draw[->] (mc) -- (images);
-\draw[->] (images) -- (ctf);
-\draw[->] (ctf) -- (match);
-\draw[->] (match) -- (refine);
-
-\draw[->] (meta) -- (assem);
-\draw[->] (images) -- (assem);
-
-\draw[->] (simu) |- (match);
-\draw[->] (simu) |- (refine);
-
-\draw[->] (assem) -- (monstar);
-\draw[->] (monstar) -- (assemma);
-
-\draw[->] (refine) -- (refstar);
-\draw[->] (refstar) -- (assemma);
-\draw[->] (assemma) -- (monmastar);
-
-\end{scope}
-```
+Cryo-EM movies, motion-corrected images and template matching results have been deposited in EMPIAR under accession code [CODE]. The custom cisTEM version is available here [] until features have been integrated into a cisTEM release. The ChimeraX extension for rendering is avaibale here []. This manuscript was prepared using the manubot package [@ cite] . Custom python scripts and all files nescessary for manuscript generation are available here []. 
 
 ## Figures
 
@@ -1288,41 +1226,6 @@ plotted as a function of the beam image-shift values. ](tikz:lamella_motion_thic
 
 
 
-![Statistics of 2DTM on lamella imaged using DeCo-LACE (A) Number of detected targets in
-each lamella (B) Distribution of targets per tile in each lamella. Only tiles
-with two or more detected targets were included (C) Distribution of SNRs in each lamella
-(D) For each lamella an average of all tiles is shown. Overlaid is a scatterplot
-of all detected targets in these tiles according to their in-tile coordinates.
-Scatterplot is colored according to the 2DTM SNR. There are no detected targets in the top
-circle-circle intersection due to radiation damage from previous exposures. (E) 2D histogram of number of detected targets as a function of beam-image shift (F) Mean 2DTM SNR as a function of beam-image shift](tikz:matching_stat){#fig:matching_stat}
-
-```{.tikz-figure #matching_stat width=15cm height=3cm draft=false}
-
-
-\node (anchor) at (0.5,2.5) {}; 
-\node[labelNode] {A};
-\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/num_matches_plot.png}};
-\node (anchor) at ([shift={(0.5cm,0.0)}]panel.north east) {}; 
-\node[labelNode] {B};
-\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/matches_per_tile_plot.png}};
-\node (anchor) at ([shift={(0.5cm,0.0)}]panel.north east) {}; 
-\node[labelNode] {C};
-\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/scores_plot.png}};
-\node (anchor) at ([shift={(0.0cm,-0.2)}]0.5,2.5 |- panel.south east) {}; 
-\node[labelNode] {D};
-\node[graphicNode] (panel) {\includegraphics[width=14cm]{content/code/img/micrograph_with_matches.png}};
-
-\node (anchor) at ([shift={(0.0cm,-0.2)}]0.5,2.5 |- panel.south east) {}; 
-\node[labelNode] {E};
-\node[graphicNode] (panel) {\includegraphics[width=6cm]{content/code/img/num_matches_vs_bis.png}};
-
-\node (anchor) at ([shift={(1.0cm,0.0)}]panel.north east) {}; 
-\node[labelNode] {F};
-\node[graphicNode] {\includegraphics[width=6cm]{content/code/img/snrs_vs_bis.png}};
-
-```
-
-
 ![Template matching in lamella imaged using the DeCo-Lace approach at eucentric
 focus (A) Montage of Lamella$_\textrm{EUC}$ 1 overlaid with detected targets according to
 their montage coordinates colored in orange. Scalebar corresponds to 1 μm. (B) Side view of detected targets in the lamella, such that the
@@ -1466,6 +1369,131 @@ panel E. Ribosomes are colored in white with the surface of the peptide exit tun
 \node[graphicNode] {\includegraphics[height=2.8cm]{content/images/fff_lamella4_detail3_close_side.png}};
 
 ```
+
+
+![Statistics of 2DTM on lamella imaged using DeCo-LACE (A) Number of detected targets in
+each lamella (B) Distribution of targets per tile in each lamella. Only tiles
+with two or more detected targets were included (C) Distribution of SNRs in each lamella
+(D) For each lamella an average of all tiles is shown. Overlaid is a scatterplot
+of all detected targets in these tiles according to their in-tile coordinates.
+Scatterplot is colored according to the 2DTM SNR. There are no detected targets in the top
+circle-circle intersection due to radiation damage from previous exposures. (E) 2D histogram of number of detected targets as a function of beam-image shift (F) Mean 2DTM SNR as a function of beam-image shift](tikz:matching_stat){#fig:matching_stat}
+
+```{.tikz-figure #matching_stat width=15cm height=3cm draft=false}
+
+
+\node (anchor) at (0.5,2.5) {}; 
+\node[labelNode] {A};
+\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/num_matches_plot.png}};
+\node (anchor) at ([shift={(0.5cm,0.0)}]panel.north east) {}; 
+\node[labelNode] {B};
+\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/matches_per_tile_plot.png}};
+\node (anchor) at ([shift={(0.5cm,0.0)}]panel.north east) {}; 
+\node[labelNode] {C};
+\node[graphicNode] (panel) {\includegraphics[width=4.5cm]{content/code/img/scores_plot.png}};
+\node (anchor) at ([shift={(0.0cm,-0.2)}]0.5,2.5 |- panel.south east) {}; 
+\node[labelNode] {D};
+\node[graphicNode] (panel) {\includegraphics[width=14cm]{content/code/img/micrograph_with_matches.png}};
+
+\node (anchor) at ([shift={(0.0cm,-0.2)}]0.5,2.5 |- panel.south east) {}; 
+\node[labelNode] {E};
+\node[graphicNode] (panel) {\includegraphics[width=6cm]{content/code/img/num_matches_vs_bis.png}};
+
+\node (anchor) at ([shift={(1.0cm,0.0)}]panel.north east) {}; 
+\node[labelNode] {F};
+\node[graphicNode] {\includegraphics[width=6cm]{content/code/img/snrs_vs_bis.png}};
+
+```
+
+
+![Workflow of DeCo-Lace processing](tikz:deco_lace_workflow){#fig:deco_lace_workflow}
+
+```{.tikz-figure #deco_lace_workflow width=18cm height=18cm draft=false}
+\begin{scope}[
+          blocks/.style = {rectangle, draw, fill=blue!20, text width=15em, align=center, rounded corners, minimum height=2em,inner sep=0.5em},
+          inputs/.style = {rectangle,draw,fill=cyan!20, inner sep=0.5em},
+          every path/.style={line width=1pt}
+]
+\node [inputs,anchor=north] (struc) at (3.0,17.5) {\textbf{6SWA Structure}};
+
+\node [inputs,anchor=north] (movies) at (9.0,17.5) {\textbf{Movies}};
+\node [inputs,anchor=north] (meta) at (15.0,17.5) {\textbf{SerialEM Metadata}};
+
+\node [inputs,anchor=north] (over) at (3.0,1.5) {\textbf{Overview Image}};
+
+\node [blocks,anchor=north] (simu) at (3.0,15.5) {\textbf{Generate Template} \\ \textit{simulate}
+\begin{itemize}
+    \item   Generate electron density map at 1.5{\AA}  pixel-size
+\end{itemize}};
+
+\node [blocks,anchor=north] (mc) at (9.0,15.5) {\textbf{Motion correction} \\ \textit{unblur\_decolace}
+\begin{itemize}
+    \item   Motion correction using central area of movie
+    \item   Mask out unilluminated areas and replace with noise
+\end{itemize}};
+
+\node [inputs,below = 0.5 cm of mc.south] (images) {\textbf{Images}};
+
+\node [blocks,below = 0.5 cm of images.south] (ctf) {\textbf{Ctf estimation} \\ \textit{ctffind4} 
+\begin{itemize}
+    \item Standard CTF estimation
+\end{itemize}};
+\node [blocks,below = 0.7 cm of ctf.south] (match) {\textbf{Template matching} \\ \textit{match\_template} \\ Template matching using 6swa as template};
+
+\begin{scope}[on background layer]
+
+\node[draw,very thick, dashed, inner sep=0.5em, rounded corners, fill=blue!10,
+    fit=(mc) (ctf) (match)] (gui) {};
+\end{scope}
+\node[below left=0.1cm and 0cm of gui.south east, font=\fontannot] {cisTEM GUI};
+
+\node [blocks,below = 1.4 cm of match.south] (refine) {\textbf{Refine matches} \\ \textit{refine\_matches.py/refine\_template} \\ Refine matches and compile list of all matches in a lamella};
+
+\node [inputs,below = 0.5 cm of refine.south] (refstar) {\textbf{matches\_in\_tiles.star}};
+
+
+\node [blocks,anchor=center] (assem) at (images.east -| meta.south) {\textbf{Assemble montage} \\ \textit{assemble\_montage.py} 
+\begin{itemize}
+    \item Create list of all tiles and their respective coordinates
+    \item Create binned montage image
+\end{itemize}};
+
+\node [inputs,below = 0.5 cm of assem.south] (monstar) {\textbf{montage.star}};
+
+\node [blocks,anchor=center] (assemma) at (refstar.east -| monstar.south) {\textbf{Assemble matches} \\ \textit{assemble\_matches.py} 
+\begin{itemize}
+    \item Transfer coordinates of matches into the montage coordinate system
+\end{itemize}};
+
+\node [inputs,below = 0.5 cm of assemma.south] (monmastar) {\textbf{matches\_in\_montage.star}};
+
+
+%% Draw lines
+\draw[->] (struc) -- (simu);
+
+\draw[->] (movies) -- (mc);
+\draw[->] (mc) -- (images);
+\draw[->] (images) -- (ctf);
+\draw[->] (ctf) -- (match);
+\draw[->] (match) -- (refine);
+
+\draw[->] (meta) -- (assem);
+\draw[->] (images) -- (assem);
+
+\draw[->] (simu) |- (match);
+\draw[->] (simu) |- (refine);
+
+\draw[->] (assem) -- (monstar);
+\draw[->] (monstar) -- (assemma);
+
+\draw[->] (refine) -- (refstar);
+\draw[->] (refstar) -- (assemma);
+\draw[->] (assemma) -- (monmastar);
+
+\end{scope}
+```
+
+
 
 ## References {.page_break_before}
 

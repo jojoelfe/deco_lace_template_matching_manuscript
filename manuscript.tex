@@ -37,7 +37,7 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={Defocus Corrected Large Area Cryo-EM (DeCo-LACE) for Label-Free Detection of Molecules across Entire Cell Sections},
-  pdfauthor={Johannes ElferichNikolaus Grigorieff},
+  pdfauthor={Johannes ElferichGiulia SchiroliDavid ScaddenNikolaus Grigorieff},
   pdflang={en-US},
   pdfkeywords={cryo-EM, visual protemics, ribosome},
   hidelinks,
@@ -123,10 +123,10 @@
 \maketitle
 
 This manuscript
-(\href{https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/e94f17b00fe53a7b703becda30c7a1b1503e6e7e/}{permalink})
+(\href{https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/26bf17f811e80363e8f38656b89bbae2c14147f8/}{permalink})
 was automatically generated
-from \href{https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/e94f17b00fe53a7b703becda30c7a1b1503e6e7e}{jojoelfe/deco\_lace\_template\_matching\_manuscript@e94f17b}
-on May 20, 2022.
+from \href{https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/26bf17f811e80363e8f38656b89bbae2c14147f8}{jojoelfe/deco\_lace\_template\_matching\_manuscript@26bf17f}
+on May 27, 2022.
 
 \hypertarget{authors}{%
 \subsection{Authors}\label{authors}}
@@ -139,6 +139,12 @@ on May 20, 2022.
   · \includegraphics[width=0.16667in,height=0.16667in]{images/github.pdf}
   \href{https://github.com/jojoelfe}{jojoelfe}
   RNA Therapeutic Institute, UMass Chan Medical School; HHMI
+\item
+  \textbf{Giulia Schiroli}
+  None
+\item
+  \textbf{David Scadden}
+  None
 \item
   \textbf{Nikolaus Grigorieff}
   \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.pdf}
@@ -234,159 +240,6 @@ volume. We find a highly heterogeneous density of ribosomes within the cell.
 Analysis of the throughput in this method suggests that for the foreseeable
 future computation will be the bottleneck for visual proteomics.
 
-\hypertarget{materials-and-methods}{%
-\subsection{Materials and Methods}\label{materials-and-methods}}
-
-\hypertarget{grid-preparation}{%
-\subsubsection{Grid preparation}\label{grid-preparation}}
-
-ER-HoxA9 cells were maintained in RPMI medium supplemented with 10\% FBS,
-penicillin/streptomycin, SCF, and estrogen {[}\protect\hyperlink{ref-1B9Vt9eYu}{10}{]} at
-37 °C and 5\% CO2. 120 h prior to grid preparation, cells were washed twice in PBS
-and cultured in the same medium except without estrogen. Differentiation was
-verified by staining with Hoechst-dye and inspection of nuclear morphology.
-Cells were then counted and diluted to \(1\cdot10^6\) cells/ml. Grids (either 200
-mesh copper grids, with a sillicone-oxide and 2 µm holes with a 2 µm spacing or
-200 mesh gold grids with a thin gold film and 2 µm holes in 2 µm spacing) were
-glow-discharged from both sides using a 15 mA for 45 s. 3.5 µl of cell suspension
-was added to grids on the thin-film side and grids were blotted from the back
-side using a GP2 cryoplunger (Leica) for 8 s and rapidly plunged into liquid
-ethane at -185 °C.
-
-\hypertarget{fib-milling}{%
-\subsubsection{FIB-milling}\label{fib-milling}}
-
-Grids were loaded into an Aquilos 2 FIB/SEM (Thermo Fisher) instrument with a
-stage cooled to -190 °C. Grids were sputter-coated with platinum for 15 s at 45 mA
-and then coated with a layer of platinum-precursor by opening the GIS-valve for
-45 s. An overview of the grid was created by montaging SEM images and isolated
-cells at the center of gridsquares were selected for FIB-milling. Lamellae were
-generated automatically using the AutoTEM software (Thermo Fisher), with the
-following parameters:
-
-\begin{itemize}
-\tightlist
-\item
-  Milling angle: 20°
-\item
-  Rough milling: 3.2 µm thickness, 0.5 nA current
-\item
-  Medium milling: 1.8 µm thickness, 0.3 nA current, 1.0° overtilt
-\item
-  Fine milling: 1.0 µm tchickness, 0.1 nA current, 0.5° overtilt
-\item
-  Finer milling: 700 nm thickness, 0.1 nA curent, 0.2° overtilt
-\item
-  Polish 1: 450 nm thickness, 50 pA current
-\item
-  Polish 2: 200 nm thickness, 30 pA current
-\end{itemize}
-
-This resulted in 6-10 µm wide lamella with 150-250 nm thickness as determined by
-FIB-imaging of the lamella edges.
-
-\hypertarget{data-collection}{%
-\subsubsection{Data collection}\label{data-collection}}
-
-Grids were loaded into a Titan Krios TEM (Thermo Fisher) operated at 300 keV and
-equipped with a BioQuantum energy filter (Gatan) and K3 camera (Gatan). The
-microscope was aligned using a cross-grating grid on the stage. Prior to each
-session, we carefully performed the ``Image/Beam'' calibration in nanoprobe. We
-set the magnification to a pixel size of 1.76 Å and condensed the beam to \textasciitilde{} 900 nm
-diameter, resulting in the beam being completely visible on the camera. To
-establish fringe-free conditions, the ``Fine eucentric'' procedure of SerialEM {[}\protect\hyperlink{ref-19ZFerhph}{13}{]} was
-used to move a square of the cross-grating grid to the eucentric position of the
-microscope. The effective defocus was then set to 2 µm, using the ``autofocus''
-routine of SerialEM. The objective focus of the microscope was changed until no
-fringes were visible. The stage was then moved in Z until images had an apparent
-defocus of 2 µm. The difference in stage Z-position between the eucentric and
-fringe-free conditions was used to move other areas into fringe-free condition.
-
-Low magnification montages were used to find lamellae and lamellae that were
-sufficiently thin and free of contamination were selected for automated data
-collection. Overview images of each lamella were taken at 2250x magnification
-(38 Å pixel size). The corners of the lamella in the overview image were manually
-annotated in SerialEM and translated into beam image-shift values using SerialEM's
-calibration. A hexagonal pattern of beam image-shift positions was calculated
-that covered the area between the four corners in a serpentine way, with a
-\(\sqrt{3}\cdot425\) nm horizontal spacing and \(3/4\cdot 850\) nm vertical spacing. Exposures were
-taken at each position with a 30 e\textsuperscript{-}/Å\(^2\) total dose. After each exposure, the
-defocus was estimated using the ctffind function of SerialEM and the focus for
-the next exposure was corrected by the difference between the estimated focus
-and the desired defocus of 800 nm. Furthermore, after each exposure the
-deviation of the beam from the center of the camera was measured and corrected
-using the ``CenterBeamFromImage'' command of SerialEM.
-
-After data collection, a 20 s exposure at 2250x magnification of the lamella at
-200 μm defocus was taken for visualization purposes. A Python script implementing
-this procedure is available at {[}Link to repo{]}.
-
-\hypertarget{deco-lace-data-processing}{%
-\subsubsection{DeCo-LACE data processing}\label{deco-lace-data-processing}}
-
-An overview of the data analysis pipeline is shown in Fig.
-\ref{fig:deco_lace_workflow}.
-
-\hypertarget{pre-processing}{%
-\paragraph{Pre-processing}\label{pre-processing}}
-
-Motion-correction, dose weighting and other preprocessing as detailed below was performed using \emph{cis}TEM {[}\protect\hyperlink{ref-MUY42yxp}{14}{]}. To avoid influence of the beam-edge on motion-correction, only a quarter of the
-movie in the center of the camera was considered for calculation of the
-estimated motion. After movie frames were aligned and summed, a mask for the
-illuminated area was calculated by lowpass filtering the image with a 100 Å
-resolution cutoff, thresholding the image at 10\% of the maximal value and then lowpass
-filtering the mask again with a 100 Å resolution cutoff to smooth the mask edges. This mask was
-then used to select dark areas in the image and fill the pixels with
-Gaussian noise, with the same mean and standard deviation as the illuminated
-area. A custom version of the unblur program {[}\protect\hyperlink{ref-1G4Y94qCy}{15}{]}
-implementing this procedure is available at {[}link to decolace branch{]}. During motion correction images were resampled to a pixel size of 1.5 Å. The
-contrast-transfer function (CTF) was estimated using ctffind
-{[}\protect\hyperlink{ref-n43f3Sqs}{16}{]}, searching between 0.2 and 2 μm defocus.
-
-\hypertarget{dtm}{%
-\paragraph{2DTM}\label{dtm}}
-
-The search template was generated from the atomic model of the mouse LSU
-(PDB 6SWA, exluding the Epb1 subunit) using the cryo-EM simulator implemented in \emph{cis}TEM
-{[}\protect\hyperlink{ref-q2PSamkS}{17}{]}. The
-match\_template program {[}\protect\hyperlink{ref-10bXZuF3G}{9}{]} was used to search for this
-template in the movie-aligned, exposure-filtered and masked images, using a 1.5°
-angular step in out-of-plane angles and a 1.0° angular step in-plane. 11 defocus
-planes in 20 nm steps centered around the ctffind-determined defocus were searched. Targets
-were defined as detected when their matches with the template produced peaks
-with a singal-to-noise ratio (SNR) above a threshold of 7.75, which was chosen
-based on the one-false-positive-per-tile criterion {[}\protect\hyperlink{ref-Ynb3IP6I}{7}{]}.
-
-\hypertarget{montage-assembly}{%
-\paragraph{Montage assembly}\label{montage-assembly}}
-
-The coordinates of each tile \(i\),
-\(\mathbf{c}_{i}\) {[}2D Vector in pixels{]} were initialized using beam image-shift of the tile, \(\mathbf{b}_i\) {[}2D Vector in μm{]},
-and the ISToCamera matrix \(\mathbf{IC}\), as calibrated by SerialEM:
-
-\[\mathbf{c}_{i} = \mathbf{IC} \cdot \mathbf{b}_i\]
-
-A list of tile pairs \(i,j\) that overlap were assembled by selecting images where
-\(|\mathbf{c}_i-\mathbf{c}_j| < D_{Beam}\). In order to calculate the precise offset between tiles \(i\) and \(j\), \(\mathbf{r}_{i,j}\), we calculated the cross-correlation between the two tiles, masked to the overlapping illuminated area using the scikit-image
-package {[}\protect\hyperlink{ref-stvWEJeu}{18}{]} was used to calculate refined offsets . The coordinates \(\mathbf{c}_{i}\) were then refined by a least-square minimization against \(\mathbf{r}_{i,j}\):
-
-\[ \displaystyle{\min_{\mathbf{c}} \sum_{pairs}{(\mathbf{r}_{i,j} - (\mathbf{c}_i-\mathbf{c}_j))^2}}\]
-
-using the scipy package {[}\protect\hyperlink{ref-8Miti2Gz}{19}{]}. The masked cross-correlation and the least-square minimization was repeated once more to arrive at the final tile alignment.
-
-The x,y coordinates of target \(n\) detected by 2DTM in the tile \(i\),
-\(\textbf{m}^\textrm{T}_{n,i}\), was transformed into the montage frame by adding
-the coordinate of the tile.
-
-\[ \textbf{m}^\textrm{M}_n = \textbf{m}^\textrm{T}_{n,i} + \textbf{c}_i\]
-
-The z coordinate of each target was calculated as the sum of the defocus offset
-for the target, the estimated defocus of the tile, and the nominal defocus of
-the microscope when the tile was acquired.
-
-Images were rendered using UCSF ChimeraX {[}\protect\hyperlink{ref-cYCuuZxG}{20}{]}. The Python scripts used for data processing are available
-under {[}repolink{]}.
-
 \hypertarget{results}{%
 \subsection{Results}\label{results}}
 
@@ -407,7 +260,7 @@ smooth bilayered membranes and no signs of crystalline ice (Fig.
 {[}\ref{fig:initmatching}{]}C,D), indicating successful vitrification throughout the
 lamella. Successful vitrification is facilitated by the small size (\textasciitilde8 μm diameter) of these cells.
 
-We used an atomic model of the 60S mouse ribosomal subunit (6SWA) for 2DTM {[}\protect\hyperlink{ref-sbkam02a}{21}{]}. In a
+We used an atomic model of the 60S mouse ribosomal subunit (6SWA) for 2DTM {[}\protect\hyperlink{ref-sbkam02a}{13}{]}. In a
 subset of images, the distribution of cross-correlation scores significantly
 exceeded the distribution expected from images devoid of detectable targets. In the
 resulting scaled maximum-intensity projections (MIPs), clear peaks with SNR
@@ -469,7 +322,7 @@ contamination. We also plotted the measured objective astigmatism of each
 lamella and found that it varies with the applied image shift, becoming more
 astigmatic mostly due to image shift in the x direction (Fig.
 {[}\ref{fig:lamella_spatial_info}{]}B). While approaches exist to correct for this
-during the data collection {[}\protect\hyperlink{ref-APSL9LmU}{22}{]}, we opted to not use these approaches in our
+during the data collection {[}\protect\hyperlink{ref-APSL9LmU}{14}{]}, we opted to not use these approaches in our
 initial experiments. We reasoned that because 2DTM depends on high-resolution
 information, this would be an excellent test of how much these aberration affect
 imaging.
@@ -489,11 +342,11 @@ behavior of the K3 camera since we can observe these shading artifacts in microg
 
 The montages show membrane vesicles and granules with highly variable sizes and
 density. We found that a substantial number of granules, which are characterized by higher
-density inside the the surrounding cytosol {[}\protect\hyperlink{ref-xE2EhAcH}{23}{]}, seemed to contain a membrane-enclosed inclusion with density similar to
+density inside the the surrounding cytosol {[}\protect\hyperlink{ref-xE2EhAcH}{15}{]}, seemed to contain a membrane-enclosed inclusion with density similar to
 the surrounding cytosol (Fig. {[}\ref{fig:lamella_images}{]}C) and could therefore be formed
 by an autophagy-like pathway. These granules were
 150-300 nm in diameter and the inclusions were 100-200 nm in diameter. Based on
-these dimensions the granules are either azurophil or specific granules {[}\protect\hyperlink{ref-xE2EhAcH}{23}{]}. To our
+these dimensions the granules are either azurophil or specific granules {[}\protect\hyperlink{ref-xE2EhAcH}{15}{]}. To our
 knowledge, these inclusion have not been described in granulocytes and are
 further described and discussed below.
 
@@ -540,8 +393,8 @@ to the microscope frame of reference (Fig. {[}\ref{fig:matching_euc}{]}B, Fig.
 were thinner at the leading edge. Indeed, when plotting the transmitted beam
 intensities in individual tiles as a function of beam image-shift, we observed
 substantially higher intensities at the leading edge (Fig. {[}\ref{fig:lamella_motion_thickness}{]}B), which in energy-filtered
-TEM indicates a thinner sample {[}\protect\hyperlink{ref-17IP4Lhz1}{24}{]}. Even though we prepared the lamellae
-with the ``overtilt'' approach {[}\protect\hyperlink{ref-hr3dyUeI}{25}{]}, this means that ribosome densities across
+TEM indicates a thinner sample {[}\protect\hyperlink{ref-17IP4Lhz1}{16}{]}. Even though we prepared the lamellae
+with the ``overtilt'' approach {[}\protect\hyperlink{ref-hr3dyUeI}{17}{]}, this means that ribosome densities across
 the lamellae can be skewed by a change in thickness, and better sample
 preparation methods are needed to generate more even samples.
 
@@ -551,7 +404,7 @@ patterns reminiscent of the rough endoplasmic reticulum (Fig.
 {[}\ref{fig:matching_euc}{]}C, Fig. {[}\ref{fig:matching_fff}{]}C) or the outer nuclear
 membrane (Fig. {[}\ref{fig:matching_euc}{]}D). We also observed ribosomes forming
 ring-like structures (Fig. {[}\ref{fig:matching_euc}{]}E), potentially indicating
-circularized mRNAs {[}\protect\hyperlink{ref-cie13Q8F}{26}{]}. While ribosomes were for the most part excluded
+circularized mRNAs {[}\protect\hyperlink{ref-cie13Q8F}{18}{]}. While ribosomes were for the most part excluded
 from the numerous granules observed in the cytoplasm, in some cases we observed
 clusters of ribosomes in the inclusions of double-membraned granules
 described earlier (Fig. {[}\ref{fig:matching_euc}{]}F, Fig. {[}\ref{fig:matching_fff}{]}D,E). It is, in principle, possible that these targets are situated above or
@@ -601,7 +454,7 @@ focus illumination, demonstrating that both illumination schemed are suitable
 for DeCo-LACE (Fig. {[}\ref{fig:matching_stat}{]}D).
 
 We also wondered whether large image shifts would lead aberration due to
-astigmatism or beam tilt {[}\protect\hyperlink{ref-APSL9LmU}{22}{]}. We reasoned that if
+astigmatism or beam tilt {[}\protect\hyperlink{ref-APSL9LmU}{14}{]}. We reasoned that if
 that was the case the number of detected targets should be highest in the center of the
 lamella where the applied beam image-shift is 0. Instead we observed that in
 both eucentric and fring-free focus conditions more target where detected at the
@@ -639,25 +492,180 @@ increasing the number of processing units.
 \hypertarget{discussion}{%
 \subsection{Discussion}\label{discussion}}
 
-In this study we developed an approach to image entire cellular cross-section using cryo-EM at high enough resolution to allow for 2DTM detection of the LSU. The two main advantages compared to previous approaches are a high throughput of imaging and the biological context for detected molecules. The requirement to increase throughput in cryo-EM data collection of cellular samples has been recognized in the recent literature. Most approaches describeb so far are tailored towards tomography. Peck et al. {[}\protect\hyperlink{ref-1GPPSX111}{27}{]} and Yang et al. {[}\protect\hyperlink{ref-ujizcpVn}{28}{]} developed approaches to increase the FOV of tomogram data-collection by using a montaging technique. Peck et al.~used a similar ``condensed-beam'' approach as described here. However, the montages are substantially smaller in scope, covering carbon film holes of 2 um diameter. Bouvette et al. {[}\protect\hyperlink{ref-1Gwx5ScUa}{29}{]} and Eisenstein et al. {[}\protect\hyperlink{ref-xvouNMBy}{30}{]} are using beam image-shift to collect tilt-series in multiple locations in parallel to increase throughput. However, none of these approaches provide the full coverage of a cellular cross-section that can be achieved using DeCo-Lace.
+In this study we developed an approach to image entire cellular cross-section using cryo-EM at high enough resolution to allow for 2DTM detection of the LSU. The two main advantages compared to previous approaches are a high throughput of imaging and the biological context for detected molecules. The requirement to increase throughput in cryo-EM data collection of cellular samples has been recognized in the recent literature. Most approaches describeb so far are tailored towards tomography. Peck et al. {[}\protect\hyperlink{ref-1GPPSX111}{19}{]} and Yang et al. {[}\protect\hyperlink{ref-ujizcpVn}{20}{]} developed approaches to increase the FOV of tomogram data-collection by using a montaging technique. Peck et al.~used a similar ``condensed-beam'' approach as described here. However, the montages are substantially smaller in scope, covering carbon film holes of 2 um diameter. Bouvette et al. {[}\protect\hyperlink{ref-1Gwx5ScUa}{21}{]} and Eisenstein et al. {[}\protect\hyperlink{ref-xvouNMBy}{22}{]} are using beam image-shift to collect tilt-series in multiple locations in parallel to increase throughput. However, none of these approaches provide the full coverage of a cellular cross-section that can be achieved using DeCo-Lace.
 
-Since we observed substantial variation in ribosome density within and between lamellae, visual proteomics studies that use cryo-EM to establish changes in molecular organization within cells will require orders of magnitude more data than used in this study. One milestone would be to image enough data to represent one cellular volume, which for a small eukaryotic cells requires imaging approximately 100 lamella. While data collection throughput on the TEM is fundamentally limited by the exposure time, this amount of data could be collected within 12 hour by improving the data acquisition scheme to perform all necessary calculation in parallel with actual exposure of the camera. Sample preparation using a FIB/SEM is also currently a bottleneck, but preparation of large lamellae with multiple cellular cross-sections using methods like WAFFLE {[}\protect\hyperlink{ref-17H2LWiIu}{31}{]} might allow sufficient throughput. As stated in the results, at least for 2DTM computation will remain challenging and approximately 17,000 GPU hours would be required for a 100 lamellae dataset.
+Since we observed substantial variation in ribosome density within and between lamellae, visual proteomics studies that use cryo-EM to establish changes in molecular organization within cells will require orders of magnitude more data than used in this study. One milestone would be to image enough data to represent one cellular volume, which for a small eukaryotic cells requires imaging approximately 100 lamella. While data collection throughput on the TEM is fundamentally limited by the exposure time, this amount of data could be collected within 12 hour by improving the data acquisition scheme to perform all necessary calculation in parallel with actual exposure of the camera. Sample preparation using a FIB/SEM is also currently a bottleneck, but preparation of large lamellae with multiple cellular cross-sections using methods like WAFFLE {[}\protect\hyperlink{ref-17H2LWiIu}{23}{]} might allow sufficient throughput. As stated in the results, at least for 2DTM computation will remain challenging and approximately 17,000 GPU hours would be required for a 100 lamellae dataset.
 
-As described in {[}\protect\hyperlink{ref-Ynb3IP6I}{7}{]} the 2DTM SNR threshold for detecting a target is chosen to result in one false positive detection per image searched. We would therefore expect to find one false positive detection per tile. We reasoned that the large nuclear area imaged by DeCo-Lace could be used to test whether this assumption is true. In the 670 tiles containing exclusively nucleus (as manually annotated from the overview image) we detected 247 targets, making the false-positive rate more than twofold lower than expected. Since earlier work shows that 2DTM with the LSU can produce matches to nuclear ribosome biogenesis intermediates {[}\protect\hyperlink{ref-T1Qr0xyP}{32}{]}, this could even be an overestimate of the false-positive rate. This suggests that the detection threshold could be even lower, which is an area of ongoing research.
+As described in {[}\protect\hyperlink{ref-Ynb3IP6I}{7}{]} the 2DTM SNR threshold for detecting a target is chosen to result in one false positive detection per image searched. We would therefore expect to find one false positive detection per tile. We reasoned that the large nuclear area imaged by DeCo-Lace could be used to test whether this assumption is true. In the 670 tiles containing exclusively nucleus (as manually annotated from the overview image) we detected 247 targets, making the false-positive rate more than twofold lower than expected. Since earlier work shows that 2DTM with the LSU can produce matches to nuclear ribosome biogenesis intermediates {[}\protect\hyperlink{ref-T1Qr0xyP}{24}{]}, this could even be an overestimate of the false-positive rate. This suggests that the detection threshold could be even lower, which is an area of ongoing research.
 
-We found that even though we used beam image-shift extensively (up to 7 um), we did not see substantially reduced 2DTM SNR values in tiles acquired at high beam image-shift compared to tiles acquired with low or no beam image-shift. This is in contrast to reports in single-particle analysis (SPA) {[}\protect\hyperlink{ref-44fG6kcy}{33}{]} where the induced beam tilt substantially reduced the resolution if it was not corrected during processing. It is possible that 2DTM is less sensitive to beam-tilt aberrations, since the template is free of any aberration and only the image is distorted, while in SPA the beam tilt will affect both the images and the reconstructed template.
+We found that even though we used beam image-shift extensively (up to 7 um), we did not see substantially reduced 2DTM SNR values in tiles acquired at high beam image-shift compared to tiles acquired with low or no beam image-shift. This is in contrast to reports in single-particle analysis (SPA) {[}\protect\hyperlink{ref-44fG6kcy}{25}{]} where the induced beam tilt substantially reduced the resolution if it was not corrected during processing. It is possible that 2DTM is less sensitive to beam-tilt aberrations, since the template is free of any aberration and only the image is distorted, while in SPA the beam tilt will affect both the images and the reconstructed template.
 
 As mentioned in the results, we found a consistent shading artifact pattern in our montages, that we believe is the result of non-linear behavior of the K3 camera. Indeed, when we average images with a condensed beam taken over vacuum we found in both focus conditions a consistent background pattern with a brighter region on the periphery of the illuminated area (Fig {[}\ref{fig:gain}{]}). This might be caused by dynamic adjustment of the internal camera counting threshold which expects columns of the sensor to be evenly illuminated as is the case for SPA applications. Since the signal of this pattern has mainly low-resolution components it is unlikely to affect 2DTM. However, it highlights that the non-linear behavior of the camera has to be taken into account when imaging samples with strongly varying density and unusual illumination schemes.
 
-Unexpectedly, we observed granules containing a vesicle of putative cytosolic origin. We speculate that upon degranulation, the process in which granules fuse with the plasma membrane, these vesicles would be released into the extracelullar space. The main types of extracellular vesicles of this size are exosomes, up to 100 nm large vesicles derived from fusion of multivesicular bodies with the plasma membrane, and microvesicles, which are derived from direct budding of the plasma membrane {[}\protect\hyperlink{ref-kncnYGLD}{34}{]}. We suggest that granulocytes could release a third type of extracellular vesicle, granule-derived vesicles (GDV), into the extracellular space. 2DTM showed that a subset of GDVs can contain ribosomes (Fig. {[}\ref{fig:matching_euc}{]}F, Fig. {[}\ref{fig:matching_fff}{]}D,E). This could indicate that these vesicles are transporting translation-capable mRNAs, as has been described for exosomes {[}\protect\hyperlink{ref-agVdpX76}{35}{]}. Further studies will be necessary to confirm the existence of GDVs in granulocytes isolated from mammals and to understand their functional significance.
+Unexpectedly, we observed granules containing a vesicle of putative cytosolic origin. We speculate that upon degranulation, the process in which granules fuse with the plasma membrane, these vesicles would be released into the extracelullar space. The main types of extracellular vesicles of this size are exosomes, up to 100 nm large vesicles derived from fusion of multivesicular bodies with the plasma membrane, and microvesicles, which are derived from direct budding of the plasma membrane {[}\protect\hyperlink{ref-kncnYGLD}{26}{]}. We suggest that granulocytes could release a third type of extracellular vesicle, granule-derived vesicles (GDV), into the extracellular space. 2DTM showed that a subset of GDVs can contain ribosomes (Fig. {[}\ref{fig:matching_euc}{]}F, Fig. {[}\ref{fig:matching_fff}{]}D,E). This could indicate that these vesicles are transporting translation-capable mRNAs, as has been described for exosomes {[}\protect\hyperlink{ref-agVdpX76}{27}{]}. Further studies will be necessary to confirm the existence of GDVs in granulocytes isolated from mammals and to understand their functional significance.
 
-\begin{figure}
-\hypertarget{fig:deco_lace_workflow}{%
-\centering
-\includegraphics{figures/deco_lace_workflow.png}
-\caption{Workflow of DeCo-Lace processing}\label{fig:deco_lace_workflow}
-}
-\end{figure}
+\hypertarget{materials-and-methods}{%
+\subsection{Materials and Methods}\label{materials-and-methods}}
+
+\hypertarget{grid-preparation}{%
+\subsubsection{Grid preparation}\label{grid-preparation}}
+
+ER-HoxA9 cells were maintained in RPMI medium supplemented with 10\% FBS,
+penicillin/streptomycin, SCF, and estrogen {[}\protect\hyperlink{ref-1B9Vt9eYu}{10}{]} at
+37 °C and 5\% CO2. 120 h prior to grid preparation, cells were washed twice in PBS
+and cultured in the same medium except without estrogen. Differentiation was
+verified by staining with Hoechst-dye and inspection of nuclear morphology.
+Cells were then counted and diluted to \(1\cdot10^6\) cells/ml. Grids (either 200
+mesh copper grids, with a sillicone-oxide and 2 µm holes with a 2 µm spacing or
+200 mesh gold grids with a thin gold film and 2 µm holes in 2 µm spacing) were
+glow-discharged from both sides using a 15 mA for 45 s. 3.5 µl of cell suspension
+was added to grids on the thin-film side and grids were blotted from the back
+side using a GP2 cryoplunger (Leica) for 8 s and rapidly plunged into liquid
+ethane at -185 °C.
+
+\hypertarget{fib-milling}{%
+\subsubsection{FIB-milling}\label{fib-milling}}
+
+Grids were loaded into an Aquilos 2 FIB/SEM (Thermo Fisher) instrument with a
+stage cooled to -190 °C. Grids were sputter-coated with platinum for 15 s at 45 mA
+and then coated with a layer of platinum-precursor by opening the GIS-valve for
+45 s. An overview of the grid was created by montaging SEM images and isolated
+cells at the center of gridsquares were selected for FIB-milling. Lamellae were
+generated automatically using the AutoTEM software (Thermo Fisher), with the
+following parameters:
+
+\begin{itemize}
+\tightlist
+\item
+  Milling angle: 20°
+\item
+  Rough milling: 3.2 µm thickness, 0.5 nA current
+\item
+  Medium milling: 1.8 µm thickness, 0.3 nA current, 1.0° overtilt
+\item
+  Fine milling: 1.0 µm tchickness, 0.1 nA current, 0.5° overtilt
+\item
+  Finer milling: 700 nm thickness, 0.1 nA curent, 0.2° overtilt
+\item
+  Polish 1: 450 nm thickness, 50 pA current
+\item
+  Polish 2: 200 nm thickness, 30 pA current
+\end{itemize}
+
+This resulted in 6-10 µm wide lamella with 150-250 nm thickness as determined by
+FIB-imaging of the lamella edges.
+
+\hypertarget{data-collection}{%
+\subsubsection{Data collection}\label{data-collection}}
+
+Grids were loaded into a Titan Krios TEM (Thermo Fisher) operated at 300 keV and
+equipped with a BioQuantum energy filter (Gatan) and K3 camera (Gatan). The
+microscope was aligned using a cross-grating grid on the stage. Prior to each
+session, we carefully performed the ``Image/Beam'' calibration in nanoprobe. We
+set the magnification to a pixel size of 1.76 Å and condensed the beam to \textasciitilde{} 900 nm
+diameter, resulting in the beam being completely visible on the camera. To
+establish fringe-free conditions, the ``Fine eucentric'' procedure of SerialEM {[}\protect\hyperlink{ref-19ZFerhph}{28}{]} was
+used to move a square of the cross-grating grid to the eucentric position of the
+microscope. The effective defocus was then set to 2 µm, using the ``autofocus''
+routine of SerialEM. The objective focus of the microscope was changed until no
+fringes were visible. The stage was then moved in Z until images had an apparent
+defocus of 2 µm. The difference in stage Z-position between the eucentric and
+fringe-free conditions was used to move other areas into fringe-free condition.
+
+Low magnification montages were used to find lamellae and lamellae that were
+sufficiently thin and free of contamination were selected for automated data
+collection. Overview images of each lamella were taken at 2250x magnification
+(38 Å pixel size). The corners of the lamella in the overview image were manually
+annotated in SerialEM and translated into beam image-shift values using SerialEM's
+calibration. A hexagonal pattern of beam image-shift positions was calculated
+that covered the area between the four corners in a serpentine way, with a
+\(\sqrt{3}\cdot425\) nm horizontal spacing and \(3/4\cdot 850\) nm vertical spacing. Exposures were
+taken at each position with a 30 e\textsuperscript{-}/Å\(^2\) total dose. After each exposure, the
+defocus was estimated using the ctffind function of SerialEM and the focus for
+the next exposure was corrected by the difference between the estimated focus
+and the desired defocus of 800 nm. Furthermore, after each exposure the
+deviation of the beam from the center of the camera was measured and corrected
+using the ``CenterBeamFromImage'' command of SerialEM.
+
+After data collection, a 20 s exposure at 2250x magnification of the lamella at
+200 μm defocus was taken for visualization purposes. A Python script implementing
+this procedure is available at {[}Link to repo{]}.
+
+\hypertarget{deco-lace-data-processing}{%
+\subsubsection{DeCo-LACE data processing}\label{deco-lace-data-processing}}
+
+An overview of the data analysis pipeline is shown in Fig.
+\ref{fig:deco_lace_workflow}.
+
+\hypertarget{pre-processing}{%
+\paragraph{Pre-processing}\label{pre-processing}}
+
+Motion-correction, dose weighting and other preprocessing as detailed below was performed using \emph{cis}TEM {[}\protect\hyperlink{ref-MUY42yxp}{29}{]}. To avoid influence of the beam-edge on motion-correction, only a quarter of the
+movie in the center of the camera was considered for calculation of the
+estimated motion. After movie frames were aligned and summed, a mask for the
+illuminated area was calculated by lowpass filtering the image with a 100 Å
+resolution cutoff, thresholding the image at 10\% of the maximal value and then lowpass
+filtering the mask again with a 100 Å resolution cutoff to smooth the mask edges. This mask was
+then used to select dark areas in the image and fill the pixels with
+Gaussian noise, with the same mean and standard deviation as the illuminated
+area. A custom version of the unblur program {[}\protect\hyperlink{ref-1G4Y94qCy}{30}{]}
+implementing this procedure is available at {[}link to decolace branch{]}. During motion correction images were resampled to a pixel size of 1.5 Å. The
+contrast-transfer function (CTF) was estimated using ctffind
+{[}\protect\hyperlink{ref-n43f3Sqs}{31}{]}, searching between 0.2 and 2 μm defocus.
+
+\hypertarget{dtm}{%
+\paragraph{2DTM}\label{dtm}}
+
+The search template was generated from the atomic model of the mouse LSU
+(PDB 6SWA, exluding the Epb1 subunit) using the cryo-EM simulator implemented in \emph{cis}TEM
+{[}\protect\hyperlink{ref-q2PSamkS}{32}{]}. The
+match\_template program {[}\protect\hyperlink{ref-10bXZuF3G}{9}{]} was used to search for this
+template in the movie-aligned, exposure-filtered and masked images, using a 1.5°
+angular step in out-of-plane angles and a 1.0° angular step in-plane. 11 defocus
+planes in 20 nm steps centered around the ctffind-determined defocus were searched. Targets
+were defined as detected when their matches with the template produced peaks
+with a singal-to-noise ratio (SNR) above a threshold of 7.75, which was chosen
+based on the one-false-positive-per-tile criterion {[}\protect\hyperlink{ref-Ynb3IP6I}{7}{]}.
+
+\hypertarget{montage-assembly}{%
+\paragraph{Montage assembly}\label{montage-assembly}}
+
+The coordinates of each tile \(i\),
+\(\mathbf{c}_{i}\) {[}2D Vector in pixels{]} were initialized using beam image-shift of the tile, \(\mathbf{b}_i\) {[}2D Vector in μm{]},
+and the ISToCamera matrix \(\mathbf{IC}\), as calibrated by SerialEM:
+
+\[\mathbf{c}_{i} = \mathbf{IC} \cdot \mathbf{b}_i\]
+
+A list of tile pairs \(i,j\) that overlap were assembled by selecting images where
+\(|\mathbf{c}_i-\mathbf{c}_j| < D_{Beam}\). In order to calculate the precise offset between tiles \(i\) and \(j\), \(\mathbf{r}_{i,j}\), we calculated the cross-correlation between the two tiles, masked to the overlapping illuminated area using the scikit-image
+package {[}\protect\hyperlink{ref-stvWEJeu}{33}{]} was used to calculate refined offsets . The coordinates \(\mathbf{c}_{i}\) were then refined by a least-square minimization against \(\mathbf{r}_{i,j}\):
+
+\[ \displaystyle{\min_{\mathbf{c}} \sum_{pairs}{(\mathbf{r}_{i,j} - (\mathbf{c}_i-\mathbf{c}_j))^2}}\]
+
+using the scipy package {[}\protect\hyperlink{ref-8Miti2Gz}{34}{]}. The masked cross-correlation and the least-square minimization was repeated once more to arrive at the final tile alignment.
+
+The x,y coordinates of target \(n\) detected by 2DTM in the tile \(i\),
+\(\textbf{m}^\textrm{T}_{n,i}\), was transformed into the montage frame by adding
+the coordinate of the tile.
+
+\[ \textbf{m}^\textrm{M}_n = \textbf{m}^\textrm{T}_{n,i} + \textbf{c}_i\]
+
+The z coordinate of each target was calculated as the sum of the defocus offset
+for the target, the estimated defocus of the tile, and the nominal defocus of
+the microscope when the tile was acquired.
+
+Images were rendered using UCSF ChimeraX {[}\protect\hyperlink{ref-cYCuuZxG}{35}{]} using a custom extension to render 2DTM results available at {[}https://github.com/jojoelfe/tempest{]}. The Python scripts used for data processing are available
+under {[}https://github.com/jojoelfe/deco\_lace\_template\_matching\_manuscript{]}.
+
+\hypertarget{acknowledgments}{%
+\subsection{Acknowledgments}\label{acknowledgments}}
+
+The authors would like to thank Bronwyn Lucas, Carsten Sachse, and Chen Xue for helpful suggestions and careful reading of the manuscript. Data was collected at the UMass Chan medical School CryoEM core with help by Kankang song, Christna, and Chen Xue.
+
+\hypertarget{data-availability}{%
+\subsection{Data availability}\label{data-availability}}
+
+Cryo-EM movies, motion-corrected images and template matching results have been deposited in EMPIAR under accession code {[}CODE{]}. The custom cisTEM version is available here {[}{]} until features have been integrated into a cisTEM release. The ChimeraX extension for rendering is avaibale here {[}{]}. This manuscript was prepared using the manubot package {[}@ cite{]} . Custom python scripts and all files nescessary for manuscript generation are available here {[}{]}.
 
 \hypertarget{figures}{%
 \subsection{Figures}\label{figures}}
@@ -797,20 +805,6 @@ plotted as a function of the beam image-shift values.}\label{fig:lamella_motion_
 \end{fignos:tagged-figure}
 
 \begin{figure}
-\hypertarget{fig:matching_stat}{%
-\centering
-\includegraphics{figures/matching_stat.png}
-\caption{Statistics of 2DTM on lamella imaged using DeCo-LACE (A) Number of detected targets in
-each lamella (B) Distribution of targets per tile in each lamella. Only tiles
-with two or more detected targets were included (C) Distribution of SNRs in each lamella
-(D) For each lamella an average of all tiles is shown. Overlaid is a scatterplot
-of all detected targets in these tiles according to their in-tile coordinates.
-Scatterplot is colored according to the 2DTM SNR. There are no detected targets in the top
-circle-circle intersection due to radiation damage from previous exposures. (E) 2D histogram of number of detected targets as a function of beam-image shift (F) Mean 2DTM SNR as a function of beam-image shift}\label{fig:matching_stat}
-}
-\end{figure}
-
-\begin{figure}
 \hypertarget{fig:matching_euc}{%
 \centering
 \includegraphics{figures/matching_euc.png}
@@ -835,6 +829,28 @@ direction of the electron beam is horizontal. (C-E) Magnified area of panel A
 showing rough ER with associated ribosomes(C) and ribosomes
 enclosed in a less electron dense inclusion in a granule(D,E). (F) Side view of
 panel E. Ribosomes are colored in white with the surface of the peptide exit tunnel colored in green and the A, P, and E sites colored in blue, purple, and red, respectively. Scalebar corresponds to 100 nm.}\label{fig:matching_fff}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:matching_stat}{%
+\centering
+\includegraphics{figures/matching_stat.png}
+\caption{Statistics of 2DTM on lamella imaged using DeCo-LACE (A) Number of detected targets in
+each lamella (B) Distribution of targets per tile in each lamella. Only tiles
+with two or more detected targets were included (C) Distribution of SNRs in each lamella
+(D) For each lamella an average of all tiles is shown. Overlaid is a scatterplot
+of all detected targets in these tiles according to their in-tile coordinates.
+Scatterplot is colored according to the 2DTM SNR. There are no detected targets in the top
+circle-circle intersection due to radiation damage from previous exposures. (E) 2D histogram of number of detected targets as a function of beam-image shift (F) Mean 2DTM SNR as a function of beam-image shift}\label{fig:matching_stat}
+}
+\end{figure}
+
+\begin{figure}
+\hypertarget{fig:deco_lace_workflow}{%
+\centering
+\includegraphics{figures/deco_lace_workflow.png}
+\caption{Workflow of DeCo-Lace processing}\label{fig:deco_lace_workflow}
 }
 \end{figure}
 
@@ -915,144 +931,144 @@ panel E. Ribosomes are colored in white with the surface of the peptide exit tun
 \CSLBlock{James M Dolezal, Arie P Dash, Edward V Prochownik} \emph{BMC Cancer} (2018-03-12) \url{https://doi.org/gc87j9}
 \CSLBlock{DOI: \href{https://doi.org/10.1186/s12885-018-4178-z}{10.1186/s12885-018-4178-z} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29530001}{29530001} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5848553}{PMC5848553}}}
 
-\leavevmode\vadjust pre{\hypertarget{ref-19ZFerhph}{}}%
-\CSLLeftMargin{13. }%
-\CSLRightInline{\textbf{Automated electron microscope tomography using robust prediction of specimen movements}
-\CSLBlock{David N Mastronarde} \emph{Journal of Structural Biology} (2005-10) \url{https://doi.org/ff7gzx}
-\CSLBlock{DOI: \href{https://doi.org/10.1016/j.jsb.2005.07.007}{10.1016/j.jsb.2005.07.007} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/16182563}{16182563}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-MUY42yxp}{}}%
-\CSLLeftMargin{14. }%
-\CSLRightInline{\textbf{cisTEM, user-friendly software for single-particle image processing}
-\CSLBlock{Timothy Grant, Alexis Rohou, Nikolaus Grigorieff} \emph{eLife} (2018-03-07) \url{https://doi.org/gf5cq7}
-\CSLBlock{DOI: \href{https://doi.org/10.7554/elife.35383}{10.7554/elife.35383} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29513216}{29513216} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5854467}{PMC5854467}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-1G4Y94qCy}{}}%
-\CSLLeftMargin{15. }%
-\CSLRightInline{\textbf{Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6}
-\CSLBlock{Timothy Grant, Nikolaus Grigorieff} \emph{eLife} (2015-05-29) \url{https://doi.org/gf5cm7}
-\CSLBlock{DOI: \href{https://doi.org/10.7554/elife.06980}{10.7554/elife.06980} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/26023829}{26023829} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4471936}{PMC4471936}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-n43f3Sqs}{}}%
-\CSLLeftMargin{16. }%
-\CSLRightInline{\textbf{CTFFIND4: Fast and accurate defocus estimation from electron micrographs}
-\CSLBlock{Alexis Rohou, Nikolaus Grigorieff} \emph{Journal of Structural Biology} (2015-11) \url{https://doi.org/f7xzgv}
-\CSLBlock{DOI: \href{https://doi.org/10.1016/j.jsb.2015.08.008}{10.1016/j.jsb.2015.08.008} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/26278980}{26278980} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6760662}{PMC6760662}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-q2PSamkS}{}}%
-\CSLLeftMargin{17. }%
-\CSLRightInline{\textbf{Cryo-TEM simulations of amorphous radiation-sensitive samples using multislice wave propagation}
-\CSLBlock{Benjamin Himes, Nikolaus Grigorieff} \emph{IUCrJ} (2021-09-30) \url{https://doi.org/gpzs9r}
-\CSLBlock{DOI: \href{https://doi.org/10.1107/s2052252521008538}{10.1107/s2052252521008538} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34804546}{34804546} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8562658}{PMC8562658}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-stvWEJeu}{}}%
-\CSLLeftMargin{18. }%
-\CSLRightInline{\textbf{scikit-image: image processing in Python}
-\CSLBlock{Stéfan van der Walt, Johannes L Schönberger, Juan Nunez-Iglesias, François Boulogne, Joshua D Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu} \emph{PeerJ} (2014-06-19) \url{https://doi.org/gftp3s}
-\CSLBlock{DOI: \href{https://doi.org/10.7717/peerj.453}{10.7717/peerj.453} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/25024921}{25024921} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081273}{PMC4081273}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-8Miti2Gz}{}}%
-\CSLLeftMargin{19. }%
-\CSLRightInline{\textbf{SciPy 1.0: fundamental algorithms for scientific computing in Python}
-\CSLBlock{Pauli Virtanen, Ralf Gommers, Travis E Oliphant, Matt Haberland, Tyler Reddy, David Cournapeau, Evgeni Burovski, Pearu Peterson, Warren Weckesser, Jonathan Bright, \ldots{} } \emph{Nature Methods} (2020-02-03) \url{https://doi.org/ggj45f}
-\CSLBlock{DOI: \href{https://doi.org/10.1038/s41592-019-0686-2}{10.1038/s41592-019-0686-2} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/32015543}{32015543} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7056644}{PMC7056644}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-cYCuuZxG}{}}%
-\CSLLeftMargin{20. }%
-\CSLRightInline{\textbf{\textless scp\textgreater UCSF ChimeraX\textless/scp\textgreater{}
-: Structure visualization for researchers, educators, and developers}
-\CSLBlock{Eric F Pettersen, Thomas D Goddard, Conrad C Huang, Elaine C Meng, Gregory S Couch, Tristan I Croll, John H Morris, Thomas E Ferrin} \emph{Protein Science} (2020-10-22) \url{https://doi.org/ghr6mn}
-\CSLBlock{DOI: \href{https://doi.org/10.1002/pro.3943}{10.1002/pro.3943} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/32881101}{32881101} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7737788}{PMC7737788}}}
-
 \leavevmode\vadjust pre{\hypertarget{ref-sbkam02a}{}}%
-\CSLLeftMargin{21. }%
+\CSLLeftMargin{13. }%
 \CSLRightInline{\textbf{Protein Synthesis in the Developing Neocortex at Near-Atomic Resolution Reveals Ebp1-Mediated Neuronal Proteostasis at the 60S Tunnel Exit}
 \CSLBlock{Matthew L Kraushar, Ferdinand Krupp, Dermot Harnett, Paul Turko, Mateusz C Ambrozkiewicz, Thiemo Sprink, Koshi Imami, Manuel Günnigmann, Ulrike Zinnall, Carlos H Vieira-Vieira, \ldots{} Christian MT Spahn} \emph{Molecular Cell} (2021-01) \url{https://doi.org/gh7d72}
 \CSLBlock{DOI: \href{https://doi.org/10.1016/j.molcel.2020.11.037}{10.1016/j.molcel.2020.11.037} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/33357414}{33357414} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8163098}{PMC8163098}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-APSL9LmU}{}}%
-\CSLLeftMargin{22. }%
+\CSLLeftMargin{14. }%
 \CSLRightInline{\textbf{High-quality, high-throughput cryo-electron microscopy data collection via beam tilt and astigmatism-free beam-image shift}
 \CSLBlock{Chunling Wu, Xiaojun Huang, Jing Cheng, Dongjie Zhu, Xinzheng Zhang} \emph{Journal of Structural Biology} (2019-12) \url{https://doi.org/gp2nq9}
 \CSLBlock{DOI: \href{https://doi.org/10.1016/j.jsb.2019.09.013}{10.1016/j.jsb.2019.09.013} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31562921}{31562921}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-xE2EhAcH}{}}%
-\CSLLeftMargin{23. }%
+\CSLLeftMargin{15. }%
 \CSLRightInline{\textbf{THE DEVELOPMENT OF NEUTROPHILIC POLYMORPHONUCLEAR LEUKOCYTES IN HUMAN BONE MARROW}
 \CSLBlock{Dorothy Ford Bainton, Joan L Ullyot, Marilyn G Farquhar} \emph{Journal of Experimental Medicine} (1971-10-01) \url{https://doi.org/chkbcm}
 \CSLBlock{DOI: \href{https://doi.org/10.1084/jem.134.4.907}{10.1084/jem.134.4.907} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/4106490}{4106490} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2138991}{PMC2138991}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-17IP4Lhz1}{}}%
-\CSLLeftMargin{24. }%
+\CSLLeftMargin{16. }%
 \CSLRightInline{\textbf{Routine determination of ice thickness for cryo-EM grids}
 \CSLBlock{William J Rice, Anchi Cheng, Alex J Noble, Edward T Eng, Laura Y Kim, Bridget Carragher, Clinton S Potter} \emph{Journal of Structural Biology} (2018-10) \url{https://doi.org/gfbpj2}
 \CSLBlock{DOI: \href{https://doi.org/10.1016/j.jsb.2018.06.007}{10.1016/j.jsb.2018.06.007} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29981485}{29981485} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6119488}{PMC6119488}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-hr3dyUeI}{}}%
-\CSLLeftMargin{25. }%
+\CSLLeftMargin{17. }%
 \CSLRightInline{\textbf{Optimized cryo-focused ion beam sample preparation aimed at in situ structural studies of membrane proteins}
 \CSLBlock{Miroslava Schaffer, Julia Mahamid, Benjamin D Engel, Tim Laugks, Wolfgang Baumeister, Jürgen M Plitzko} \emph{Journal of Structural Biology} (2017-02) \url{https://doi.org/f9qfr6}
 \CSLBlock{DOI: \href{https://doi.org/10.1016/j.jsb.2016.07.010}{10.1016/j.jsb.2016.07.010} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/27444390}{27444390}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-cie13Q8F}{}}%
-\CSLLeftMargin{26. }%
+\CSLLeftMargin{18. }%
 \CSLRightInline{\textbf{Circularization of mRNA by eukaryotic translation initiation factors.}
 \CSLBlock{SE Wells, PE Hillner, RD Vale, AB Sachs} \emph{Molecular cell} (1998-07) \url{https://www.ncbi.nlm.nih.gov/pubmed/9702200}
 \CSLBlock{DOI: \href{https://doi.org/10.1016/s1097-2765(00)80122-7}{10.1016/s1097-2765(00)80122-7} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/9702200}{9702200}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-1GPPSX111}{}}%
-\CSLLeftMargin{27. }%
+\CSLLeftMargin{19. }%
 \CSLRightInline{\textbf{Montage electron tomography of vitrified specimens}
 \CSLBlock{Ariana Peck, Stephen D Carter, Huanghao Mai, Songye Chen, Alister Burt, Grant J Jensen} \emph{Journal of Structural Biology} (2022-06) \url{https://doi.org/gp4qrs}
 \CSLBlock{DOI: \href{https://doi.org/10.1016/j.jsb.2022.107860}{10.1016/j.jsb.2022.107860} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35487464}{35487464}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-ujizcpVn}{}}%
-\CSLLeftMargin{28. }%
+\CSLLeftMargin{20. }%
 \CSLRightInline{\textbf{Correlative cryogenic montage electron tomography for comprehensive in-situ whole-cell structural studies}
 \CSLBlock{Jie E Yang, Matthew R Larson, Bryan S Sibert, Joseph Y Kim, Daniel Parrell, Juan C Sanchez, Victoria Pappas, Anil Kumar, Kai Cai, Keith Thompson, Elizabeth R Wright} \emph{Cold Spring Harbor Laboratory} (2022-01-02) \url{https://doi.org/gp4qrv}
 \CSLBlock{DOI: \href{https://doi.org/10.1101/2021.12.31.474669}{10.1101/2021.12.31.474669}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-1Gwx5ScUa}{}}%
-\CSLLeftMargin{29. }%
+\CSLLeftMargin{21. }%
 \CSLRightInline{\textbf{Beam image-shift accelerated data acquisition for near-atomic resolution single-particle cryo-electron tomography}
 \CSLBlock{Jonathan Bouvette, Hsuan-Fu Liu, Xiaochen Du, Ye Zhou, Andrew P Sikkema, Juliana da Fonseca Rezende e Mello, Bradley P Klemm, Rick Huang, Roel M Schaaper, Mario J Borgnia, Alberto Bartesaghi} \emph{Nature Communications} (2021-03-30) \url{https://doi.org/gjphkb}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-021-22251-8}{10.1038/s41467-021-22251-8} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/33785757}{33785757} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8009872}{PMC8009872}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-xvouNMBy}{}}%
-\CSLLeftMargin{30. }%
+\CSLLeftMargin{22. }%
 \CSLRightInline{\textbf{Parallel cryo electron tomography on \textless i\textgreater in situ\textless/i\textgreater{} lamellae}
 \CSLBlock{Fabian Eisenstein, Haruaki Yanagisawa, Hiroka Kashihara, Masahide Kikkawa, Sachiko Tsukita, Radostin Danev} \emph{Cold Spring Harbor Laboratory} (2022-04-08) \url{https://doi.org/gp4qrw}
 \CSLBlock{DOI: \href{https://doi.org/10.1101/2022.04.07.487557}{10.1101/2022.04.07.487557}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-17H2LWiIu}{}}%
-\CSLLeftMargin{31. }%
+\CSLLeftMargin{23. }%
 \CSLRightInline{\textbf{Waffle Method: A general and flexible approach for improving throughput in FIB-milling}
 \CSLBlock{Kotaro Kelley, Ashleigh M Raczkowski, Oleg Klykov, Pattana Jaroenlak, Daija Bobe, Mykhailo Kopylov, Edward T Eng, Gira Bhabha, Clinton S Potter, Bridget Carragher, Alex J Noble} \emph{Nature Communications} (2022-04-06) \url{https://doi.org/gp4qrt}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-022-29501-3}{10.1038/s41467-022-29501-3} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35387991}{35387991} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8987090}{PMC8987090}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-T1Qr0xyP}{}}%
-\CSLLeftMargin{32. }%
+\CSLLeftMargin{24. }%
 \CSLRightInline{\textbf{\textless i\textgreater In situ\textless/i\textgreater{} single particle classification reveals distinct 60S maturation intermediates in cells}
 \CSLBlock{Bronwyn A Lucas, Kexin Zhang, Sarah Loerch, Nikolaus Grigorieff} \emph{Cold Spring Harbor Laboratory} (2022-04-10) \url{https://doi.org/gp4qrx}
 \CSLBlock{DOI: \href{https://doi.org/10.1101/2022.04.10.487797}{10.1101/2022.04.10.487797}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-44fG6kcy}{}}%
-\CSLLeftMargin{33. }%
+\CSLLeftMargin{25. }%
 \CSLRightInline{\textbf{High-resolution cryo-EM using beam-image shift at 200 keV}
 \CSLBlock{Jennifer N Cash, Sarah Kearns, Yilai Li, Michael A Cianfrocco} \emph{IUCrJ} (2020-10-29) \url{https://doi.org/gjwcfq}
 \CSLBlock{DOI: \href{https://doi.org/10.1107/s2052252520013482}{10.1107/s2052252520013482} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/33209328}{33209328} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7642776}{PMC7642776}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-kncnYGLD}{}}%
-\CSLLeftMargin{34. }%
+\CSLLeftMargin{26. }%
 \CSLRightInline{\textbf{Shedding light on the cell biology of extracellular vesicles}
 \CSLBlock{Guillaume van Niel, Gisela D'Angelo, Graça Raposo} \emph{Nature Reviews Molecular Cell Biology} (2018-01-17) \url{https://doi.org/gct4df}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/nrm.2017.125}{10.1038/nrm.2017.125} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29339798}{29339798}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-agVdpX76}{}}%
-\CSLLeftMargin{35. }%
+\CSLLeftMargin{27. }%
 \CSLRightInline{\textbf{Exosome-mediated transfer of mRNAs and microRNAs is a novel mechanism of genetic exchange between cells}
 \CSLBlock{Hadi Valadi, Karin Ekström, Apostolos Bossios, Margareta Sjöstrand, James J Lee, Jan O Lötvall} \emph{Nature Cell Biology} (2007-05-07) \url{https://doi.org/d5df4s}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/ncb1596}{10.1038/ncb1596} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/17486113}{17486113}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-19ZFerhph}{}}%
+\CSLLeftMargin{28. }%
+\CSLRightInline{\textbf{Automated electron microscope tomography using robust prediction of specimen movements}
+\CSLBlock{David N Mastronarde} \emph{Journal of Structural Biology} (2005-10) \url{https://doi.org/ff7gzx}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.jsb.2005.07.007}{10.1016/j.jsb.2005.07.007} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/16182563}{16182563}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-MUY42yxp}{}}%
+\CSLLeftMargin{29. }%
+\CSLRightInline{\textbf{cisTEM, user-friendly software for single-particle image processing}
+\CSLBlock{Timothy Grant, Alexis Rohou, Nikolaus Grigorieff} \emph{eLife} (2018-03-07) \url{https://doi.org/gf5cq7}
+\CSLBlock{DOI: \href{https://doi.org/10.7554/elife.35383}{10.7554/elife.35383} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29513216}{29513216} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5854467}{PMC5854467}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1G4Y94qCy}{}}%
+\CSLLeftMargin{30. }%
+\CSLRightInline{\textbf{Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6}
+\CSLBlock{Timothy Grant, Nikolaus Grigorieff} \emph{eLife} (2015-05-29) \url{https://doi.org/gf5cm7}
+\CSLBlock{DOI: \href{https://doi.org/10.7554/elife.06980}{10.7554/elife.06980} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/26023829}{26023829} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4471936}{PMC4471936}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-n43f3Sqs}{}}%
+\CSLLeftMargin{31. }%
+\CSLRightInline{\textbf{CTFFIND4: Fast and accurate defocus estimation from electron micrographs}
+\CSLBlock{Alexis Rohou, Nikolaus Grigorieff} \emph{Journal of Structural Biology} (2015-11) \url{https://doi.org/f7xzgv}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.jsb.2015.08.008}{10.1016/j.jsb.2015.08.008} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/26278980}{26278980} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6760662}{PMC6760662}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-q2PSamkS}{}}%
+\CSLLeftMargin{32. }%
+\CSLRightInline{\textbf{Cryo-TEM simulations of amorphous radiation-sensitive samples using multislice wave propagation}
+\CSLBlock{Benjamin Himes, Nikolaus Grigorieff} \emph{IUCrJ} (2021-09-30) \url{https://doi.org/gpzs9r}
+\CSLBlock{DOI: \href{https://doi.org/10.1107/s2052252521008538}{10.1107/s2052252521008538} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34804546}{34804546} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8562658}{PMC8562658}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-stvWEJeu}{}}%
+\CSLLeftMargin{33. }%
+\CSLRightInline{\textbf{scikit-image: image processing in Python}
+\CSLBlock{Stéfan van der Walt, Johannes L Schönberger, Juan Nunez-Iglesias, François Boulogne, Joshua D Warner, Neil Yager, Emmanuelle Gouillart, Tony Yu} \emph{PeerJ} (2014-06-19) \url{https://doi.org/gftp3s}
+\CSLBlock{DOI: \href{https://doi.org/10.7717/peerj.453}{10.7717/peerj.453} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/25024921}{25024921} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081273}{PMC4081273}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-8Miti2Gz}{}}%
+\CSLLeftMargin{34. }%
+\CSLRightInline{\textbf{SciPy 1.0: fundamental algorithms for scientific computing in Python}
+\CSLBlock{Pauli Virtanen, Ralf Gommers, Travis E Oliphant, Matt Haberland, Tyler Reddy, David Cournapeau, Evgeni Burovski, Pearu Peterson, Warren Weckesser, Jonathan Bright, \ldots{} } \emph{Nature Methods} (2020-02-03) \url{https://doi.org/ggj45f}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41592-019-0686-2}{10.1038/s41592-019-0686-2} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/32015543}{32015543} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7056644}{PMC7056644}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-cYCuuZxG}{}}%
+\CSLLeftMargin{35. }%
+\CSLRightInline{\textbf{\textless scp\textgreater UCSF ChimeraX\textless/scp\textgreater{}
+: Structure visualization for researchers, educators, and developers}
+\CSLBlock{Eric F Pettersen, Thomas D Goddard, Conrad C Huang, Elaine C Meng, Gregory S Couch, Tristan I Croll, John H Morris, Thomas E Ferrin} \emph{Protein Science} (2020-10-22) \url{https://doi.org/ghr6mn}
+\CSLBlock{DOI: \href{https://doi.org/10.1002/pro.3943}{10.1002/pro.3943} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/32881101}{32881101} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7737788}{PMC7737788}}}
 
 \end{CSLReferences}
 

@@ -2,6 +2,7 @@ Aquilos
 autofocus
 autophagy
 AutoTEM
+avaibale
 azurophil
 bilayer
 bilayered
@@ -11,11 +12,16 @@ biomolecules
 BioQuantum
 Bouvette
 Boxplot
+Bronwyn
+Carsten
 CenterBeamFromImage
 ChimeraX
+Christna
 cis
+cisTEM
 conformational
 cryo
+CryoEM
 cryoplunger
 CTF
 ctffind
@@ -32,6 +38,7 @@ describeb
 detections
 DTM
 Elferich
+EMPIAR
 endoplasmic
 Epb
 EUC
@@ -50,6 +57,7 @@ Gatan
 GDV
 GDVs
 GIS
+Giulia
 GPUs
 granulocytes
 GrCyt
@@ -63,10 +71,11 @@ HoxA
 initmatching
 ISToCamera
 jojoelfe
+Kankang
 keV
 Krios
 lamella
-lamellae
+Lamellae
 Leica
 lowpass
 LSU
@@ -81,6 +90,7 @@ montaging
 mRNAs
 multivesicular
 nanoprobe
+nescessary
 neutrophil
 neutrophils
 nikogrigorieff
@@ -95,7 +105,6 @@ preprocessing
 proteomics
 putatively
 repo
-repolink
 resampled
 reticulum
 ribosomal
@@ -103,9 +112,12 @@ ribosome
 ribosomes
 ribsomes
 RPMI
+Sachse
+Scadden
 Scalebar
 Scatterplot
 SCF
+Schiroli
 scikit
 scipy
 SEM
@@ -114,7 +126,7 @@ SerialEM’s
 sillicone
 singal
 SNR
-SNRs
+SNRS
 spectrometry
 subunit
 subunits
@@ -131,3 +143,4 @@ UMass
 unblur
 uncharacterized
 unilluminated
+Xue
