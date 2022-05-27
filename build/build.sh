@@ -38,10 +38,13 @@ manubot process \
 # Make output directory
 mkdir -p output
 mkdir -p output/figures
+mkdir -p output/movies
 
 # Generate the figures
 
 cp content/figures/* output/figures/
+cp content/movies/* output/movies/
+
 
 pandoc --verbose \
   --data-dir="$PANDOC_DATA_DIR" \
