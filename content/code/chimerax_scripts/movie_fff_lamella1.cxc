@@ -1,0 +1,187 @@
+view matrix camera  1,0,0,58225,0,1,0,32938,0,0,1,1.2046e+05 
+view name view1
+view matrix camera  1,0,0,36715,0,1,0,62582,0,0,1,1.2046e+05
+view name view2
+view matrix camera  1,0,0,45831,0,1,0,9979.8,0,0,1,1.2046e+05
+view name view3
+view matrix camera  -0.98766,-0.070789,0.13968,62410,-0.12992,-0.12762,-0.98328,-1.0433e+05,0.087432,-0.98929,0.11685,17264
+view name view4
+tempest load_star /scratch/bern/elferich/deco_lace_manuscript_processing/assemble/fff_lamella4_assembled_matches.star
+
+
+
+open /scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/fff_lamella4_montage_t2_tophat.tif
+open /scratch/bern/elferich/deco_lace_manuscript_processing/refined_assembly_it2/fff_lamella4_montage_t2_highres.tif
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/6swa.pdb
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/5lzs.pdb
+open  /scratch/bern/elferich/deco_lace_manuscript_processing/structures/3j7r.pdb
+
+windowsize 518 622
+
+zoom pixelSize 150
+
+volume #3 voxelSize 75
+volume #4 voxelSize 7.5
+volume #4 style image
+volume #3 style image
+
+volume #3 origin 0,0,-5000
+color #3 white models transparency 0
+volume #3 level 0,1 level 1.125e+04,0.9592 level 2.269e+04,1 level 9556,0.9592 change image
+volume #3 color black color white color white color black change image
+
+color #2 #fcaf3e models transparency 0 
+volume #2 level 0.000002 change surface
+
+hide #!1 models
+hide #4
+
+camera ortho
+
+windowsize 518 622
+
+zoom pixelSize 150
+
+lighting simple
+
+windowsize 518 622
+zoom pixelSize 150
+
+
+set bgColor black
+
+view name overview
+
+movie record supersample 3 
+ 
+wait 20
+
+turn y 1 90
+perframe "volume #3 color black color white color white color black change image transparency $1" range 0.1,3.0 frames 90
+wait 90 
+turn y 1 90
+wait 90 
+turn y 1 90
+wait 90 
+turn y 1 90
+perframe "volume #3 color black color white color white color black change image transparency $1" range 3.0,0.1 frames 90
+wait 90 
+
+crossfade
+volume #2 level 0.0002 change surface
+tempest toggle_instancing #2
+color #5 lightgray
+select zone #6/ii 40.0 #5
+color sel blue
+select zone #6/3 40.0 #5
+color sel red
+select zone #6/2 20.0 #5
+color sel purple
+select zone #7/1 60.0 #5
+color sel lime
+hide #6
+hide #7
+color zone #2 near #5 distance 30.0
+hide #5
+tempest toggle_instancing #2
+zoom pixelSize 150
+2dlabels text 'A Site' color blue xpos 0.05 ypos 0.17  frames 30 margin 20
+2dlabels text 'P Site' color purple xpos 0.05 ypos 0.12  frames 30 margin 20
+2dlabels text 'E Site' color red xpos 0.05 ypos 0.07  frames 30 margin 20
+2dlabels text 'Peptide exit' color green xpos 0.05 ypos 0.02 frames 30 margin 20
+wait 30
+view view1 60
+zoom pixelSize 6.0 frames 120
+volume #4 origin 0,0,-1000
+volume #4 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1 change image transparency 100
+volume #4 color black color white color white color black change image
+volume #4 style image step 1
+show #4
+perframe "volume #4 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1 change image transparency $1" range 100,0.01 frames 60
+wait 120
+2dlabels text 'Rough ER' color white xpos 0.02 ypos 0.92 frames 30
+wait 60
+wobble x 10 120 aspect 0.2 cycle 60 center 0.5,0.5,0.
+wait 120
+2dlabels #8.5 vis f frames 30
+wait 30
+zoom pixelSize 25.0 frames 60
+wait 30
+perframe "volume #4 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1 change image transparency $1" range 0.01,100 frames 30
+wait 30
+hide #4
+
+
+view view2 120
+wait 120
+
+zoom pixelSize 6.0 frames 60
+show #4
+perframe "volume #4 level 0,1 level 5191,0.9898 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 100,0.01 frames 30
+wait 60
+2dlabels text 'Outer nuclear membrane' color white xpos 0.02 ypos 0.92 frames 30
+wait 60
+wobble x 10 120 aspect 0.2 cycle 60 center 0.5,0.5,0.
+wait 120
+2dlabels #8.6 vis f frames 30
+wait 30
+zoom pixelSize 25.0 frames 60
+wait 30
+perframe "volume #4 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1 change image transparency $1" range 0.01,100 frames 30
+wait 30
+hide #4
+
+view view3 120
+wait 120
+zoom pixelSize 6.0 frames 60
+show #4
+perframe "volume #4 level 0,1 level 8181,0.9898 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 100,0.01 frames 30
+wait 60
+2dlabels text 'Ring shaped polysome' color white xpos 0.02 ypos 0.92 frames 30
+wait 60
+wobble x 10 120 aspect 0.2 cycle 60 center 0.5,0.5,0.
+wait 120
+2dlabels #8.7 vis f frames 30
+
+wait 30
+zoom pixelSize 25.0 frames 60
+perframe "volume #4 level 0,1 level 8181,0.9898 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 0.01,100 frames 30
+wait 30 
+hide #4
+wait 60
+
+view view4 120
+wait 120
+zoom pixelSize 10.0 frames 60
+show #4
+perframe "volume #4 level 0,1 level 4679,1 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 100,0.01 frames 60
+wait 60
+2dlabels text 'Intra-granule vesicle' color white xpos 0.02 ypos 0.92 frames 30
+
+wait 60
+wobble x 10 120 aspect 0.2 cycle 60 center 0.5,0.5,0.
+wait 120
+2dlabels #8.8 vis f frames 30
+
+wait 30
+view overview frames 60
+perframe "volume #4 level 0,1 level 4679,1 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 0.01,100 frames 30
+wait 30
+hide #4
+
+wait 30
+
+wait 60
+
+
+
+movie stop
+
+movie encode ~/test3.mp4 framerate 30
+
+quit
+ 
+
+
+
+
