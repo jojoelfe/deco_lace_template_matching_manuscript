@@ -1,7 +1,7 @@
 view matrix camera  1,0,0,58225,0,1,0,32938,0,0,1,1.2046e+05 
-view name view1
-view matrix camera  1,0,0,36715,0,1,0,62582,0,0,1,1.2046e+05
 view name view2
+view matrix camera  1,0,0,36715,0,1,0,62582,0,0,1,1.2046e+05
+view name view1
 view matrix camera  1,0,0,45831,0,1,0,9979.8,0,0,1,1.2046e+05
 view name view3
 view matrix camera  -0.98766,-0.070789,0.13968,62410,-0.12992,-0.12762,-0.98328,-1.0433e+05,0.087432,-0.98929,0.11685,17264
@@ -92,12 +92,12 @@ zoom pixelSize 150
 wait 30
 view view1 60
 zoom pixelSize 6.0 frames 120
-volume #4 origin 0,0,-1000
-volume #4 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1 change image transparency 100
+volume #4 origin 0,0,-3500
+volume #4 level 0,1 level 7161,0.9694 level 2.269e+04,1 level 2736,0.9694 change image transparency 100
 volume #4 color black color white color white color black change image
 volume #4 style image step 1
 show #4
-perframe "volume #4 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1 change image transparency $1" range 100,0.01 frames 60
+perframe "volume #4 level 0,1 level 7161,0.9694 level 2.269e+04,1 level 2736,0.9694 change image transparency $1" range 100,0.01 frames 60
 wait 120
 2dlabels text 'Rough ER' color white xpos 0.02 ypos 0.92 frames 30
 wait 60
@@ -107,7 +107,7 @@ wait 120
 wait 30
 zoom pixelSize 25.0 frames 60
 wait 30
-perframe "volume #4 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1 change image transparency $1" range 0.01,100 frames 30
+perframe "volume #4 level 0,1 level 7161,0.9694 level 2.269e+04,1 level 2736,0.9694 change image transparency $1" range 0.01,100 frames 30
 wait 30
 hide #4
 
@@ -115,11 +115,11 @@ hide #4
 view view2 120
 wait 120
 
-zoom pixelSize 6.0 frames 60
+zoom pixelSize 10.0 frames 60
 show #4
-perframe "volume #4 level 0,1 level 5191,0.9898 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 100,0.01 frames 30
+perframe "volume #4 level 0,1 level 6451,0.9898 level 2.269e+04,1 level 2642,0.9694 change image transparency $1" range 100,0.01 frames 30
 wait 60
-2dlabels text 'Outer nuclear membrane' color white xpos 0.02 ypos 0.92 frames 30
+2dlabels text 'Vesicle inside granule' color white xpos 0.02 ypos 0.92 frames 30
 wait 60
 wobble x 10 120 aspect 0.2 cycle 60 center 0.5,0.5,0.
 wait 120
@@ -127,45 +127,26 @@ wait 120
 wait 30
 zoom pixelSize 25.0 frames 60
 wait 30
-perframe "volume #4 level 0,1 level 7394,0.9898 level 2.269e+04,1 level 2789,1 change image transparency $1" range 0.01,100 frames 30
+perframe "volume #4 level 0,1 level 6451,0.9898 level 2.269e+04,1 level 2642,0.9694 change image transparency $1" range 0.01,100 frames 30
 wait 30
 hide #4
 
 view view3 120
 wait 120
-zoom pixelSize 6.0 frames 60
+zoom pixelSize 8.0 frames 60
+volume #4 origin 0,0,-1700
 show #4
-perframe "volume #4 level 0,1 level 8181,0.9898 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 100,0.01 frames 30
+perframe "volume #4 level 0,1 level 9008,1 level 2.269e+04,1 level 4725,0.949 change image transparency $1" range 100,0.01 frames 30
 wait 60
-2dlabels text 'Ring shaped polysome' color white xpos 0.02 ypos 0.92 frames 30
+2dlabels text 'Vesicle inside granule' color white xpos 0.02 ypos 0.92 frames 30
 wait 60
 wobble x 10 120 aspect 0.2 cycle 60 center 0.5,0.5,0.
 wait 120
 2dlabels #8.7 vis f frames 30
 
 wait 30
-zoom pixelSize 25.0 frames 60
-perframe "volume #4 level 0,1 level 8181,0.9898 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 0.01,100 frames 30
-wait 30 
-hide #4
-wait 60
-
-view view4 120
-wait 120
-zoom pixelSize 10.0 frames 60
-show #4
-perframe "volume #4 level 0,1 level 4679,1 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 100,0.01 frames 60
-wait 60
-2dlabels text 'Intra-granule vesicle' color white xpos 0.02 ypos 0.92 frames 30
-
-wait 60
-wobble x 10 120 aspect 0.2 cycle 60 center 0.5,0.5,0.
-wait 120
-2dlabels #8.8 vis f frames 30
-
-wait 30
 view overview frames 60
-perframe "volume #4 level 0,1 level 4679,1 level 2.269e+04,1 level 2356,0.9898 change image transparency $1" range 0.01,100 frames 30
+perframe "volume #4 level 0,1 level 9008,1 level 2.269e+04,1 level 4725,0.949 change image transparency $1" range 0.01,100 frames 30
 wait 30
 hide #4
 
