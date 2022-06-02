@@ -12,20 +12,19 @@ authors:
     orcid: 0000-0002-9911-706X
     email: johannes.elferich@umassmed.edu
     affiliations:
-      - RNA Therapeutic Institute, UMass Chan Medical School
+      - RNA Therapeutics Institute, UMass Chan Medical School
       - HHMI
 
   - name: Giulia Schiroli
     initials: GS
-    orcid:
+    orcid: 0000-0002-9812-8728
     email: 
-    affiliations:
+    affiliations: Massachusetts General Hospital
       - 
   - name: David Scadden
     initials: DS
-    orcid:
     email: 
-    affiliations:
+    affiliations: Massachusetts General Hospital
       - 
       
   - github: nikogrigorieff
@@ -34,7 +33,7 @@ authors:
     orcid: 0000-0002-1506-909X
     email: niko@grigorieff.org
     affiliations:
-      - RNA Therapeutic Institute, UMass Chan Medical School
+      - RNA Therapeutics Institute, UMass Chan Medical School
       - HHMI
 
 
