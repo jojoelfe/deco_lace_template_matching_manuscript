@@ -55,7 +55,7 @@
      
     \node (anchor) at (0.5,9.35) {}; 
 \node[labelNode] {A};
-\node[graphicNode] {\includegraphics[height=9cm]{content/images/the_lamella.png}};
+\node[graphicNode] (panel) {\includegraphics[height=9cm]{content/images/the_lamella.png}};
 
 \node[annotNode] at (3.5,8.35) {\contour{white}{Nuc}};
 \node[annotNode] at (1.75,4.0) {\contour{white}{Nuc}};
@@ -66,6 +66,9 @@
 \node[annotNode] at (1.5,8.0) {\contour{white}{GrCyt}};
 \node[annotNode] at (4.5,3.5) {\contour{white}{GrCyt}};
 
+% scalebar - physical height is 12810 nm
+\draw [line width=1.55mm,white] ([xshift=-0.05cm, yshift=0.1cm]panel.south east) -- ([xshift=-1.25cm  , yshift=0.1cm]panel.south east);
+\draw [line width=0.7mm,black] ([xshift=-0.05cm, yshift=0.1cm]panel.south east) -- ([xshift=-1.25cm , yshift=0.1cm]panel.south east);
 
 \node (rect) at (1.1,7.5) [anchor=center,draw,thick,minimum width=0.85cm,minimum height=0.6cm,color=blue!60] {};
 \node[mnNode, color=blue!60] {\contour{white}{2}};
