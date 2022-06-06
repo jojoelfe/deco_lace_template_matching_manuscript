@@ -12,20 +12,22 @@ authors:
     orcid: 0000-0002-9911-706X
     email: johannes.elferich@umassmed.edu
     affiliations:
-      - RNA Therapeutics Institute, UMass Chan Medical School
-      - HHMI
+      - RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA
+      - Howard Hughes Medical Institute, Ashburn, VA, USA
 
   - name: Giulia Schiroli
     initials: GS
     orcid: 0000-0002-9812-8728
     email: 
-    affiliations: Massachusetts General Hospital
-      - 
+    affiliations: 
+      - Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA 02114, USA
   - name: David Scadden
     initials: DS
     email: 
-    affiliations: Massachusetts General Hospital
-      - 
+    affiliations: 
+      - Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA 02114, USA
+      - Harvard Stem Cell Institute, Cambridge, MA 02138, USA
+      - Department of Stem Cell and Regenerative Biology, Harvard University, Cambridge, MA 02138, USA
       
   - github: nikogrigorieff
     name: Nikolaus Grigorieff
@@ -33,7 +35,7 @@ authors:
     orcid: 0000-0002-1506-909X
     email: niko@grigorieff.org
     affiliations:
-      - RNA Therapeutics Institute, UMass Chan Medical School
-      - HHMI
+      - RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA
+      - Howard Hughes Medical Institute, Ashburn, VA, USA
 
 
