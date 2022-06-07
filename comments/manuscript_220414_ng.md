@@ -629,15 +629,15 @@ used to raster the whole lamella (B) Diagram of the collection algorithm
 positions and the used beam diameter indicated with red circles (D+E)
 Representative micrographs takne with a condensed beam at eucentric
 focus (D) or fringe-free focus (E) (F) Boxplot of defocus measured by
-ctffind of micrographs taken by the DeCo-Lace approach on 4 lamella
+ctffind of micrographs taken by the DeCo-LACE approach on 4 lamella
 images at eucentric focus and 4 lamella imaged with fringe-free focus.
 (F+G) Lamella overview images of lamella imaged at eucentric focus (F)
 Overview image taken at low magnification (40Å pixel size) (G) Overview
-created by montaging high magnification images taken with the DeCo-Lace
+created by montaging high magnification images taken with the DeCo-LACE
 approach (1.5Å pixelsize) (H+I) Lamella overview images of lamella
 imaged at fringe-free focus (H) Overview image taken at low
 magnification (40Å pixel size) (I) Overview created by montaging high
-magnification images taken with the DeCo-Lace approach (1.5Å
+magnification images taken with the DeCo-LACE approach (1.5Å
 pixelsize)](media/image7.png){width="6.5in"
 height="6.513888888888889in"}
 
@@ -651,15 +651,15 @@ with the designated acquisition positions and the used beam diameter
 indicated with red circles. (D+E) Representative micrographs takne with
 a condensed beam at eucentric focus (D) or fringe-free focus (E). (F)
 Boxplot of defocus measured by ctffind of micrographs taken by the
-DeCo-Lace approach on four lamella images at eucentric focus and four
+DeCo-LACE approach on four lamella images at eucentric focus and four
 lamella imaged with fringe-free focus. (F+G) Lamella overview images of
 lamella imaged at eucentric focus. (F) Overview image taken at low
 magnification (40Å pixel size). (G) Overview created by montaging high
-magnification images taken with the DeCo-Lace approach (1.5Å pixelsize).
+magnification images taken with the DeCo-LACE approach (1.5Å pixelsize).
 (H+I) Lamella overview images of lamella imaged at fringe-free focus.
 (H) Overview image taken at low magnification (40Å pixel size). (I)
 Overview created by montaging high magnification images taken with the
-DeCo-Lace approach (1.5Å pixelsize)
+DeCo-LACE approach (1.5Å pixelsize)
 
 ![Figure S2: Overview images of lamellae imaged using the DeCo-LACE
 approach taken at low-magnification](media/image8.png){width="6.5in"
@@ -668,17 +668,17 @@ height="3.3875in"}
 Figure S2: Overview images of lamellae imaged using the DeCo-LACE
 approach taken at low-magnification
 
-![Figure S3: Defocus estimation of individual tiles of DeCo-Lace
+![Figure S3: Defocus estimation of individual tiles of DeCo-LACE
 montages (A) Defocus values of individual micrographs taken using the
-DeCo-Lace approach plotted as a function of the Beam-Image-Shift values.
+DeCo-LACE approach plotted as a function of the Beam-Image-Shift values.
 (B) Defocus astigmatism of individual micrographs taken using the
-DeCo-Lace approach plotted as a function of the Beam-Image-Shift
+DeCo-LACE approach plotted as a function of the Beam-Image-Shift
 values.](media/image9.png){width="6.5in" height="6.940277777777778in"}
 
-Figure S3: Defocus estimation of individual tiles of DeCo-Lace montages.
-(A) Defocus values of individual micrographs taken using the DeCo-Lace
+Figure S3: Defocus estimation of individual tiles of DeCo-LACE montages.
+(A) Defocus values of individual micrographs taken using the DeCo-LACE
 approach plotted as a function of the beam image-shift values. (B)
-Defocus astigmatism of individual micrographs taken using the DeCo-Lace
+Defocus astigmatism of individual micrographs taken using the DeCo-LACE
 approach plotted as a function of the image-shift values.
 
 ![Figure S4: Motion correction of movies with condensed beams. At the
@@ -704,17 +704,17 @@ central region to estimate the shifts
 
 ![Figure S5: Motion correction of individual tiles imaged using the
 DeCo-LACE approach (A) Total estimated motion of individual micrographs
-taken using the DeCo-Lace approach plotted as a function of the
+taken using the DeCo-LACE approach plotted as a function of the
 Beam-Image-Shift values. (B) Electron intensity of individual
-micrographs taken using the DeCo-Lace approach plotted as a function of
+micrographs taken using the DeCo-LACE approach plotted as a function of
 the Beam-Image-Shift values.](media/image11.png){width="6.5in"
 height="6.940277777777778in"}
 
 Figure S5: Motion correction of individual tiles imaged using the
 DeCo-LACE approach. (A) Total estimated motion of individual micrographs
-taken using the DeCo-Lace approach plotted as a function of the beam
+taken using the DeCo-LACE approach plotted as a function of the beam
 image-shift values. (B) Electron intensity of individual micrographs
-taken using the DeCo-Lace approach plotted as a function of the
+taken using the DeCo-LACE approach plotted as a function of the
 image-shift values.
 
 ![Figure 3: Statistics of 2DTM on lamella imaged using DeCo-LACE (A)
@@ -738,7 +738,7 @@ Scatterplot is color according to the detection SNR. There are no
 detected targets in the top circle-circle intersection due to radiation
 damage from previous exposures.
 
-![Figure 4: Template matching in lamella imaged using the DeCo-Lace
+![Figure 4: Template matching in lamella imaged using the DeCo-LACE
 approach at eucentric focus (A) Montage of Lamella\_\\textrm{EUC} 1
 overlaid with matches according to their montage coordinates (B) Side
 view of matches in the lamella, such that the direction of the electron
@@ -748,7 +748,7 @@ ribosomes (D), ribsomes arranged in a circular fashion(E), ribosomes
 enclosed in a less electron dense inclusion in a
 granule(F).](media/image13.png){width="6.5in" height="4.79375in"}
 
-Figure 4: Template matching in lamella imaged using the DeCo-Lace
+Figure 4: Template matching in lamella imaged using the DeCo-LACE
 approach at eucentric focus. (A) Montage of Lamella${}_{\text{EUC}}$ 1
 overlaid with detected targets according to their montage coordinates.
 (B) Side view of targets in the lamella, such that the direction of the
@@ -757,7 +757,7 @@ rough ER with associated ribosomes (C), outer nuclear membrane with
 associated ribosomes (D), ribsomes arranged in a circular fashion(E),
 ribosomes enclosed in a less electron dense inclusion in a granule (F).
 
-![Figure 5: Template matching in lamella imaged using the DeCo-Lace
+![Figure 5: Template matching in lamella imaged using the DeCo-LACE
 approach at fringe-free focus (A) Montage of Lamella\_\\textrm{FFF} 4
 overlaid with matches according to their montage coordinates (B) Side
 view of matches in the lamella, such that the direction of the electron
@@ -768,7 +768,7 @@ ribosomes situated inside the granule colored accoding to SNR and other
 ribosomes colored in grey.](media/image14.png){width="6.5in"
 height="4.79375in"}
 
-Figure 5: Template matching in lamella imaged using the DeCo-Lace
+Figure 5: Template matching in lamella imaged using the DeCo-LACE
 approach at fringe-free focus. (A) Montage of Lamella${}_{\text{FFF}}$ 4
 overlaid with detected targets according to their montage coordinates.
 (B) Side view of targets in the lamella, such that the direction of the
@@ -778,10 +778,10 @@ electron dense inclusion in a granule (D,E). (F) Side view of panel E
 with ribosomes situated inside the granule colored accoding to SNR and
 other ribosomes colored in grey.
 
-![Figure 6: Workflow of DeCo-Lace
+![Figure 6: Workflow of DeCo-LACE
 processing](media/image15.png){width="6.5in" height="6.5in"}
 
-Figure 6: Workflow of DeCo-Lace processing
+Figure 6: Workflow of DeCo-LACE processing
 
 ## References
 
