@@ -11,6 +11,7 @@ authors:
     initials: JE
     orcid: 0000-0002-9911-706X
     email: johannes.elferich@umassmed.edu
+    correspondence: true
     affiliations:
       - RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA
       - Howard Hughes Medical Institute, Ashburn, VA, USA
@@ -21,6 +22,9 @@ authors:
     email: 
     affiliations: 
       - Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA 02114, USA
+      - Harvard Stem Cell Institute, Cambridge, MA 02138, USA
+      - Department of Stem Cell and Regenerative Biology, Harvard University, Cambridge, MA 02138, USA
+
   - name: David Scadden
     initials: DS
     email: 
@@ -34,6 +38,7 @@ authors:
     initials: NG
     orcid: 0000-0002-1506-909X
     email: niko@grigorieff.org
+    correspondence: true
     affiliations:
       - RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA
       - Howard Hughes Medical Institute, Ashburn, VA, USA
