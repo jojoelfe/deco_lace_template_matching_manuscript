@@ -12,7 +12,10 @@
   ItalicFont = *-italic,
   BoldItalicFont = *-bolditalic,
 ]
-
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{caption}
+\captionsetup[figure]{font={stretch=1.2}}
 
 %% pandoc-fignos: environment for tagged figures
 \newenvironment{fignos:tagged-figure}[1][]{
