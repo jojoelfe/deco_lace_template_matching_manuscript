@@ -1,4 +1,4 @@
-# DeCo LACE 2D template matching manuscript
+# Defocus Corrected Large Area Cryo-EM (DeCo-LACE) for Label-Free Detection of Molecules across Entire Cell Sections
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -7,59 +7,25 @@
 [![GitHub Actions Status](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/workflows/Manubot/badge.svg)](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/actions)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
+![DeCo-LACE movie](/content/movies/movie1.mp4)
+
+
+
 ## Manuscript description
 
 <!-- usage note: edit this section. -->
 
-This manuscript describes how to use the Defocus-Corrected Large-Area Cryo-EM (DeCo-LACE) technique to find biomolecules in lamella.
+This manuscript describes how to use the Defocus-Corrected Large-Area Cryo-EM (DeCo-LACE) technique to find biomolecules using 2DTM in lamellae. This repository uses [manubot](https://greenelab.github.io/meta-review/ "Open collaborative writing with Manubot") to compile the final manuscript file. The repository also contains processing scripts that were used to process the data as well as the SerialEM scripts to collect data by DeCo-LACE. The manubot system has been slightly modified, most notably to allow assembling the figures using [tikz/pgf](https://github.com/pgf-tikz/pgf).
 
+### Directories & files
 
-## Figure Outline
+The directories are as follows:
 
-- Figure 1: Why is DeCo LACE needed?
-  - Example of ribosome condensation
++ [`content`](content) contains the manuscript source, which includes markdown files as well as inputs for citations and references.
++ [`content/code`](content/code) contains python scripts used for the data processing
++ [`content/code/img`](content/code/img) contains images generated from the python scripts and are used to assemble the figures
++ [`content/code/chimerax_scripts`](content/code/chimerax_scripts/) contains [ChimeraX](https://www.cgl.ucsf.edu/chimerax/) command files used to render some of the images in the manscript
 
-- Figure 2: DeCo LACE collection + dataprocessing pipeline
-  - Collection
-  - Plot CTFs as function of collection
-  - Analysis
-  - Time needed
-
-- Figure 3: LSU template matching in lamella
-  - Overviews + positions
-  - Plot scores
-  - Plot thickness
-  - Score vs Thickness
-  - Scores in overlap regions
-  - Scores at edge of beam
-  - Beamtilt refinement?
-
-- Figure 4: Analysis of functional states
-  - Is SSU present (plot on overview)
-  - Polyribosome (plot colored by polyribosome group)
-  - Membranebound
-
-
-
-## Data TODOs
-
-- [ ] Match at least four lamella of neutrophil-like cells
-- [ ] Test if small subunit of ribosome is present
-- [ ] Statistical argument for polyribosome presence
-
-## Code TODOs
-
-- [ ] DeCo LACE collection script 
-- [ ] cisTEM processing pipeline
-  - [ ] Correct beamdetection and noise-masking in unblur
-    - [ ] Let gui calculate correct pixel size
-    - [ ] Blend noise into image
-- [ ] visualization in napari/chimeraX?
-
-## Writing TODO
-
-- [ ] Abstract
-- [ ] Introduction
 
 ## Manubot
 
@@ -73,7 +39,7 @@ See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
 
 Please open [an issue](https://git.io/fhQHM) for questions related to Manubot usage, bug reports, or general inquiries.
 
-### Repository directories & files
+### Manubot directories & files
 
 The directories are as follows:
 
