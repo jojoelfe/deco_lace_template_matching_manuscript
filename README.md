@@ -7,9 +7,7 @@
 [![GitHub Actions Status](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/workflows/Manubot/badge.svg)](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/actions)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
-![DeCo-LACE movie](/content/movies/movie1.mp4)
-
-
+https://user-images.githubusercontent.com/6081039/173131842-fd0da8e4-87c3-4b5e-8169-988f43c83619.mp4
 
 ## Manuscript description
 
