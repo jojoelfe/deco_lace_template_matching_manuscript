@@ -4,6 +4,7 @@
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf)
+[![BioRxiv](https://img.shields.io/badge/manuscript-bioRxiv-critical)](https://doi.org/10.1101/2022.06.13.495969)
 [![GitHub Actions Status](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/workflows/Manubot/badge.svg)](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/actions)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
