@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://jojoelfe.github.io/deco_lace_template_matching_manuscript/>.
-The permalink for this webpage version is <https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a321def4b341f6e6f2c8d66936f53cf5e9398eae/>.
+The permalink for this webpage version is <https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/009ecfe7c505910c424b8f1b31b59f44373441da/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`a321def4b341f6e6f2c8d66936f53cf5e9398eae`](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/commit/a321def4b341f6e6f2c8d66936f53cf5e9398eae).
+[`009ecfe7c505910c424b8f1b31b59f44373441da`](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/commit/009ecfe7c505910c424b8f1b31b59f44373441da).
