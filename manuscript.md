@@ -5,7 +5,7 @@ keywords:
 - visual protemics
 - ribosome
 lang: en-US
-date-meta: '2022-06-06'
+date-meta: '2022-06-14'
 author-meta:
 - Johannes Elferich
 - Giulia Schiroli
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Defocus Corrected Large Area Cryo-EM (DeCo-LACE) for Label-Free Detection of Molecules across Entire Cell Sections" />
   <meta property="og:title" content="Defocus Corrected Large Area Cryo-EM (DeCo-LACE) for Label-Free Detection of Molecules across Entire Cell Sections" />
   <meta property="twitter:title" content="Defocus Corrected Large Area Cryo-EM (DeCo-LACE) for Label-Free Detection of Molecules across Entire Cell Sections" />
-  <meta name="dc.date" content="2022-06-06" />
-  <meta name="citation_publication_date" content="2022-06-06" />
+  <meta name="dc.date" content="2022-06-14" />
+  <meta name="citation_publication_date" content="2022-06-14" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -31,18 +31,21 @@ header-includes: |-
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Johannes Elferich" />
   <meta name="citation_author_institution" content="RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA" />
-  <meta name="citation_author_institution" content="Howard Hughes Medical Institute, Ashburn, VA, USA" />
+  <meta name="citation_author_institution" content="Howard Hughes Medical Institute, USA" />
   <meta name="citation_author_orcid" content="0000-0002-9911-706X" />
   <meta name="citation_author" content="Giulia Schiroli" />
-  <meta name="citation_author_institution" content="Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA 02114, USA" />
+  <meta name="citation_author_institution" content="Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA, USA" />
+  <meta name="citation_author_institution" content="Harvard Stem Cell Institute, Cambridge, MA, USA" />
+  <meta name="citation_author_institution" content="Department of Stem Cell and Regenerative Biology, Harvard University, Cambridge, MA, USA" />
   <meta name="citation_author_orcid" content="0000-0002-9812-8728" />
   <meta name="citation_author" content="David Scadden" />
-  <meta name="citation_author_institution" content="Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA 02114, USA" />
-  <meta name="citation_author_institution" content="Harvard Stem Cell Institute, Cambridge, MA 02138, USA" />
-  <meta name="citation_author_institution" content="Department of Stem Cell and Regenerative Biology, Harvard University, Cambridge, MA 02138, USA" />
+  <meta name="citation_author_institution" content="Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA, USA" />
+  <meta name="citation_author_institution" content="Harvard Stem Cell Institute, Cambridge, MA, USA" />
+  <meta name="citation_author_institution" content="Department of Stem Cell and Regenerative Biology, Harvard University, Cambridge, MA, USA" />
+  <meta name="citation_author_orcid" content="0000-0001-9821-7133" />
   <meta name="citation_author" content="Nikolaus Grigorieff" />
   <meta name="citation_author_institution" content="RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA" />
-  <meta name="citation_author_institution" content="Howard Hughes Medical Institute, Ashburn, VA, USA" />
+  <meta name="citation_author_institution" content="Howard Hughes Medical Institute, USA" />
   <meta name="citation_author_orcid" content="0000-0002-1506-909X" />
   <link rel="canonical" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta property="og:url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
@@ -50,9 +53,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/" />
   <meta name="citation_pdf_url" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a321def4b341f6e6f2c8d66936f53cf5e9398eae/" />
-  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a321def4b341f6e6f2c8d66936f53cf5e9398eae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a321def4b341f6e6f2c8d66936f53cf5e9398eae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/009ecfe7c505910c424b8f1b31b59f44373441da/" />
+  <meta name="manubot_html_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/009ecfe7c505910c424b8f1b31b59f44373441da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/009ecfe7c505910c424b8f1b31b59f44373441da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,49 +75,47 @@ manubot-clear-requests-cache: false
 
 
 
-<small><em>
-This manuscript
-([permalink](https://jojoelfe.github.io/deco_lace_template_matching_manuscript/v/a321def4b341f6e6f2c8d66936f53cf5e9398eae/))
-was automatically generated
-from [jojoelfe/deco_lace_template_matching_manuscript@a321def](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/tree/a321def4b341f6e6f2c8d66936f53cf5e9398eae)
-on June 6, 2022.
-</em></small>
-
 ## Authors
 
 
 
-+ **Johannes Elferich**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
++ **Johannes Elferich**
+![Corresponding](images/envelope.svg){.inline_icon width=16 height=16}![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-9911-706X](https://orcid.org/0000-0002-9911-706X)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [jojoelfe](https://github.com/jojoelfe)<br>
+
   <small>
-     RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA; Howard Hughes Medical Institute, Ashburn, VA, USA
+     RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA; Howard Hughes Medical Institute, USA
   </small>
 
-+ **Giulia Schiroli**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0002-9812-8728](https://orcid.org/0000-0002-9812-8728)<br>
++ **Giulia Schiroli**
+![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-9812-8728](https://orcid.org/0000-0002-9812-8728)
+
   <small>
-     Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA 02114, USA
+     Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA, USA; Harvard Stem Cell Institute, Cambridge, MA, USA; Department of Stem Cell and Regenerative Biology, Harvard University, Cambridge, MA, USA
   </small>
 
-+ **David Scadden**<br><br>
++ **David Scadden**
+![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-9821-7133](https://orcid.org/0000-0001-9821-7133)
+
   <small>
-     Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA 02114, USA; Harvard Stem Cell Institute, Cambridge, MA 02138, USA; Department of Stem Cell and Regenerative Biology, Harvard University, Cambridge, MA 02138, USA
+     Center for Regenerative Medicine, Massachusetts General Hospital, Boston, MA, USA; Harvard Stem Cell Institute, Cambridge, MA, USA; Department of Stem Cell and Regenerative Biology, Harvard University, Cambridge, MA, USA
   </small>
 
-+ **Nikolaus Grigorieff**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
++ **Nikolaus Grigorieff**
+![Corresponding](images/envelope.svg){.inline_icon width=16 height=16}![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-1506-909X](https://orcid.org/0000-0002-1506-909X)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [nikogrigorieff](https://github.com/nikogrigorieff)<br>
+
   <small>
-     RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA; Howard Hughes Medical Institute, Ashburn, VA, USA
+     RNA Therapeutics Institute, University of Massachusetts Chan Medical School, Worcester, MA, USA; Howard Hughes Medical Institute, USA
   </small>
 
 
+::: {#correspondence}
+![Corresponding](images/envelope.svg){.inline_icon width=16 height=16} — correspondence preferred via [GitHub Issues](https://github.com/jojoelfe/deco_lace_template_matching_manuscript/issues).
+Otherwise, address correspondence to <johannes.elferich@umassmed.edu> and <niko@grigorieff.org>.
+:::
 
 ## Abstract {.page_break_before}
 
@@ -181,7 +182,7 @@ method can be used to calculate complete 3D coordinates and orientations
 of a biomolecule in a cellular sample
 [@doi:10.1101/2020.04.22.053868].
 
-Here we apply 2DTM of the ribosome large subunit (LSU) to conditionally immortalized *mus musculus* (mouse) cell line that gives rise to functional mature neutrophils [@doi:10.1016/j.cell.2016.08.057] after thinning using cryo-FIB milling. We chose these
+Here we apply 2DTM of the ribosome large subunit (LSU) to a conditionally immortalized *mus musculus* (mouse) cell line that gives rise to functional mature neutrophils [@doi:10.1016/j.cell.2016.08.057]. We chose these
  cells because genetic defects in the ribosome machinery often leads to
 hematopoietic disease [@doi:10.1093/nar/gkz637] and direct quantification of
 ribosome location, number and conformational states in hematopoietic cells could
@@ -329,7 +330,7 @@ mean and standard deviation matching the illuminated portion of the micrograph
 all tiles of the eight lamellae.
 
 We used the tile positions to calculate the positions of the detected
-LSUs in the lamellae (Fig. [@fig:matching_euc]A, Fig. [@fig:matching_fff]A). Overlaying these positions of the lamellae montages reveals LSU
+LSUs in the lamellae (Fig. [@fig:matching_euc]A, Fig. [@fig:matching_fff]A, Movie 1, Movie 2). Overlaying these positions of the lamellae montages reveals LSU
 distribution throughout the FIB-milled slices of individual cells. Consistent with prior observations imaging selected views in yeast [@doi:10.1101/2022.04.10.487797], organelles
 like the nucleus and mitochondria only showed sporadic targets detected with low
 SNRs, consistent with the estimated false-positive rate of one per tile. For
@@ -337,7 +338,7 @@ each detected target we also calculated the Z positions from the individual
 estimated defocus and defocus offset for each tile. When viewed from the side,
 the ribosome positions therefore show the slight tilts of the lamellae relative
 to the microscope frame of reference (Fig. [@fig:matching_euc]B, Fig.
-[@fig:matching_fff]B). Furthermore, the side views indicated that lamellae
+[@fig:matching_fff]B, Movie 1, Movie 2). Furthermore, the side views indicated that lamellae
 were thinner at the leading edge. Indeed, when plotting the transmitted beam
 intensities in individual tiles as a function of beam image-shift, we observed
 substantially higher intensities at the leading edge (Fig. [@fig:lamella_motion_thickness]B), which in energy-filtered
@@ -345,6 +346,8 @@ TEM indicates a thinner sample [@doi:10.1016/j.jsb.2018.06.007]. Even though we 
 with the "overtilt" approach [@doi:10.1016/j.jsb.2016.07.010], this means that LSU densities across
 the lamellae can be skewed by a change in thickness, and better sample
 preparation methods are needed to generate more even samples.
+
+As described in [@doi:10.7554/eLife.25648] the 2DTM SNR threshold for detecting a target is chosen to result in one false positive detection per image searched. We would therefore expect to find one false positive detection per tile. We reasoned that the large nuclear area imaged by DeCo-LACE could be used to test whether this assumption is true. In the 670 tiles containing exclusively nucleus (as manually annotated from the overview image) we detected 247 targets, making the false-positive rate more than twofold lower than expected. Since earlier work shows that 2DTM with the LSU can produce matches to nuclear ribosome biogenesis intermediates [@doi:10.1101/2022.04.10.487797], this could even be an overestimate of the false-positive rate. This suggests that the detection threshold could be even lower, which is an area of ongoing research.
 
 Close inspection of the LSU positions in the lamellae revealed several
 interesting features. LSUs could be seen associating with membranes, in
@@ -396,10 +399,10 @@ unusually condensed beam and uncharacterized aberrations near the beam
 periphery. When plotting the SNR values of detected targets in all eight
 lamellae as a function of their location in the tiles, we found uniformly high
 SNR values throughout the illuminated areas for both eucentric and fringe-free
-focus illumination, demonstrating that both illumination schemed are suitable
+focus illumination, demonstrating that both illumination schemes are suitable
 for DeCo-LACE (Fig. [@fig:matching_stat]D).
 
-We also wondered whether large image shifts would lead aberration due to
+We also wondered whether large image shifts would lead to aberrations due to
 astigmatism or beam tilt [@doi:10.1016/j.jsb.2019.09.013]. We reasoned that if
 that was the case the number of detected targets should be highest in the center of the
 lamella where the applied beam image-shift is 0. Instead, we observed that in
@@ -434,17 +437,20 @@ increasing the number of processing units.
 
 ## Discussion
 
-In this study we developed an approach to image entire cellular cross-section using cryo-EM at high enough resolution to allow for 2DTM detection of the LSU. The two main advantages compared to previous approaches are a high throughput of imaging and the biological context for detected molecules. The requirement to increase throughput in cryo-EM data collection of cellular samples has been recognized in the recent literature. Most approaches described so far are tailored towards tomography. Peck et al. [@doi:10.1016/j.jsb.2022.107860] and Yang et al. [@doi:10.1101/2021.12.31.474669] developed approaches to increase the FOV of tomogram data-collection by using a montaging technique. Peck et al. used a similar "condensed-beam" approach as described here. However, the montages are substantially smaller in scope, covering carbon film holes of 2 um diameter. Bouvette et al. [@doi:10.1038/s41467-021-22251-8] and Eisenstein et al. [@doi:10.1101/2022.04.07.487557] are using beam image-shift to collect tilt-series in multiple locations in parallel to increase throughput. However, none of these approaches provide the full coverage of a cellular cross-section that can be achieved using DeCo-Lace.
+In this study we developed an approach to image entire cellular cross-section using cryo-EM at high enough resolution to allow for 2DTM detection of the LSU. The two main advantages compared to previous approaches are high throughput of imaging and biological context for detected molecules. The requirement to increase throughput in cryo-EM data collection of cellular samples has been recognized in the recent literature. Most approaches described so far are tailored towards tomography. Peck et al. [@doi:10.1016/j.jsb.2022.107860] and Yang et al. [@doi:10.1101/2021.12.31.474669] developed approaches to increase the FOV of tomogram data-collection by using a montaging technique. Peck et al. used a similar "condensed-beam" approach as described here. However, the montages are substantially smaller in scope, covering carbon film holes of 2 µm diameter. Bouvette et al. [@doi:10.1038/s41467-021-22251-8] and Eisenstein et al. [@doi:10.1101/2022.04.07.487557] are using beam image-shift to collect tilt-series in multiple locations in parallel to increase throughput. However, none of these approaches provide the full coverage of a cellular cross-section that can be achieved using DeCo-LACE.
 
-Since we observed substantial variation in LSU density within and between lamellae, visual proteomics studies that use cryo-EM to establish changes in molecular organization within cells will require orders of magnitude more data than used in this study. One milestone would be to image enough data to represent one cellular volume, which for a small eukaryotic cells requires imaging approximately 100 lamella. While data collection throughput on the TEM is fundamentally limited by the exposure time, this amount of data could be collected within 12 hours by improving the data acquisition scheme to perform all necessary calculations in parallel with actual exposure of the camera. Sample preparation using a FIB/SEM is also currently a bottleneck, but preparation of large lamellae with multiple cellular cross-sections using methods like WAFFLE [@doi:10.1038/s41467-022-29501-3] might allow sufficient throughput. As stated in the results, at least for 2DTM computation will remain challenging and approximately 17,000 GPU hours would be required for a 100 lamellae dataset. 
-
-As described in [@doi:10.7554/eLife.25648] the 2DTM SNR threshold for detecting a target is chosen to result in one false positive detection per image searched. We would therefore expect to find one false positive detection per tile. We reasoned that the large nuclear area imaged by DeCo-Lace could be used to test whether this assumption is true. In the 670 tiles containing exclusively nucleus (as manually annotated from the overview image) we detected 247 targets, making the false-positive rate more than twofold lower than expected. Since earlier work shows that 2DTM with the LSU can produce matches to nuclear ribosome biogenesis intermediates [@doi:10.1101/2022.04.10.487797], this could even be an overestimate of the false-positive rate. This suggests that the detection threshold could be even lower, which is an area of ongoing research.
-
-We found that even though we used beam image-shift extensively (up to 7 um), we did not see substantially reduced 2DTM SNR values in tiles acquired at high beam image-shift compared to tiles acquired with low or no beam image-shift. This is in contrast to reports in single-particle analysis (SPA) [@doi:10.1107/S2052252520013482] where the induced beam tilt substantially reduced the resolution if it was not corrected during processing. It is possible that 2DTM is less sensitive to beam-tilt aberrations, since the template is free of any aberration and only the image is distorted, while in SPA the beam tilt will affect both the images and the reconstructed template.
+We observed granules containing a vesicle of putative cytosolic origin. We speculate that upon degranulation, the process in which granules fuse with the plasma membrane, these vesicles would be released into the extracelullar space. The main types of extracellular vesicles of this size are exosomes, up to 100 nm large vesicles derived from fusion of multivesicular bodies with the plasma membrane, and microvesicles, which are derived from direct budding of the plasma membrane [@doi:10.1038/nrm.2017.125]. We suggest that granulocytes could release a third type of extracellular vesicle, granule-derived vesicles (GDV), into the extracellular space. 2DTM showed that a subset of GDVs can contain ribosomes (Fig. [@fig:matching_euc]F, Fig. [@fig:matching_fff]D,E). This could indicate that these vesicles are transporting translation-capable mRNAs, as has been described for exosomes [@doi:10.1038/ncb1596]. Further studies will be necessary to confirm the existence of GDVs in granulocytes isolated from mammals and to understand their functional significance.
 
 As mentioned in the results, we found a consistent shading artifact pattern in our montages, that we believe is the result of non-linear behavior of the K3 camera. Indeed, when we average images with a condensed beam taken over vacuum we found in both focus conditions a consistent background pattern with a brighter region on the periphery of the illuminated area (Fig [@fig:gain]). This might be caused by dynamic adjustment of the internal camera counting threshold which expects columns of the sensor to be evenly illuminated as is the case for SPA applications. Since the signal of this pattern has mainly low-resolution components it is unlikely to affect 2DTM. However, it highlights that the non-linear behavior of the camera has to be taken into account when imaging samples with strongly varying density and unusual illumination schemes. 
 
-We observed granules containing a vesicle of putative cytosolic origin. We speculate that upon degranulation, the process in which granules fuse with the plasma membrane, these vesicles would be released into the extracelullar space. The main types of extracellular vesicles of this size are exosomes, up to 100 nm large vesicles derived from fusion of multivesicular bodies with the plasma membrane, and microvesicles, which are derived from direct budding of the plasma membrane [@doi:10.1038/nrm.2017.125]. We suggest that granulocytes could release a third type of extracellular vesicle, granule-derived vesicles (GDV), into the extracellular space. 2DTM showed that a subset of GDVs can contain ribosomes (Fig. [@fig:matching_euc]F, Fig. [@fig:matching_fff]D,E). This could indicate that these vesicles are transporting translation-capable mRNAs, as has been described for exosomes [@doi:10.1038/ncb1596]. Further studies will be necessary to confirm the existence of GDVs in granulocytes isolated from mammals and to understand their functional significance.
+We found that even though we used beam image-shift extensively (up to 7 um), we did not see substantially reduced 2DTM SNR values in tiles acquired at high beam image-shift compared to tiles acquired with low or no beam image-shift. This is in contrast to reports in single-particle analysis (SPA) [@doi:10.1107/S2052252520013482] where the induced beam tilt substantially reduced the resolution if it was not corrected during processing. It is possible that 2DTM is less sensitive to beam-tilt aberrations, since the template is free of any aberration and only the image is distorted, while in SPA the beam tilt will affect both the images and the reconstructed template.
+
+Since we observed substantial variation in LSU density within and between lamellae, visual proteomics studies that use cryo-EM to establish changes in molecular organization within cells will require orders of magnitude more data than used in this study. One milestone would be to image enough data to represent one cellular volume, which for a small eukaryotic cells requires imaging approximately 100 lamellae. While data collection throughput on the TEM is fundamentally limited by the exposure time, this amount of data could be collected within 12 hours by improving the data acquisition scheme to perform all necessary calculations in parallel with actual exposure of the camera. Sample preparation using a FIB/SEM is also currently a bottleneck, but preparation of large lamellae with multiple cellular cross-sections using methods like WAFFLE [@doi:10.1038/s41467-022-29501-3] might allow sufficient throughput. As stated in the results, at least for 2DTM computation will remain challenging and approximately 17,000 GPU hours would be required for a 100 lamellae dataset. 
+
+
+
+
+
 
 
 
@@ -462,12 +468,12 @@ mesh copper grids, with a sillicone-oxide and 2 µm holes with a 2 µm spacing o
 200 mesh gold grids with a thin gold film and 2 µm holes in 2 µm spacing) were
 glow-discharged from both sides using a 15 mA for 45 s. 3.5 µl of cell suspension
 was added to grids on the thin-film side and grids were blotted from the back
-side using a GP2 cryoplunger (Leica) for 8 s and rapidly plunged into liquid
+side using a GP2 cryoplunger (Leica, Wetzlar, Germany) for 8 s and rapidly plunged into liquid
 ethane at -185 °C. 
 
 ### FIB-milling
 
-Grids were loaded into an Aquilos 2 FIB/SEM (Thermo Fisher) instrument with a
+Grids were loaded into an Aquilos 2 FIB/SEM (Thermo Fisher, Waltham, MA) instrument with a
 stage cooled to -190 °C. Grids were sputter-coated with platinum for 15 s at 45 mA
 and then coated with a layer of platinum-precursor by opening the GIS-valve for
 45 s. An overview of the grid was created by montaging SEM images and isolated
@@ -489,7 +495,7 @@ FIB-imaging of the lamella edges.
 ### Data collection
 
 Grids were loaded into a Titan Krios TEM (Thermo Fisher) operated at 300 keV and
-equipped with a BioQuantum energy filter (Gatan) and K3 camera (Gatan). The
+equipped with a BioQuantum energy filter (Gatan, Pleasanton, CA) and K3 camera (Gatan). The
 microscope was aligned using a cross-grating grid on the stage. Prior to each
 session, we carefully performed the "Image/Beam" calibration in nanoprobe. We
 set the magnification to a pixel size of 1.76 Å and condensed the beam to ~ 900 nm
@@ -519,7 +525,7 @@ using the "CenterBeamFromImage" command of SerialEM.
 
 After data collection, a 20 s exposure at 2250x magnification of the lamella at
 200 μm defocus was taken for visualization purposes. A Python script implementing
-this procedure is available at [Link to repo].
+this procedure is available at [https://github.com/jojoelfe/deco_lace_template_matching_manuscript](https://github.com/jojoelfe/deco_lace_template_matching_manuscript).
 
 ### DeCo-LACE data processing
 
@@ -579,18 +585,22 @@ The z coordinate of each target was calculated as the sum of the defocus offset
 for the target, the estimated defocus of the tile, and the nominal defocus of
 the microscope when the tile was acquired. 
 
-Images were rendered using UCSF ChimeraX [@doi:10.1002/pro.3943] using a custom extension to render 2DTM results available at [https://github.com/jojoelfe/tempest]. The Python scripts used for data processing are available
-under [https://github.com/jojoelfe/deco_lace_template_matching_manuscript].
+Images were rendered using UCSF ChimeraX [@doi:10.1002/pro.3943] using a custom extension to render 2DTM results available at [https://github.com/jojoelfe/tempest](https://github.com/jojoelfe/tempest). The Python scripts used for data processing are available
+under [https://github.com/jojoelfe/deco_lace_template_matching_manuscript](https://github.com/jojoelfe/deco_lace_template_matching_manuscript).
 
 
 
 ## Acknowledgments
 
-The authors would like to thank Bronwyn Lucas, Carsten Sachse, and Chen Xue for helpful suggestions and careful reading of the manuscript. Data was collected at the UMass Chan medical School CryoEM core with help by Kankang song, Christna, and Chen Xue. 
+The authors would like to thank Bronwyn Lucas, Carsten Sachse, and Chen Xu for helpful suggestions and careful reading of the manuscriptas as well as members of the Grigorieff lab for helpful discussions. Data was collected at the UMass Chan Medical School Cryo-EM core with help by Kankang Song, Christna Ouch, and Chen Xu. 
 
 ## Data availability
 
-Cryo-EM movies, motion-corrected images and template matching results have been deposited in EMPIAR under accession code [CODE]. The custom cisTEM version is available here [] until features have been integrated into a cisTEM release. The ChimeraX extension for rendering is avaibale here []. This manuscript was prepared using the manubot package [@ cite] . Custom python scripts and all files nescessary for manuscript generation are available here []. 
+Cryo-EM movies, motion-corrected images and 2DTM results have been deposited in EMPIAR under accession code [will be inserted]. The custom cisTEM version is available under [https://github.com/jojoelfe/cisTEM/tree/2574dbdf6161658fd177660b3a841100a792f61b](https://github.com/jojoelfe/cisTEM/tree/2574dbdf6161658fd177660b3a841100a792f61b) until features have been integrated into a cisTEM release. The ChimeraX extension for rendering is available under [https://github.com/jojoelfe/tempest](https://github.com/jojoelfe/tempest). This manuscript was prepared using the manubot package [@doi:10.1371/journal.pcbi.1007128] . The corresponding repository containing all scripts used for figure generation can be found under [https://github.com/jojoelfe/deco_lace_template_matching_manuscript](https://github.com/jojoelfe/deco_lace_template_matching_manuscript). 
+
+## Conflicts of interest
+
+The Authors declare that there is no conflict of interest.
 
 ## Figures
 
@@ -700,7 +710,7 @@ the whole illuminated area on the camera. Beam-image shift along X and Y
 positions and the used beam diameter indicated with red circles. Scalebar corresponds to 1 μm.
 (D+E) Representative micrographs takne with a condensed beam at eucentric focus
 (D) or fringe-free focus (E). Scalebar corresponds to 100 nm.
-(F) Boxplot of defocus measured by ctffind of micrographs taken by the DeCo-Lace
+(F) Boxplot of defocus measured by ctffind of micrographs taken by the DeCo-LACE
 approach on four lamellae images at eucentric focus and four lamellae imaged with
 fringe-free focus.
 ](tikz:approach){#fig:approach}
@@ -771,10 +781,10 @@ fringe-free focus.
 ```
 
 
-![Defocus estimation of individual tiles of DeCo-Lace montages
-(A) Defocus values of individual micrographs taken using the DeCo-Lace approach
+![Defocus estimation of individual tiles of DeCo-LACE montages
+(A) Defocus values of individual micrographs taken using the DeCo-LACE approach
 plotted as a function of the beam image-shift values. 
-(B) Defocus astigmatism of individual micrographs taken using the DeCo-Lace approach
+(B) Defocus astigmatism of individual micrographs taken using the DeCo-LACE approach
 plotted as a function of the beam image-shift values. ](tikz:lamella_spatial_info){#fig:lamella_spatial_info tag="3 - figure supplement 1"}
 
 ```{.tikz-figure #lamella_spatial_info width=20.0cm height=10cm draft=false}
@@ -831,10 +841,10 @@ plotted as a function of the beam image-shift values. ](tikz:lamella_spatial_inf
 
 ![Assembling DeCo-LACE exposures into montages (A)  Overview
 image of Lamella~EUC~ 1  taken at low magnification. Scalebar corresponds to 1 μm. (B) Overview of Lamella~EUC~ 1 created by
-montaging high magnification images taken with the DeCo-Lace approach. Scalebar corresponds to 1 μm. (C) Zoom-in into red box in panel B. Slight beam-fringe artifacts are visible. Scalebar corresponds to 100 nm.
+montaging high magnification images taken with the DeCo-LACE approach. Scalebar corresponds to 1 μm. (C) Zoom-in into red box in panel B. Slight beam-fringe artifacts are visible. Scalebar corresponds to 100 nm.
 (D)  Overview
 image of Lamella~FFF~ 4  taken at low magnification. Scalebar corresponds to 1 μm. (E) Overview of Lamella~FFF~ 4 created by
-montaging high magnification images taken with the DeCo-Lace approach. Scalebar corresponds to 1 μm. (F) Zoom-in into red box in panel E. No beam-fringe artifacts are visible. Scalebar corresponds to 100 nm. ](tikz:assembly){#fig:assembly}
+montaging high magnification images taken with the DeCo-LACE approach. Scalebar corresponds to 1 μm. (F) Zoom-in into red box in panel E. No beam-fringe artifacts are visible. Scalebar corresponds to 100 nm. ](tikz:assembly){#fig:assembly}
 ```{.tikz-figure #assembly width=15cm height=5cm draft=false}
 \def\panelheight{6.0cm}
 
@@ -975,9 +985,9 @@ estimate the shifts
 
 
 ![Motion correction of individual tiles imaged using the DeCo-LACE approach
-(A) Total estimated motion of individual micrographs taken using the DeCo-Lace approach
+(A) Total estimated motion of individual micrographs taken using the DeCo-LACE approach
 plotted as a function of the beam image-shift values. 
-(B) Electron intensity of individual micrographs taken using the DeCo-Lace approach
+(B) Electron intensity of individual micrographs taken using the DeCo-LACE approach
 plotted as a function of the beam image-shift values. ](tikz:lamella_motion_thickness){#fig:lamella_motion_thickness tag="4 - figure supplement 2"}
 
 
@@ -1054,7 +1064,7 @@ plotted as a function of the beam image-shift values. ](tikz:lamella_motion_thic
 ```
 
 ![ Overview images of lamellae imaged using the DeCo-LACE approach taken at low-magnification (A) Overviews taken at low magnification. Scalebar corresponds to 1 μm. (B) Overviews assembled using the DeCo-LACE approach. Scalebar corresponds to 1 μm. (C) Representative examples of a class of granules containing a putatively cytosolic inclusion. Scalebar corresponds to 100 nm.
-](tikz:lamella_images){#fig:lamella_images tag="4 - figure supplement 4"}
+](tikz:lamella_images){#fig:lamella_images tag="4 - figure supplement 4"  height=23cm}
 
 ```{.tikz-figure #lamella_images width=20.0cm height=5cm draft=false}
 \newlength{\panelheight}
@@ -1215,7 +1225,7 @@ plotted as a function of the beam image-shift values. ](tikz:lamella_motion_thic
 
 
 
-![Template matching in lamella imaged using the DeCo-Lace approach at eucentric
+![Template matching in lamella imaged using the DeCo-LACE approach at eucentric
 focus (A) Montage of Lamella$_\textrm{EUC}$ 1 overlaid with detected targets colored in orange. Scalebar corresponds to 1 μm. (B) Side view of detected targets in the lamella, such that the
 direction of the electron beam is horizontal. (C-F) Magnified area of panel A
 showing rough ER with associated ribosomes (C), outer nuclear membrane with
@@ -1289,7 +1299,7 @@ enclosed in a less electron dense inclusion in a granule (F). Ribosomes are colo
 ```
 
 
-![Template matching in lamella imaged using the DeCo-Lace approach at fringe-free
+![Template matching in lamella imaged using the DeCo-LACE approach at fringe-free
 focus (A) Montage of Lamella$_\textrm{FFF}$ 4 overlaid with detected targets  colored in orange. Scalebar corresponds to 1 μm. (B) Side view of detected targets in the lamella, such that the
 direction of the electron beam is horizontal. (C-E) Magnified area of panel A
 showing rough ER with associated ribosomes (C) and ribosomes
@@ -1393,7 +1403,7 @@ circle-circle intersection due to radiation damage from previous exposures. (E) 
 ```
 
 
-![Workflow of DeCo-Lace processing](tikz:deco_lace_workflow){#fig:deco_lace_workflow}
+![Workflow of DeCo-LACE processing](tikz:deco_lace_workflow){#fig:deco_lace_workflow}
 
 ```{.tikz-figure #deco_lace_workflow width=18cm height=18cm draft=false}
 \begin{scope}[
@@ -1480,7 +1490,15 @@ circle-circle intersection due to radiation damage from previous exposures. (E) 
 \end{scope}
 ```
 
+<video  controls>
+  <source src="movies/movie1.mp4" type="video/mp4">
+</video>
+
 ![Movie of detected LSU targets in Lamella$_\textrm{EUC}$ 1, corresponding to Figure 5](images/1x1-00000000.png ){#fig:movie1 tag="Movie 1"}
+
+<video  controls>
+  <source src="movies/movie2.mp4" type="video/mp4">
+</video>
 
 ![Movie of detected LSU targets in Lamella$_\textrm{FFF}$ 4, corresponding to Figure 6](images/1x1-00000000.png ){#fig:movie2 tag="Movie 2"}
 
