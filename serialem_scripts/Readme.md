@@ -1,0 +1,3 @@
+## SerialEM collection scripts for DeCo-LACE
+
+This folder contains the SerialEM python scripts I used for DeCo-LACE collection. The [original](original/) folder contains the scripts I used to collect the data in the manuscript. At this point I called the method FOWL (Fast observation of lamellae) and they consist of a fowl.py script and a jupyter notebook that I used to setup collection on that particular day. During this session I also collected tomography data that is not included in this manuscript.
