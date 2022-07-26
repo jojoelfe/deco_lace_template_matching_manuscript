@@ -2,13 +2,31 @@ The authors have developed a method aimed at characterizing particles found in w
 
 1) They have only used the large ribosomal subunit for this study. They should discuss the MW of this object and the fact that it has a significant fraction of nucleic acid, increasing the contrast. They might speculate how the method would work for objects with lower MW and no nucleic acid content.
 
+Refer to Peters paper
+Christian Span (Joachim Frank) threshold protein vs RNA
+https://www.sciencedirect.com/science/article/pii/S0969212600001854
+
 2) While the method is proposed as a faster alternative to cryo-ET, the computational demands seem prohibitive. Can they speculate on how the method could be accelerated (and not just by adding more processors)? Given the computational bottleneck, can they provide recommendations to readers on when the presented approach is appropriate?
+
+Accelerate FFTs
+Lower resolution/sparser sampling
+2DTM hands-off / tomography compicated workflow
+nucleus (dense background)
+
 
 3) The manuscript could potentially be improved by a more thorough explanation of the resolution regime to which the 2DTM signal-to-noise ratio (SNR) values are most sensitive. When would one anticipate aberrations like a coma to become problematic?
 
+Peters paper
+Which resolution is coma important mrad/resolution
+
 4) Fitting of particle defocus allows detection of the Z-height for each large ribosomal subunit. Could the authors estimate what is the precision of the detection of Z-height in their experiment and how it depends on the thickness of the lamella (˜150...250 nm in this case).
 
+Bronwyns paper
+
 5) How close to the top or the bottom end of the lamella can a ribosome subunit be detected? Can it be detected when it is partially milled away? Do the molecules in the "middle" of the lamella correspond to higher SNR?
+
+theoretically yes/ milling damage
+interesting question
 
 ----------
 
