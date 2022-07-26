@@ -10,6 +10,7 @@ for dataset, name in utils.dataset_info:
     assembled_directory = Path("/scratch/bern/elferich/deco_lace_manuscript_processing/assemble/")
     data  =  starfile.read(assembled_directory / f"{name}_assembled_matches.star")
     num_matches.append(len(data[data["display"]]))
+    print(len(data[data["display"]]))
 
 lp.latexify()
 with lp.figure("num_matches_plot",tight_layout=True):
