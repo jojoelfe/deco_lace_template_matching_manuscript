@@ -2,8 +2,10 @@ The authors have developed a method aimed at characterizing particles found in w
 
 1) They have only used the large ribosomal subunit for this study. They should discuss the MW of this object and the fact that it has a significant fraction of nucleic acid, increasing the contrast. They might speculate how the method would work for objects with lower MW and no nucleic acid content.
 
+We have included the MW of the used template to find the large ribosomal subunit and the fraction of RNA vs protein. Regarding objects with lower MW we have an included a citation to the following paper in eLife that contains data regarding the MW of proteins that is expected to be sufficient to be detected.Regarding the amount of included nucleic acid we refer to Span, et. al. that determined the relative contribution of nucleic acid ve protein on the signal in cryo-EM micrographs. We also note that these might not only be the only criterion that determines detectability, but that the conformation homogeneity and abundance within the cells also play important roles.
+
 Refer to Peters paper
-Christian Span (Joachim Frank) threshold protein vs RNA
+Christian Span (Joachim Frank) threshold protein vs RNA (Discuss with Niko, density vs mass?, Publications say nucleic acids scatters better, but only per volume. Does that matter to us?)
 https://www.sciencedirect.com/science/article/pii/S0969212600001854
 
 2) While the method is proposed as a faster alternative to cryo-ET, the computational demands seem prohibitive. Can they speculate on how the method could be accelerated (and not just by adding more processors)? Given the computational bottleneck, can they provide recommendations to readers on when the presented approach is appropriate?
