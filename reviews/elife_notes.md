@@ -21,6 +21,9 @@ nucleus (dense background)
 Peters paper
 Which resolution is coma important mrad/resolution
 
+ ![https://www.biorxiv.org/content/biorxiv/early/2018/04/26/306241.full.pdf
+ cheng et al](images/2022-09-27-15-42-30.png){width=50%}
+
 4) Fitting of particle defocus allows detection of the Z-height for each large ribosomal subunit. Could the authors estimate what is the precision of the detection of Z-height in their experiment and how it depends on the thickness of the lamella (˜150...250 nm in this case).
 
 Bronwyns paper
@@ -29,6 +32,8 @@ Bronwyns paper
 
 theoretically yes/ milling damage
 interesting question
+
+![analysis](../content/code/img/matchrange_vs_thickness_plot.png){width=50%}
 
 ----------
 
