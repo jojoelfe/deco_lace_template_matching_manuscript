@@ -2,10 +2,25 @@ The authors have developed a method aimed at characterizing particles found in w
 
 1) They have only used the large ribosomal subunit for this study. They should discuss the MW of this object and the fact that it has a significant fraction of nucleic acid, increasing the contrast. They might speculate how the method would work for objects with lower MW and no nucleic acid content.
 
-We have included the MW of the used template to find the large ribosomal subunit and the fraction of RNA vs protein. Regarding objects with lower MW we have an included a citation to the following paper in eLife that contains data regarding the MW of proteins that is expected to be sufficient to be detected.Regarding the amount of included nucleic acid we refer to Span, et. al. that determined the relative contribution of nucleic acid ve protein on the signal in cryo-EM micrographs. We also note that these might not only be the only criterion that determines detectability, but that the conformation homogeneity and abundance within the cells also play important roles.
+** We have included the MW of the used template to find the large ribosomal
+subunit and the fraction of RNA vs protein. Regarding objects with lower MW we
+have an included a citation to the following paper in eLife that contains data
+regarding the MW of proteins that is expected to be sufficient to be
+detected.Regarding the amount of included nucleic acid we refer to Span, et. al.
+that determined the relative contribution of nucleic acid ve protein on the
+signal in cryo-EM micrographs. We also note that these might not only be the
+only criterion that determines detectability, but that the conformation
+homogeneity and abundance within the cells also play important roles. **
 
 
-2) While the method is proposed as a faster alternative to cryo-ET, the computational demands seem prohibitive. Can they speculate on how the method could be accelerated (and not just by adding more processors)? Given the computational bottleneck, can they provide recommendations to readers on when the presented approach is appropriate?
+2) While the method is proposed as a faster alternative to cryo-ET, the
+   computational demands seem prohibitive. Can they speculate on how the method
+   could be accelerated (and not just by adding more processors)? Given the
+   computational bottleneck, can they provide recommendations to readers on when
+   the presented approach is appropriate?
+
+** We have expanded a paragraph in the discussion with speculation about
+approaches to accelerate 2DTM. We also included some speculation about 
 
 
 3) The manuscript could potentially be improved by a more thorough explanation of the resolution regime to which the 2DTM signal-to-noise ratio (SNR) values are most sensitive. When would one anticipate aberrations like a coma to become problematic?
@@ -27,7 +42,17 @@ Reviewer #1 (Public Review):
 
 The manuscript is likely of interest to cryo-electron microscopists working on cellular samples. It details a data-acquisition scheme for mapping large areas at a fine pixel size by cryo-electron microscopy for the purpose of macromolecular identification by high-resolution 2D template matching (2DTM). The authors succinctly describe the methodology, as well as detail the apparent effects of microscope aberrations on 2DTM results.
 
-While other montaging approaches have been described recently, the one presented here differs in its approach to controlling defocus and avoids the need to sacrifice a biologically meaningful region of a sample. The authors investigate the compatibility of the data acquisition with their 2DTM method using cryoFIB-milled mouse neutrophil-like cells and the 60S ribosome as an example case. In order to minimize unnecessary exposures, the authors restrict illumination to a circle inscribed on the detector and use beam image-shift in lieu of stage shift. This approach introduces several optical aberrations for which the authors investigate the effects on the 2DTM results. The results of the investigated aberration effects may be of general interest to the cryoEM community, not just those using montaging methods.
+While other montaging approaches have been described recently, the one
+presented here differs in its approach to controlling defocus and avoids the
+need to sacrifice a biologically meaningful region of a sample. The authors
+investigate the compatibility of the data acquisition with their 2DTM method
+using cryoFIB-milled mouse neutrophil-like cells and the 60S ribosome as an
+example case. In order to minimize unnecessary exposures, the authors restrict
+illumination to a circle inscribed on the detector and use beam image-shift in
+lieu of stage shift. This approach introduces several optical aberrations for
+which the authors investigate the effects on the 2DTM results. The results of
+the investigated aberration effects may be of general interest to the cryoEM
+community, not just those using montaging methods.
 
 
 Reviewer #1 (Recommendations for the authors):
