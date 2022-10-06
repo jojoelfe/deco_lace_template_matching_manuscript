@@ -72,10 +72,27 @@ Lines 270-272:
 Can the authors elaborate their explanation on the impact of coma on SPA vs 2DTM? I would have thought that a coma would have less of an impact on SPA data through averaging compensatory directions and more of an impact on 2DTM by making the reference project less similar to the experimental image.
 
 Line 342:
-Why were images resampled to 1.5 Å? Was this to include information beyond the physical Nyquist? If so, has this been shown to improve the 2DTM results?
+Why were images resampled to 1.5 Å? Was this to include information beyond the
+physical Nyquist? If so, has this been shown to improve the 2DTM results?
+
+The resampling to 1.5 Å was not intended do include information beyond nyquist.
+Instead we chose 1.5 Å initially since we were expecting information up to 3 Å to
+contribute to 2DTM and wanted to slightly lower the magnification compared to
+the ~ 1.0 Å pixelsize use previously, to reduce the number of tiles that have to be
+acquired. We then chose the first magnification at our Krios that was closest to
+1.5 Å physical pixelsize and binned to 1.5 Å, with the idea that this would
+simplify combining data from different instruments, which we did not do in this
+study.
+
 
 Figure-4 supplement-1:
-Panels D and E are not described in the legend. Are micrographs cropped to the illuminated area inscribed before 2DTM or is the entirety of the unilluminated area, filled with Guassian noise, included?
+Panels D and E are not described in the legend. Are micrographs cropped to the
+illuminated area inscribed before 2DTM or is the entirety of the unilluminated
+area, filled with Guassian noise, included?
+
+We apoligize for the omission of figure legend describing pandel D and E.
+Indeed, the micrographs are cropped to the illuminated area in order to avoid
+performing unnecessary cross-correlation.
 
 Figure 7:
 Remove/replace "electron" in the first box.
@@ -95,6 +112,9 @@ The manuscript is technically excellent and well written. I have several importa
 
 Minor questions
 1. What is the fraction of overlap between the circular images in percent?
+
+
+
 2. The hardware used by the authors is a non-common high-performance unit. Could the authors give a time estimate for processing on one full lamella on a more conventional consumer GPU such as Nvidia 3000-series?
 
 
