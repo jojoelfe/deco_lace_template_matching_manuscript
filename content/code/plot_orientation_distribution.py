@@ -3,6 +3,7 @@ import latexipy as lp
 import utils
 import starfile
 from pathlib import Path
+from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 phis = []
 thetas = []
@@ -17,13 +18,18 @@ for dataset, name in utils.dataset_info:
 
 lp.latexify()
 with lp.figure("orientation_dist",tight_layout=True):
-    fig, axs = plt.subplots(1,3,sharey=True)
-    axs[0].hist(phis, bins=100, color='grey', edgecolor='black', linewidth=0.5)
-    axs[0].set_title("Phi")
-    axs[1].hist(thetas, bins=100, color='grey', edgecolor='black', linewidth=0.5)
-    axs[1].set_title("Theta")
-    axs[2].hist(psis, bins=100, color='grey', edgecolor='black', linewidth=0.5)
-    axs[2].set_title("Psi")
-    #axs[1].bar(range(1,5),num_matches[4:8], align='center', color='grey', edgecolor='black', linewidth=0.5)
-    #axs[0].set_title("Eucentric Focus")
+    fig, ax = plt.subplots()
+    hb = ax.hexbin(phis, thetas, bins='log', cmap="viridis", gridsize=20)
+    ax.set(xlim=(0, 180), ylim=(0, 180))
+    ax.set_xlabel('$\phi$ (rlnAngleRot, deg)')
+    ax.set_xticks(range(0, 181, 45))
+    ax.set_ylabel('$\\theta$ (rlnAngleTilt, deg)')
+    ax.set_yticks(range(0, 181, 45))
+    ax.set_title("Ribosome orientation distribution")
+    fig.gca().set_aspect('equal', adjustable='box')
+    divider = make_axes_locatable(ax)
+    cax = divider.append_axes('right', size='5%', pad=0.1)
+    cb = fig.colorbar(hb, ax=ax, cax=cax)
+    cb.set_label('Number of particles')
+    fig.tight_layout()
     
