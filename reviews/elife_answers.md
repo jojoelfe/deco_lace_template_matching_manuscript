@@ -113,7 +113,9 @@ The manuscript is technically excellent and well written. I have several importa
 Minor questions
 1. What is the fraction of overlap between the circular images in percent?
 
-
+The overlap between adjacent circular tiles was 12.9% for the eucentric focus
+condition and 10.3% for the fringe-free focus condition. We have included this
+information in the manuscript.
 
 2. The hardware used by the authors is a non-common high-performance unit. Could the authors give a time estimate for processing on one full lamella on a more conventional consumer GPU such as Nvidia 3000-series?
 
