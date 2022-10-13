@@ -59,7 +59,13 @@ Reviewer #1 (Recommendations for the authors):
 
 The manuscript could potentially be improved by a more thorough explanation of the resolution regime to which the 2DTM signal-to-noise ratio (SNR) values are most sensitive. When would one anticipate aberrations like a coma to become problematic?
 
-Lines 156-158: How does the inclusion of the non-illuminated areas, even when filled with Gaussian noise, impact the estimate of the false-positive rate? Could this be the source of the apparent overestimation of the false-positive rate?
+Lines 156-158: How does the inclusion of the non-illuminated areas, even when
+filled with Gaussian noise, impact the estimate of the false-positive rate?
+Could this be the source of the apparent overestimation of the false-positive
+rate?
+
+During data processing we do not include matches that occur in the
+Gaussian noise filled non-illuminated areas.
 
 Ln 189: "exclusively".
 
@@ -97,6 +103,7 @@ performing unnecessary cross-correlation.
 Figure 7:
 Remove/replace "electron" in the first box.
 
+We have removed "electron" as requested.
 
 Reviewer #2 (Public Review):
 
@@ -117,6 +124,10 @@ The overlap between adjacent circular tiles was 12.9% for the eucentric focus
 condition and 10.3% for the fringe-free focus condition. We have included this
 information in the manuscript.
 
-2. The hardware used by the authors is a non-common high-performance unit. Could the authors give a time estimate for processing on one full lamella on a more conventional consumer GPU such as Nvidia 3000-series?
+2. The hardware used by the authors is a non-common high-performance unit. Could
+   the authors give a time estimate for processing on one full lamella on a more
+   conventional consumer GPU such as Nvidia 3000-series?
+
+
 
 
