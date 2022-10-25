@@ -94,8 +94,8 @@ session.models.add([mset4])
 
 for i, axis_vecs in enumerate([axis_vecs_1, axis_vecs_2, axis_vecs_3, axis_vecs_4]):
     heightscale=0.3
-    widthscale=0.5
-    nside = 2**4
+    widthscale=0.25
+    nside = 2**3
     angular_sampling = np.sqrt(3 / np.pi) * 60 / nside
     theta, phi = pix2ang(nside, np.arange(12 * nside ** 2))
     phi = np.pi - phi
