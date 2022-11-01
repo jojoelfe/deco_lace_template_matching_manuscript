@@ -28,7 +28,7 @@ for dataset, name in utils.dataset_info[:]:
     
     data_euc[:,0] = - np.log(data_euc[:,0]/average) * 322
     print(data_euc[:,0])
-    thicknesses.append(data_euc[:,0])
+    thicknesses = np.append(thicknesses,data_euc[:,0])
     #plt.hist(data_euc[:,0],bins=100,color='k',alpha=0.5)
 
     if False:
@@ -44,5 +44,5 @@ for dataset, name in utils.dataset_info[:]:
         plt.xlim(-6,6)
         plt.ylim(-10,8)
     with lp.figure(f"thickness_by_intensity_vs_bs_plo_lblaw_hist",size=lp.figure_size(ratio=1.0,doc_width_pt=250),tight_layout=True):
-        plt.hist(thicknesses,bins=100,color='k',alpha=0.5)
+        plt.hist(thicknesses,bins=100,color='k',alpha=0.5,range=[70,300])
 
