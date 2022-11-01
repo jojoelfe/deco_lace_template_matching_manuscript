@@ -23,11 +23,40 @@ homogeneity and abundance within the cells also play important roles. **
 approaches to accelerate 2DTM. We also included some speculation about 
 
 
-3) The manuscript could potentially be improved by a more thorough explanation of the resolution regime to which the 2DTM signal-to-noise ratio (SNR) values are most sensitive. When would one anticipate aberrations like a coma to become problematic?
+3) The manuscript could potentially be improved by a more thorough explanation
+   of the resolution regime to which the 2DTM signal-to-noise ratio (SNR) values
+   are most sensitive. When would one anticipate aberrations like a coma to
+   become problematic?
 
-4) Fitting of particle defocus allows detection of the Z-height for each large ribosomal subunit. Could the authors estimate what is the precision of the detection of Z-height in their experiment and how it depends on the thickness of the lamella (˜150...250 nm in this case).
 
-5) How close to the top or the bottom end of the lamella can a ribosome subunit be detected? Can it be detected when it is partially milled away? Do the molecules in the "middle" of the lamella correspond to higher SNR?
+
+4) Fitting of particle defocus allows detection of the Z-height for each large
+   ribosomal subunit. Could the authors estimate what is the precision of the
+   detection of Z-height in their experiment and how it depends on the thickness
+   of the lamella (˜150...250 nm in this case).
+
+The precision of Z-height estimation in 2DTM has been previously investigated by
+comparing it with results from 3d coordinates from cryo-tomography (Lucas. et.
+al. eLife 2021). The median difference in the Z-direction between 2DTM and
+tomography was found to 59 A, roughly a third of the LSU diameter. While we have
+not yet sufficent data from 2DTM+tomography to perform such an analysis as a
+function of sample thickness, we note that Lucas et. al. used samples with a
+thickness ranging from 80-220 nm, wo we don't expect uncertainties to be
+substantialy higher in our present study. 
+
+5) How close to the top or the bottom end of the lamella can a ribosome subunit
+   be detected? Can it be detected when it is partially milled away? Do the
+   molecules in the "middle" of the lamella correspond to higher SNR?
+
+We cannot detect edges of the lamella using a single exposure and therefore
+cannot directly measure the distance of a detection from the lamella edge.
+In order to address this question we have estimated the lamella thickness in
+every tile using (...) and compared it to the range of ribsome detection in the
+beam direction. This analysis suggests that ribsome detections are only in a
+slice that is ~70 nm thinner that the lamella, suggesting that we could not
+detect ribosome ~35nm from the lamella edge, potentially due to radiation damage
+during the milling process. Our lab is currently performing a more through
+investigation of this phenomenon.
 
 ----------
 
@@ -69,7 +98,16 @@ Gaussian noise filled non-illuminated areas.
 
 Ln 189: "exclusively".
 
-Lines 220-224: Are the authors able to incorporate the effect of coma in the 2DTM routine to see its effect on results or perform simulations on the effect coma has on the SNR values? When would one expect a coma to become limiting/negatively affect the SNR? Is it near/beyond the Nyquist of this data set anyway?
+Lines 220-224: Are the authors able to incorporate the effect of coma in the
+2DTM routine to see its effect on results or perform simulations on the effect
+coma has on the SNR values? When would one expect a coma to become
+limiting/negatively affect the SNR? Is it near/beyond the Nyquist of this data
+set anyway?
+
+Resolution capped by B-factor applied to reference. In this case 1.5 *
+experimental => media 120 => 7.7A lowpass filter (even though some areas use
+higher resolution) Expected maximal beamtilt of woret case 2.5 mRad => should keep
+data up to 6A => no influence from beamtilt as expected
 
 Lines 267-269:
 Reference 27 (Cash et al, 2020) detailed a case of substantial beam image shift which resulted in |0-6| mrad of beam tilt (up to 20 um image shift) and limited the reconstruction to 4.9 Å. In Cheng et al, JSB, 2018 the authors could obtain ~3-3.5 Å reconstructions in light of |1.3| mrad beam tilt (~5-8 um image shift), which is likely closer to the maximum amount of beam tilt being applied in the presented study.
