@@ -28,7 +28,10 @@ approaches to accelerate 2DTM. We also included some speculation about
    are most sensitive. When would one anticipate aberrations like a coma to
    become problematic?
 
-
+Resolution capped by B-factor applied to reference. In this case 1.5 *
+experimental => media 120 => 7.7A lowpass filter (even though some areas use
+higher resolution) Expected maximal beamtilt of woret case 2.5 mRad => should keep
+data up to 6A => no influence from beamtilt as expected
 
 4) Fitting of particle defocus allows detection of the Z-height for each large
    ribosomal subunit. Could the authors estimate what is the precision of the
@@ -98,22 +101,39 @@ Gaussian noise filled non-illuminated areas.
 
 Ln 189: "exclusively".
 
+Thank you for pointing this out. The typo is fixed.
+
 Lines 220-224: Are the authors able to incorporate the effect of coma in the
 2DTM routine to see its effect on results or perform simulations on the effect
 coma has on the SNR values? When would one expect a coma to become
 limiting/negatively affect the SNR? Is it near/beyond the Nyquist of this data
 set anyway?
 
-Resolution capped by B-factor applied to reference. In this case 1.5 *
-experimental => media 120 => 7.7A lowpass filter (even though some areas use
-higher resolution) Expected maximal beamtilt of woret case 2.5 mRad => should keep
-data up to 6A => no influence from beamtilt as expected
+See answer to question 3)
 
 Lines 267-269:
-Reference 27 (Cash et al, 2020) detailed a case of substantial beam image shift which resulted in |0-6| mrad of beam tilt (up to 20 um image shift) and limited the reconstruction to 4.9 Å. In Cheng et al, JSB, 2018 the authors could obtain ~3-3.5 Å reconstructions in light of |1.3| mrad beam tilt (~5-8 um image shift), which is likely closer to the maximum amount of beam tilt being applied in the presented study.
+Reference 27 (Cash et al, 2020) detailed a case of substantial beam image shift
+which resulted in |0-6| mrad of beam tilt (up to 20 um image shift) and limited
+the reconstruction to 4.9 Å. In Cheng et al, JSB, 2018 the authors could obtain
+~3-3.5 Å reconstructions in light of |1.3| mrad beam tilt (~5-8 um image shift),
+which is likely closer to the maximum amount of beam tilt being applied in the
+presented study.
+
+Thank you for pointing this out. We updated the discussion to incule Cheng et
+al, 2018, as described in the answer to question 3)
 
 Lines 270-272:
-Can the authors elaborate their explanation on the impact of coma on SPA vs 2DTM? I would have thought that a coma would have less of an impact on SPA data through averaging compensatory directions and more of an impact on 2DTM by making the reference project less similar to the experimental image.
+Can the authors elaborate their explanation on the impact of coma on SPA vs
+2DTM? I would have thought that a coma would have less of an impact on SPA data
+through averaging compensatory directions and more of an impact on 2DTM by
+making the reference project less similar to the experimental image.
+
+We have removed the discussion of impact in SPA vs 2DTM, since as elaborated in
+Cheng 2018 the current theory does apparently not capture the experimental
+observations and as detailed in the answer to question 3) in our case the signal
+degradation caused by beamtilt occurs at higher-resolutions than used by our
+reference. We are currently exploring including fitting coma and other
+aberrations during 2DTM to better understand its impact.
 
 Line 342:
 Why were images resampled to 1.5 Å? Was this to include information beyond the
@@ -165,6 +185,12 @@ information in the manuscript.
 2. The hardware used by the authors is a non-common high-performance unit. Could
    the authors give a time estimate for processing on one full lamella on a more
    conventional consumer GPU such as Nvidia 3000-series?
+
+We benchmarked 2DTM on NVIDIA A6000 GPUs and NVIDIA 3090 GPUs and found
+negligible differences in performance. While purchase consumer GPUs will
+certainly be more cost-effective it can be hard to source the required number of
+consumer GPUs and find manufactures that build high-density rack-mounted systems containing
+multiple consumer grade GPUs.
 
 
 
