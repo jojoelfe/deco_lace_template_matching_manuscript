@@ -145,6 +145,9 @@ if [ "${BUILD_LATEX}" = "true" ]; then
     --defaults=common.yaml \
     --defaults=latex.yaml
   tectonic output/manuscript.tex
+
+  ~/sw/latexdiff/latexdiff reviews/submitted.tex output/manuscript.tex > output/diff.tex
+  tectonic output/diff.tex
   rm images
   rm output/graphics
   rm graphics
