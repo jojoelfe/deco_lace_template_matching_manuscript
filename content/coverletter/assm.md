@@ -1,3 +1,42 @@
+---
+output:
+  pdf_document:
+    template: template-letter.tex
+author:
+- Johannes Elferich
+- UMass Chan Medical School/HHMI
+opening: Dear Editor,
+date: 4 Nov 2022
+
+return-address: 
+- RNA Therapeutics Institute
+- 368 Plantation St
+- Worcester MA 01605
+
+fontfamily: mathpazo
+fontsize: 12pt
+geometry: margin=1in
+blockquote: true
+
+signature-before: -8ex
+signature-after: 0ex
+closing-indentation: 0pt
+links-as-notes: true
+colorlinks: true
+...
+
+Please find enclosed our revised manuscript titled “Defocus Corrected Large Area Cryo-EM (DeCo- LACE) for Label-Free Detection of Molecules across Entire Cell Sections”.
+
+As detailed below, we have carefully considered each comment by the reviewers and revised the manuscript accordingly.
+
+We hope that you will find the manuscript in its revised form suitable as an article for the Tools and Resources section of eLife. 
+
+
+\longindentation=0pt
+\closing{Sincerely,}
+
+\pagebreak
+
 The authors have developed a method aimed at characterizing particles found in wide-view image montages from cellular sections. While it might be seen as an incremental advance over their previous publication on template-matching, enabling users to be able to examine wide fields of view has importance and significance for addressing cell biological questions. There are several limitations to the present study, however, that should be addressed in a revised paper:
 
 1) They have only used the large ribosomal subunit for this study. They should discuss the MW of this object and the fact that it has a significant fraction of nucleic acid, increasing the contrast. They might speculate how the method would work for objects with lower MW and no nucleic acid content.
