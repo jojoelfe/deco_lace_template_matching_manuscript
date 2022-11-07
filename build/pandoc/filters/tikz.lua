@@ -86,7 +86,7 @@ local function tikz2image(width,height,draft,src, filetype, outfile)
     else
         os.execute('pdf2svg ' .. get_file_name(outfile) .. '.pdf '  .. outfile .. '.svg')
         os.rename(get_file_name(outfile) .. '.pdf', outfile .. '.pdf')
-        os.execute('convert -density 300 '.. outfile .. '.pdf' .. ' -background white -alpha remove ' .. outfile .. '.png')
+        os.execute('convert -density 600 '.. outfile .. '.pdf' .. ' -background white -alpha remove ' .. outfile .. '.png')
         
         print(outfile)
     end

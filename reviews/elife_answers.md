@@ -2,9 +2,15 @@ The authors have developed a method aimed at characterizing particles found in w
 
 1) They have only used the large ribosomal subunit for this study. They should discuss the MW of this object and the fact that it has a significant fraction of nucleic acid, increasing the contrast. They might speculate how the method would work for objects with lower MW and no nucleic acid content.
 
-**Answer:** We added a paragraph to the discussion (lines 295-300). The paragraphincludes the MW of the template used to detect the large ribosomal
-subunit (2MDa) and the fraction of RNA. Regarding the amount of included nucleic acid we refer to Spahn et. al. Structure 2000 to discuss the possibility that nucleic acid contribute more the the signal in cryo-EM micrographs. Regarding the question about objects with lower MW we cite Rickgauer et.al.  eLife 2017, which contains data
-regarding the MW of proteins that are expected to be detectable.  We note that MW might not only be the only criterion that determines detectability, but that the conformational homogeneity and abundance within the cells also play important roles. 
+**Answer:** We added a paragraph to the discussion (lines 295-300). The
+paragraph includes the MW of the template used to detect the large ribosomal
+subunit (2MDa) and the fraction of RNA. Regarding the amount of included nucleic
+acid, we refer to Spahn et. al. Structure 2000 to discuss the possibility that
+nucleic acid contribute more the the signal in cryo-EM micrographs compared to
+protein occupying the same volume. Regarding
+the question about objects with lower MW, we cite Rickgauer et.al. eLife 2017,
+which contains data
+regarding the MW of proteins that are expected to be detectable.  We note that MW might not only be the only criterion that determines detectability, but that the conformational homogeneity and abundance within the cell also play important roles. 
 
 
 2) While the method is proposed as a faster alternative to cryo-ET, the
@@ -27,7 +33,7 @@ disadvantages of 2DTM compared to cryo-ET we refer to Lucas et.al. eLife 2021.
    are most sensitive. When would one anticipate aberrations like a coma to
    become problematic?
 
-**Answer:** We have updated the discussion paragraph in lines 279-294 with an explanation of the expected resolution ranges compared with the expected coma aberrations as discussed in Cheng et.al. JSB 2018. In summary, we assume that the resoution range being used for 2DTM is lower than the resolution at which coma aberrations are expected to be problematic.
+**Answer:** We have updated the discussion paragraph in lines 279-294 with an explanation of the expected resolution ranges compared with the expected coma aberrations as discussed in Cheng et.al. JSB 2018. In summary, we assume that the resolution range being used for 2DTM is lower than the resolution at which coma aberrations are expected to be problematic.
 
 4) Fitting of particle defocus allows detection of the Z-height for each large
    ribosomal subunit. Could the authors estimate what is the precision of the
@@ -38,7 +44,7 @@ disadvantages of 2DTM compared to cryo-ET we refer to Lucas et.al. eLife 2021.
 comparing it with results from 3D coordinates from cryo-tomography (Lucas. et.
 al. eLife 2021). The median difference in the Z-direction between 2DTM and
 tomography was found to 59 A, roughly a third of the LSU diameter. While we have
-not yet sufficent data from 2DTM+tomography to perform such an analysis as a
+not yet sufficient data from 2DTM+tomography to perform such an analysis as a
 function of sample thickness, we note that Lucas et. al. used samples with a
 thickness ranging from 80-220 nm, so we don't expect uncertainties to be
 substantialy higher in our present study. 
@@ -50,10 +56,10 @@ substantialy higher in our present study.
 **Answer:** We cannot detect edges of the lamella using a single exposure and therefore
 cannot directly measure the distance of a detection from the lamella edge.
 In order to address this question we have estimated the lamella thickness in
-every tile using (...) and compared it to the range of ribsome detection in the
-beam direction. This analysis suggests that ribsome detections are only in a
-slice that is ~70 nm thinner that the lamella, suggesting that we could not
-detect ribosome ~35nm from the lamella edge, potentially due to radiation damage
+every tile using the Beer-Lambert law as described in Rice et. al., JSB 2018 and compared it to the range of ribosome detections in the
+beam direction. This analysis suggests that ribosomes are only detected in a
+slice that is ~70 nm thinner than the lamella, suggesting that we could not
+detect ribosome ~35nm from the lamella edge, potentially due to damage
 during the milling process. Our lab is currently performing a more through
 investigation of this phenomenon.
 
@@ -133,7 +139,7 @@ Line 342:
 Why were images resampled to 1.5 Å? Was this to include information beyond the
 physical Nyquist? If so, has this been shown to improve the 2DTM results?
 
-**Answer:** The resampling to 1.5 Å was not intended do include information beyond Nyquist.
+**Answer:** The resampling to 1.5 Å was not intended to include information beyond Nyquist.
 Instead we chose 1.5 Å initially since we were expecting information up to 3 Å to
 contribute to 2DTM and wanted to slightly lower the magnification compared to
 the ~ 1.0 Å pixelsize use previously, to reduce the number of tiles that have to be
@@ -148,7 +154,7 @@ Panels D and E are not described in the legend. Are micrographs cropped to the
 illuminated area inscribed before 2DTM or is the entirety of the unilluminated
 area, filled with Guassian noise, included?
 
-**Answer:** We apologize for the omission of figure legend describing pandel D and E. Indeed, the micrographs are cropped to the illuminated area in order to avoid
+**Answer:** We apologize for the omission of the figure legend describing panels D and E. Indeed, the micrographs are cropped to the illuminated area in order to avoid
 performing unnecessary cross-correlation.
 
 Figure 7:
@@ -189,9 +195,9 @@ information in the manuscript.
 
 **Answer:** We benchmarked 2DTM on NVIDIA A6000 GPUs and NVIDIA 3090 GPUs and found
 negligible differences in performance. While purchasing consumer GPUs will
-certainly be more cost-effective it can be hard to source the required number of
+certainly be more cost-effective, it can be difficult to source the required number of
 consumer GPUs and find manufactures that build high-density rack-mounted systems containing
-multiple consumer grade GPUs.
+multiple consumer GPUs.
 
 
 
